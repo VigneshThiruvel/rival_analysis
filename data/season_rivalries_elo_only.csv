@@ -1,0 +1,2927 @@
+country,season,team_a,team_b,elo_diff
+England,2017,Arsenal,Chelsea,39.0488281200001
+England,2017,Arsenal,Man Utd,44.7634277299999
+England,2017,Bournemouth,Brighton,52.1440429699999
+England,2017,Bournemouth,Burnley,31.9510498
+England,2017,Bournemouth,Crystal Palace,3.50195313000017
+England,2017,Bournemouth,Everton,17.8316650400002
+England,2017,Bournemouth,Fulham,56.08898925
+England,2017,Bournemouth,Leicester,21.5330810600001
+England,2017,Bournemouth,Newcastle,26.4448242199999
+England,2017,Bournemouth,Southampton,48.4350585899999
+England,2017,Bournemouth,Watford,27.6304931599998
+England,2017,Bournemouth,West Ham,31.06640625
+England,2017,Bournemouth,Wolves,91.5837402299999
+England,2017,Brighton,Burnley,20.1929931699999
+England,2017,Brighton,Cardiff,62.2537841799999
+England,2017,Brighton,Crystal Palace,55.6459961000001
+England,2017,Brighton,Everton,69.9757080100001
+England,2017,Brighton,Fulham,3.94494628000007
+England,2017,Brighton,Huddersfield,77.3024902300001
+England,2017,Brighton,Leicester,73.67712403
+England,2017,Brighton,Newcastle,25.69921875
+England,2017,Brighton,Southampton,3.70898437999995
+England,2017,Brighton,Watford,24.5135498100001
+England,2017,Brighton,West Ham,21.0776367199999
+England,2017,Brighton,Wolves,39.43969726
+England,2017,Burnley,Cardiff,82.4467773499998
+England,2017,Burnley,Crystal Palace,35.4530029300001
+England,2017,Burnley,Everton,49.7827148400002
+England,2017,Burnley,Fulham,24.13793945
+England,2017,Burnley,Huddersfield,97.4954834
+England,2017,Burnley,Leicester,53.4841308600001
+England,2017,Burnley,Newcastle,5.50622558000009
+England,2017,Burnley,Southampton,16.48400879
+England,2017,Burnley,Watford,4.32055664000018
+England,2017,Burnley,West Ham,0.884643549999964
+England,2017,Burnley,Wolves,59.6326904299999
+England,2017,Cardiff,Fulham,58.3088378999999
+England,2017,Cardiff,Huddersfield,15.0487060500002
+England,2017,Cardiff,Newcastle,87.9530029299999
+England,2017,Cardiff,Southampton,65.9627685599999
+England,2017,Cardiff,Watford,86.76733399
+England,2017,Cardiff,West Ham,83.3314208999998
+England,2017,Cardiff,Wolves,22.8140869199999
+England,2017,Chelsea,Liverpool,74.8061523499998
+England,2017,Chelsea,Man Utd,5.71459960999982
+England,2017,Chelsea,Tottenham,81.76953125
+England,2017,Crystal Palace,Everton,14.32971191
+England,2017,Crystal Palace,Fulham,59.5909423800001
+England,2017,Crystal Palace,Leicester,18.0311279299999
+England,2017,Crystal Palace,Newcastle,29.9467773500001
+England,2017,Crystal Palace,Southampton,51.9370117200001
+England,2017,Crystal Palace,Watford,31.13244629
+England,2017,Crystal Palace,West Ham,34.5683593800002
+England,2017,Crystal Palace,Wolves,95.0856933600001
+England,2017,Everton,Fulham,73.9206542900001
+England,2017,Everton,Leicester,3.7014160199999
+England,2017,Everton,Newcastle,44.2764892600001
+England,2017,Everton,Southampton,66.2667236300001
+England,2017,Everton,Watford,45.4621582
+England,2017,Everton,West Ham,48.8980712900002
+England,2017,Fulham,Huddersfield,73.35754395
+England,2017,Fulham,Leicester,77.62207031
+England,2017,Fulham,Newcastle,29.6441650300001
+England,2017,Fulham,Southampton,7.65393066000002
+England,2017,Fulham,Watford,28.4584960900002
+England,2017,Fulham,West Ham,25.0225829999999
+England,2017,Fulham,Wolves,35.4947509799999
+England,2017,Huddersfield,Southampton,81.0114746100001
+England,2017,Huddersfield,West Ham,98.38012695
+England,2017,Huddersfield,Wolves,37.8627929700001
+England,2017,Leicester,Newcastle,47.97790528
+England,2017,Leicester,Southampton,69.96813965
+England,2017,Leicester,Watford,49.1635742199999
+England,2017,Leicester,West Ham,52.5994873100001
+England,2017,Liverpool,Man City,48.3624267600001
+England,2017,Liverpool,Man Utd,69.09155274
+England,2017,Liverpool,Tottenham,6.96337890000018
+England,2017,Man City,Tottenham,41.3990478599999
+England,2017,Man Utd,Tottenham,76.0549316400002
+England,2017,Newcastle,Southampton,21.9902343700001
+England,2017,Newcastle,Watford,1.18566893999991
+England,2017,Newcastle,West Ham,4.62158203000013
+England,2017,Newcastle,Wolves,65.13891601
+England,2017,Southampton,Watford,20.8045654300001
+England,2017,Southampton,West Ham,17.3686523399999
+England,2017,Southampton,Wolves,43.14868164
+England,2017,Watford,West Ham,3.43591309000021
+England,2017,Watford,Wolves,63.9532470700001
+England,2017,West Ham,Wolves,60.5173339799999
+England,2018,Arsenal,Chelsea,11.6108398499998
+England,2018,Arsenal,Man Utd,35.5402832
+England,2018,Arsenal,Tottenham,12.8673095700001
+England,2018,Aston Villa,Bournemouth,70.5982666099999
+England,2018,Aston Villa,Brighton,8.43286132999992
+England,2018,Aston Villa,Burnley,75.3900146499998
+England,2018,Aston Villa,Newcastle,94.8608398499998
+England,2018,Aston Villa,Norwich,17.53198243
+England,2018,Aston Villa,Sheff Utd,18.8482666099999
+England,2018,Aston Villa,Southampton,63.3712158199999
+England,2018,Aston Villa,Watford,39.3981933599998
+England,2018,Bournemouth,Brighton,62.16540528
+England,2018,Bournemouth,Burnley,4.7917480399999
+England,2018,Bournemouth,Crystal Palace,64.0374755800001
+England,2018,Bournemouth,Everton,75.3099365200001
+England,2018,Bournemouth,Leicester,71.3015136700001
+England,2018,Bournemouth,Newcastle,24.2625732399999
+England,2018,Bournemouth,Norwich,53.0662841799999
+England,2018,Bournemouth,Sheff Utd,51.75
+England,2018,Bournemouth,Southampton,7.22705079000002
+England,2018,Bournemouth,Watford,31.2000732500001
+England,2018,Bournemouth,West Ham,55.71875
+England,2018,Bournemouth,Wolves,50.1011962800001
+England,2018,Brighton,Burnley,66.9571533199999
+England,2018,Brighton,Newcastle,86.4279785199999
+England,2018,Brighton,Norwich,9.09912110000005
+England,2018,Brighton,Sheff Utd,10.41540528
+England,2018,Brighton,Southampton,54.9383544899999
+England,2018,Brighton,Watford,30.9653320299999
+England,2018,Burnley,Crystal Palace,59.2457275400002
+England,2018,Burnley,Everton,70.5181884800002
+England,2018,Burnley,Leicester,66.5097656300002
+England,2018,Burnley,Newcastle,19.4708252
+England,2018,Burnley,Norwich,57.8580322199998
+England,2018,Burnley,Sheff Utd,56.5417480399999
+England,2018,Burnley,Southampton,12.0187988299999
+England,2018,Burnley,Watford,35.99182129
+England,2018,Burnley,West Ham,50.9270019600001
+England,2018,Burnley,Wolves,45.3094482400002
+England,2018,Chelsea,Man Utd,23.9294433500002
+England,2018,Chelsea,Tottenham,24.4781494199999
+England,2018,Crystal Palace,Everton,11.27246094
+England,2018,Crystal Palace,Leicester,7.26403808999999
+England,2018,Crystal Palace,Man Utd,87.5363769599999
+England,2018,Crystal Palace,Newcastle,39.7749023400002
+England,2018,Crystal Palace,Southampton,71.2645263700001
+England,2018,Crystal Palace,Watford,95.2375488300001
+England,2018,Crystal Palace,West Ham,8.31872558000009
+England,2018,Crystal Palace,Wolves,13.9362793
+England,2018,Everton,Leicester,4.00842284999999
+England,2018,Everton,Man Utd,76.2639160199999
+England,2018,Everton,Newcastle,51.0473632800001
+England,2018,Everton,Southampton,82.5369873100001
+England,2018,Everton,West Ham,19.5911865200001
+England,2018,Everton,Wolves,25.20874024
+England,2018,Leicester,Man Utd,80.2723388699999
+England,2018,Leicester,Newcastle,47.0389404300001
+England,2018,Leicester,Southampton,78.5285644600001
+England,2018,Leicester,West Ham,15.5827636700001
+England,2018,Leicester,Wolves,21.20031739
+England,2018,Liverpool,Man City,14.2280273399997
+England,2018,Man Utd,Tottenham,48.4075927700001
+England,2018,Man Utd,West Ham,95.85510254
+England,2018,Newcastle,Norwich,77.3288574199999
+England,2018,Newcastle,Sheff Utd,76.0125732399999
+England,2018,Newcastle,Southampton,31.48962403
+England,2018,Newcastle,Watford,55.46264649
+England,2018,Newcastle,West Ham,31.4561767600001
+England,2018,Newcastle,Wolves,25.8386230400001
+England,2018,Norwich,Sheff Utd,1.31628417999991
+England,2018,Norwich,Southampton,45.8392333899999
+England,2018,Norwich,Watford,21.8662109299999
+England,2018,Sheff Utd,Southampton,44.52294921
+England,2018,Sheff Utd,Watford,20.5499267499999
+England,2018,Southampton,Watford,23.97302246
+England,2018,Southampton,West Ham,62.94580079
+England,2018,Southampton,Wolves,57.3282470700001
+England,2018,Watford,West Ham,86.9188232500001
+England,2018,Watford,Wolves,81.3012695300001
+England,2018,West Ham,Wolves,5.61755371999993
+England,2019,Arsenal,Burnley,76.8211669899999
+England,2019,Arsenal,Chelsea,19.0389404300001
+England,2019,Arsenal,Everton,83.5843505799999
+England,2019,Arsenal,Leicester,41.5388183599998
+England,2019,Arsenal,Man Utd,61.2054443400002
+England,2019,Arsenal,Southampton,79.31274414
+England,2019,Arsenal,Tottenham,8.1887207000002
+England,2019,Arsenal,Wolves,21.0759277299999
+England,2019,Aston Villa,Brighton,35.3770751999998
+England,2019,Aston Villa,Crystal Palace,55.43481445
+England,2019,Aston Villa,Everton,97.6855468799999
+England,2019,Aston Villa,Fulham,26.7077636700001
+England,2019,Aston Villa,Leeds,6.37023925999984
+England,2019,Aston Villa,Newcastle,59.3094482399999
+England,2019,Aston Villa,Sheff Utd,75.4223632799999
+England,2019,Aston Villa,West Brom,24.4633789100001
+England,2019,Aston Villa,West Ham,67.5102539099999
+England,2019,Brighton,Burnley,69.0716552700001
+England,2019,Brighton,Crystal Palace,20.0577392500002
+England,2019,Brighton,Everton,62.3084716800002
+England,2019,Brighton,Fulham,62.0848388699999
+England,2019,Brighton,Leeds,29.00683594
+England,2019,Brighton,Newcastle,23.9323730400001
+England,2019,Brighton,Sheff Utd,40.0452880800001
+England,2019,Brighton,Southampton,66.5800781200001
+England,2019,Brighton,West Brom,59.8404541099999
+England,2019,Brighton,West Ham,32.13317871
+England,2019,Burnley,Chelsea,95.8601074200001
+England,2019,Burnley,Crystal Palace,49.0139160199999
+England,2019,Burnley,Everton,6.76318358999993
+England,2019,Burnley,Leeds,98.07849121
+England,2019,Burnley,Leicester,35.2823486300001
+England,2019,Burnley,Newcastle,45.1392822299999
+England,2019,Burnley,Sheff Utd,29.02636719
+England,2019,Burnley,Southampton,2.49157715000001
+England,2019,Burnley,Tottenham,85.0098876900002
+England,2019,Burnley,West Ham,36.93847656
+England,2019,Burnley,Wolves,55.7452392600001
+England,2019,Chelsea,Leicester,60.57775879
+England,2019,Chelsea,Man Utd,42.1665039100001
+England,2019,Chelsea,Southampton,98.3516845700001
+England,2019,Chelsea,Tottenham,10.8502197299999
+England,2019,Chelsea,Wolves,40.11486816
+England,2019,Crystal Palace,Everton,42.25073243
+England,2019,Crystal Palace,Fulham,82.1425781200001
+England,2019,Crystal Palace,Leeds,49.0645751900001
+England,2019,Crystal Palace,Leicester,84.29626465
+England,2019,Crystal Palace,Newcastle,3.87463378999996
+England,2019,Crystal Palace,Sheff Utd,19.9875488299999
+England,2019,Crystal Palace,Southampton,46.5223388699999
+England,2019,Crystal Palace,West Brom,79.8981933600001
+England,2019,Crystal Palace,West Ham,12.0754394599999
+England,2019,Everton,Leeds,91.3153076200001
+England,2019,Everton,Leicester,42.04553222
+England,2019,Everton,Newcastle,38.37609864
+England,2019,Everton,Sheff Utd,22.2631836000001
+England,2019,Everton,Southampton,4.27160643999991
+England,2019,Everton,Tottenham,91.7730712800001
+England,2019,Everton,West Ham,30.1752929700001
+England,2019,Everton,Wolves,62.50842285
+England,2019,Fulham,Leeds,33.0780029299999
+England,2019,Fulham,Newcastle,86.01721191
+England,2019,Fulham,West Brom,2.24438476
+England,2019,Fulham,West Ham,94.2180175799999
+England,2019,Leeds,Newcastle,52.9392089800001
+England,2019,Leeds,Sheff Utd,69.0521240200001
+England,2019,Leeds,Southampton,95.58691406
+England,2019,Leeds,West Brom,30.8336181699999
+England,2019,Leeds,West Ham,61.14001465
+England,2019,Leicester,Newcastle,80.4216308600001
+England,2019,Leicester,Sheff Utd,64.3087158200001
+England,2019,Leicester,Southampton,37.7739257800001
+England,2019,Leicester,Tottenham,49.72753906
+England,2019,Leicester,West Ham,72.2208251900002
+England,2019,Leicester,Wolves,20.4628906299999
+England,2019,Liverpool,Man City,23.8519287199999
+England,2019,Man Utd,Tottenham,53.01672364
+England,2019,Man Utd,Wolves,82.2813720700001
+England,2019,Newcastle,Sheff Utd,16.11291504
+England,2019,Newcastle,Southampton,42.6477050799999
+England,2019,Newcastle,West Brom,83.77282715
+England,2019,Newcastle,West Ham,8.20080566999991
+England,2019,Sheff Utd,Southampton,26.53479004
+England,2019,Sheff Utd,West Brom,99.88574219
+England,2019,Sheff Utd,West Ham,7.91210937000005
+England,2019,Sheff Utd,Wolves,84.77160645
+England,2019,Southampton,Tottenham,87.5014648400002
+England,2019,Southampton,West Ham,34.44689941
+England,2019,Southampton,Wolves,58.2368164100001
+England,2019,Tottenham,Wolves,29.2646484300001
+England,2019,West Brom,West Ham,91.9736328199999
+England,2019,West Ham,Wolves,92.6837158200001
+England,2020,Arsenal,Aston Villa,86.31066895
+England,2020,Arsenal,Everton,40.97265625
+England,2020,Arsenal,Leeds,58.00268555
+England,2020,Arsenal,Leicester,31.1109619199999
+England,2020,Arsenal,Tottenham,22.4552001899999
+England,2020,Arsenal,West Ham,3.70715331999986
+England,2020,Aston Villa,Brentford,53.0085449199999
+England,2020,Aston Villa,Brighton,17.3585205099998
+England,2020,Aston Villa,Burnley,46.42834472
+England,2020,Aston Villa,Crystal Palace,52.7022705099998
+England,2020,Aston Villa,Everton,45.3380127
+England,2020,Aston Villa,Leeds,28.3079834
+England,2020,Aston Villa,Leicester,55.1997070300001
+England,2020,Aston Villa,Newcastle,39.9522705099998
+England,2020,Aston Villa,Southampton,46.0430908199999
+England,2020,Aston Villa,Watford,75.1358642599998
+England,2020,Aston Villa,West Ham,82.6035156300002
+England,2020,Aston Villa,Wolves,22.1833496100001
+England,2020,Brentford,Brighton,35.65002441
+England,2020,Brentford,Burnley,6.58020019999981
+England,2020,Brentford,Crystal Palace,0.306274410000015
+England,2020,Brentford,Everton,98.3465576199999
+England,2020,Brentford,Leeds,81.3165283199999
+England,2020,Brentford,Newcastle,13.05627441
+England,2020,Brentford,Norwich,49.3378906200001
+England,2020,Brentford,Southampton,6.96545409999999
+England,2020,Brentford,Watford,22.12731934
+England,2020,Brentford,Wolves,30.8251953099998
+England,2020,Brighton,Burnley,29.0698242100002
+England,2020,Brighton,Crystal Palace,35.34375
+England,2020,Brighton,Everton,62.6965332099999
+England,2020,Brighton,Leeds,45.6665039099998
+England,2020,Brighton,Leicester,72.55822754
+England,2020,Brighton,Newcastle,22.59375
+England,2020,Brighton,Norwich,84.9879150300001
+England,2020,Brighton,Southampton,28.68457031
+England,2020,Brighton,Watford,57.77734375
+England,2020,Brighton,West Ham,99.96203614
+England,2020,Brighton,Wolves,4.82482910000022
+England,2020,Burnley,Crystal Palace,6.27392578999979
+England,2020,Burnley,Everton,91.7663574200001
+England,2020,Burnley,Leeds,74.7363281200001
+England,2020,Burnley,Newcastle,6.47607421000021
+England,2020,Burnley,Norwich,55.9180908199999
+England,2020,Burnley,Southampton,0.38525390000018
+England,2020,Burnley,Watford,28.7075195399998
+England,2020,Burnley,Wolves,24.24499511
+England,2020,Chelsea,Liverpool,9.15771485000005
+England,2020,Chelsea,Man City,74.20153809
+England,2020,Chelsea,Man Utd,5.82556152000007
+England,2020,Chelsea,Tottenham,84.2194824200001
+England,2020,Crystal Palace,Everton,98.0402832099999
+England,2020,Crystal Palace,Leeds,81.0102539099998
+England,2020,Crystal Palace,Newcastle,12.75
+England,2020,Crystal Palace,Norwich,49.6441650300001
+England,2020,Crystal Palace,Southampton,6.65917968999997
+England,2020,Crystal Palace,Watford,22.43359375
+England,2020,Crystal Palace,Wolves,30.5189208999998
+England,2020,Everton,Leeds,17.0300293
+England,2020,Everton,Leicester,9.86169433000009
+England,2020,Everton,Newcastle,85.2902832099999
+England,2020,Everton,Southampton,91.3811035199999
+England,2020,Everton,Tottenham,63.4278564399999
+England,2020,Everton,West Ham,37.2655029300001
+England,2020,Everton,Wolves,67.5213623100001
+England,2020,Leeds,Leicester,26.8917236300001
+England,2020,Leeds,Newcastle,68.2602539099999
+England,2020,Leeds,Southampton,74.3510742199999
+England,2020,Leeds,Tottenham,80.4578857399999
+England,2020,Leeds,West Ham,54.2955322300002
+England,2020,Leeds,Wolves,50.4913330100001
+England,2020,Leicester,Newcastle,95.15197754
+England,2020,Leicester,Tottenham,53.5661621099998
+England,2020,Leicester,West Ham,27.4038086000001
+England,2020,Leicester,Wolves,77.3830566400002
+England,2020,Liverpool,Man City,65.0438232399999
+England,2020,Liverpool,Man Utd,14.9832763700001
+England,2020,Liverpool,Tottenham,93.3771972700001
+England,2020,Man City,Man Utd,80.0270996100001
+England,2020,Man Utd,Tottenham,78.3939209
+England,2020,Newcastle,Norwich,62.3941650300001
+England,2020,Newcastle,Southampton,6.09082031000003
+England,2020,Newcastle,Watford,35.18359375
+England,2020,Newcastle,Wolves,17.7689208999998
+England,2020,Norwich,Southampton,56.3033447200001
+England,2020,Norwich,Watford,27.2105712800001
+England,2020,Norwich,Wolves,80.1630859299999
+England,2020,Southampton,Watford,29.09277344
+England,2020,Southampton,Wolves,23.8597412099998
+England,2020,Tottenham,West Ham,26.1623535099998
+England,2020,Watford,Wolves,52.9525146499998
+England,2021,Arsenal,Chelsea,6.96728514999995
+England,2021,Arsenal,Man Utd,79.0889892600001
+England,2021,Arsenal,Tottenham,0.0988769599998705
+England,2021,Aston Villa,Bournemouth,79.4577636700001
+England,2021,Aston Villa,Brentford,13.8598632899998
+England,2021,Aston Villa,Brighton,65.328125
+England,2021,Aston Villa,Crystal Palace,43.1235351599999
+England,2021,Aston Villa,Everton,21.7714843700001
+England,2021,Aston Villa,Fulham,48.3885498000002
+England,2021,Aston Villa,Leeds,10.1682128999998
+England,2021,Aston Villa,Leicester,41.5795898499998
+England,2021,Aston Villa,Man Utd,88.6680908199999
+England,2021,Aston Villa,Newcastle,54.73547364
+England,2021,Aston Villa,Nott'm Forest,97.5703125
+England,2021,Aston Villa,Southampton,28.1365966800001
+England,2021,Aston Villa,West Ham,53.59667969
+England,2021,Aston Villa,Wolves,1.84448242000008
+England,2021,Bournemouth,Brentford,93.3176269599999
+England,2021,Bournemouth,Everton,57.6862793
+England,2021,Bournemouth,Fulham,31.0692138699999
+England,2021,Bournemouth,Leeds,89.6259765699999
+England,2021,Bournemouth,Nott'm Forest,18.1125488299999
+England,2021,Bournemouth,Southampton,51.3211669899999
+England,2021,Bournemouth,Wolves,77.61328125
+England,2021,Brentford,Brighton,51.4682617100002
+England,2021,Brentford,Crystal Palace,29.2636718700001
+England,2021,Brentford,Everton,35.6313476599999
+England,2021,Brentford,Fulham,62.24841309
+England,2021,Brentford,Leeds,3.69165038999995
+England,2021,Brentford,Leicester,27.71972656
+England,2021,Brentford,Man Utd,74.8082275300001
+England,2021,Brentford,Newcastle,40.8756103500002
+England,2021,Brentford,Southampton,41.9964599699999
+England,2021,Brentford,West Ham,39.7368164000002
+England,2021,Brentford,Wolves,15.7043457099999
+England,2021,Brighton,Chelsea,95.46166993
+England,2021,Brighton,Crystal Palace,22.2045898400002
+England,2021,Brighton,Everton,87.0996093700001
+England,2021,Brighton,Leeds,55.1599121000002
+England,2021,Brighton,Leicester,23.7485351500002
+England,2021,Brighton,Man Utd,23.3399658199999
+England,2021,Brighton,Newcastle,10.59265136
+England,2021,Brighton,Southampton,93.4647216800001
+England,2021,Brighton,West Ham,11.73144531
+England,2021,Brighton,Wolves,67.1726074200001
+England,2021,Chelsea,Man Utd,72.1217041100001
+England,2021,Chelsea,Tottenham,7.06616210999982
+England,2021,Crystal Palace,Everton,64.8950195299999
+England,2021,Crystal Palace,Fulham,91.51208496
+England,2021,Crystal Palace,Leeds,32.95532226
+England,2021,Crystal Palace,Leicester,1.54394531000003
+England,2021,Crystal Palace,Man Utd,45.54455566
+England,2021,Crystal Palace,Newcastle,11.6119384800002
+England,2021,Crystal Palace,Southampton,71.26013184
+England,2021,Crystal Palace,West Ham,10.4731445300001
+England,2021,Crystal Palace,Wolves,44.9680175799999
+England,2021,Everton,Fulham,26.6170654300001
+England,2021,Everton,Leeds,31.9396972699999
+England,2021,Everton,Leicester,63.3510742199999
+England,2021,Everton,Newcastle,76.5069580100001
+England,2021,Everton,Nott'm Forest,75.79882813
+England,2021,Everton,Southampton,6.36511231000009
+England,2021,Everton,West Ham,75.36816406
+England,2021,Everton,Wolves,19.92700195
+England,2021,Fulham,Leeds,58.5567627
+England,2021,Fulham,Leicester,89.96813965
+England,2021,Fulham,Nott'm Forest,49.1817626999998
+England,2021,Fulham,Southampton,20.2519531200001
+England,2021,Fulham,Wolves,46.5440673800001
+England,2021,Leeds,Leicester,31.41137695
+England,2021,Leeds,Man Utd,78.49987792
+England,2021,Leeds,Newcastle,44.5672607400002
+England,2021,Leeds,Southampton,38.30480958
+England,2021,Leeds,West Ham,43.4284667900001
+England,2021,Leeds,Wolves,12.0126953199999
+England,2021,Leicester,Man Utd,47.08850097
+England,2021,Leicester,Newcastle,13.1558837900002
+England,2021,Leicester,Southampton,69.71618653
+England,2021,Leicester,West Ham,12.0170898400002
+England,2021,Leicester,Wolves,43.4240722699999
+England,2021,Liverpool,Man City,18.57983399
+England,2021,Man Utd,Newcastle,33.9326171799999
+England,2021,Man Utd,Tottenham,79.1878662199999
+England,2021,Man Utd,West Ham,35.0714111299999
+England,2021,Man Utd,Wolves,90.5125732399999
+England,2021,Newcastle,Southampton,82.8720703200002
+England,2021,Newcastle,West Ham,1.13879395000004
+England,2021,Newcastle,Wolves,56.5799560600001
+England,2021,Nott'm Forest,Southampton,69.4337158199999
+England,2021,Nott'm Forest,Wolves,95.7258300799999
+England,2021,Southampton,West Ham,81.7332763700001
+England,2021,Southampton,Wolves,26.2921142600001
+England,2021,West Ham,Wolves,55.4411621100001
+England,2022,Arsenal,Aston Villa,85.2972412099998
+England,2022,Arsenal,Brentford,88.90527344
+England,2022,Arsenal,Brighton,92.4284668
+England,2022,Arsenal,Liverpool,33.2895507800001
+England,2022,Arsenal,Man Utd,52.2626953099998
+England,2022,Arsenal,Newcastle,44.0548095699999
+England,2022,Arsenal,Tottenham,84.54418945
+England,2022,Aston Villa,Brentford,3.60803223000016
+England,2022,Aston Villa,Brighton,7.13122559000021
+England,2022,Aston Villa,Chelsea,49.2199707000002
+England,2022,Aston Villa,Crystal Palace,73.3010253900002
+England,2022,Aston Villa,Fulham,96.84973145
+England,2022,Aston Villa,Man Utd,33.0345459
+England,2022,Aston Villa,Newcastle,41.24243164
+England,2022,Aston Villa,Tottenham,0.753051759999835
+England,2022,Aston Villa,West Ham,32.4721679700001
+England,2022,Bournemouth,Burnley,60.20812989
+England,2022,Bournemouth,Everton,28.95910645
+England,2022,Bournemouth,Fulham,85.5860595700001
+England,2022,Bournemouth,Luton,56.02441406
+England,2022,Bournemouth,Nott'm Forest,21.8598632800001
+England,2022,Bournemouth,Sheff Utd,22.57666015
+England,2022,Bournemouth,Wolves,60.7049560600001
+England,2022,Brentford,Brighton,3.52319336000005
+England,2022,Brentford,Chelsea,45.6119384700001
+England,2022,Brentford,Crystal Palace,69.69299316
+England,2022,Brentford,Fulham,93.2416992199999
+England,2022,Brentford,Man Utd,36.6425781300002
+England,2022,Brentford,Newcastle,44.8504638700001
+England,2022,Brentford,Tottenham,4.36108399
+England,2022,Brentford,West Ham,28.8641357399999
+England,2022,Brighton,Chelsea,42.08874511
+England,2022,Brighton,Crystal Palace,66.1697998
+England,2022,Brighton,Fulham,89.7185058599998
+England,2022,Brighton,Man Utd,40.1657714900002
+England,2022,Brighton,Newcastle,48.3736572300002
+England,2022,Brighton,Tottenham,7.88427735000005
+England,2022,Brighton,West Ham,25.3409423799999
+England,2022,Burnley,Chelsea,73.0076904299999
+England,2022,Burnley,Crystal Palace,48.9266357399999
+England,2022,Burnley,Everton,31.24902344
+England,2022,Burnley,Fulham,25.3779296800001
+England,2022,Burnley,Nott'm Forest,38.3482666099999
+England,2022,Burnley,Sheff Utd,82.78479004
+England,2022,Burnley,West Ham,89.75549316
+England,2022,Burnley,Wolves,0.496826170000077
+England,2022,Chelsea,Crystal Palace,24.08105469
+England,2022,Chelsea,Fulham,47.6297607499998
+England,2022,Chelsea,Man Utd,82.2545166000002
+England,2022,Chelsea,Newcastle,90.4624023400001
+England,2022,Chelsea,Tottenham,49.97302246
+England,2022,Chelsea,West Ham,16.7478027300001
+England,2022,Chelsea,Wolves,72.5108642599998
+England,2022,Crystal Palace,Everton,80.1756591799999
+England,2022,Crystal Palace,Fulham,23.5487060599999
+England,2022,Crystal Palace,Nott'm Forest,87.2749023499998
+England,2022,Crystal Palace,Tottenham,74.05407715
+England,2022,Crystal Palace,West Ham,40.8288574200001
+England,2022,Crystal Palace,Wolves,48.4298095699999
+England,2022,Everton,Fulham,56.6269531200001
+England,2022,Everton,Luton,84.9835205100001
+England,2022,Everton,Nott'm Forest,7.09924316999991
+England,2022,Everton,Sheff Utd,51.5357666
+England,2022,Everton,Wolves,31.7458496100001
+England,2022,Fulham,Nott'm Forest,63.72619629
+England,2022,Fulham,Tottenham,97.6027832099999
+England,2022,Fulham,West Ham,64.3775634799999
+England,2022,Fulham,Wolves,24.88110351
+England,2022,Liverpool,Man Utd,85.5522460899999
+England,2022,Liverpool,Newcastle,77.34436035
+England,2022,Luton,Nott'm Forest,77.8842773400002
+England,2022,Luton,Sheff Utd,33.4477539100001
+England,2022,Man Utd,Newcastle,8.20788573999994
+England,2022,Man Utd,Tottenham,32.2814941400002
+England,2022,Man Utd,West Ham,65.5067138700001
+England,2022,Newcastle,Tottenham,40.4893798800001
+England,2022,Newcastle,West Ham,73.7145996100001
+England,2022,Nott'm Forest,Sheff Utd,44.4365234300001
+England,2022,Nott'm Forest,Wolves,38.84509278
+England,2022,Sheff Utd,Wolves,83.2816162100001
+England,2022,Tottenham,West Ham,33.2252197299999
+England,2022,West Ham,Wolves,89.25866699
+England,2023,Arsenal,Liverpool,42.3067626899999
+England,2023,Aston Villa,Bournemouth,75.1627197299999
+England,2023,Aston Villa,Brentford,57.2265625
+England,2023,Aston Villa,Brighton,33.5728759799999
+England,2023,Aston Villa,Chelsea,40.57458496
+England,2023,Aston Villa,Crystal Palace,40.234375
+England,2023,Aston Villa,Fulham,63.9790039100001
+England,2023,Aston Villa,Man Utd,1.27355956999986
+England,2023,Aston Villa,Newcastle,25.20141601
+England,2023,Aston Villa,Tottenham,19.0876464800001
+England,2023,Aston Villa,West Ham,48.1508789100001
+England,2023,Bournemouth,Brentford,17.9361572299999
+England,2023,Bournemouth,Brighton,41.58984375
+England,2023,Bournemouth,Crystal Palace,34.9283447299999
+England,2023,Bournemouth,Everton,29.6127929700001
+England,2023,Bournemouth,Fulham,11.1837158199999
+England,2023,Bournemouth,Leicester,67.11486816
+England,2023,Bournemouth,Man Utd,73.8891601600001
+England,2023,Bournemouth,Nott'm Forest,48.0573730400001
+England,2023,Bournemouth,Tottenham,94.25036621
+England,2023,Bournemouth,West Ham,27.0118408199999
+England,2023,Bournemouth,Wolves,37.78405761
+England,2023,Brentford,Brighton,23.6536865200001
+England,2023,Brentford,Chelsea,97.80114746
+England,2023,Brentford,Crystal Palace,16.9921875
+England,2023,Brentford,Everton,47.5489502
+England,2023,Brentford,Fulham,6.75244141000007
+England,2023,Brentford,Leicester,85.05102539
+England,2023,Brentford,Man Utd,55.9530029300001
+England,2023,Brentford,Newcastle,82.42797851
+England,2023,Brentford,Nott'm Forest,65.9935302700001
+England,2023,Brentford,Tottenham,76.3142089800001
+England,2023,Brentford,West Ham,9.07568358999993
+England,2023,Brentford,Wolves,55.7202148399999
+England,2023,Brighton,Chelsea,74.14746094
+England,2023,Brighton,Crystal Palace,6.66149902000007
+England,2023,Brighton,Everton,71.2026367200001
+England,2023,Brighton,Fulham,30.4061279300001
+England,2023,Brighton,Man Utd,32.2993164100001
+England,2023,Brighton,Newcastle,58.7742919899999
+England,2023,Brighton,Nott'm Forest,89.6472167900001
+England,2023,Brighton,Tottenham,52.6605224600001
+England,2023,Brighton,West Ham,14.5780029300001
+England,2023,Brighton,Wolves,79.37390136
+England,2023,Chelsea,Crystal Palace,80.80895996
+England,2023,Chelsea,Liverpool,89.6668701200001
+England,2023,Chelsea,Man Utd,41.8481445299999
+England,2023,Chelsea,Newcastle,15.37316895
+England,2023,Chelsea,Tottenham,21.4869384799999
+England,2023,Chelsea,West Ham,88.7254638700001
+England,2023,Crystal Palace,Everton,64.5411377
+England,2023,Crystal Palace,Fulham,23.7446289100001
+England,2023,Crystal Palace,Man Utd,38.9608154300001
+England,2023,Crystal Palace,Newcastle,65.43579101
+England,2023,Crystal Palace,Nott'm Forest,82.9857177700001
+England,2023,Crystal Palace,Tottenham,59.3220214800001
+England,2023,Crystal Palace,West Ham,7.91650391000007
+England,2023,Crystal Palace,Wolves,72.7124023399999
+England,2023,Everton,Fulham,40.79650879
+England,2023,Everton,Leicester,37.5020751899999
+England,2023,Everton,Nott'm Forest,18.44458007
+England,2023,Everton,Southampton,89.1339111299999
+England,2023,Everton,West Ham,56.62463379
+England,2023,Everton,Wolves,8.17126463999989
+England,2023,Fulham,Leicester,78.2985839799999
+England,2023,Fulham,Man Utd,62.7054443400002
+England,2023,Fulham,Newcastle,89.1804199200001
+England,2023,Fulham,Nott'm Forest,59.24108886
+England,2023,Fulham,Tottenham,83.0666503900002
+England,2023,Fulham,West Ham,15.828125
+England,2023,Fulham,Wolves,48.9677734299999
+England,2023,Ipswich,Leicester,68.1340332
+England,2023,Ipswich,Nott'm Forest,87.1915283199999
+England,2023,Ipswich,Southampton,16.50219726
+England,2023,Ipswich,Wolves,97.46484375
+England,2023,Leicester,Nott'm Forest,19.0574951199999
+England,2023,Leicester,Southampton,51.63183594
+England,2023,Leicester,West Ham,94.1267089799999
+England,2023,Leicester,Wolves,29.33081055
+England,2023,Man Utd,Newcastle,26.4749755799999
+England,2023,Man Utd,Tottenham,20.36120605
+England,2023,Man Utd,West Ham,46.8773193400002
+England,2023,Newcastle,Tottenham,6.1137695299999
+England,2023,Newcastle,West Ham,73.3522949200001
+England,2023,Nott'm Forest,Southampton,70.6893310599999
+England,2023,Nott'm Forest,West Ham,75.06921386
+England,2023,Nott'm Forest,Wolves,10.2733154300001
+England,2023,Southampton,Wolves,80.96264649
+England,2023,Tottenham,West Ham,67.2385253900002
+England,2023,West Ham,Wolves,64.7958984299999
+France,2018,Amiens SC,Angers SCO,83.5264892500002
+France,2018,Amiens SC,Dijon,24.33203125
+France,2018,Amiens SC,Dijon,50.7973632800001
+France,2018,Amiens SC,FC Nantes,90.2117919900002
+France,2018,Amiens SC,G. Bordeaux,69.8260498
+France,2018,Amiens SC,Monaco,49.1645507800001
+France,2018,Amiens SC,Toulouse,16.0229492200001
+France,2018,Angers SCO,Dijon,32.72912597
+France,2018,Angers SCO,FC Nantes,6.68530274
+France,2018,Angers SCO,G. Bordeaux,13.7004394500002
+France,2018,Angers SCO,Marseille,55.5588378999999
+France,2018,Angers SCO,Monaco,34.36193847
+France,2018,Angers SCO,Montpellier,35.6340332099999
+France,2018,Angers SCO,Nice,25.77807618
+France,2018,Angers SCO,Saint-Étienne,69.5952148499998
+France,2018,Angers SCO,Stade Rennais,72.86010743
+France,2018,Angers SCO,Toulouse,67.5035400300001
+France,2018,Dijon,FC Nantes,39.41442871
+France,2018,Dijon,G. Bordeaux,94.15808105
+France,2018,Dijon,G. Bordeaux,19.0286865199998
+France,2018,Dijon,Marseille,88.2879638699999
+France,2018,Dijon,Monaco,73.4965820300001
+France,2018,Dijon,Monaco,1.6328125
+France,2018,Dijon,Montpellier,68.3631591799999
+France,2018,Dijon,Nice,58.50720215
+France,2018,Dijon,Toulouse,40.3549804700001
+France,2018,Dijon,Toulouse,34.77441406
+France,2018,FC Nantes,G. Bordeaux,20.3857421900002
+France,2018,FC Nantes,Lille,95.7360839799999
+France,2018,FC Nantes,Marseille,48.8735351599999
+France,2018,FC Nantes,Monaco,41.04724121
+France,2018,FC Nantes,Montpellier,28.9487304699999
+France,2018,FC Nantes,Nice,19.09277344
+France,2018,FC Nantes,Saint-Étienne,62.9099121099998
+France,2018,FC Nantes,Stade Rennais,66.17480469
+France,2018,FC Nantes,Toulouse,74.1888427700001
+France,2018,G. Bordeaux,Marseille,69.2592773500001
+France,2018,G. Bordeaux,Monaco,20.6614990199998
+France,2018,G. Bordeaux,Montpellier,49.3344726600001
+France,2018,G. Bordeaux,Nice,39.4785156300002
+France,2018,G. Bordeaux,Saint-Étienne,83.2956543
+France,2018,G. Bordeaux,Stade Rennais,86.5605468800002
+France,2018,G. Bordeaux,Toulouse,53.8031005799999
+France,2018,Lille,Lyon,50.60180664
+France,2018,Lille,Marseille,46.86254882
+France,2018,Lille,Montpellier,66.78735351
+France,2018,Lille,Nice,76.6433105399999
+France,2018,Lille,Saint-Étienne,32.8261718700001
+France,2018,Lille,Stade Rennais,29.5612792899999
+France,2018,Lyon,Marseille,97.46435546
+France,2018,Lyon,PSG,99.3972168
+France,2018,Lyon,Saint-Étienne,83.42797851
+France,2018,Lyon,Stade Rennais,80.1630859299999
+France,2018,Marseille,Monaco,89.9207763699999
+France,2018,Marseille,Montpellier,19.92480469
+France,2018,Marseille,Nice,29.7807617199999
+France,2018,Marseille,Saint-Étienne,14.03637695
+France,2018,Marseille,Stade Rennais,17.3012695300001
+France,2018,Monaco,Montpellier,69.9959716799999
+France,2018,Monaco,Nice,60.14001465
+France,2018,Monaco,Toulouse,33.14160156
+France,2018,Montpellier,Nice,9.8559570299999
+France,2018,Montpellier,Saint-Étienne,33.96118164
+France,2018,Montpellier,Stade Rennais,37.2260742200001
+France,2018,Nice,Saint-Étienne,43.8171386699999
+France,2018,Nice,Stade Rennais,47.08203125
+France,2018,Nice,Toulouse,93.28161621
+France,2018,Saint-Étienne,Stade Rennais,3.26489258000015
+France,2022,Clermont Foot,FC Lorient,35.05761719
+France,2022,Clermont Foot,FC Nantes,43.51062011
+France,2022,Clermont Foot,Le Havre AC,81.29553222
+France,2022,Clermont Foot,Montpellier,42.6295166
+France,2022,Clermont Foot,Nice,91.3771972700001
+France,2022,Clermont Foot,Stade Reims,52.4969482500001
+France,2022,Clermont Foot,Toulouse,10.18823243
+France,2022,FC Lorient,FC Nantes,78.5682373
+France,2022,FC Lorient,Lille,91.2955322300002
+France,2022,FC Lorient,Lyon,70.6147460900002
+France,2022,FC Lorient,Monaco,72.0102539100001
+France,2022,FC Lorient,Montpellier,7.57189941000002
+France,2022,FC Lorient,Nice,56.3195800800002
+France,2022,FC Lorient,Stade Reims,17.4393310600001
+France,2022,FC Lorient,Toulouse,24.86938476
+France,2022,FC Nantes,Le Havre AC,37.7849121100001
+France,2022,FC Nantes,Montpellier,86.14013671
+France,2022,FC Nantes,Stade Reims,96.0075683600001
+France,2022,FC Nantes,Toulouse,53.69885254
+France,2022,Le Havre AC,Lille,76.5008544999998
+France,2022,Le Havre AC,Toulouse,91.48376465
+France,2022,Lens,Lille,50.5065917899999
+France,2022,Lens,Lyon,71.1873779299999
+France,2022,Lens,Marseille,32.8214111300001
+France,2022,Lens,Monaco,69.79187011
+France,2022,Lens,Nice,85.4825439399999
+France,2022,Lens,PSG,67.1326904299999
+France,2022,Lens,Stade Rennais,31.68322754
+France,2022,Lille,Lyon,20.68078614
+France,2022,Lille,Marseille,17.6851806599998
+France,2022,Lille,Monaco,19.2852783200001
+France,2022,Lille,Montpellier,83.7236328200001
+France,2022,Lille,Nice,34.97595215
+France,2022,Lille,Stade Reims,73.8562011700001
+France,2022,Lille,Stade Rennais,18.8233642499999
+France,2022,Lyon,Marseille,38.3659667999998
+France,2022,Lyon,Monaco,1.39550781999992
+France,2022,Lyon,Montpellier,63.0428466800001
+France,2022,Lyon,Nice,14.29516601
+France,2022,Lyon,Stade Reims,53.1754150300001
+France,2022,Lyon,Stade Rennais,39.50415039
+France,2022,Lyon,Toulouse,95.4841308500002
+France,2022,Marseille,Monaco,36.9704589799999
+France,2022,Marseille,Nice,52.6611328099998
+France,2022,Marseille,PSG,99.95410156
+France,2022,Marseille,Stade Reims,91.5413818299999
+France,2022,Marseille,Stade Rennais,1.13818359000015
+France,2022,Monaco,Montpellier,64.4383545000001
+France,2022,Monaco,Nice,15.6906738299999
+France,2022,Monaco,Stade Reims,54.57092285
+France,2022,Monaco,Stade Rennais,38.10864257
+France,2022,Monaco,Toulouse,96.8796386700001
+France,2022,Montpellier,Nice,48.7476806700001
+France,2022,Montpellier,Stade Reims,9.86743165000007
+France,2022,Montpellier,Toulouse,32.44128417
+France,2022,Nice,Stade Reims,38.8802490200001
+France,2022,Nice,Stade Rennais,53.7993164
+France,2022,Nice,Toulouse,81.1889648400002
+France,2022,PSG,Stade Rennais,98.8159179699999
+France,2022,Stade Reims,Stade Rennais,92.67956542
+France,2022,Stade Reims,Toulouse,42.3087158200001
+France,2023,AJ Auxerre,Angers SCO,89.6453857399999
+France,2023,AJ Auxerre,FC Nantes,13.5671386700001
+France,2023,AJ Auxerre,Le Havre AC,8.25012207000009
+France,2023,AJ Auxerre,Montpellier,63.9240722700001
+France,2023,AJ Auxerre,R. Strasbourg,60.1795654299999
+France,2023,AJ Auxerre,Saint-Étienne,68.39575195
+France,2023,AJ Auxerre,Stade Reims,70.9543457
+France,2023,AJ Auxerre,Toulouse,75.2426757799999
+France,2023,Angers SCO,Le Havre AC,81.3952636699999
+France,2023,Angers SCO,Saint-Étienne,21.24963379
+France,2023,FC Nantes,Le Havre AC,21.8172607400002
+France,2023,FC Nantes,Montpellier,50.3569336000001
+France,2023,FC Nantes,R. Strasbourg,46.6124267599998
+France,2023,FC Nantes,Saint-Étienne,81.9628906200001
+France,2023,FC Nantes,Stade Reims,57.3872070299999
+France,2023,FC Nantes,Toulouse,61.6755371099998
+France,2023,Le Havre AC,Montpellier,72.1741943400002
+France,2023,Le Havre AC,R. Strasbourg,68.4296875
+France,2023,Le Havre AC,Saint-Étienne,60.1456298799999
+France,2023,Le Havre AC,Stade Reims,79.2044677700001
+France,2023,Le Havre AC,Toulouse,83.49279785
+France,2023,Lens,Lille,65.5141601600001
+France,2023,Lens,Lyon,18.0889892599998
+France,2023,Lens,Marseille,32.3035888700001
+France,2023,Lens,Monaco,59.18786621
+France,2023,Lens,Montpellier,91.4462890599998
+France,2023,Lens,Nice,24.6164550799999
+France,2023,Lens,R. Strasbourg,95.1907959
+France,2023,Lens,Stade Brestois,29.0682373099999
+France,2023,Lens,Stade Reims,84.41601563
+France,2023,Lens,Stade Rennais,20.7034912099998
+France,2023,Lens,Toulouse,80.12768555
+France,2023,Lille,Lyon,83.6031494199999
+France,2023,Lille,Marseille,33.21057129
+France,2023,Lille,Monaco,6.32629395000004
+France,2023,Lille,Nice,90.13061524
+France,2023,Lille,Stade Brestois,94.5823974699999
+France,2023,Lille,Stade Rennais,86.2176513699999
+France,2023,Lyon,Marseille,50.39257813
+France,2023,Lyon,Monaco,77.2768554699999
+France,2023,Lyon,Montpellier,73.3572998
+France,2023,Lyon,Nice,6.52746582000009
+France,2023,Lyon,R. Strasbourg,77.1018066400002
+France,2023,Lyon,Stade Brestois,10.97924805
+France,2023,Lyon,Stade Reims,66.3270263700001
+France,2023,Lyon,Stade Rennais,2.61450194999998
+France,2023,Lyon,Toulouse,62.0386962900002
+France,2023,Marseille,Monaco,26.8842773399999
+France,2023,Marseille,Nice,56.92004395
+France,2023,Marseille,Stade Brestois,61.37182618
+France,2023,Marseille,Stade Rennais,53.0070800799999
+France,2023,Monaco,Nice,83.80432129
+France,2023,Monaco,Stade Brestois,88.2561035199999
+France,2023,Monaco,Stade Rennais,79.8913574199999
+France,2023,Montpellier,Nice,66.8298339799999
+France,2023,Montpellier,R. Strasbourg,3.74450684000021
+France,2023,Montpellier,Stade Brestois,62.37805175
+France,2023,Montpellier,Stade Reims,7.03027342999985
+France,2023,Montpellier,Stade Rennais,70.74279785
+France,2023,Montpellier,Toulouse,11.3186035099998
+France,2023,Nice,R. Strasbourg,70.5743408200001
+France,2023,Nice,Stade Brestois,4.45178222999994
+France,2023,Nice,Stade Reims,59.79956055
+France,2023,Nice,Stade Rennais,3.91296387000011
+France,2023,Nice,Toulouse,55.5112304700001
+France,2023,R. Strasbourg,Stade Brestois,66.1225585900002
+France,2023,R. Strasbourg,Stade Reims,10.7747802700001
+France,2023,R. Strasbourg,Stade Rennais,74.4873046900002
+France,2023,R. Strasbourg,Toulouse,15.06311035
+France,2023,Stade Brestois,Stade Reims,55.3477783200001
+France,2023,Stade Brestois,Stade Rennais,8.36474610000005
+France,2023,Stade Brestois,Toulouse,51.0594482400002
+France,2023,Stade Reims,Stade Rennais,63.7125244200001
+France,2023,Stade Reims,Toulouse,4.28833007999992
+France,2023,Stade Rennais,Toulouse,59.4241943400002
+France,2017,Amiens SC,Angers SCO,3.29492187000005
+France,2017,Amiens SC,Dijon,57.13830566
+France,2017,Amiens SC,Dijon,52.9448242200001
+France,2017,Amiens SC,FC Nantes,21.3221435600001
+France,2017,Amiens SC,Guingamp,3.84631348000016
+France,2017,Amiens SC,Lille,29.55761719
+France,2017,Amiens SC,Montpellier,53.2407226600001
+France,2017,Amiens SC,Nice,79.9477539100001
+France,2017,Amiens SC,Saint-Étienne,89.6561279300001
+France,2017,Amiens SC,Toulouse,13.9929199200001
+France,2017,Angers SCO,Dijon,60.4332275300001
+France,2017,Angers SCO,Dijon,56.2397460900002
+France,2017,Angers SCO,FC Nantes,24.6170654300001
+France,2017,Angers SCO,Guingamp,7.14123535000022
+France,2017,Angers SCO,Lille,32.85253906
+France,2017,Angers SCO,Montpellier,56.5356445300001
+France,2017,Angers SCO,Nice,83.2426757800001
+France,2017,Angers SCO,Saint-Étienne,92.9510498000002
+France,2017,Angers SCO,Toulouse,17.2878417900001
+France,2017,Dijon,FC Nantes,35.8161620999999
+France,2017,Dijon,FC Nantes,31.62268066
+France,2017,Dijon,G. Bordeaux,43.2307129000001
+France,2017,Dijon,G. Bordeaux,47.42419434
+France,2017,Dijon,Guingamp,53.2919921799999
+France,2017,Dijon,Guingamp,49.0985107399999
+France,2017,Dijon,Lille,27.58068847
+France,2017,Dijon,Lille,23.3872070300001
+France,2017,Dijon,Montpellier,3.89758299999994
+France,2017,Dijon,Montpellier,0.295898439999974
+France,2017,Dijon,Nice,22.8094482500001
+France,2017,Dijon,Nice,27.00292969
+France,2017,Dijon,Saint-Étienne,32.5178222700001
+France,2017,Dijon,Saint-Étienne,36.71130371
+France,2017,Dijon,Stade Rennais,43.9973144600001
+France,2017,Dijon,Stade Rennais,48.1907959
+France,2017,Dijon,Toulouse,43.1453857399999
+France,2017,Dijon,Toulouse,38.9519043
+France,2017,FC Nantes,G. Bordeaux,79.046875
+France,2017,FC Nantes,Guingamp,17.4758300799999
+France,2017,FC Nantes,Lille,8.23547362999989
+France,2017,FC Nantes,Montpellier,31.9185791
+France,2017,FC Nantes,Nice,58.62561035
+France,2017,FC Nantes,Saint-Étienne,68.3339843700001
+France,2017,FC Nantes,Stade Rennais,79.81347656
+France,2017,FC Nantes,Toulouse,7.32922364000001
+France,2017,G. Bordeaux,Guingamp,96.5227050799999
+France,2017,G. Bordeaux,Lille,70.8114013700001
+France,2017,G. Bordeaux,Montpellier,47.1282959
+France,2017,G. Bordeaux,Nice,20.42126465
+France,2017,G. Bordeaux,Saint-Étienne,10.7128906299999
+France,2017,G. Bordeaux,Stade Rennais,0.766601560000026
+France,2017,G. Bordeaux,Toulouse,86.37609864
+France,2017,Guingamp,Lille,25.7113037099998
+France,2017,Guingamp,Montpellier,49.3944091799999
+France,2017,Guingamp,Nice,76.1014404299999
+France,2017,Guingamp,Saint-Étienne,85.80981445
+France,2017,Guingamp,Stade Rennais,97.28930664
+France,2017,Guingamp,Toulouse,10.1466064399999
+France,2017,Lille,Montpellier,23.6831054700001
+France,2017,Lille,Nice,50.3901367200001
+France,2017,Lille,Saint-Étienne,60.0985107400002
+France,2017,Lille,Stade Rennais,71.5780029300001
+France,2017,Lille,Toulouse,15.5646972699999
+France,2017,Lyon,Marseille,0.503417969999873
+France,2017,Lyon,Monaco,12.8233642599998
+France,2017,Marseille,Monaco,12.31994629
+France,2017,Montpellier,Nice,26.70703125
+France,2017,Montpellier,Saint-Étienne,36.4154052700001
+France,2017,Montpellier,Stade Rennais,47.89489746
+France,2017,Montpellier,Toulouse,39.24780274
+France,2017,Nice,Saint-Étienne,9.70837402000006
+France,2017,Nice,Stade Rennais,21.18786621
+France,2017,Nice,Toulouse,65.95483399
+France,2017,Saint-Étienne,Stade Rennais,11.47949219
+France,2017,Saint-Étienne,Toulouse,75.6632080100001
+France,2017,Stade Rennais,Toulouse,87.1427002
+France,2019,Angers SCO,Dijon,57.3719482400002
+France,2019,Angers SCO,Dijon,58.0308837800001
+France,2019,Angers SCO,FC Lorient,81.1352539000002
+France,2019,Angers SCO,FC Nantes,13.7260742199999
+France,2019,Angers SCO,G. Bordeaux,34.93884278
+France,2019,Angers SCO,Lens,89.6285400300001
+France,2019,Angers SCO,Monaco,31.3452148499998
+France,2019,Angers SCO,Montpellier,41.6151123099999
+France,2019,Angers SCO,Nice,57.5126953199999
+France,2019,Angers SCO,Saint-Étienne,6.5520019500002
+France,2019,Angers SCO,Stade Reims,34.52416993
+France,2019,Angers SCO,Stade Rennais,90.37731934
+France,2019,Dijon,FC Lorient,23.76330566
+France,2019,Dijon,FC Lorient,23.1043701200001
+France,2019,Dijon,FC Nantes,71.0980224600001
+France,2019,Dijon,FC Nantes,71.7569579999999
+France,2019,Dijon,G. Bordeaux,92.3107910200001
+France,2019,Dijon,G. Bordeaux,92.96972656
+France,2019,Dijon,Lens,32.2565917899999
+France,2019,Dijon,Lens,31.59765625
+France,2019,Dijon,Monaco,88.71716309
+France,2019,Dijon,Monaco,89.3760986299999
+France,2019,Dijon,Montpellier,98.98706055
+France,2019,Dijon,Montpellier,99.6459960899999
+France,2019,Dijon,Saint-Étienne,50.81994629
+France,2019,Dijon,Saint-Étienne,51.4788818299999
+France,2019,Dijon,Stade Reims,91.8961181700001
+France,2019,Dijon,Stade Reims,92.55505371
+France,2019,FC Lorient,FC Nantes,94.8613281200001
+France,2019,FC Lorient,Lens,8.49328612999989
+France,2019,FC Lorient,Saint-Étienne,74.58325195
+France,2019,FC Nantes,G. Bordeaux,21.2127685600001
+France,2019,FC Nantes,Lille,91.4188232500001
+France,2019,FC Nantes,Monaco,17.6191406299999
+France,2019,FC Nantes,Montpellier,27.88903809
+France,2019,FC Nantes,Nice,43.7866211000001
+France,2019,FC Nantes,Saint-Étienne,20.2780761700001
+France,2019,FC Nantes,Stade Reims,20.7980957100001
+France,2019,FC Nantes,Stade Rennais,76.6512451200001
+France,2019,G. Bordeaux,Lille,70.20605469
+France,2019,G. Bordeaux,Marseille,85.6199951199999
+France,2019,G. Bordeaux,Monaco,3.59362793000014
+France,2019,G. Bordeaux,Montpellier,6.6762695299999
+France,2019,G. Bordeaux,Nice,22.57385254
+France,2019,G. Bordeaux,Saint-Étienne,41.4908447300002
+France,2019,G. Bordeaux,Stade Reims,0.414672849999988
+France,2019,G. Bordeaux,Stade Rennais,55.43847656
+France,2019,Lens,Saint-Étienne,83.0765380799999
+France,2019,Lille,Lyon,53.88012695
+France,2019,Lille,Marseille,15.4139404299999
+France,2019,Lille,Monaco,73.7996826200001
+France,2019,Lille,Montpellier,63.5297851600001
+France,2019,Lille,Nice,47.63220215
+France,2019,Lille,Stade Reims,70.62072754
+France,2019,Lille,Stade Rennais,14.7675781299999
+France,2019,Lyon,Marseille,38.4661865200001
+France,2019,Lyon,Stade Rennais,68.6477050799999
+France,2019,Marseille,Monaco,89.21362305
+France,2019,Marseille,Montpellier,78.94372559
+France,2019,Marseille,Nice,63.0461425799999
+France,2019,Marseille,Stade Reims,86.0346679699999
+France,2019,Marseille,Stade Rennais,30.1815185599999
+France,2019,Monaco,Montpellier,10.26989746
+France,2019,Monaco,Nice,26.1674804700001
+France,2019,Monaco,Saint-Étienne,37.8972168
+France,2019,Monaco,Stade Reims,3.17895508000015
+France,2019,Monaco,Stade Rennais,59.0321044900002
+France,2019,Montpellier,Nice,15.8975830100001
+France,2019,Montpellier,Saint-Étienne,48.1671142600001
+France,2019,Montpellier,Stade Reims,7.09094237999989
+France,2019,Montpellier,Stade Rennais,48.7622070300001
+France,2019,Nice,Saint-Étienne,64.0646972700001
+France,2019,Nice,Stade Reims,22.98852539
+France,2019,Nice,Stade Rennais,32.8646240200001
+France,2019,Saint-Étienne,Stade Reims,41.0761718800002
+France,2019,Saint-Étienne,Stade Rennais,96.9293212900002
+France,2019,Stade Reims,Stade Rennais,55.85314941
+France,2020,Angers SCO,Clermont Foot,32.14880371
+France,2020,Angers SCO,FC Lorient,38.53503417
+France,2020,Angers SCO,FC Nantes,5.55224608999993
+France,2020,Angers SCO,G. Bordeaux,52.18969726
+France,2020,Angers SCO,Lens,14.1954345700001
+France,2020,Angers SCO,Marseille,67.1711425799999
+France,2020,Angers SCO,Montpellier,28.73706055
+France,2020,Angers SCO,Nice,47.7386474699999
+France,2020,Angers SCO,Saint-Étienne,16.78015136
+France,2020,Angers SCO,Stade Rennais,52.7768554700001
+France,2020,Angers SCO,Troyes,77.75878906
+France,2020,Clermont Foot,FC Lorient,6.38623045999998
+France,2020,Clermont Foot,FC Nantes,26.5965576200001
+France,2020,Clermont Foot,G. Bordeaux,20.04089355
+France,2020,Clermont Foot,Lens,46.3442382800001
+France,2020,Clermont Foot,Marseille,99.31994629
+France,2020,Clermont Foot,Monaco,69.4708251899999
+France,2020,Clermont Foot,Montpellier,60.8858642600001
+France,2020,Clermont Foot,Nice,79.88745118
+France,2020,Clermont Foot,Saint-Étienne,15.36865235
+France,2020,Clermont Foot,Stade Rennais,84.9256591800002
+France,2020,Clermont Foot,Troyes,45.60998535
+France,2020,FC Lorient,FC Nantes,32.9827880800001
+France,2020,FC Lorient,G. Bordeaux,13.65466309
+France,2020,FC Lorient,Lens,52.7304687400001
+France,2020,FC Lorient,Monaco,63.0845947299999
+France,2020,FC Lorient,Montpellier,67.2720947200001
+France,2020,FC Lorient,Nice,86.27368164
+France,2020,FC Lorient,Saint-Étienne,21.75488281
+France,2020,FC Lorient,Stade Rennais,91.3118896400001
+France,2020,FC Lorient,Troyes,39.22375489
+France,2020,FC Nantes,G. Bordeaux,46.6374511700001
+France,2020,FC Nantes,Lens,19.74768066
+France,2020,FC Nantes,Marseille,72.7233886699999
+France,2020,FC Nantes,Monaco,96.06738281
+France,2020,FC Nantes,Montpellier,34.28930664
+France,2020,FC Nantes,Nice,53.2908935599999
+France,2020,FC Nantes,Saint-Étienne,11.2279052700001
+France,2020,FC Nantes,Stade Rennais,58.32910156
+France,2020,FC Nantes,Troyes,72.2065429700001
+France,2020,G. Bordeaux,Lens,66.3851318300001
+France,2020,G. Bordeaux,Monaco,49.42993164
+France,2020,G. Bordeaux,Montpellier,80.92675781
+France,2020,G. Bordeaux,Nice,99.9283447299999
+France,2020,G. Bordeaux,Saint-Étienne,35.4095459
+France,2020,G. Bordeaux,Troyes,25.5690918
+France,2020,Lens,Marseille,52.9757080099998
+France,2020,Lens,Monaco,94.23156739
+France,2020,Lens,Montpellier,14.5416259799999
+France,2020,Lens,Nice,33.5432128999998
+France,2020,Lens,Saint-Étienne,30.9755859300001
+France,2020,Lens,Stade Rennais,38.5814209
+France,2020,Lens,Troyes,91.9542236300001
+France,2020,Lille,Lyon,10.5991210899999
+France,2020,Lille,Marseille,88.02282715
+France,2020,Lille,Monaco,46.7669677699998
+France,2020,Lyon,Marseille,77.4237060600001
+France,2020,Lyon,Monaco,36.1678466799999
+France,2020,Lyon,Nice,96.8562011700001
+France,2020,Lyon,Stade Rennais,91.8179931699999
+France,2020,Marseille,Monaco,41.2558593800002
+France,2020,Marseille,Montpellier,38.4340820299999
+France,2020,Marseille,Nice,19.43249511
+France,2020,Marseille,Saint-Étienne,83.9512939399999
+France,2020,Marseille,Stade Rennais,14.3942871099998
+France,2020,Monaco,Montpellier,79.6899414100001
+France,2020,Monaco,Nice,60.6883544900002
+France,2020,Monaco,Saint-Étienne,84.83947754
+France,2020,Monaco,Stade Rennais,55.65014649
+France,2020,Monaco,Troyes,23.8608398399999
+France,2020,Montpellier,Nice,19.0015869199999
+France,2020,Montpellier,Saint-Étienne,45.51721191
+France,2020,Montpellier,Stade Rennais,24.0397949200001
+France,2020,Nice,Saint-Étienne,64.5187988299999
+France,2020,Nice,Stade Rennais,5.03820800000017
+France,2020,Saint-Étienne,Stade Rennais,69.5570068300001
+France,2020,Saint-Étienne,Troyes,60.9786377
+France,2021,AC Ajaccio,AJ Auxerre,49.91223145
+France,2021,AC Ajaccio,Angers SCO,30.2696533200001
+France,2021,AC Ajaccio,Clermont Foot,42.11950684
+France,2021,AC Ajaccio,FC Lorient,57.7270507800001
+France,2021,AC Ajaccio,Lille,42.1678466799999
+France,2021,AC Ajaccio,Toulouse,80.0274658200001
+France,2021,AC Ajaccio,Troyes,67.7900390700002
+France,2021,AJ Auxerre,Angers SCO,19.6425781299999
+France,2021,AJ Auxerre,Clermont Foot,7.79272461000005
+France,2021,AJ Auxerre,FC Lorient,7.81481933000009
+France,2021,AJ Auxerre,Lille,92.0800781299999
+France,2021,AJ Auxerre,Montpellier,53.65588379
+France,2021,AJ Auxerre,Toulouse,30.1152343700001
+France,2021,AJ Auxerre,Troyes,17.8778076200001
+France,2021,Angers SCO,Clermont Foot,11.8498535199999
+France,2021,Angers SCO,FC Lorient,27.45739746
+France,2021,Angers SCO,Lille,72.4375
+France,2021,Angers SCO,Montpellier,73.2984619199999
+France,2021,Angers SCO,Toulouse,49.7578125
+France,2021,Angers SCO,Troyes,37.5203857500001
+France,2021,Clermont Foot,FC Lorient,15.6075439400001
+France,2021,Clermont Foot,Lille,84.2873535199999
+France,2021,Clermont Foot,Montpellier,61.4486084
+France,2021,Clermont Foot,Toulouse,37.9079589800001
+France,2021,Clermont Foot,Troyes,25.6705322300002
+France,2021,FC Lorient,FC Nantes,94.43652344
+France,2021,FC Lorient,Lille,99.89489746
+France,2021,FC Lorient,Montpellier,45.8410644599999
+France,2021,FC Lorient,Toulouse,22.30041504
+France,2021,FC Lorient,Troyes,10.06298829
+France,2021,FC Nantes,Lens,64.83947754
+France,2021,FC Nantes,Lille,50.7277832099999
+France,2021,FC Nantes,Monaco,76.63549805
+France,2021,FC Nantes,Montpellier,48.5954589800001
+France,2021,FC Nantes,Nice,20.9028320299999
+France,2021,FC Nantes,R. Strasbourg,11.88098145
+France,2021,FC Nantes,Stade Rennais,73.9024658199999
+France,2021,FC Nantes,Toulouse,72.1361084
+France,2021,FC Nantes,Troyes,84.37353515
+France,2021,Lens,Lille,14.1116943300001
+France,2021,Lens,Lyon,42.82446289
+France,2021,Lens,Marseille,42.88879395
+France,2021,Lens,Monaco,11.7960205100001
+France,2021,Lens,Nice,43.9366455100001
+France,2021,Lens,R. Strasbourg,52.9584960899999
+France,2021,Lens,Stade Rennais,9.0629882799999
+France,2021,Lille,Lyon,56.93615722
+France,2021,Lille,Marseille,57.0004882800001
+France,2021,Lille,Monaco,25.9077148400002
+France,2021,Lille,Montpellier,99.32324219
+France,2021,Lille,Nice,29.82495118
+France,2021,Lille,R. Strasbourg,38.8468017599998
+France,2021,Lille,Stade Rennais,23.17468261
+France,2021,Lyon,Marseille,0.0643310600000859
+France,2021,Lyon,Monaco,31.0284423799999
+France,2021,Lyon,Nice,86.7611084
+France,2021,Lyon,R. Strasbourg,95.7829589799999
+France,2021,Lyon,Stade Rennais,33.7614746100001
+France,2021,Marseille,Monaco,31.09277344
+France,2021,Marseille,Nice,86.8254394600001
+France,2021,Marseille,R. Strasbourg,95.84729004
+France,2021,Marseille,Stade Rennais,33.8258056700001
+France,2021,Monaco,Nice,55.7326660200001
+France,2021,Monaco,R. Strasbourg,64.7545166
+France,2021,Monaco,Stade Rennais,2.73303223000016
+France,2021,Montpellier,Nice,69.49829101
+France,2021,Montpellier,R. Strasbourg,60.4764404300001
+France,2021,Montpellier,Toulouse,23.5406494199999
+France,2021,Montpellier,Troyes,35.7780761699999
+France,2021,Nice,R. Strasbourg,9.02185057999986
+France,2021,Nice,Stade Rennais,52.99963379
+France,2021,Nice,Toulouse,93.0389404299999
+France,2021,R. Strasbourg,Stade Rennais,62.0214843699998
+France,2021,R. Strasbourg,Toulouse,84.01708985
+France,2021,R. Strasbourg,Troyes,96.2545166
+France,2021,Toulouse,Troyes,12.2374267499999
+Germany,2017,Augsburg,Frankfurt,18.9918212800001
+Germany,2017,Augsburg,Freiburg,58.89685059
+Germany,2017,Augsburg,Hannover 96,37.7197265700002
+Germany,2017,Augsburg,Hertha BSC,7.07324218999997
+Germany,2017,Augsburg,Hoffenheim,88.5308837800001
+Germany,2017,Augsburg,Leipzig,65.99987792
+Germany,2017,Augsburg,Leverkusen,74.5200195299999
+Germany,2017,Augsburg,Mainz,15.9042968799999
+Germany,2017,Augsburg,Mönchengladbach,50.3696289
+Germany,2017,Augsburg,Stuttgart,31.00634765
+Germany,2017,Augsburg,Werder Bremen,30.3731689399999
+Germany,2017,Augsburg,Wolfsburg,10.0565185600001
+Germany,2017,Augsburg,Wolfsburg,36.7365722700001
+Germany,2017,Dortmund,FC Schalke 04,18.51330566
+Germany,2017,Dortmund,Hoffenheim,35.59277344
+Germany,2017,Dortmund,Leipzig,58.1237793
+Germany,2017,Dortmund,Leverkusen,49.6036376900002
+Germany,2017,Dortmund,Mönchengladbach,73.7540283200001
+Germany,2017,Dortmund,Stuttgart,93.1173095700001
+Germany,2017,Dortmund,Werder Bremen,93.7504882800001
+Germany,2017,FC Schalke 04,Frankfurt,86.61853028
+Germany,2017,FC Schalke 04,Hoffenheim,17.07946778
+Germany,2017,FC Schalke 04,Leipzig,39.61047364
+Germany,2017,FC Schalke 04,Leverkusen,31.0903320300001
+Germany,2017,FC Schalke 04,Mönchengladbach,55.2407226600001
+Germany,2017,FC Schalke 04,Stuttgart,74.6040039100001
+Germany,2017,FC Schalke 04,Werder Bremen,75.2371826200001
+Germany,2017,Frankfurt,Freiburg,77.8886718700001
+Germany,2017,Frankfurt,Hannover 96,56.7115478500002
+Germany,2017,Frankfurt,Hertha BSC,26.06506347
+Germany,2017,Frankfurt,Hoffenheim,69.5390625
+Germany,2017,Frankfurt,Leipzig,47.00805664
+Germany,2017,Frankfurt,Leverkusen,55.5281982499998
+Germany,2017,Frankfurt,Mainz,34.89611816
+Germany,2017,Frankfurt,Mönchengladbach,31.3778076199999
+Germany,2017,Frankfurt,Stuttgart,12.0145263699999
+Germany,2017,Frankfurt,Werder Bremen,11.3813476599998
+Germany,2017,Frankfurt,Wolfsburg,29.0483398400002
+Germany,2017,Freiburg,Hannover 96,21.1771240199998
+Germany,2017,Freiburg,Hannover 96,89.8126220699999
+Germany,2017,Freiburg,Hertha BSC,51.8236084
+Germany,2017,Freiburg,Mainz,42.99255371
+Germany,2017,Freiburg,Stuttgart,89.90319824
+Germany,2017,Freiburg,Werder Bremen,89.2700195299999
+Germany,2017,Freiburg,Wolfsburg,48.8403320299999
+Germany,2017,Freiburg,Wolfsburg,74.61486816
+Germany,2017,Hannover 96,Hertha BSC,30.6464843800002
+Germany,2017,Hannover 96,Mainz,21.8154296900002
+Germany,2017,Hannover 96,Mönchengladbach,88.0893554700001
+Germany,2017,Hannover 96,Stuttgart,68.7260742200001
+Germany,2017,Hannover 96,Werder Bremen,68.0928955100001
+Germany,2017,Hannover 96,Wolfsburg,27.6632080100001
+Germany,2017,Hertha BSC,Hoffenheim,95.60412597
+Germany,2017,Hertha BSC,Leipzig,73.07312011
+Germany,2017,Hertha BSC,Leverkusen,81.5932617199999
+Germany,2017,Hertha BSC,Mainz,8.83105468999997
+Germany,2017,Hertha BSC,Mönchengladbach,57.4428710899999
+Germany,2017,Hertha BSC,Stuttgart,38.0795898399999
+Germany,2017,Hertha BSC,Werder Bremen,37.4464111299999
+Germany,2017,Hertha BSC,Wolfsburg,2.98327637000011
+Germany,2017,Hoffenheim,Leipzig,22.5310058600001
+Germany,2017,Hoffenheim,Leverkusen,14.0108642500002
+Germany,2017,Hoffenheim,Mönchengladbach,38.1612548800001
+Germany,2017,Hoffenheim,Stuttgart,57.5245361300001
+Germany,2017,Hoffenheim,Werder Bremen,58.1577148400002
+Germany,2017,Hoffenheim,Wolfsburg,98.5874023400002
+Germany,2017,Leipzig,Leverkusen,8.52014160999988
+Germany,2017,Leipzig,Mainz,81.9041748
+Germany,2017,Leipzig,Mönchengladbach,15.6302490200001
+Germany,2017,Leipzig,Stuttgart,34.9935302700001
+Germany,2017,Leipzig,Werder Bremen,35.6267089800001
+Germany,2017,Leipzig,Wolfsburg,76.0563964800001
+Germany,2017,Leverkusen,Mainz,90.4243164099998
+Germany,2017,Leverkusen,Mönchengladbach,24.1503906299999
+Germany,2017,Leverkusen,Stuttgart,43.51367188
+Germany,2017,Leverkusen,Werder Bremen,44.14685059
+Germany,2017,Leverkusen,Wolfsburg,84.57653809
+Germany,2017,Mainz,Mönchengladbach,66.2739257799999
+Germany,2017,Mainz,Stuttgart,46.9106445299999
+Germany,2017,Mainz,Werder Bremen,46.2774658199999
+Germany,2017,Mainz,Wolfsburg,5.84777831999986
+Germany,2017,Mönchengladbach,Stuttgart,19.36328125
+Germany,2017,Mönchengladbach,Werder Bremen,19.99645996
+Germany,2017,Mönchengladbach,Wolfsburg,60.42614746
+Germany,2017,Stuttgart,Werder Bremen,0.633178710000038
+Germany,2017,Stuttgart,Wolfsburg,41.06286621
+Germany,2017,Werder Bremen,Wolfsburg,40.4296875
+Germany,2018,Augsburg,F. Düsseldorf,29.30114746
+Germany,2018,Augsburg,FC Schalke 04,71.4132080100001
+Germany,2018,Augsburg,Freiburg,24.2629394599999
+Germany,2018,Augsburg,Hertha BSC,36.45483399
+Germany,2018,Augsburg,Mainz,37.8598632799999
+Germany,2018,Augsburg,SC Paderborn,89.13830566
+Germany,2018,Augsburg,Union Berlin,31.1542968700001
+Germany,2018,Augsburg,Wolfsburg,91.0422363299999
+Germany,2018,Dortmund,Frankfurt,59.7215576199999
+Germany,2018,Dortmund,Hoffenheim,82.71655274
+Germany,2018,Dortmund,Leipzig,8.02612305000002
+Germany,2018,Dortmund,Leverkusen,44.31750489
+Germany,2018,Dortmund,Wolfsburg,98.02905274
+Germany,2018,F. Düsseldorf,FC Schalke 04,42.11206055
+Germany,2018,F. Düsseldorf,Freiburg,5.03820800000017
+Germany,2018,F. Düsseldorf,Hertha BSC,7.15368652999996
+Germany,2018,F. Düsseldorf,Mainz,8.55871581999986
+Germany,2018,F. Düsseldorf,Mönchengladbach,79.0461425799999
+Germany,2018,F. Düsseldorf,Union Berlin,60.4554443300001
+Germany,2018,F. Düsseldorf,Werder Bremen,81.28845215
+Germany,2018,FC Schalke 04,Frankfurt,97.2734375
+Germany,2018,FC Schalke 04,Freiburg,47.1502685500002
+Germany,2018,FC Schalke 04,Hertha BSC,34.9583740200001
+Germany,2018,FC Schalke 04,Hoffenheim,74.2784423799999
+Germany,2018,FC Schalke 04,Mainz,33.5533447300002
+Germany,2018,FC Schalke 04,Mönchengladbach,36.9340820299999
+Germany,2018,FC Schalke 04,Werder Bremen,39.1763916
+Germany,2018,FC Schalke 04,Wolfsburg,58.9659423799999
+Germany,2018,Frankfurt,Hoffenheim,22.9949951200001
+Germany,2018,Frankfurt,Leipzig,51.6954345699999
+Germany,2018,Frankfurt,Leverkusen,15.4040527299999
+Germany,2018,Frankfurt,Mönchengladbach,60.3393554700001
+Germany,2018,Frankfurt,Werder Bremen,58.0970459
+Germany,2018,Frankfurt,Wolfsburg,38.3074951200001
+Germany,2018,Freiburg,Hertha BSC,12.1918945300001
+Germany,2018,Freiburg,Mainz,13.59692382
+Germany,2018,Freiburg,Mönchengladbach,84.0843505800001
+Germany,2018,Freiburg,SC Paderborn,29.47851563
+Germany,2018,Freiburg,Union Berlin,55.4172363299999
+Germany,2018,Freiburg,Union Berlin,87.4625244199999
+Germany,2018,Freiburg,Werder Bremen,86.3266601500002
+Germany,2018,Freiburg,Wolfsburg,27.57458496
+Germany,2018,Hertha BSC,Mainz,1.4050292899999
+Germany,2018,Hertha BSC,Mönchengladbach,71.89245605
+Germany,2018,Hertha BSC,Union Berlin,67.6091308600001
+Germany,2018,Hertha BSC,Werder Bremen,74.1347656200001
+Germany,2018,Hertha BSC,Wolfsburg,93.9243164
+Germany,2018,Hoffenheim,Leipzig,74.69042969
+Germany,2018,Hoffenheim,Leverkusen,38.39904785
+Germany,2018,Hoffenheim,Mönchengladbach,37.34436035
+Germany,2018,Hoffenheim,Werder Bremen,35.1020507799999
+Germany,2018,Hoffenheim,Wolfsburg,15.3125
+Germany,2018,Leipzig,Leverkusen,36.29138184
+Germany,2018,Leipzig,Wolfsburg,90.00292969
+Germany,2018,Leverkusen,Mönchengladbach,75.7434082
+Germany,2018,Leverkusen,Werder Bremen,73.5010986299999
+Germany,2018,Leverkusen,Wolfsburg,53.71154785
+Germany,2018,Mainz,Mönchengladbach,70.4874267600001
+Germany,2018,Mainz,Union Berlin,69.01416015
+Germany,2018,Mainz,Werder Bremen,72.7297363300002
+Germany,2018,Mainz,Wolfsburg,92.5192871100001
+Germany,2018,Mönchengladbach,Werder Bremen,2.24230957000009
+Germany,2018,Mönchengladbach,Wolfsburg,22.03186035
+Germany,2018,SC Paderborn,Union Berlin,57.98400879
+Germany,2018,SC Paderborn,Wolfsburg,1.90393066999991
+Germany,2018,Union Berlin,Wolfsburg,59.8879394599999
+Germany,2018,Werder Bremen,Wolfsburg,19.7895507799999
+Germany,2019,1.FC Köln,Arm. Bielefeld,5.84704590000001
+Germany,2019,1.FC Köln,Augsburg,4.78845215000001
+Germany,2019,1.FC Köln,FC Schalke 04,7.5524902300001
+Germany,2019,1.FC Köln,Frankfurt,99.0841064400001
+Germany,2019,1.FC Köln,Freiburg,60.05297851
+Germany,2019,1.FC Köln,Hertha BSC,48.0045166
+Germany,2019,1.FC Köln,Mainz,52.0065918
+Germany,2019,1.FC Köln,Stuttgart,34.4824218799999
+Germany,2019,1.FC Köln,Union Berlin,0.33203125
+Germany,2019,1.FC Köln,Werder Bremen,32.1329345700001
+Germany,2019,1.FC Köln,Wolfsburg,43.70471191
+Germany,2019,Arm. Bielefeld,Augsburg,10.63549805
+Germany,2019,Arm. Bielefeld,FC Schalke 04,13.3995361300001
+Germany,2019,Arm. Bielefeld,Freiburg,65.90002441
+Germany,2019,Arm. Bielefeld,Hertha BSC,53.8515625
+Germany,2019,Arm. Bielefeld,Mainz,57.8536377
+Germany,2019,Arm. Bielefeld,Stuttgart,28.6353759799999
+Germany,2019,Arm. Bielefeld,Union Berlin,5.51501465000001
+Germany,2019,Arm. Bielefeld,Werder Bremen,37.9799804700001
+Germany,2019,Arm. Bielefeld,Wolfsburg,37.85766601
+Germany,2019,Augsburg,FC Schalke 04,2.76403808000009
+Germany,2019,Augsburg,Frankfurt,94.2956542900001
+Germany,2019,Augsburg,Freiburg,55.26452636
+Germany,2019,Augsburg,Hertha BSC,43.21606445
+Germany,2019,Augsburg,Mainz,47.21813965
+Germany,2019,Augsburg,Stuttgart,39.27087403
+Germany,2019,Augsburg,Union Berlin,5.12048340000001
+Germany,2019,Augsburg,Werder Bremen,27.3444824200001
+Germany,2019,Augsburg,Wolfsburg,48.49316406
+Germany,2019,Dortmund,Leipzig,9.31469727000012
+Germany,2019,Dortmund,Leverkusen,45.2912597699999
+Germany,2019,Dortmund,Mönchengladbach,74.2545166
+Germany,2019,FC Schalke 04,Frankfurt,91.53161621
+Germany,2019,FC Schalke 04,Freiburg,52.5004882799999
+Germany,2019,FC Schalke 04,Hertha BSC,40.4520263699999
+Germany,2019,FC Schalke 04,Mainz,44.4541015699999
+Germany,2019,FC Schalke 04,Stuttgart,42.0349121100001
+Germany,2019,FC Schalke 04,Union Berlin,7.8845214800001
+Germany,2019,FC Schalke 04,Werder Bremen,24.58044434
+Germany,2019,FC Schalke 04,Wolfsburg,51.2572021400001
+Germany,2019,FC Schalke 04,Wolfsburg,99.4822998099999
+Germany,2019,Frankfurt,Freiburg,39.0311279300001
+Germany,2019,Frankfurt,Hertha BSC,51.0795898400002
+Germany,2019,Frankfurt,Hoffenheim,30.3126220699999
+Germany,2019,Frankfurt,Leverkusen,89.4959716799999
+Germany,2019,Frankfurt,Mainz,47.0775146400001
+Germany,2019,Frankfurt,Mönchengladbach,60.5327148499998
+Germany,2019,Frankfurt,Union Berlin,99.4161376900001
+Germany,2019,Frankfurt,Werder Bremen,66.9511718700001
+Germany,2019,Frankfurt,Wolfsburg,7.95068359999982
+Germany,2019,Freiburg,Hertha BSC,12.04846191
+Germany,2019,Freiburg,Hoffenheim,69.34375
+Germany,2019,Freiburg,Mainz,8.04638670999998
+Germany,2019,Freiburg,Mönchengladbach,99.56384278
+Germany,2019,Freiburg,Stuttgart,94.5354003899999
+Germany,2019,Freiburg,Union Berlin,60.38500976
+Germany,2019,Freiburg,Werder Bremen,27.9200439399999
+Germany,2019,Freiburg,Wolfsburg,46.98181153
+Germany,2019,Hertha BSC,Hoffenheim,81.39221191
+Germany,2019,Hertha BSC,Mainz,4.00207520000004
+Germany,2019,Hertha BSC,Stuttgart,82.4869384799999
+Germany,2019,Hertha BSC,Union Berlin,48.33654785
+Germany,2019,Hertha BSC,Werder Bremen,15.8715820299999
+Germany,2019,Hertha BSC,Wolfsburg,91.70922851
+Germany,2019,Hertha BSC,Wolfsburg,59.03027344
+Germany,2019,Hoffenheim,Leverkusen,59.1833496100001
+Germany,2019,Hoffenheim,Mainz,77.39013671
+Germany,2019,Hoffenheim,Mönchengladbach,30.22009278
+Germany,2019,Hoffenheim,Werder Bremen,97.2637939399999
+Germany,2019,Hoffenheim,Wolfsburg,22.36193847
+Germany,2019,Leipzig,Leverkusen,54.60595704
+Germany,2019,Leipzig,Mönchengladbach,83.5692138700001
+Germany,2019,Leverkusen,Mönchengladbach,28.9632568300001
+Germany,2019,Leverkusen,Wolfsburg,81.5452880800001
+Germany,2019,Mainz,Stuttgart,86.48901368
+Germany,2019,Mainz,Union Berlin,52.33862305
+Germany,2019,Mainz,Werder Bremen,19.8736572299999
+Germany,2019,Mainz,Wolfsburg,95.71130371
+Germany,2019,Mainz,Wolfsburg,55.0281982399999
+Germany,2019,Mönchengladbach,Wolfsburg,52.58203125
+Germany,2019,Stuttgart,Union Berlin,34.1503906299999
+Germany,2019,Stuttgart,Werder Bremen,66.61535645
+Germany,2019,Stuttgart,Wolfsburg,9.22229003000007
+Germany,2019,Union Berlin,Werder Bremen,32.4649658200001
+Germany,2019,Union Berlin,Wolfsburg,43.37268066
+Germany,2019,Werder Bremen,Wolfsburg,75.8376464800001
+Germany,2019,Werder Bremen,Wolfsburg,74.9018554699999
+Germany,2020,1.FC Köln,Arm. Bielefeld,3.50659180000002
+Germany,2020,1.FC Köln,Augsburg,33.8811035199999
+Germany,2020,1.FC Köln,Freiburg,82.9975585900002
+Germany,2020,1.FC Köln,Hertha BSC,6.02709960000016
+Germany,2020,1.FC Köln,Hoffenheim,86.78540039
+Germany,2020,1.FC Köln,Mainz,53.1459960900002
+Germany,2020,1.FC Köln,Stuttgart,25.77722167
+Germany,2020,1.FC Köln,Union Berlin,83.8974609300001
+Germany,2020,1.FC Köln,VfL Bochum,43.9685058600001
+Germany,2020,Arm. Bielefeld,Augsburg,30.3745117199999
+Germany,2020,Arm. Bielefeld,Freiburg,86.5041503900002
+Germany,2020,Arm. Bielefeld,Hertha BSC,9.53369140000018
+Germany,2020,Arm. Bielefeld,Hoffenheim,90.29199219
+Germany,2020,Arm. Bielefeld,Mainz,56.6525878900002
+Germany,2020,Arm. Bielefeld,Stuttgart,29.28381347
+Germany,2020,Arm. Bielefeld,Union Berlin,87.4040527300001
+Germany,2020,Arm. Bielefeld,VfL Bochum,40.46191406
+Germany,2020,Augsburg,Hertha BSC,39.9082031200001
+Germany,2020,Augsburg,Mainz,87.0270996100001
+Germany,2020,Augsburg,Stuttgart,59.6583251899999
+Germany,2020,Augsburg,VfL Bochum,10.0874023400002
+Germany,2020,Dortmund,Frankfurt,99.8995361299999
+Germany,2020,Dortmund,Leipzig,38.80236816
+Germany,2020,Dortmund,Leverkusen,86.4735107399999
+Germany,2020,Dortmund,Wolfsburg,59.2390136699999
+Germany,2020,Frankfurt,Freiburg,48.70727539
+Germany,2020,Frankfurt,Hoffenheim,44.9194335900002
+Germany,2020,Frankfurt,Leipzig,61.0971679699999
+Germany,2020,Frankfurt,Leverkusen,13.42602539
+Germany,2020,Frankfurt,Mainz,78.55883789
+Germany,2020,Frankfurt,Mönchengladbach,12.86682129
+Germany,2020,Frankfurt,Union Berlin,47.80737305
+Germany,2020,Frankfurt,Wolfsburg,40.66052246
+Germany,2020,Freiburg,Hertha BSC,76.97045899
+Germany,2020,Freiburg,Hoffenheim,3.7878417999998
+Germany,2020,Freiburg,Leverkusen,62.1333007799999
+Germany,2020,Freiburg,Mainz,29.8515625
+Germany,2020,Freiburg,Mönchengladbach,35.8404541
+Germany,2020,Freiburg,Stuttgart,57.2203369200001
+Germany,2020,Freiburg,Union Berlin,0.899902339999926
+Germany,2020,Freiburg,Wolfsburg,89.36779785
+Germany,2020,Hertha BSC,Hoffenheim,80.7583007899998
+Germany,2020,Hertha BSC,Mainz,47.11889649
+Germany,2020,Hertha BSC,Stuttgart,19.7501220699999
+Germany,2020,Hertha BSC,Union Berlin,77.8703613299999
+Germany,2020,Hertha BSC,VfL Bochum,49.9956054600002
+Germany,2020,Hoffenheim,Leverkusen,58.3454589800001
+Germany,2020,Hoffenheim,Mainz,33.6394042999998
+Germany,2020,Hoffenheim,Mönchengladbach,32.0526123000002
+Germany,2020,Hoffenheim,Stuttgart,61.0081787199999
+Germany,2020,Hoffenheim,Union Berlin,2.88793945999987
+Germany,2020,Hoffenheim,Wolfsburg,85.5799560500002
+Germany,2020,Leipzig,Leverkusen,47.6711425799999
+Germany,2020,Leipzig,Mönchengladbach,73.9639892599998
+Germany,2020,Leipzig,Wolfsburg,20.4366455099998
+Germany,2020,Leverkusen,Mainz,91.9848632799999
+Germany,2020,Leverkusen,Mönchengladbach,26.2928466799999
+Germany,2020,Leverkusen,Union Berlin,61.23339844
+Germany,2020,Leverkusen,Wolfsburg,27.2344970700001
+Germany,2020,Mainz,Mönchengladbach,65.6920166
+Germany,2020,Mainz,Stuttgart,27.3687744200001
+Germany,2020,Mainz,Union Berlin,30.7514648399999
+Germany,2020,Mainz,VfL Bochum,97.1145019500002
+Germany,2020,Mönchengladbach,Stuttgart,93.0607910200001
+Germany,2020,Mönchengladbach,Union Berlin,34.9405517600001
+Germany,2020,Mönchengladbach,Wolfsburg,53.52734375
+Germany,2020,Stuttgart,Union Berlin,58.1202392600001
+Germany,2020,Stuttgart,VfL Bochum,69.7457275300001
+Germany,2020,Union Berlin,Wolfsburg,88.4678955100001
+Germany,2020,VfL Bochum,Wolfsburg,90.9864501999998
+Germany,2021,1.FC Köln,Augsburg,86.71447754
+Germany,2021,1.FC Köln,Frankfurt,38.92321778
+Germany,2021,1.FC Köln,Freiburg,41.4787597699999
+Germany,2021,1.FC Köln,Hoffenheim,3.32409668000014
+Germany,2021,1.FC Köln,Leverkusen,76.74023438
+Germany,2021,1.FC Köln,Mainz,8.58190918000014
+Germany,2021,1.FC Köln,Mönchengladbach,36.44372559
+Germany,2021,1.FC Köln,Stuttgart,68.90026855
+Germany,2021,1.FC Köln,Union Berlin,64.7436523500001
+Germany,2021,1.FC Köln,VfL Bochum,98.7531738299999
+Germany,2021,1.FC Köln,Werder Bremen,83.02404785
+Germany,2021,1.FC Köln,Wolfsburg,24.6756591800001
+Germany,2021,Augsburg,Hertha BSC,16.1478271400001
+Germany,2021,Augsburg,Hoffenheim,83.3903808599998
+Germany,2021,Augsburg,Mainz,78.1325683599998
+Germany,2021,Augsburg,Stuttgart,17.81420899
+Germany,2021,Augsburg,VfL Bochum,12.03869629
+Germany,2021,Augsburg,Werder Bremen,3.69042968999997
+Germany,2021,Augsburg,Wolfsburg,62.0388183599998
+Germany,2021,Dortmund,Frankfurt,76.4464111300001
+Germany,2021,Dortmund,Freiburg,73.8908691400002
+Germany,2021,Dortmund,Leipzig,5.85021973000016
+Germany,2021,Dortmund,Leverkusen,38.6293945300001
+Germany,2021,Dortmund,Mönchengladbach,78.9259033200001
+Germany,2021,Dortmund,Union Berlin,50.62597656
+Germany,2021,Frankfurt,Freiburg,2.55554198999994
+Germany,2021,Frankfurt,Hoffenheim,42.2473144600001
+Germany,2021,Frankfurt,Leipzig,70.5961914
+Germany,2021,Frankfurt,Leverkusen,37.8170166
+Germany,2021,Frankfurt,Mainz,47.5051269600001
+Germany,2021,Frankfurt,Mönchengladbach,2.47949218999997
+Germany,2021,Frankfurt,Union Berlin,25.8204345700001
+Germany,2021,Frankfurt,Wolfsburg,63.5988769600001
+Germany,2021,Freiburg,Hoffenheim,44.80285645
+Germany,2021,Freiburg,Leipzig,68.04064941
+Germany,2021,Freiburg,Leverkusen,35.2614746100001
+Germany,2021,Freiburg,Mainz,50.06066895
+Germany,2021,Freiburg,Mönchengladbach,5.03503417999991
+Germany,2021,Freiburg,Union Berlin,23.2648925800002
+Germany,2021,Freiburg,Wolfsburg,66.15441895
+Germany,2021,Hertha BSC,Hoffenheim,99.538208
+Germany,2021,Hertha BSC,Mainz,94.2803954999999
+Germany,2021,Hertha BSC,Stuttgart,33.9620361300001
+Germany,2021,Hertha BSC,VfL Bochum,4.10913085000016
+Germany,2021,Hertha BSC,Werder Bremen,19.8382568300001
+Germany,2021,Hertha BSC,Wolfsburg,78.1866454999999
+Germany,2021,Hoffenheim,Leverkusen,80.0643310600001
+Germany,2021,Hoffenheim,Mainz,5.2578125
+Germany,2021,Hoffenheim,Mönchengladbach,39.7678222700001
+Germany,2021,Hoffenheim,Stuttgart,65.5761718699998
+Germany,2021,Hoffenheim,Union Berlin,68.0677490300002
+Germany,2021,Hoffenheim,VfL Bochum,95.4290771499998
+Germany,2021,Hoffenheim,Werder Bremen,79.6999511699999
+Germany,2021,Hoffenheim,Wolfsburg,21.3515625
+Germany,2021,Leipzig,Leverkusen,32.7791748
+Germany,2021,Leipzig,Mönchengladbach,73.0756835899999
+Germany,2021,Leipzig,Union Berlin,44.7757568299999
+Germany,2021,Leverkusen,Mainz,85.3221435600001
+Germany,2021,Leverkusen,Mönchengladbach,40.29650879
+Germany,2021,Leverkusen,Union Berlin,11.9965820299999
+Germany,2021,Mainz,Mönchengladbach,45.0256347700001
+Germany,2021,Mainz,Stuttgart,60.3183593699998
+Germany,2021,Mainz,Union Berlin,73.3255615300002
+Germany,2021,Mainz,VfL Bochum,90.1712646499998
+Germany,2021,Mainz,Werder Bremen,74.4421386699999
+Germany,2021,Mainz,Wolfsburg,16.09375
+Germany,2021,Mönchengladbach,Union Berlin,28.2999267600001
+Germany,2021,Mönchengladbach,Wolfsburg,61.1193847700001
+Germany,2021,Stuttgart,VfL Bochum,29.85290528
+Germany,2021,Stuttgart,Werder Bremen,14.1237793
+Germany,2021,Stuttgart,Wolfsburg,44.2246093699998
+Germany,2021,Union Berlin,Wolfsburg,89.4193115300002
+Germany,2021,VfL Bochum,Werder Bremen,15.7291259799999
+Germany,2021,VfL Bochum,Wolfsburg,74.0775146499998
+Germany,2021,Werder Bremen,Wolfsburg,58.3483886699999
+Germany,2022,1.FC Köln,Augsburg,66.80200195
+Germany,2022,1.FC Köln,Frankfurt,68.8968505800001
+Germany,2022,1.FC Köln,Freiburg,89.8598632799999
+Germany,2022,1.FC Köln,Heidenheim,97.44042969
+Germany,2022,1.FC Köln,Hoffenheim,13.54748535
+Germany,2022,1.FC Köln,Mainz,19.4439697299999
+Germany,2022,1.FC Köln,Mönchengladbach,16.78942871
+Germany,2022,1.FC Köln,Stuttgart,17.1894531299999
+Germany,2022,1.FC Köln,VfL Bochum,52.7191162100001
+Germany,2022,1.FC Köln,Werder Bremen,59.3715820299999
+Germany,2022,1.FC Köln,Wolfsburg,69.7263183600001
+Germany,2022,Augsburg,Darmstadt 98,45.43591309
+Germany,2022,Augsburg,Heidenheim,30.63842774
+Germany,2022,Augsburg,Hoffenheim,53.2545166
+Germany,2022,Augsburg,Mainz,86.2459716799999
+Germany,2022,Augsburg,Mönchengladbach,83.59143066
+Germany,2022,Augsburg,Stuttgart,49.61254882
+Germany,2022,Augsburg,VfL Bochum,14.0828857399999
+Germany,2022,Augsburg,Werder Bremen,7.43041992000008
+Germany,2022,Darmstadt 98,Heidenheim,14.79748535
+Germany,2022,Darmstadt 98,Hoffenheim,98.69042969
+Germany,2022,Darmstadt 98,Stuttgart,95.04846191
+Germany,2022,Darmstadt 98,VfL Bochum,59.5187988299999
+Germany,2022,Darmstadt 98,Werder Bremen,52.8663330100001
+Germany,2022,Dortmund,Freiburg,95.2083740200001
+Germany,2022,Dortmund,Leipzig,15.78222656
+Germany,2022,Dortmund,Leverkusen,68.69689941
+Germany,2022,Dortmund,Union Berlin,82.40478515
+Germany,2022,Frankfurt,Freiburg,20.9630126999998
+Germany,2022,Frankfurt,Hoffenheim,82.4443359300001
+Germany,2022,Frankfurt,Leverkusen,47.4744873099999
+Germany,2022,Frankfurt,Mainz,49.4528808500002
+Germany,2022,Frankfurt,Mönchengladbach,52.1074218700001
+Germany,2022,Frankfurt,Stuttgart,86.08630371
+Germany,2022,Frankfurt,Union Berlin,33.7666015699999
+Germany,2022,Frankfurt,Wolfsburg,0.829467779999959
+Germany,2022,Freiburg,Leipzig,79.42614746
+Germany,2022,Freiburg,Leverkusen,26.5114746100001
+Germany,2022,Freiburg,Mainz,70.41589355
+Germany,2022,Freiburg,Mönchengladbach,73.0704345699999
+Germany,2022,Freiburg,Union Berlin,12.8035888700001
+Germany,2022,Freiburg,Wolfsburg,20.1335449199998
+Germany,2022,Freiburg,Wolfsburg,15.3889160199999
+Germany,2022,Heidenheim,Hoffenheim,83.89294434
+Germany,2022,Heidenheim,Stuttgart,80.25097656
+Germany,2022,Heidenheim,VfL Bochum,44.7213134799999
+Germany,2022,Heidenheim,Werder Bremen,38.0688476600001
+Germany,2022,Hoffenheim,Mainz,32.9914550799999
+Germany,2022,Hoffenheim,Mönchengladbach,30.33691406
+Germany,2022,Hoffenheim,Stuttgart,3.64196777999996
+Germany,2022,Hoffenheim,VfL Bochum,39.1716308600001
+Germany,2022,Hoffenheim,Werder Bremen,45.8240966799999
+Germany,2022,Hoffenheim,Wolfsburg,83.27380371
+Germany,2022,Leipzig,Leverkusen,52.91467285
+Germany,2022,Leipzig,Union Berlin,66.6225585899999
+Germany,2022,Leipzig,Wolfsburg,99.5596923799999
+Germany,2022,Leverkusen,Mainz,96.92736816
+Germany,2022,Leverkusen,Mönchengladbach,99.5819091799999
+Germany,2022,Leverkusen,Union Berlin,13.7078857399999
+Germany,2022,Leverkusen,Wolfsburg,46.6450195299999
+Germany,2022,Mainz,Mönchengladbach,2.6545410199999
+Germany,2022,Mainz,Stuttgart,36.6334228599999
+Germany,2022,Mainz,Union Berlin,83.2194824200001
+Germany,2022,Mainz,VfL Bochum,72.16308594
+Germany,2022,Mainz,Werder Bremen,78.8155517599998
+Germany,2022,Mainz,Wolfsburg,50.2823486300001
+Germany,2022,Mönchengladbach,Stuttgart,33.97888184
+Germany,2022,Mönchengladbach,Union Berlin,85.87402344
+Germany,2022,Mönchengladbach,VfL Bochum,69.5085449200001
+Germany,2022,Mönchengladbach,Werder Bremen,76.1610107399999
+Germany,2022,Mönchengladbach,Wolfsburg,52.93688965
+Germany,2022,Stuttgart,VfL Bochum,35.5296630800001
+Germany,2022,Stuttgart,Werder Bremen,42.1821289
+Germany,2022,Stuttgart,Wolfsburg,86.91577149
+Germany,2022,Union Berlin,Wolfsburg,32.93713379
+Germany,2022,VfL Bochum,Werder Bremen,6.65246581999986
+Germany,2023,Augsburg,Frankfurt,75.8864745999999
+Germany,2023,Augsburg,Freiburg,65.34472656
+Germany,2023,Augsburg,Heidenheim,35.6007079999999
+Germany,2023,Augsburg,Hoffenheim,52.1508789
+Germany,2023,Augsburg,Holstein Kiel,66.6502685600001
+Germany,2023,Augsburg,Mainz,68.8190917899999
+Germany,2023,Augsburg,Mönchengladbach,34.68615722
+Germany,2023,Augsburg,St. Pauli,44.3399658200001
+Germany,2023,Augsburg,Union Berlin,22.140625
+Germany,2023,Augsburg,VfL Bochum,42.2459716800001
+Germany,2023,Augsburg,Werder Bremen,45.50036621
+Germany,2023,Augsburg,Wolfsburg,33.2692870999999
+Germany,2023,Bayern Munich,Dortmund,34.4003906300002
+Germany,2023,Bayern Munich,Leipzig,43.7260742200001
+Germany,2023,Bayern Munich,Leverkusen,13.05859375
+Germany,2023,Dortmund,Leipzig,9.32568358999993
+Germany,2023,Dortmund,Leverkusen,47.4589843800002
+Germany,2023,Dortmund,Stuttgart,79.11157226
+Germany,2023,Frankfurt,Freiburg,10.5417480399999
+Germany,2023,Frankfurt,Heidenheim,40.2857666
+Germany,2023,Frankfurt,Hoffenheim,23.7355957
+Germany,2023,Frankfurt,Mainz,7.06738281000003
+Germany,2023,Frankfurt,Mönchengladbach,41.2003173799999
+Germany,2023,Frankfurt,Stuttgart,88.45837403
+Germany,2023,Frankfurt,Union Berlin,53.7458495999999
+Germany,2023,Frankfurt,Werder Bremen,30.3861083899999
+Germany,2023,Frankfurt,Wolfsburg,42.6171875
+Germany,2023,Freiburg,Heidenheim,29.7440185600001
+Germany,2023,Freiburg,Hoffenheim,13.1938476600001
+Germany,2023,Freiburg,Mainz,3.47436522999988
+Germany,2023,Freiburg,Mönchengladbach,30.65856934
+Germany,2023,Freiburg,Stuttgart,99.0001220699999
+Germany,2023,Freiburg,Union Berlin,43.20410156
+Germany,2023,Freiburg,Werder Bremen,19.84436035
+Germany,2023,Freiburg,Wolfsburg,32.0754394600001
+Germany,2023,Freiburg,Wolfsburg,12.8702392600001
+Germany,2023,Heidenheim,Hoffenheim,16.5501709
+Germany,2023,Heidenheim,Mainz,33.21838379
+Germany,2023,Heidenheim,Mönchengladbach,0.9145507799999
+Germany,2023,Heidenheim,St. Pauli,79.94067382
+Germany,2023,Heidenheim,Union Berlin,13.4600829999999
+Germany,2023,Heidenheim,VfL Bochum,77.8466796800001
+Germany,2023,Heidenheim,Werder Bremen,9.8996582100001
+Germany,2023,Heidenheim,Wolfsburg,2.33142090000001
+Germany,2023,Hoffenheim,Mainz,16.66821289
+Germany,2023,Hoffenheim,Mönchengladbach,17.4647216799999
+Germany,2023,Hoffenheim,St. Pauli,96.4908447200001
+Germany,2023,Hoffenheim,Union Berlin,30.0102539
+Germany,2023,Hoffenheim,VfL Bochum,94.3968505800001
+Germany,2023,Hoffenheim,Werder Bremen,6.65051268999991
+Germany,2023,Hoffenheim,Wolfsburg,18.8815918
+Germany,2023,Holstein Kiel,St. Pauli,22.31030274
+Germany,2023,Holstein Kiel,Union Berlin,88.7908935600001
+Germany,2023,Holstein Kiel,VfL Bochum,24.4042968799999
+Germany,2023,Holstein Kiel,Wolfsburg,99.91955566
+Germany,2023,Leipzig,Leverkusen,56.7846679700001
+Germany,2023,Leipzig,Stuttgart,69.7858886700001
+Germany,2023,Mainz,Mönchengladbach,34.1329345699999
+Germany,2023,Mainz,Stuttgart,95.52575684
+Germany,2023,Mainz,Union Berlin,46.6784667899999
+Germany,2023,Mainz,Werder Bremen,23.3187255799999
+Germany,2023,Mainz,Wolfsburg,35.54980469
+Germany,2023,Mönchengladbach,St. Pauli,79.0261230400001
+Germany,2023,Mönchengladbach,Union Berlin,12.54553222
+Germany,2023,Mönchengladbach,VfL Bochum,76.9321289000002
+Germany,2023,Mönchengladbach,Werder Bremen,10.81420899
+Germany,2023,Mönchengladbach,Wolfsburg,1.41687012000011
+Germany,2023,St. Pauli,Union Berlin,66.4805908200001
+Germany,2023,St. Pauli,VfL Bochum,2.09399413999995
+Germany,2023,St. Pauli,Werder Bremen,89.8403320300001
+Germany,2023,St. Pauli,Wolfsburg,77.60925292
+Germany,2023,Union Berlin,VfL Bochum,64.3865966800001
+Germany,2023,Union Berlin,Werder Bremen,23.35974121
+Germany,2023,Union Berlin,Wolfsburg,11.1286620999999
+Germany,2023,VfL Bochum,Werder Bremen,87.7463378900002
+Germany,2023,VfL Bochum,Wolfsburg,75.5152587800001
+Germany,2023,Werder Bremen,Wolfsburg,12.2310791100001
+Italy,2017,AC Milan,Atalanta,8.95056153000019
+Italy,2017,AC Milan,Fiorentina,35.63378906
+Italy,2017,AC Milan,Inter,11.6959228600001
+Italy,2017,AC Milan,Lazio,16.7614746100001
+Italy,2017,AC Milan,Torino,51.0450439399999
+Italy,2017,Atalanta,Fiorentina,44.5843505900002
+Italy,2017,Atalanta,Inter,2.74536132999992
+Italy,2017,Atalanta,Lazio,7.81091307999986
+Italy,2017,Atalanta,Torino,59.9956054700001
+Italy,2017,Bologna,Cagliari,4.62011718999997
+Italy,2017,Bologna,Chievo Verona,10.1209716799999
+Italy,2017,Bologna,FC Empoli,50.5928955100001
+Italy,2017,Bologna,Frosinone,43.09863281
+Italy,2017,Bologna,Genoa,31.2498779299999
+Italy,2017,Bologna,Napoli,69.8770752
+Italy,2017,Bologna,Parma,60.7565918
+Italy,2017,Bologna,Parma,95.1072998
+Italy,2017,Bologna,SPAL,31.37915039
+Italy,2017,Bologna,SPAL,50.0545654299999
+Italy,2017,Bologna,Sampdoria,55.63342285
+Italy,2017,Bologna,Sassuolo,68.6041259799999
+Italy,2017,Bologna,Udinese,24.2536621100001
+Italy,2017,Cagliari,Chievo Verona,5.50085448999994
+Italy,2017,Cagliari,FC Empoli,45.9727783200001
+Italy,2017,Cagliari,Frosinone,47.71875
+Italy,2017,Cagliari,Genoa,26.6297607399999
+Italy,2017,Cagliari,Napoli,65.2569580100001
+Italy,2017,Cagliari,Parma,65.37670899
+Italy,2017,Cagliari,SPAL,26.7590332
+Italy,2017,Cagliari,Sampdoria,51.01330566
+Italy,2017,Cagliari,Sassuolo,63.98400879
+Italy,2017,Cagliari,Udinese,19.6335449200001
+Italy,2017,Chievo Verona,FC Empoli,40.4719238300002
+Italy,2017,Chievo Verona,Frosinone,53.2196044899999
+Italy,2017,Chievo Verona,Genoa,21.12890625
+Italy,2017,Chievo Verona,Napoli,59.7561035200001
+Italy,2017,Chievo Verona,Parma,70.8775634799999
+Italy,2017,Chievo Verona,SPAL,21.25817871
+Italy,2017,Chievo Verona,Sampdoria,45.5124511700001
+Italy,2017,Chievo Verona,Sassuolo,58.4831543
+Italy,2017,Chievo Verona,Udinese,14.1326904300001
+Italy,2017,FC Empoli,Frosinone,93.6915283200001
+Italy,2017,FC Empoli,Genoa,19.3430175800002
+Italy,2017,FC Empoli,Napoli,19.28417969
+Italy,2017,FC Empoli,SPAL,19.2137451200001
+Italy,2017,FC Empoli,Sampdoria,5.04052733999993
+Italy,2017,FC Empoli,Sassuolo,18.0112304699999
+Italy,2017,FC Empoli,Torino,87.82446289
+Italy,2017,FC Empoli,Udinese,26.3392334
+Italy,2017,Fiorentina,Inter,47.3297119200001
+Italy,2017,Fiorentina,Lazio,52.3952636700001
+Italy,2017,Fiorentina,Napoli,83.9515380799999
+Italy,2017,Fiorentina,Sampdoria,98.1951904299999
+Italy,2017,Fiorentina,Sassuolo,85.2244873
+Italy,2017,Fiorentina,Torino,15.4112548799999
+Italy,2017,Frosinone,Genoa,74.3485107399999
+Italy,2017,Frosinone,Parma,17.65795899
+Italy,2017,Frosinone,SPAL,74.4777832
+Italy,2017,Frosinone,SPAL,62.7106933600001
+Italy,2017,Frosinone,Sampdoria,98.73205566
+Italy,2017,Frosinone,Udinese,67.3522949200001
+Italy,2017,Genoa,Napoli,38.6271972700001
+Italy,2017,Genoa,Parma,92.0064697299999
+Italy,2017,Genoa,SPAL,0.129272460000038
+Italy,2017,Genoa,Sampdoria,24.3835449200001
+Italy,2017,Genoa,Sassuolo,37.35424805
+Italy,2017,Genoa,Udinese,6.99621581999986
+Italy,2017,Inter,Lazio,5.06555174999994
+Italy,2017,Inter,Roma,98.50317382
+Italy,2017,Inter,Torino,62.7409668
+Italy,2017,Juventus,Napoli,98.1512451200001
+Italy,2017,Lazio,Roma,93.4376220700001
+Italy,2017,Lazio,Torino,67.80651855
+Italy,2017,Napoli,Roma,28.8387451199999
+Italy,2017,Napoli,SPAL,38.4979248100001
+Italy,2017,Napoli,Sampdoria,14.24365235
+Italy,2017,Napoli,Sassuolo,1.2729492200001
+Italy,2017,Napoli,Torino,68.5402832
+Italy,2017,Napoli,Udinese,45.62341309
+Italy,2017,Parma,SPAL,92.13574219
+Italy,2017,Parma,SPAL,45.0527343700001
+Italy,2017,Parma,Udinese,85.0102539100001
+Italy,2017,SPAL,Udinese,7.1254882799999
+Italy,2017,Sampdoria,SPAL,24.25427246
+Italy,2017,Sampdoria,Sassuolo,12.9707031299999
+Italy,2017,Sampdoria,Torino,82.78393555
+Italy,2017,Sampdoria,Udinese,31.3797607399999
+Italy,2017,Sassuolo,SPAL,37.22497559
+Italy,2017,Sassuolo,Torino,69.8132324200001
+Italy,2017,Sassuolo,Udinese,44.3504638699999
+Italy,2018,AC Milan,Atalanta,49.25878906
+Italy,2018,AC Milan,Inter,30.9172363300002
+Italy,2018,AC Milan,Lazio,29.46484375
+Italy,2018,AC Milan,Napoli,94.5198974599998
+Italy,2018,AC Milan,Roma,38.2857666
+Italy,2018,AC Milan,Torino,12.63964844
+Italy,2018,Atalanta,Inter,18.3415527299999
+Italy,2018,Atalanta,Lazio,78.72363281
+Italy,2018,Atalanta,Napoli,53.6157226600001
+Italy,2018,Atalanta,Roma,10.97302246
+Italy,2018,Atalanta,Torino,61.8984375
+Italy,2018,Bologna,Brescia,94.3188476599999
+Italy,2018,Bologna,Cagliari,55.3414306699999
+Italy,2018,Bologna,Fiorentina,11.0327148400002
+Italy,2018,Bologna,Genoa,32.1356201199999
+Italy,2018,Bologna,Lazio,97.21154785
+Italy,2018,Bologna,Napoli,32.1564941400002
+Italy,2018,Bologna,Parma,79.8736572299999
+Italy,2018,Bologna,SPAL,36.2764892599998
+Italy,2018,Bologna,Sampdoria,18.45373535
+Italy,2018,Bologna,Sassuolo,13.9259033199999
+Italy,2018,Bologna,Udinese,4.47143555000002
+Italy,2018,Brescia,Cagliari,38.9774169899999
+Italy,2018,Brescia,Genoa,62.18322754
+Italy,2018,Brescia,Lecce,29.6260986300001
+Italy,2018,Brescia,Parma,14.4451904299999
+Italy,2018,Brescia,SPAL,58.0423584
+Italy,2018,Brescia,SPAL,52.8914794900002
+Italy,2018,Brescia,Sassuolo,80.39294434
+Italy,2018,Brescia,Udinese,89.8474121099998
+Italy,2018,Cagliari,Fiorentina,66.3741455100001
+Italy,2018,Cagliari,Genoa,23.20581055
+Italy,2018,Cagliari,Lecce,68.6035156200001
+Italy,2018,Cagliari,Napoli,87.4979248100001
+Italy,2018,Cagliari,Parma,24.53222656
+Italy,2018,Cagliari,SPAL,19.0649414100001
+Italy,2018,Cagliari,SPAL,91.8688964800001
+Italy,2018,Cagliari,Sampdoria,73.7951660199999
+Italy,2018,Cagliari,Sassuolo,41.4155273500001
+Italy,2018,Cagliari,Udinese,50.8699951199999
+Italy,2018,Fiorentina,Genoa,43.16833496
+Italy,2018,Fiorentina,Lazio,86.1788330099998
+Italy,2018,Fiorentina,Napoli,21.1237793
+Italy,2018,Fiorentina,Parma,90.9063720700001
+Italy,2018,Fiorentina,SPAL,47.3092041
+Italy,2018,Fiorentina,Sampdoria,7.42102050999984
+Italy,2018,Fiorentina,Sassuolo,24.95861816
+Italy,2018,Fiorentina,Udinese,15.5041503900002
+Italy,2018,Genoa,Lecce,91.8093261700001
+Italy,2018,Genoa,Napoli,64.2921142600001
+Italy,2018,Genoa,Parma,47.7380371100001
+Italy,2018,Genoa,SPAL,4.14086913999995
+Italy,2018,Genoa,Sampdoria,50.5893554699999
+Italy,2018,Genoa,Sassuolo,18.2097168
+Italy,2018,Genoa,Udinese,27.6641845699999
+Italy,2018,Inter,Lazio,60.3820800800002
+Italy,2018,Inter,Napoli,71.95727539
+Italy,2018,Inter,Roma,7.36853026999984
+Italy,2018,Inter,Torino,43.5568847700001
+Italy,2018,Juventus,Napoli,69.4018554700001
+Italy,2018,Lazio,Napoli,65.0550537099998
+Italy,2018,Lazio,Roma,67.75061035
+Italy,2018,Lazio,Sampdoria,78.7578125
+Italy,2018,Lazio,Torino,16.82519531
+Italy,2018,Lecce,Parma,44.07128906
+Italy,2018,Lecce,SPAL,87.6684570300001
+Italy,2018,Lecce,SPAL,23.2653808600001
+Italy,2018,Napoli,Roma,64.5887451200001
+Italy,2018,Napoli,SPAL,68.4329834
+Italy,2018,Napoli,Sampdoria,13.7027587900002
+Italy,2018,Napoli,Sassuolo,46.08239746
+Italy,2018,Napoli,Torino,81.8802490199998
+Italy,2018,Napoli,Udinese,36.6279296900002
+Italy,2018,Parma,SPAL,43.5971679700001
+Italy,2018,Parma,SPAL,67.3366699200001
+Italy,2018,Parma,Sampdoria,98.3273925799999
+Italy,2018,Parma,Sassuolo,65.9477539100001
+Italy,2018,Parma,Udinese,75.4022216799999
+Italy,2018,Roma,Torino,50.92541504
+Italy,2018,SPAL,Udinese,31.8050537099998
+Italy,2018,Sampdoria,SPAL,54.7302246099998
+Italy,2018,Sampdoria,Sassuolo,32.3796386699999
+Italy,2018,Sampdoria,Torino,95.58300781
+Italy,2018,Sampdoria,Udinese,22.9251709
+Italy,2018,Sassuolo,SPAL,22.35058594
+Italy,2018,Sassuolo,Udinese,9.45446776999984
+Italy,2019,AC Milan,Atalanta,60.3288574199999
+Italy,2019,AC Milan,Inter,76.0003662099998
+Italy,2019,AC Milan,Juventus,72.40258789
+Italy,2019,AC Milan,Lazio,36.53063965
+Italy,2019,AC Milan,Napoli,1.56787109000015
+Italy,2019,AC Milan,Roma,18.15808105
+Italy,2019,Atalanta,Inter,15.67150879
+Italy,2019,Atalanta,Juventus,12.0737304700001
+Italy,2019,Atalanta,Lazio,96.8594970699999
+Italy,2019,Atalanta,Napoli,61.89672851
+Italy,2019,Atalanta,Roma,78.4869384699998
+Italy,2019,Benevento,Bologna,35.69372559
+Italy,2019,Benevento,Cagliari,33.4738769600001
+Italy,2019,Benevento,Crotone,42.03942871
+Italy,2019,Benevento,Fiorentina,93.3469238300002
+Italy,2019,Benevento,Genoa,1.84033204000002
+Italy,2019,Benevento,Napoli,44.01281739
+Italy,2019,Benevento,Parma,33.2128906300002
+Italy,2019,Benevento,Sampdoria,40.00231934
+Italy,2019,Benevento,Sassuolo,86.8769531300002
+Italy,2019,Benevento,Spezia Calcio,92.6889648399999
+Italy,2019,Benevento,Torino,36.65270996
+Italy,2019,Benevento,Udinese,46.6258545000001
+Italy,2019,Bologna,Cagliari,2.21984862999989
+Italy,2019,Bologna,Crotone,77.7331543
+Italy,2019,Bologna,Fiorentina,57.6531982400002
+Italy,2019,Bologna,Genoa,33.85339355
+Italy,2019,Bologna,Napoli,8.31909180000002
+Italy,2019,Bologna,Parma,2.48083495999981
+Italy,2019,Bologna,Sampdoria,4.30859375
+Italy,2019,Bologna,Sassuolo,51.1832275400002
+Italy,2019,Bologna,Torino,0.958984370000053
+Italy,2019,Bologna,Udinese,10.9321289100001
+Italy,2019,Cagliari,Crotone,75.5133056700001
+Italy,2019,Cagliari,Fiorentina,59.8730468700001
+Italy,2019,Cagliari,Genoa,31.6335449200001
+Italy,2019,Cagliari,Napoli,10.5389404299999
+Italy,2019,Cagliari,Parma,0.260986329999923
+Italy,2019,Cagliari,Sampdoria,6.52844237999989
+Italy,2019,Cagliari,Sassuolo,53.4030761700001
+Italy,2019,Cagliari,Torino,3.17883299999994
+Italy,2019,Cagliari,Udinese,13.15197754
+Italy,2019,Crotone,Genoa,43.8797607500001
+Italy,2019,Crotone,Napoli,86.0522461000001
+Italy,2019,Crotone,Parma,75.2523193400002
+Italy,2019,Crotone,Sampdoria,82.04174805
+Italy,2019,Crotone,Spezia Calcio,50.6495361299999
+Italy,2019,Crotone,Torino,78.6921386700001
+Italy,2019,Crotone,Udinese,88.6652832100001
+Italy,2019,Fiorentina,Genoa,91.5065917900001
+Italy,2019,Fiorentina,Lazio,86.8482666
+Italy,2019,Fiorentina,Napoli,49.3341064400001
+Italy,2019,Fiorentina,Parma,60.1340332
+Italy,2019,Fiorentina,Sampdoria,53.3446044900002
+Italy,2019,Fiorentina,Sassuolo,6.46997069999998
+Italy,2019,Fiorentina,Torino,56.6942138700001
+Italy,2019,Fiorentina,Udinese,46.7210693300001
+Italy,2019,Genoa,Napoli,42.17248535
+Italy,2019,Genoa,Parma,31.3725585900002
+Italy,2019,Genoa,Sampdoria,38.1619873
+Italy,2019,Genoa,Sassuolo,85.0366210900002
+Italy,2019,Genoa,Spezia Calcio,94.52929688
+Italy,2019,Genoa,Torino,34.81237792
+Italy,2019,Genoa,Udinese,44.78552246
+Italy,2019,Inter,Juventus,3.59777831999986
+Italy,2019,Inter,Napoli,77.5682373
+Italy,2019,Inter,Roma,94.1584472599998
+Italy,2019,Juventus,Napoli,73.9704589800001
+Italy,2019,Juventus,Roma,90.5606689399999
+Italy,2019,Lazio,Napoli,34.9627685599999
+Italy,2019,Lazio,Roma,18.3725586
+Italy,2019,Lazio,Sassuolo,93.3182373
+Italy,2019,Napoli,Parma,10.7999267599998
+Italy,2019,Napoli,Roma,16.5902099599998
+Italy,2019,Napoli,Sampdoria,4.01049805000002
+Italy,2019,Napoli,Sassuolo,42.8641357400002
+Italy,2019,Napoli,Torino,7.36010742999997
+Italy,2019,Napoli,Udinese,2.61303711000005
+Italy,2019,Parma,Sampdoria,6.78942870999981
+Italy,2019,Parma,Sassuolo,53.6640625
+Italy,2019,Parma,Torino,3.43981932999986
+Italy,2019,Parma,Udinese,13.4129638699999
+Italy,2019,Sampdoria,Sassuolo,46.8746337900002
+Italy,2019,Sampdoria,Torino,3.34960937999995
+Italy,2019,Sampdoria,Udinese,6.62353516000007
+Italy,2019,Sassuolo,Torino,50.2242431700001
+Italy,2019,Sassuolo,Udinese,40.2510986300001
+Italy,2019,Torino,Udinese,9.97314454000002
+Italy,2020,AC Milan,Atalanta,20.8549804700001
+Italy,2020,AC Milan,Inter,92.6280517600001
+Italy,2020,AC Milan,Juventus,15.8203125
+Italy,2020,AC Milan,Lazio,67.3874511699999
+Italy,2020,AC Milan,Napoli,2.26989745999981
+Italy,2020,AC Milan,Roma,56.0032958999998
+Italy,2020,Atalanta,Inter,71.77307129
+Italy,2020,Atalanta,Juventus,5.0346679700001
+Italy,2020,Atalanta,Lazio,88.24243164
+Italy,2020,Atalanta,Napoli,23.1248779299999
+Italy,2020,Atalanta,Roma,76.8582763699999
+Italy,2020,Bologna,Cagliari,23.0662841799999
+Italy,2020,Bologna,FC Empoli,51.7603759799999
+Italy,2020,Bologna,Fiorentina,23.5611572300002
+Italy,2020,Bologna,Genoa,7.47949218999997
+Italy,2020,Bologna,Sampdoria,36.4298095700001
+Italy,2020,Bologna,Sassuolo,95.78222656
+Italy,2020,Bologna,Spezia Calcio,66.3061523399999
+Italy,2020,Bologna,Torino,27.6076660199999
+Italy,2020,Bologna,Udinese,0.448608400000012
+Italy,2020,Cagliari,FC Empoli,28.6940918
+Italy,2020,Cagliari,Fiorentina,46.6274414100001
+Italy,2020,Cagliari,Genoa,15.5867919899999
+Italy,2020,Cagliari,Sampdoria,59.49609375
+Italy,2020,Cagliari,Spezia Calcio,43.23986816
+Italy,2020,Cagliari,Torino,4.54138183999999
+Italy,2020,Cagliari,Udinese,22.6176757799999
+Italy,2020,Cagliari,Venezia,97.7377929700001
+Italy,2020,FC Empoli,Fiorentina,75.3215332100001
+Italy,2020,FC Empoli,Genoa,44.28088379
+Italy,2020,FC Empoli,Salernitana,78.8714599600001
+Italy,2020,FC Empoli,Sampdoria,88.19018555
+Italy,2020,FC Empoli,Spezia Calcio,14.54577636
+Italy,2020,FC Empoli,Torino,24.15270996
+Italy,2020,FC Empoli,Udinese,51.3117675799999
+Italy,2020,FC Empoli,Venezia,69.0437011700001
+Italy,2020,Fiorentina,Genoa,31.0406494200001
+Italy,2020,Fiorentina,Sampdoria,12.8686523399999
+Italy,2020,Fiorentina,Sassuolo,72.2210693299999
+Italy,2020,Fiorentina,Spezia Calcio,89.8673095700001
+Italy,2020,Fiorentina,Torino,51.1688232500001
+Italy,2020,Fiorentina,Udinese,24.0097656300002
+Italy,2020,Genoa,Sampdoria,43.9093017600001
+Italy,2020,Genoa,Spezia Calcio,58.82666015
+Italy,2020,Genoa,Torino,20.1281738299999
+Italy,2020,Genoa,Udinese,7.03088378999996
+Italy,2020,Inter,Juventus,76.8077392600001
+Italy,2020,Inter,Napoli,94.8979492199999
+Italy,2020,Juventus,Lazio,83.2077636699999
+Italy,2020,Juventus,Napoli,18.0902099599998
+Italy,2020,Juventus,Roma,71.8236083999998
+Italy,2020,Lazio,Napoli,65.11755371
+Italy,2020,Lazio,Roma,11.3841552700001
+Italy,2020,Lazio,Sassuolo,44.2963867200001
+Italy,2020,Napoli,Roma,53.73339844
+Italy,2020,Roma,Sassuolo,55.6805419900002
+Italy,2020,Salernitana,Spezia Calcio,64.3256836000001
+Italy,2020,Salernitana,Venezia,9.82775878999996
+Italy,2020,Sampdoria,Sassuolo,59.3524169899999
+Italy,2020,Sampdoria,Torino,64.03747559
+Italy,2020,Sampdoria,Udinese,36.8784179700001
+Italy,2020,Sassuolo,Udinese,96.23083496
+Italy,2020,Spezia Calcio,Torino,38.69848632
+Italy,2020,Spezia Calcio,Udinese,65.8575439399999
+Italy,2020,Spezia Calcio,Venezia,54.4979248100001
+Italy,2020,Torino,Udinese,27.1590576199999
+Italy,2020,Torino,Venezia,93.1964111300001
+Italy,2021,AC Milan,Atalanta,89.7791748
+Italy,2021,AC Milan,Inter,19.8572998100001
+Italy,2021,AC Milan,Juventus,48.54199219
+Italy,2021,AC Milan,Lazio,99.7351074199999
+Italy,2021,AC Milan,Napoli,32.9620361299999
+Italy,2021,AC Milan,Roma,69.56970215
+Italy,2021,Atalanta,Fiorentina,86.5897216799999
+Italy,2021,Atalanta,Juventus,41.23718261
+Italy,2021,Atalanta,Lazio,9.95593261999988
+Italy,2021,Atalanta,Napoli,56.8171386700001
+Italy,2021,Atalanta,Roma,20.20947265
+Italy,2021,Atalanta,Sassuolo,91.53845215
+Italy,2021,Bologna,FC Empoli,48.6260986299999
+Italy,2021,Bologna,Fiorentina,66.3886718800002
+Italy,2021,Bologna,Hellas Verona,27.8116455100001
+Italy,2021,Bologna,Lecce,64.7097167999998
+Italy,2021,Bologna,Monza,89.1251220699999
+Italy,2021,Bologna,Salernitana,82.4720459
+Italy,2021,Bologna,Sampdoria,29.11682129
+Italy,2021,Bologna,Sassuolo,61.4399414100001
+Italy,2021,Bologna,Spezia Calcio,63.14807129
+Italy,2021,Bologna,Torino,45.3520507800001
+Italy,2021,Bologna,Udinese,45.2949218800002
+Italy,2021,Cremonese,FC Empoli,76.6706543
+Italy,2021,Cremonese,Lecce,60.5870361300001
+Italy,2021,Cremonese,Monza,36.1716308600001
+Italy,2021,Cremonese,Napoli,40.2644043
+Italy,2021,Cremonese,Salernitana,42.8247070299999
+Italy,2021,Cremonese,Sampdoria,96.17993164
+Italy,2021,Cremonese,Spezia Calcio,62.14868164
+Italy,2021,FC Empoli,Hellas Verona,76.43774414
+Italy,2021,FC Empoli,Lecce,16.0836181699999
+Italy,2021,FC Empoli,Monza,40.49902344
+Italy,2021,FC Empoli,Salernitana,33.8459472700001
+Italy,2021,FC Empoli,Sampdoria,19.5092773399999
+Italy,2021,FC Empoli,Spezia Calcio,14.5219726600001
+Italy,2021,FC Empoli,Torino,93.97814941
+Italy,2021,FC Empoli,Udinese,93.9210205100001
+Italy,2021,Fiorentina,Hellas Verona,38.5770263700001
+Italy,2021,Fiorentina,Lazio,76.63378906
+Italy,2021,Fiorentina,Sampdoria,95.5054931700001
+Italy,2021,Fiorentina,Sassuolo,4.9487304700001
+Italy,2021,Fiorentina,Torino,21.0366211000001
+Italy,2021,Fiorentina,Udinese,21.09375
+Italy,2021,Hellas Verona,Lecce,92.5213623099999
+Italy,2021,Hellas Verona,Sampdoria,56.9284668
+Italy,2021,Hellas Verona,Sassuolo,33.6282959
+Italy,2021,Hellas Verona,Spezia Calcio,90.9597168
+Italy,2021,Hellas Verona,Torino,17.5404052700001
+Italy,2021,Hellas Verona,Udinese,17.4832763700001
+Italy,2021,Inter,Juventus,68.3992920000001
+Italy,2021,Inter,Monza,3.32336424999994
+Italy,2021,Inter,Napoli,82.9990234299999
+Italy,2021,Inter,Napoli,52.81933594
+Italy,2021,Inter,Roma,89.4270019600001
+Italy,2021,Juventus,Lazio,51.1931152299999
+Italy,2021,Juventus,Napoli,15.5799560600001
+Italy,2021,Juventus,Roma,21.02770996
+Italy,2021,Lazio,Napoli,66.77307129
+Italy,2021,Lazio,Roma,30.1654052699998
+Italy,2021,Lazio,Sassuolo,81.5825195300001
+Italy,2021,Lazio,Torino,97.6704101600001
+Italy,2021,Lazio,Udinese,97.72753906
+Italy,2021,Lecce,Monza,24.4154052700001
+Italy,2021,Lecce,Salernitana,17.7623291000002
+Italy,2021,Lecce,Sampdoria,35.5928955099998
+Italy,2021,Lecce,Spezia Calcio,1.56164550999983
+Italy,2021,Monza,Napoli,79.6756591799999
+Italy,2021,Monza,Napoli,76.4360351600001
+Italy,2021,Monza,Salernitana,6.65307616999985
+Italy,2021,Monza,Sampdoria,60.0083007799999
+Italy,2021,Monza,Spezia Calcio,25.9770507799999
+Italy,2021,Napoli,Roma,36.6076660200001
+Italy,2021,Napoli,Salernitana,83.0891113299999
+Italy,2021,Salernitana,Sampdoria,53.3552246100001
+Italy,2021,Salernitana,Spezia Calcio,19.3239746100001
+Italy,2021,Sampdoria,Sassuolo,90.5567627
+Italy,2021,Sampdoria,Spezia Calcio,34.03125
+Italy,2021,Sampdoria,Torino,74.4688720700001
+Italy,2021,Sampdoria,Udinese,74.4117431700001
+Italy,2021,Sassuolo,Torino,16.0878906299999
+Italy,2021,Sassuolo,Udinese,16.1450195299999
+Italy,2021,Torino,Udinese,0.0571288999999524
+Italy,2022,AC Milan,Atalanta,87.85900879
+Italy,2022,AC Milan,Fiorentina,89.6245117199999
+Italy,2022,AC Milan,Inter,44.69177246
+Italy,2022,AC Milan,Juventus,42.3907470699999
+Italy,2022,AC Milan,Lazio,90.3623046799999
+Italy,2022,AC Milan,Napoli,66.0080566400002
+Italy,2022,AC Milan,Roma,72.1134033199999
+Italy,2022,Atalanta,Bologna,60.1574707
+Italy,2022,Atalanta,Fiorentina,1.76550292999991
+Italy,2022,Atalanta,Juventus,45.4682617200001
+Italy,2022,Atalanta,Lazio,2.50329588999989
+Italy,2022,Atalanta,Monza,96.0798339799999
+Italy,2022,Atalanta,Roma,15.7456054700001
+Italy,2022,Atalanta,Torino,75.0853271399999
+Italy,2022,Bologna,FC Empoli,88.7552490200001
+Italy,2022,Bologna,Fiorentina,58.3919677700001
+Italy,2022,Bologna,Frosinone,96.8793945299999
+Italy,2022,Bologna,Genoa,95.3477783200001
+Italy,2022,Bologna,Hellas Verona,67.3991699200001
+Italy,2022,Bologna,Lazio,57.6541748100001
+Italy,2022,Bologna,Lecce,99.9481201199999
+Italy,2022,Bologna,Monza,35.9223632799999
+Italy,2022,Bologna,Roma,75.9030761700001
+Italy,2022,Bologna,Salernitana,81.49853515
+Italy,2022,Bologna,Sassuolo,58.6522216799999
+Italy,2022,Bologna,Torino,14.9278564399999
+Italy,2022,Bologna,Udinese,53.8670654299999
+Italy,2022,Cagliari,FC Empoli,34.21679688
+Italy,2022,Cagliari,Frosinone,26.0926513700001
+Italy,2022,Cagliari,Genoa,27.6242675799999
+Italy,2022,Cagliari,Hellas Verona,55.5728759799999
+Italy,2022,Cagliari,Lecce,23.0239257800001
+Italy,2022,Cagliari,Monza,87.0496826200001
+Italy,2022,Cagliari,Salernitana,41.4735107500001
+Italy,2022,Cagliari,Sassuolo,64.3198242200001
+Italy,2022,Cagliari,Udinese,69.1049804700001
+Italy,2022,FC Empoli,Frosinone,8.12414550999984
+Italy,2022,FC Empoli,Genoa,6.59252930000002
+Italy,2022,FC Empoli,Hellas Verona,21.3560791
+Italy,2022,FC Empoli,Lecce,11.1928710999998
+Italy,2022,FC Empoli,Monza,52.8328857400002
+Italy,2022,FC Empoli,Salernitana,7.25671387000011
+Italy,2022,FC Empoli,Sassuolo,30.1030273400002
+Italy,2022,FC Empoli,Torino,73.8273925800002
+Italy,2022,FC Empoli,Udinese,34.8881835900002
+Italy,2022,Fiorentina,Juventus,47.23376465
+Italy,2022,Fiorentina,Lazio,0.737792959999979
+Italy,2022,Fiorentina,Monza,94.31433105
+Italy,2022,Fiorentina,Roma,17.5111084
+Italy,2022,Fiorentina,Torino,73.31982421
+Italy,2022,Frosinone,Genoa,1.53161620999981
+Italy,2022,Frosinone,Hellas Verona,29.4802246099998
+Italy,2022,Frosinone,Lecce,3.06872558999999
+Italy,2022,Frosinone,Monza,60.95703125
+Italy,2022,Frosinone,Salernitana,15.3808593799999
+Italy,2022,Frosinone,Sassuolo,38.22717285
+Italy,2022,Frosinone,Torino,81.95153809
+Italy,2022,Frosinone,Udinese,43.0123291
+Italy,2022,Genoa,Hellas Verona,27.9486084
+Italy,2022,Genoa,Lecce,4.6003417999998
+Italy,2022,Genoa,Monza,59.4254150400002
+Italy,2022,Genoa,Salernitana,13.8492431700001
+Italy,2022,Genoa,Sassuolo,36.6955566400002
+Italy,2022,Genoa,Torino,80.4199218800002
+Italy,2022,Genoa,Udinese,41.4807128900002
+Italy,2022,Hellas Verona,Lecce,32.5489501999998
+Italy,2022,Hellas Verona,Monza,31.4768066400002
+Italy,2022,Hellas Verona,Salernitana,14.0993652299999
+Italy,2022,Hellas Verona,Sassuolo,8.74694824000017
+Italy,2022,Hellas Verona,Torino,52.4713134800002
+Italy,2022,Hellas Verona,Udinese,13.5321044900002
+Italy,2022,Inter,Juventus,87.0825195299999
+Italy,2022,Inter,Lecce,21.6628417900001
+Italy,2022,Inter,Monza,82.2597656200001
+Italy,2022,Inter,Napoli,89.29003906
+Italy,2022,Inter,Napoli,21.3162841800001
+Italy,2022,Juventus,Lazio,47.97155761
+Italy,2022,Juventus,Roma,29.72265625
+Italy,2022,Lazio,Monza,93.57653809
+Italy,2022,Lazio,Roma,18.24890136
+Italy,2022,Lazio,Torino,72.58203125
+Italy,2022,Lecce,Monza,64.02575684
+Italy,2022,Lecce,Monza,60.5969238299999
+Italy,2022,Lecce,Napoli,67.6271972699999
+Italy,2022,Lecce,Salernitana,18.4495849699999
+Italy,2022,Lecce,Sassuolo,41.29589844
+Italy,2022,Lecce,Torino,85.02026368
+Italy,2022,Lecce,Udinese,46.08105469
+Italy,2022,Monza,Napoli,7.03027343999997
+Italy,2022,Monza,Salernitana,45.5761718700001
+Italy,2022,Monza,Sassuolo,22.7298584
+Italy,2022,Monza,Torino,20.99450684
+Italy,2022,Monza,Udinese,17.94470215
+Italy,2022,Roma,Torino,90.83093261
+Italy,2022,Salernitana,Sassuolo,22.84631347
+Italy,2022,Salernitana,Torino,66.57067871
+Italy,2022,Salernitana,Udinese,27.63146972
+Italy,2022,Sassuolo,Torino,43.72436524
+Italy,2022,Sassuolo,Udinese,4.78515625
+Italy,2022,Torino,Udinese,38.93920899
+Italy,2023,AC Milan,Atalanta,48.4490966799999
+Italy,2023,AC Milan,Bologna,49.10961914
+Italy,2023,AC Milan,Fiorentina,68.77246094
+Italy,2023,AC Milan,Juventus,17.8253173799999
+Italy,2023,AC Milan,Lazio,43.7416992200001
+Italy,2023,AC Milan,Napoli,45.3646240200001
+Italy,2023,AC Milan,Roma,27.1740722700001
+Italy,2023,AC Milan,Torino,63.5913086000001
+Italy,2023,Atalanta,Bologna,97.5587158199999
+Italy,2023,Atalanta,Juventus,30.6237793
+Italy,2023,Atalanta,Lazio,92.1907959
+Italy,2023,Atalanta,Napoli,93.8137207
+Italy,2023,Atalanta,Roma,75.62316895
+Italy,2023,Bologna,Fiorentina,19.6628418
+Italy,2023,Bologna,Genoa,62.4312744200001
+Italy,2023,Bologna,Juventus,66.9349365199998
+Italy,2023,Bologna,Lazio,5.36791991999985
+Italy,2023,Bologna,Napoli,3.74499511999989
+Italy,2023,Bologna,Roma,21.9355468699998
+Italy,2023,Bologna,Torino,14.4816894600001
+Italy,2023,Bologna,Udinese,92.0584716800001
+Italy,2023,Cagliari,Como,59.4985351600001
+Italy,2023,Cagliari,FC Empoli,50.58947754
+Italy,2023,Cagliari,Hellas Verona,43.93981934
+Italy,2023,Cagliari,Lecce,11.6563720700001
+Italy,2023,Cagliari,Monza,51.22302246
+Italy,2023,Cagliari,Parma,19.1076660199999
+Italy,2023,Cagliari,Udinese,75.1281738299999
+Italy,2023,Cagliari,Venezia,42.2492675799999
+Italy,2023,Como,Lecce,71.1549072300002
+Italy,2023,Como,Parma,40.3908691400002
+Italy,2023,Como,Venezia,17.2492675800002
+Italy,2023,FC Empoli,Fiorentina,96.9343261700001
+Italy,2023,FC Empoli,Genoa,54.16589355
+Italy,2023,FC Empoli,Hellas Verona,6.64965819999998
+Italy,2023,FC Empoli,Lecce,38.9331054699999
+Italy,2023,FC Empoli,Monza,0.633544920000077
+Italy,2023,FC Empoli,Parma,69.6971435599999
+Italy,2023,FC Empoli,Udinese,24.53869629
+Italy,2023,FC Empoli,Venezia,92.8387451199999
+Italy,2023,Fiorentina,Genoa,42.7684326200001
+Italy,2023,Fiorentina,Juventus,86.5977783199999
+Italy,2023,Fiorentina,Lazio,25.0307617199999
+Italy,2023,Fiorentina,Monza,96.30078125
+Italy,2023,Fiorentina,Napoli,23.4078369199999
+Italy,2023,Fiorentina,Roma,41.5983886699999
+Italy,2023,Fiorentina,Torino,5.18115233999993
+Italy,2023,Fiorentina,Udinese,72.3956298800001
+Italy,2023,Genoa,Hellas Verona,60.81555175
+Italy,2023,Genoa,Lazio,67.79919434
+Italy,2023,Genoa,Lecce,93.0989990199998
+Italy,2023,Genoa,Monza,53.5323486299999
+Italy,2023,Genoa,Napoli,66.17626954
+Italy,2023,Genoa,Roma,84.36682129
+Italy,2023,Genoa,Torino,47.94958496
+Italy,2023,Genoa,Udinese,29.62719726
+Italy,2023,Hellas Verona,Lecce,32.2834472699999
+Italy,2023,Hellas Verona,Monza,7.28320312000005
+Italy,2023,Hellas Verona,Parma,63.0474853599999
+Italy,2023,Hellas Verona,Udinese,31.1883544899999
+Italy,2023,Hellas Verona,Venezia,86.1890869199999
+Italy,2023,Inter,Monza,83.82653809
+Italy,2023,Inter,Napoli,67.8703613299999
+Italy,2023,Juventus,Lazio,61.5670166
+Italy,2023,Juventus,Napoli,63.1899414
+Italy,2023,Juventus,Roma,44.99938965
+Italy,2023,Juventus,Torino,81.41662598
+Italy,2023,Lazio,Napoli,1.62292479999996
+Italy,2023,Lazio,Roma,16.56762695
+Italy,2023,Lazio,Torino,19.8496093799999
+Italy,2023,Lazio,Udinese,97.4263916
+Italy,2023,Lecce,Monza,39.56665039
+Italy,2023,Lecce,Parma,30.76403809
+Italy,2023,Lecce,Udinese,63.4718017599998
+Italy,2023,Lecce,Venezia,53.90563965
+Italy,2023,Monza,Napoli,15.9561767600001
+Italy,2023,Monza,Parma,70.3306884799999
+Italy,2023,Monza,Udinese,23.9051513699999
+Italy,2023,Monza,Venezia,93.47229004
+Italy,2023,Napoli,Roma,18.1905517499999
+Italy,2023,Napoli,Torino,18.22668458
+Italy,2023,Napoli,Udinese,95.8034668
+Italy,2023,Parma,Udinese,94.2358398499998
+Italy,2023,Parma,Venezia,23.14160156
+Italy,2023,Roma,Torino,36.4172363299999
+Italy,2023,Torino,Udinese,77.57678222
+Spain,2017,Alavés,Athletic Club,1.89733887000011
+Spain,2017,Alavés,CD Leganés,71.1705322300002
+Spain,2017,Alavés,Celta de Vigo,24.0802001899999
+Spain,2017,Alavés,Espanyol,40.1225585899999
+Spain,2017,Alavés,Getafe,21.00939941
+Spain,2017,Alavés,Girona,32.92419434
+Spain,2017,Alavés,Levante,2.10461424999994
+Spain,2017,Alavés,Real Betis,6.33044432999986
+Spain,2017,Alavés,Real Sociedad,33.0440673799999
+Spain,2017,Alavés,Real Valladolid,74.4781494200001
+Spain,2017,Alavés,SD Eibar,8.48425292999991
+Spain,2017,Alavés,SD Huesca,80.609375
+Spain,2017,Alavés,Sevilla FC,71.9858398399999
+Spain,2017,Alavés,Valencia,87.14099121
+Spain,2017,Alavés,Villarreal,38.3580322199998
+Spain,2017,Athletic Club,CD Leganés,69.2731933600001
+Spain,2017,Athletic Club,Celta de Vigo,25.97753906
+Spain,2017,Athletic Club,Espanyol,42.01989746
+Spain,2017,Athletic Club,Getafe,22.9067382800001
+Spain,2017,Athletic Club,Girona,31.0268554699999
+Spain,2017,Athletic Club,Levante,4.00195312000005
+Spain,2017,Athletic Club,Real Betis,8.22778319999998
+Spain,2017,Athletic Club,Real Sociedad,34.94140625
+Spain,2017,Athletic Club,Real Valladolid,72.58081055
+Spain,2017,Athletic Club,SD Eibar,10.3815918
+Spain,2017,Athletic Club,SD Huesca,78.7120361299999
+Spain,2017,Athletic Club,Sevilla FC,73.88317871
+Spain,2017,Athletic Club,Valencia,89.0383300800002
+Spain,2017,Athletic Club,Villarreal,40.2553710899999
+Spain,2017,Atlético,Barcelona,99.9221191399999
+Spain,2017,Atlético,Real Madrid,97.44470215
+Spain,2017,Barcelona,Real Madrid,2.47741698999994
+Spain,2017,CD Leganés,Celta de Vigo,95.2507324200001
+Spain,2017,CD Leganés,Getafe,92.1799316400002
+Spain,2017,CD Leganés,Girona,38.2463378900002
+Spain,2017,CD Leganés,Levante,73.2751464800001
+Spain,2017,CD Leganés,Rayo Vallecano,33.2608642599998
+Spain,2017,CD Leganés,Real Betis,77.50097656
+Spain,2017,CD Leganés,Real Valladolid,3.30761718999997
+Spain,2017,CD Leganés,SD Eibar,79.6547851600001
+Spain,2017,CD Leganés,SD Huesca,9.43884276999984
+Spain,2017,Celta de Vigo,Espanyol,16.0423584
+Spain,2017,Celta de Vigo,Getafe,3.0708007799999
+Spain,2017,Celta de Vigo,Girona,57.0043945299999
+Spain,2017,Celta de Vigo,Levante,21.97558594
+Spain,2017,Celta de Vigo,Real Betis,17.7497558600001
+Spain,2017,Celta de Vigo,Real Sociedad,8.96386718999997
+Spain,2017,Celta de Vigo,Real Valladolid,98.5583496100001
+Spain,2017,Celta de Vigo,SD Eibar,15.59594726
+Spain,2017,Celta de Vigo,Sevilla FC,47.90563965
+Spain,2017,Celta de Vigo,Valencia,63.0607910200001
+Spain,2017,Celta de Vigo,Villarreal,14.2778320299999
+Spain,2017,Espanyol,Getafe,19.1131591799999
+Spain,2017,Espanyol,Girona,73.0467529299999
+Spain,2017,Espanyol,Levante,38.01794434
+Spain,2017,Espanyol,Real Betis,33.7921142600001
+Spain,2017,Espanyol,Real Sociedad,7.07849121000004
+Spain,2017,Espanyol,SD Eibar,31.63830566
+Spain,2017,Espanyol,Sevilla FC,31.86328125
+Spain,2017,Espanyol,Valencia,47.0184326200001
+Spain,2017,Espanyol,Villarreal,1.76452637000011
+Spain,2017,Getafe,Girona,53.93359375
+Spain,2017,Getafe,Levante,18.9047851600001
+Spain,2017,Getafe,Real Betis,14.6789550800002
+Spain,2017,Getafe,Real Sociedad,12.0346679699999
+Spain,2017,Getafe,Real Valladolid,95.4875488300002
+Spain,2017,Getafe,SD Eibar,12.5251464800001
+Spain,2017,Getafe,Sevilla FC,50.9764404299999
+Spain,2017,Getafe,Valencia,66.1315918
+Spain,2017,Getafe,Villarreal,17.3486328099998
+Spain,2017,Girona,Levante,35.0288085899999
+Spain,2017,Girona,Rayo Vallecano,71.50720215
+Spain,2017,Girona,Real Betis,39.2546386699999
+Spain,2017,Girona,Real Sociedad,65.9682617199999
+Spain,2017,Girona,Real Valladolid,41.5539550800002
+Spain,2017,Girona,SD Eibar,41.4084472699999
+Spain,2017,Girona,SD Huesca,47.68518066
+Spain,2017,Girona,Villarreal,71.2822265599998
+Spain,2017,Levante,Real Betis,4.22583007999992
+Spain,2017,Levante,Real Sociedad,30.93945313
+Spain,2017,Levante,Real Valladolid,76.5827636700001
+Spain,2017,Levante,SD Eibar,6.37963867999997
+Spain,2017,Levante,SD Huesca,82.7139892499999
+Spain,2017,Levante,Sevilla FC,69.88122559
+Spain,2017,Levante,Valencia,85.0363769600001
+Spain,2017,Levante,Villarreal,36.2534179699999
+Spain,2017,Rayo Vallecano,Real Valladolid,29.9532470699999
+Spain,2017,Rayo Vallecano,SD Huesca,23.82202149
+Spain,2017,Real Betis,Real Sociedad,26.71362305
+Spain,2017,Real Betis,Real Valladolid,80.80859375
+Spain,2017,Real Betis,SD Eibar,2.15380860000005
+Spain,2017,Real Betis,SD Huesca,86.9398193299999
+Spain,2017,Real Betis,Sevilla FC,65.6553955100001
+Spain,2017,Real Betis,Valencia,80.8105468800002
+Spain,2017,Real Betis,Villarreal,32.02758789
+Spain,2017,Real Sociedad,SD Eibar,24.55981445
+Spain,2017,Real Sociedad,Sevilla FC,38.94177246
+Spain,2017,Real Sociedad,Valencia,54.0969238300002
+Spain,2017,Real Sociedad,Villarreal,5.31396483999993
+Spain,2017,Real Valladolid,SD Eibar,82.96240235
+Spain,2017,Real Valladolid,SD Huesca,6.13122557999986
+Spain,2017,SD Eibar,SD Huesca,89.0936279299999
+Spain,2017,SD Eibar,Sevilla FC,63.50158691
+Spain,2017,SD Eibar,Valencia,78.6567382800001
+Spain,2017,SD Eibar,Villarreal,29.8737792899999
+Spain,2017,Sevilla FC,Valencia,15.1551513700001
+Spain,2017,Sevilla FC,Villarreal,33.6278076200001
+Spain,2017,Valencia,Villarreal,48.7829589900002
+Spain,2018,Alavés,Athletic Club,53.9444579999999
+Spain,2018,Alavés,CA Osasuna,33.93762208
+Spain,2018,Alavés,CD Leganés,43.33789063
+Spain,2018,Alavés,Celta de Vigo,5.60961914999984
+Spain,2018,Alavés,Espanyol,42.2432861300001
+Spain,2018,Alavés,Getafe,58.38598632
+Spain,2018,Alavés,Granada CF,93.0318603599999
+Spain,2018,Alavés,Levante,1.55041503000007
+Spain,2018,Alavés,Real Betis,14.0267334
+Spain,2018,Alavés,Real Sociedad,29.63269042
+Spain,2018,Alavés,Real Valladolid,63.1359863299999
+Spain,2018,Alavés,SD Eibar,11.46508789
+Spain,2018,Alavés,Sevilla FC,71.8310546800001
+Spain,2018,Alavés,Villarreal,27.91271972
+Spain,2018,Athletic Club,CA Osasuna,87.8820800799999
+Spain,2018,Athletic Club,CD Leganés,97.2823486299999
+Spain,2018,Athletic Club,Celta de Vigo,59.5540771499998
+Spain,2018,Athletic Club,Espanyol,11.7011718699998
+Spain,2018,Athletic Club,Getafe,4.44152832000009
+Spain,2018,Athletic Club,Levante,52.3940429699999
+Spain,2018,Athletic Club,Real Betis,67.9711914
+Spain,2018,Athletic Club,Real Madrid,96.82067871
+Spain,2018,Athletic Club,Real Sociedad,24.3117675799999
+Spain,2018,Athletic Club,SD Eibar,42.47937011
+Spain,2018,Athletic Club,Sevilla FC,17.8865966800001
+Spain,2018,Athletic Club,Valencia,53.20703125
+Spain,2018,Athletic Club,Villarreal,26.0317382799999
+Spain,2018,Atlético,Barcelona,97.1040039100001
+Spain,2018,Atlético,Real Madrid,43.7915039100001
+Spain,2018,Atlético,Valencia,87.4051513700001
+Spain,2018,CA Osasuna,CD Leganés,9.40026854999996
+Spain,2018,CA Osasuna,Celta de Vigo,28.3280029300001
+Spain,2018,CA Osasuna,Espanyol,76.1809082100001
+Spain,2018,CA Osasuna,Getafe,92.3236084
+Spain,2018,CA Osasuna,Granada CF,59.0942382799999
+Spain,2018,CA Osasuna,Levante,35.4880371100001
+Spain,2018,CA Osasuna,Real Betis,19.91088868
+Spain,2018,CA Osasuna,Real Sociedad,63.5703125
+Spain,2018,CA Osasuna,Real Valladolid,29.1983642499999
+Spain,2018,CA Osasuna,SD Eibar,45.4027099699999
+Spain,2018,CA Osasuna,Villarreal,61.8503418
+Spain,2018,CD Leganés,Celta de Vigo,37.7282714800001
+Spain,2018,CD Leganés,Espanyol,85.5811767600001
+Spain,2018,CD Leganés,Granada CF,49.6939697299999
+Spain,2018,CD Leganés,Levante,44.88830566
+Spain,2018,CD Leganés,Real Betis,29.3111572299999
+Spain,2018,CD Leganés,Real Sociedad,72.97058105
+Spain,2018,CD Leganés,Real Valladolid,19.7980957
+Spain,2018,CD Leganés,SD Eibar,54.8029785199999
+Spain,2018,CD Leganés,Villarreal,71.25061035
+Spain,2018,Celta de Vigo,Espanyol,47.85290528
+Spain,2018,Celta de Vigo,Getafe,63.9956054699999
+Spain,2018,Celta de Vigo,Granada CF,87.4222412100001
+Spain,2018,Celta de Vigo,Levante,7.16003417999991
+Spain,2018,Celta de Vigo,Real Betis,8.41711425000017
+Spain,2018,Celta de Vigo,Real Sociedad,35.2423095699999
+Spain,2018,Celta de Vigo,Real Valladolid,57.5263671800001
+Spain,2018,Celta de Vigo,SD Eibar,17.0747070399998
+Spain,2018,Celta de Vigo,Sevilla FC,77.4406738299999
+Spain,2018,Celta de Vigo,Villarreal,33.5223388699999
+Spain,2018,Espanyol,Getafe,16.1427001899999
+Spain,2018,Espanyol,Levante,40.6928711000001
+Spain,2018,Espanyol,Real Betis,56.2700195300001
+Spain,2018,Espanyol,Real Sociedad,12.6105957100001
+Spain,2018,Espanyol,SD Eibar,30.7781982400002
+Spain,2018,Espanyol,Sevilla FC,29.58776855
+Spain,2018,Espanyol,Valencia,64.9082031199998
+Spain,2018,Espanyol,Villarreal,14.3305664100001
+Spain,2018,Getafe,Levante,56.83557129
+Spain,2018,Getafe,Real Betis,72.41271972
+Spain,2018,Getafe,Real Madrid,92.37915039
+Spain,2018,Getafe,Real Sociedad,28.7532959
+Spain,2018,Getafe,SD Eibar,46.9208984300001
+Spain,2018,Getafe,Sevilla FC,13.4450683600001
+Spain,2018,Getafe,Valencia,48.7655029299999
+Spain,2018,Getafe,Villarreal,30.4732666
+Spain,2018,Granada CF,Levante,94.58227539
+Spain,2018,Granada CF,Real Betis,79.0051269599999
+Spain,2018,Granada CF,Real Valladolid,29.89587403
+Spain,2018,Levante,Real Betis,15.5771484300001
+Spain,2018,Levante,Real Sociedad,28.08227539
+Spain,2018,Levante,Real Valladolid,64.68640136
+Spain,2018,Levante,SD Eibar,9.91467285999988
+Spain,2018,Levante,Sevilla FC,70.28063965
+Spain,2018,Levante,Villarreal,26.36230469
+Spain,2018,Real Betis,Real Sociedad,43.65942382
+Spain,2018,Real Betis,Real Valladolid,49.1092529299999
+Spain,2018,Real Betis,SD Eibar,25.49182129
+Spain,2018,Real Betis,Sevilla FC,85.8577880800001
+Spain,2018,Real Betis,Villarreal,41.9394531200001
+Spain,2018,Real Madrid,Sevilla FC,78.9340820299999
+Spain,2018,Real Madrid,Valencia,43.61364746
+Spain,2018,Real Sociedad,Real Valladolid,92.7686767499999
+Spain,2018,Real Sociedad,SD Eibar,18.1676025300001
+Spain,2018,Real Sociedad,Sevilla FC,42.1983642600001
+Spain,2018,Real Sociedad,Valencia,77.5187988299999
+Spain,2018,Real Sociedad,Villarreal,1.71997069999998
+Spain,2018,Real Valladolid,SD Eibar,74.6010742199999
+Spain,2018,Real Valladolid,Villarreal,91.04870605
+Spain,2018,SD Eibar,Sevilla FC,60.3659667900001
+Spain,2018,SD Eibar,Valencia,95.68640136
+Spain,2018,SD Eibar,Villarreal,16.4476318300001
+Spain,2018,Sevilla FC,Valencia,35.3204345699999
+Spain,2018,Sevilla FC,Villarreal,43.91833496
+Spain,2018,Valencia,Villarreal,79.2387695299999
+Spain,2019,Alavés,Athletic Club,78.3625488299999
+Spain,2019,Alavés,CA Osasuna,53.5821533200001
+Spain,2019,Alavés,Celta de Vigo,26.68151855
+Spain,2019,Alavés,Elche CF,81.7828369199999
+Spain,2019,Alavés,Getafe,93.6876220700001
+Spain,2019,Alavés,Granada CF,72.3682861299999
+Spain,2019,Alavés,Levante,56.4893798799999
+Spain,2019,Alavés,Real Betis,24.31884765
+Spain,2019,Alavés,Real Sociedad,98.08227539
+Spain,2019,Alavés,Real Valladolid,11.5957031200001
+Spain,2019,Alavés,SD Eibar,42.3763427700001
+Spain,2019,Alavés,Valencia,91.5423584
+Spain,2019,Athletic Club,CA Osasuna,24.7803955099998
+Spain,2019,Athletic Club,Celta de Vigo,51.68103028
+Spain,2019,Athletic Club,Getafe,15.3250732400002
+Spain,2019,Athletic Club,Granada CF,5.99426270000004
+Spain,2019,Athletic Club,Levante,21.87316895
+Spain,2019,Athletic Club,Real Betis,54.04370118
+Spain,2019,Athletic Club,Real Sociedad,19.71972656
+Spain,2019,Athletic Club,Real Valladolid,66.7668457099999
+Spain,2019,Athletic Club,SD Eibar,35.9862060599999
+Spain,2019,Athletic Club,Valencia,13.1798095700001
+Spain,2019,Athletic Club,Villarreal,50.8382568300001
+Spain,2019,Atlético,Barcelona,64.5192871100001
+Spain,2019,Atlético,Real Madrid,29.5357666
+Spain,2019,Atlético,Sevilla FC,27.9050293
+Spain,2019,Barcelona,Real Madrid,34.9835205100001
+Spain,2019,Barcelona,Sevilla FC,92.4243164100001
+Spain,2019,CA Osasuna,Celta de Vigo,26.9006347700001
+Spain,2019,CA Osasuna,Getafe,40.10546875
+Spain,2019,CA Osasuna,Granada CF,18.7861328099998
+Spain,2019,CA Osasuna,Levante,2.9072265599998
+Spain,2019,CA Osasuna,Real Betis,29.2633056700001
+Spain,2019,CA Osasuna,Real Sociedad,44.5001220699999
+Spain,2019,CA Osasuna,Real Valladolid,41.9864502
+Spain,2019,CA Osasuna,SD Eibar,11.20581055
+Spain,2019,CA Osasuna,Valencia,37.9602050799999
+Spain,2019,CA Osasuna,Villarreal,75.6186523399999
+Spain,2019,Celta de Vigo,Getafe,67.0061035200001
+Spain,2019,Celta de Vigo,Granada CF,45.6867675799999
+Spain,2019,Celta de Vigo,Levante,29.8078613299999
+Spain,2019,Celta de Vigo,Real Betis,2.36267090000001
+Spain,2019,Celta de Vigo,Real Sociedad,71.40075684
+Spain,2019,Celta de Vigo,Real Valladolid,15.0858154299999
+Spain,2019,Celta de Vigo,SD Eibar,15.6948242200001
+Spain,2019,Celta de Vigo,Valencia,64.8608398500001
+Spain,2019,Elche CF,Real Valladolid,93.37854004
+Spain,2019,Getafe,Granada CF,21.3193359400002
+Spain,2019,Getafe,Levante,37.1982421900002
+Spain,2019,Getafe,Real Betis,69.3687744200001
+Spain,2019,Getafe,Real Sociedad,4.39465331999986
+Spain,2019,Getafe,Real Valladolid,82.09191895
+Spain,2019,Getafe,SD Eibar,51.3112793
+Spain,2019,Getafe,Valencia,2.14526367000008
+Spain,2019,Getafe,Villarreal,35.5131835899999
+Spain,2019,Granada CF,Levante,15.87890625
+Spain,2019,Granada CF,Real Betis,48.0494384799999
+Spain,2019,Granada CF,Real Sociedad,25.7139892600001
+Spain,2019,Granada CF,Real Valladolid,60.7725830099998
+Spain,2019,Granada CF,SD Eibar,29.9919433599998
+Spain,2019,Granada CF,Valencia,19.1740722700001
+Spain,2019,Granada CF,Villarreal,56.8325195300001
+Spain,2019,Levante,Real Betis,32.1705322299999
+Spain,2019,Levante,Real Sociedad,41.5928955100001
+Spain,2019,Levante,Real Valladolid,44.8936767599998
+Spain,2019,Levante,SD Eibar,14.1130371099998
+Spain,2019,Levante,Valencia,35.0529785200001
+Spain,2019,Levante,Villarreal,72.7114257800001
+Spain,2019,Real Betis,Real Sociedad,73.76342774
+Spain,2019,Real Betis,Real Valladolid,12.7231445299999
+Spain,2019,Real Betis,SD Eibar,18.0574951200001
+Spain,2019,Real Betis,Valencia,67.2235107500001
+Spain,2019,Real Madrid,Sevilla FC,57.4407959
+Spain,2019,Real Sociedad,Real Valladolid,86.4865722699999
+Spain,2019,Real Sociedad,SD Eibar,55.7059326199999
+Spain,2019,Real Sociedad,Valencia,6.53991698999994
+Spain,2019,Real Sociedad,Villarreal,31.1185302700001
+Spain,2019,Real Valladolid,SD Eibar,30.78063965
+Spain,2019,Real Valladolid,Valencia,79.94665528
+Spain,2019,SD Eibar,Valencia,49.16601563
+Spain,2019,SD Eibar,Villarreal,86.82446289
+Spain,2019,Sevilla FC,Villarreal,89.2772216799999
+Spain,2019,Valencia,Villarreal,37.65844726
+Spain,2020,Alavés,CA Osasuna,78.4830322299999
+Spain,2020,Alavés,Celta de Vigo,95.90759278
+Spain,2020,Alavés,Cádiz CF,3.18859863000012
+Spain,2020,Alavés,Elche CF,11.2331542899999
+Spain,2020,Alavés,Espanyol,35.7969970700001
+Spain,2020,Alavés,Getafe,44.75292969
+Spain,2020,Alavés,Granada CF,50.00048829
+Spain,2020,Alavés,Levante,54.55126954
+Spain,2020,Alavés,RCD Mallorca,36.5180664100001
+Spain,2020,Alavés,Rayo Vallecano,1.11303711000005
+Spain,2020,Athletic Club,CA Osasuna,32.04785156
+Spain,2020,Athletic Club,Celta de Vigo,14.62329101
+Spain,2020,Athletic Club,Espanyol,74.7338867199999
+Spain,2020,Athletic Club,Getafe,65.7779541
+Spain,2020,Athletic Club,Granada CF,60.5303954999999
+Spain,2020,Athletic Club,Levante,55.9796142499999
+Spain,2020,Athletic Club,RCD Mallorca,74.0128173799999
+Spain,2020,Athletic Club,Real Betis,7.76062012000011
+Spain,2020,Athletic Club,Real Sociedad,42.5845947299999
+Spain,2020,Athletic Club,Valencia,6.05065917999991
+Spain,2020,Athletic Club,Villarreal,97.09155274
+Spain,2020,Atlético,Barcelona,17.9121093700001
+Spain,2020,Atlético,Real Madrid,43.4558105400001
+Spain,2020,Atlético,Sevilla FC,47.5428466799999
+Spain,2020,Atlético,Villarreal,79.1984863299999
+Spain,2020,Barcelona,Real Madrid,25.5437011700001
+Spain,2020,Barcelona,Sevilla FC,65.45495605
+Spain,2020,Barcelona,Villarreal,97.1105957
+Spain,2020,CA Osasuna,Celta de Vigo,17.42456055
+Spain,2020,CA Osasuna,Cádiz CF,81.6716308600001
+Spain,2020,CA Osasuna,Elche CF,89.7161865199998
+Spain,2020,CA Osasuna,Espanyol,42.6860351599998
+Spain,2020,CA Osasuna,Getafe,33.73010254
+Spain,2020,CA Osasuna,Granada CF,28.4825439399999
+Spain,2020,CA Osasuna,Levante,23.9317626899999
+Spain,2020,CA Osasuna,RCD Mallorca,41.9649658199999
+Spain,2020,CA Osasuna,Rayo Vallecano,79.59606934
+Spain,2020,CA Osasuna,Real Betis,39.8084716800001
+Spain,2020,CA Osasuna,Real Sociedad,74.63244629
+Spain,2020,CA Osasuna,Valencia,25.9971923800001
+Spain,2020,Celta de Vigo,Espanyol,60.1105957099999
+Spain,2020,Celta de Vigo,Getafe,51.15466309
+Spain,2020,Celta de Vigo,Granada CF,45.9071044899999
+Spain,2020,Celta de Vigo,Levante,41.3563232399999
+Spain,2020,Celta de Vigo,RCD Mallorca,59.3895263699999
+Spain,2020,Celta de Vigo,Rayo Vallecano,97.02062989
+Spain,2020,Celta de Vigo,Real Betis,22.3839111300001
+Spain,2020,Celta de Vigo,Real Sociedad,57.2078857399999
+Spain,2020,Celta de Vigo,Valencia,8.57263183000009
+Spain,2020,Cádiz CF,Celta de Vigo,99.0961914100001
+Spain,2020,Cádiz CF,Elche CF,8.04455565999979
+Spain,2020,Cádiz CF,Espanyol,38.9855957000002
+Spain,2020,Cádiz CF,Getafe,47.9415283200001
+Spain,2020,Cádiz CF,Granada CF,53.1890869200001
+Spain,2020,Cádiz CF,Levante,57.7398681700001
+Spain,2020,Cádiz CF,RCD Mallorca,39.7066650400002
+Spain,2020,Cádiz CF,Rayo Vallecano,2.07556152000006
+Spain,2020,Elche CF,Espanyol,47.03015136
+Spain,2020,Elche CF,Getafe,55.9860839799999
+Spain,2020,Elche CF,Granada CF,61.2336425799999
+Spain,2020,Elche CF,Levante,65.7844238299999
+Spain,2020,Elche CF,RCD Mallorca,47.7512207
+Spain,2020,Elche CF,Rayo Vallecano,10.1201171799999
+Spain,2020,Espanyol,Getafe,8.95593261999989
+Spain,2020,Espanyol,Granada CF,14.2034912199999
+Spain,2020,Espanyol,Levante,18.7542724699999
+Spain,2020,Espanyol,RCD Mallorca,0.721069339999986
+Spain,2020,Espanyol,Rayo Vallecano,36.9100341800001
+Spain,2020,Espanyol,Real Betis,82.49450684
+Spain,2020,Espanyol,Valencia,68.68322754
+Spain,2020,Getafe,Granada CF,5.24755860000005
+Spain,2020,Getafe,Levante,9.79833985000005
+Spain,2020,Getafe,RCD Mallorca,8.2348632799999
+Spain,2020,Getafe,Rayo Vallecano,45.8659668
+Spain,2020,Getafe,Real Betis,73.5385742200001
+Spain,2020,Getafe,Valencia,59.7272949200001
+Spain,2020,Granada CF,Levante,4.55078125
+Spain,2020,Granada CF,RCD Mallorca,13.4824218799999
+Spain,2020,Granada CF,Rayo Vallecano,51.1135254000001
+Spain,2020,Granada CF,Real Betis,68.2910156200001
+Spain,2020,Granada CF,Valencia,54.47973632
+Spain,2020,Levante,RCD Mallorca,18.0332031299999
+Spain,2020,Levante,Rayo Vallecano,55.6643066500001
+Spain,2020,Levante,Real Betis,63.7402343700001
+Spain,2020,Levante,Real Sociedad,98.5642089799999
+Spain,2020,Levante,Valencia,49.92895507
+Spain,2020,RCD Mallorca,Real Betis,81.7734375
+Spain,2020,RCD Mallorca,Valencia,67.9621582
+Spain,2020,Rayo Vallecano,RCD Mallorca,37.6311035200001
+Spain,2020,Real Betis,Real Sociedad,34.8239746099998
+Spain,2020,Real Betis,Valencia,13.8112793
+Spain,2020,Real Betis,Villarreal,89.3309326199999
+Spain,2020,Real Madrid,Sevilla FC,90.99865722
+Spain,2020,Real Sociedad,Sevilla FC,86.1625976600001
+Spain,2020,Real Sociedad,Valencia,48.6352539099999
+Spain,2020,Real Sociedad,Villarreal,54.5069580100001
+Spain,2020,Sevilla FC,Villarreal,31.65563965
+Spain,2021,Athletic Club,CA Osasuna,69.8697509800002
+Spain,2021,Athletic Club,Celta de Vigo,46.93457031
+Spain,2021,Athletic Club,Getafe,97.4936523500001
+Spain,2021,Athletic Club,Real Betis,40.4189453099998
+Spain,2021,Athletic Club,Real Sociedad,3.53930663999995
+Spain,2021,Athletic Club,Sevilla FC,44.2114257799999
+Spain,2021,Athletic Club,Valencia,62.2348632800001
+Spain,2021,Atlético,Barcelona,17.11230469
+Spain,2021,Atlético,Real Betis,73.0732421900002
+Spain,2021,Atlético,Sevilla FC,69.2807617200001
+Spain,2021,Atlético,Villarreal,7.11425781000003
+Spain,2021,Barcelona,Real Betis,90.1855468800002
+Spain,2021,Barcelona,Sevilla FC,86.3930664100001
+Spain,2021,Barcelona,Villarreal,24.2265625
+Spain,2021,CA Osasuna,Celta de Vigo,22.9351806700001
+Spain,2021,CA Osasuna,Cádiz CF,62.53027344
+Spain,2021,CA Osasuna,Elche CF,66.69628906
+Spain,2021,CA Osasuna,Espanyol,50.4868164
+Spain,2021,CA Osasuna,Getafe,27.6239013699999
+Spain,2021,CA Osasuna,Girona,74.1241455099998
+Spain,2021,CA Osasuna,RCD Mallorca,55.5292968699998
+Spain,2021,CA Osasuna,Rayo Vallecano,60.0704345699999
+Spain,2021,CA Osasuna,Real Sociedad,73.4090576200001
+Spain,2021,CA Osasuna,Real Valladolid,44.62597656
+Spain,2021,CA Osasuna,UD Almería,43.27893066
+Spain,2021,CA Osasuna,Valencia,7.63488770000004
+Spain,2021,Celta de Vigo,Elche CF,89.6314697300002
+Spain,2021,Celta de Vigo,Espanyol,73.4219970700001
+Spain,2021,Celta de Vigo,Getafe,50.55908204
+Spain,2021,Celta de Vigo,Girona,97.05932618
+Spain,2021,Celta de Vigo,RCD Mallorca,78.46447754
+Spain,2021,Celta de Vigo,Rayo Vallecano,83.00561524
+Spain,2021,Celta de Vigo,Real Betis,87.3535156199998
+Spain,2021,Celta de Vigo,Real Sociedad,50.47387695
+Spain,2021,Celta de Vigo,Real Valladolid,67.5611572300002
+Spain,2021,Celta de Vigo,Sevilla FC,91.1459960899999
+Spain,2021,Celta de Vigo,UD Almería,66.2141113300002
+Spain,2021,Celta de Vigo,Valencia,15.3002929700001
+Spain,2021,Cádiz CF,Celta de Vigo,85.4654541100001
+Spain,2021,Cádiz CF,Elche CF,4.16601562000005
+Spain,2021,Cádiz CF,Espanyol,12.04345704
+Spain,2021,Cádiz CF,Getafe,34.9063720700001
+Spain,2021,Cádiz CF,Girona,11.5938720699999
+Spain,2021,Cádiz CF,RCD Mallorca,7.00097657000015
+Spain,2021,Cádiz CF,Rayo Vallecano,2.45983887000011
+Spain,2021,Cádiz CF,Real Valladolid,17.9042968799999
+Spain,2021,Cádiz CF,UD Almería,19.25134278
+Spain,2021,Cádiz CF,Valencia,70.16516114
+Spain,2021,Elche CF,Espanyol,16.2094726600001
+Spain,2021,Elche CF,Getafe,39.0723876900001
+Spain,2021,Elche CF,Girona,7.42785644999981
+Spain,2021,Elche CF,RCD Mallorca,11.1669921900002
+Spain,2021,Elche CF,Rayo Vallecano,6.62585449000017
+Spain,2021,Elche CF,Real Valladolid,22.0703125
+Spain,2021,Elche CF,UD Almería,23.4173584
+Spain,2021,Elche CF,Valencia,74.3311767600001
+Spain,2021,Espanyol,Getafe,22.8629150300001
+Spain,2021,Espanyol,Girona,23.6373291099999
+Spain,2021,Espanyol,RCD Mallorca,5.04248046999987
+Spain,2021,Espanyol,Rayo Vallecano,9.58361816999991
+Spain,2021,Espanyol,Real Valladolid,5.86083983999993
+Spain,2021,Espanyol,UD Almería,7.20788573999994
+Spain,2021,Espanyol,Valencia,58.1217041
+Spain,2021,Getafe,Girona,46.50024414
+Spain,2021,Getafe,RCD Mallorca,27.9053954999999
+Spain,2021,Getafe,Rayo Vallecano,32.4465332
+Spain,2021,Getafe,Real Valladolid,17.0020751900001
+Spain,2021,Getafe,UD Almería,15.6550292900001
+Spain,2021,Getafe,Valencia,35.2587890699999
+Spain,2021,Girona,RCD Mallorca,18.59484864
+Spain,2021,Girona,Rayo Vallecano,14.05371094
+Spain,2021,Girona,Real Valladolid,29.4981689499998
+Spain,2021,Girona,UD Almería,30.8452148499998
+Spain,2021,Girona,Valencia,81.7590332099999
+Spain,2021,Girona,Villarreal,46.8327636700001
+Spain,2021,RCD Mallorca,Real Valladolid,10.9033203099998
+Spain,2021,RCD Mallorca,UD Almería,12.2503662099998
+Spain,2021,RCD Mallorca,Valencia,63.1641845699999
+Spain,2021,Rayo Vallecano,RCD Mallorca,4.54113770000004
+Spain,2021,Rayo Vallecano,Real Valladolid,15.4444580099998
+Spain,2021,Rayo Vallecano,UD Almería,16.7915039099998
+Spain,2021,Rayo Vallecano,Valencia,67.7053222699999
+Spain,2021,Real Betis,Real Sociedad,36.8796386699999
+Spain,2021,Real Betis,Sevilla FC,3.7924804700001
+Spain,2021,Real Betis,Villarreal,65.9589843800002
+Spain,2021,Real Sociedad,Sevilla FC,40.67211914
+Spain,2021,Real Sociedad,Valencia,65.7741699200001
+Spain,2021,Real Valladolid,UD Almería,1.34704590000001
+Spain,2021,Real Valladolid,Valencia,52.2608642600001
+Spain,2021,Sevilla FC,Villarreal,62.1665039100001
+Spain,2021,UD Almería,Valencia,50.9138183600001
+Spain,2022,Alavés,CA Osasuna,71.8782959
+Spain,2022,Alavés,Celta de Vigo,49.2523193300001
+Spain,2022,Alavés,Cádiz CF,35.9202880800001
+Spain,2022,Alavés,Getafe,51.9277343700001
+Spain,2022,Alavés,Girona,95.5142822299999
+Spain,2022,Alavés,Granada CF,13.1674804700001
+Spain,2022,Alavés,RCD Mallorca,37.1151123
+Spain,2022,Alavés,Rayo Vallecano,39.5946044899999
+Spain,2022,Alavés,UD Las Palmas,22.42749024
+Spain,2022,Alavés,Valencia,70.1140136700001
+Spain,2022,Athletic Club,CA Osasuna,44.6038818299999
+Spain,2022,Athletic Club,Celta de Vigo,67.2298583999998
+Spain,2022,Athletic Club,Cádiz CF,80.5618896499998
+Spain,2022,Athletic Club,Getafe,64.5544433599998
+Spain,2022,Athletic Club,Girona,20.9678954999999
+Spain,2022,Athletic Club,RCD Mallorca,79.3670654299999
+Spain,2022,Athletic Club,Rayo Vallecano,76.8875732399999
+Spain,2022,Athletic Club,Real Betis,25.7062988300002
+Spain,2022,Athletic Club,Real Sociedad,59.6641845700001
+Spain,2022,Athletic Club,Sevilla FC,18.8017578200002
+Spain,2022,Athletic Club,Valencia,46.3681640599998
+Spain,2022,Athletic Club,Villarreal,45.6801757800001
+Spain,2022,Atlético,Barcelona,7.46557617999997
+Spain,2022,Atlético,Real Madrid,59.3601074200001
+Spain,2022,Atlético,Real Sociedad,87.33203125
+Spain,2022,Barcelona,Real Madrid,51.8945312400001
+Spain,2022,Barcelona,Real Sociedad,94.79760743
+Spain,2022,CA Osasuna,Celta de Vigo,22.6259765699999
+Spain,2022,CA Osasuna,Cádiz CF,35.9580078199999
+Spain,2022,CA Osasuna,Getafe,19.95056153
+Spain,2022,CA Osasuna,Girona,23.6359863299999
+Spain,2022,CA Osasuna,Granada CF,58.7108154299999
+Spain,2022,CA Osasuna,RCD Mallorca,34.7631836000001
+Spain,2022,CA Osasuna,Rayo Vallecano,32.2836914100001
+Spain,2022,CA Osasuna,Real Betis,70.31018066
+Spain,2022,CA Osasuna,Sevilla FC,63.40563965
+Spain,2022,CA Osasuna,UD Las Palmas,94.30578614
+Spain,2022,CA Osasuna,Valencia,1.76428222999994
+Spain,2022,CA Osasuna,Villarreal,90.28405761
+Spain,2022,Celta de Vigo,Getafe,2.67541503999996
+Spain,2022,Celta de Vigo,Girona,46.2619628999998
+Spain,2022,Celta de Vigo,Granada CF,36.08483886
+Spain,2022,Celta de Vigo,RCD Mallorca,12.1372070300001
+Spain,2022,Celta de Vigo,Rayo Vallecano,9.65771484000015
+Spain,2022,Celta de Vigo,Real Betis,92.9361572299999
+Spain,2022,Celta de Vigo,Sevilla FC,86.0316162199999
+Spain,2022,Celta de Vigo,UD Las Palmas,71.6798095700001
+Spain,2022,Celta de Vigo,Valencia,20.86169434
+Spain,2022,Cádiz CF,Celta de Vigo,13.33203125
+Spain,2022,Cádiz CF,Getafe,16.00744629
+Spain,2022,Cádiz CF,Girona,59.5939941499999
+Spain,2022,Cádiz CF,Granada CF,22.75280761
+Spain,2022,Cádiz CF,RCD Mallorca,1.19482421999987
+Spain,2022,Cádiz CF,Rayo Vallecano,3.67431640999985
+Spain,2022,Cádiz CF,Sevilla FC,99.3636474699999
+Spain,2022,Cádiz CF,UD Las Palmas,58.3477783200001
+Spain,2022,Cádiz CF,Valencia,34.19372559
+Spain,2022,Getafe,Girona,43.5865478599999
+Spain,2022,Getafe,Granada CF,38.7602539
+Spain,2022,Getafe,RCD Mallorca,14.8126220700001
+Spain,2022,Getafe,Rayo Vallecano,12.3331298800001
+Spain,2022,Getafe,Real Betis,90.26074219
+Spain,2022,Getafe,Sevilla FC,83.35620118
+Spain,2022,Getafe,UD Las Palmas,74.3552246100001
+Spain,2022,Getafe,Valencia,18.1862793
+Spain,2022,Girona,Granada CF,82.3468017599998
+Spain,2022,Girona,RCD Mallorca,58.39916993
+Spain,2022,Girona,Rayo Vallecano,55.91967774
+Spain,2022,Girona,Real Betis,46.6741943300001
+Spain,2022,Girona,Real Sociedad,80.63208007
+Spain,2022,Girona,Sevilla FC,39.7696533200001
+Spain,2022,Girona,Valencia,25.4002685599999
+Spain,2022,Girona,Villarreal,16.4675293
+Spain,2022,Girona,Villarreal,66.6480712800001
+Spain,2022,Granada CF,RCD Mallorca,23.9476318299999
+Spain,2022,Granada CF,Rayo Vallecano,26.4271240199998
+Spain,2022,Granada CF,UD Las Palmas,35.5949707100001
+Spain,2022,Granada CF,Valencia,56.9465332
+Spain,2022,RCD Mallorca,Sevilla FC,98.1688232500001
+Spain,2022,RCD Mallorca,UD Las Palmas,59.54260254
+Spain,2022,RCD Mallorca,Valencia,32.9989013700001
+Spain,2022,Rayo Vallecano,RCD Mallorca,2.47949218999997
+Spain,2022,Rayo Vallecano,Sevilla FC,95.6893310600001
+Spain,2022,Rayo Vallecano,UD Las Palmas,62.0220947299999
+Spain,2022,Rayo Vallecano,Valencia,30.5194091800001
+Spain,2022,Real Betis,Real Sociedad,33.9578857399999
+Spain,2022,Real Betis,Sevilla FC,6.90454101
+Spain,2022,Real Betis,Valencia,72.07446289
+Spain,2022,Real Betis,Villarreal,19.97387695
+Spain,2022,Real Sociedad,Sevilla FC,40.8624267499999
+Spain,2022,Real Sociedad,Villarreal,13.98400879
+Spain,2022,Sevilla FC,Valencia,65.16992188
+Spain,2022,Sevilla FC,Villarreal,26.87841796
+Spain,2022,UD Las Palmas,Valencia,92.5415039100001
+Spain,2022,Valencia,Villarreal,92.0483398399999
+Spain,2023,Alavés,Athletic Club,98.72094726
+Spain,2023,Alavés,CA Osasuna,5.61193847999994
+Spain,2023,Alavés,Celta de Vigo,11.5288085900002
+Spain,2023,Alavés,Espanyol,50.5079345699999
+Spain,2023,Alavés,Getafe,22.4663085999998
+Spain,2023,Alavés,RCD Mallorca,2.74926757999992
+Spain,2023,Alavés,Rayo Vallecano,35.7297363299999
+Spain,2023,Alavés,Real Betis,58.6657714800001
+Spain,2023,Alavés,Real Sociedad,93.11096191
+Spain,2023,Alavés,Sevilla FC,16.33081055
+Spain,2023,Alavés,UD Las Palmas,62.9664306699999
+Spain,2023,Alavés,Valencia,5.55871581999986
+Spain,2023,Athletic Club,Atlético,86.48901368
+Spain,2023,Athletic Club,Celta de Vigo,87.1921386699999
+Spain,2023,Athletic Club,Girona,39.7375488300002
+Spain,2023,Athletic Club,Real Betis,40.0551757799999
+Spain,2023,Athletic Club,Real Sociedad,5.60998534999999
+Spain,2023,Athletic Club,Sevilla FC,82.39013671
+Spain,2023,Athletic Club,Villarreal,2.25671387000011
+Spain,2023,Atlético,Barcelona,59.7337646400001
+Spain,2023,Atlético,Girona,46.7514648499998
+Spain,2023,Atlético,Real Sociedad,92.09899903
+Spain,2023,Atlético,Villarreal,84.2322998099999
+Spain,2023,Barcelona,Real Madrid,86.9263916099999
+Spain,2023,CA Osasuna,Celta de Vigo,17.1407470700001
+Spain,2023,CA Osasuna,Espanyol,44.8959960899999
+Spain,2023,CA Osasuna,Getafe,16.8543701199999
+Spain,2023,CA Osasuna,RCD Mallorca,2.86267090000001
+Spain,2023,CA Osasuna,Rayo Vallecano,30.11779785
+Spain,2023,CA Osasuna,Real Betis,64.27770996
+Spain,2023,CA Osasuna,Real Sociedad,98.72290039
+Spain,2023,CA Osasuna,Sevilla FC,21.94274903
+Spain,2023,CA Osasuna,UD Las Palmas,57.35449219
+Spain,2023,CA Osasuna,Valencia,0.053222660000074
+Spain,2023,Celta de Vigo,Espanyol,62.03674316
+Spain,2023,Celta de Vigo,Getafe,33.99511719
+Spain,2023,Celta de Vigo,RCD Mallorca,14.2780761700001
+Spain,2023,Celta de Vigo,Rayo Vallecano,47.2585449200001
+Spain,2023,Celta de Vigo,Real Betis,47.13696289
+Spain,2023,Celta de Vigo,Real Sociedad,81.5821533199999
+Spain,2023,Celta de Vigo,Sevilla FC,4.80200195999987
+Spain,2023,Celta de Vigo,UD Las Palmas,74.4952392600001
+Spain,2023,Celta de Vigo,Valencia,17.08752441
+Spain,2023,Celta de Vigo,Villarreal,89.44885254
+Spain,2023,Espanyol,Getafe,28.04162597
+Spain,2023,Espanyol,RCD Mallorca,47.7586669899999
+Spain,2023,Espanyol,Rayo Vallecano,14.7781982399999
+Spain,2023,Espanyol,Sevilla FC,66.8387451199999
+Spain,2023,Espanyol,UD Las Palmas,12.4584961
+Spain,2023,Espanyol,Valencia,44.94921875
+Spain,2023,Getafe,RCD Mallorca,19.7170410199999
+Spain,2023,Getafe,Rayo Vallecano,13.2634277300001
+Spain,2023,Getafe,Real Betis,81.1320800799999
+Spain,2023,Getafe,Sevilla FC,38.7971191499998
+Spain,2023,Getafe,UD Las Palmas,40.5001220700001
+Spain,2023,Getafe,Valencia,16.90759278
+Spain,2023,Girona,Real Betis,79.7927246100001
+Spain,2023,Girona,Real Sociedad,45.3475341800001
+Spain,2023,Girona,UD Las Palmas,93.08093261
+Spain,2023,Girona,Villarreal,37.48083496
+Spain,2023,RCD Mallorca,Real Betis,61.41503906
+Spain,2023,RCD Mallorca,Real Sociedad,95.8602294899999
+Spain,2023,RCD Mallorca,Sevilla FC,19.08007813
+Spain,2023,RCD Mallorca,UD Las Palmas,60.21716309
+Spain,2023,RCD Mallorca,Valencia,2.80944823999994
+Spain,2023,Rayo Vallecano,RCD Mallorca,32.98046875
+Spain,2023,Rayo Vallecano,Real Betis,94.39550781
+Spain,2023,Rayo Vallecano,Sevilla FC,52.06054688
+Spain,2023,Rayo Vallecano,UD Las Palmas,27.23669434
+Spain,2023,Rayo Vallecano,Valencia,30.1710205100001
+Spain,2023,Real Betis,Real Sociedad,34.4451904299999
+Spain,2023,Real Betis,Sevilla FC,42.3349609300001
+Spain,2023,Real Betis,Valencia,64.2244873
+Spain,2023,Real Betis,Villarreal,42.31188965
+Spain,2023,Real Sociedad,Sevilla FC,76.78015136
+Spain,2023,Real Sociedad,Valencia,98.6696777299999
+Spain,2023,Real Sociedad,Villarreal,7.8666992200001
+Spain,2023,Sevilla FC,UD Las Palmas,79.2972412199999
+Spain,2023,Sevilla FC,Valencia,21.8895263699999
+Spain,2023,Sevilla FC,Villarreal,84.6468505800001
+Spain,2023,UD Las Palmas,Valencia,57.4077148500001

@@ -1,0 +1,489 @@
+country,season,buyer_clean,total_transfers,rival_transfers,share_rival
+England,2018,west ham,7,0,0
+England,2018,chelsea,3,0,0
+England,2018,Wolves,4,0,0
+England,2018,everton,3,0,0
+England,2018,bournemouth,2,0,0
+England,2018,arsenal,4,0,0
+England,2018,newcastle,2,0,0
+England,2018,crystal palace,3,1,0.333333333333333
+England,2018,Brighton,5,0,0
+England,2018,man city,1,0,0
+England,2018,liverpool,3,0,0
+England,2018,burnley,1,0,0
+England,2018,fulham,4,0,0
+England,2019,Wolves,3,0,0
+England,2019,newcastle,4,1,0.25
+England,2019,everton,5,1,0.2
+England,2019,man city,2,0,0
+England,2019,aston villa,7,1,0.142857142857143
+England,2019,arsenal,3,1,0.333333333333333
+England,2019,crystal palace,2,1,0.5
+England,2019,man utd,2,1,0.5
+England,2019,west ham,3,0,0
+England,2019,tottenham,1,0,0
+England,2019,chelsea,1,0,0
+England,2019,liverpool,1,0,0
+England,2020,aston villa,2,1,0.5
+England,2020,arsenal,5,0,0
+England,2020,Wolves,2,0,0
+England,2020,liverpool,2,0,0
+England,2020,burnley,2,2,1
+England,2020,fulham,3,1,0.333333333333333
+England,2020,newcastle,1,1,1
+England,2020,tottenham,5,0,0
+England,2020,leeds,7,1,0.142857142857143
+England,2020,chelsea,6,1,0.166666666666667
+England,2020,Brighton,1,0,0
+England,2020,everton,2,0,0
+England,2020,man utd,1,0,0
+England,2020,man city,1,0,0
+England,2021,Wolves,1,0,0
+England,2021,newcastle,1,0,0
+England,2021,man city,1,0,0
+England,2021,man utd,4,1,0.25
+England,2021,leeds,3,1,0.333333333333333
+England,2021,tottenham,3,0,0
+England,2021,arsenal,3,0,0
+England,2021,crystal palace,3,0,0
+England,2021,west ham,2,0,0
+England,2021,burnley,2,0,0
+England,2021,everton,2,1,0.5
+England,2021,brentford,1,0,0
+England,2021,Brighton,2,0,0
+England,2021,aston villa,4,1,0.25
+England,2021,chelsea,1,0,0
+England,2021,liverpool,1,0,0
+England,2022,fulham,4,1,0.25
+England,2022,chelsea,7,2,0.285714285714286
+England,2022,newcastle,3,1,0.333333333333333
+England,2022,nott'm forest,11,3,0.272727272727273
+England,2022,tottenham,6,1,0.166666666666667
+England,2022,aston villa,5,0,0
+England,2022,bournemouth,2,1,0.5
+England,2022,crystal palace,2,0,0
+England,2022,leeds,5,0,0
+England,2022,brentford,3,0,0
+England,2022,man utd,2,1,0.5
+England,2022,everton,4,0,0
+England,2022,Brighton,2,0,0
+England,2022,west ham,6,1,0.166666666666667
+England,2022,man city,3,0,0
+England,2022,liverpool,1,0,0
+England,2022,Wolves,3,0,0
+England,2022,arsenal,2,2,1
+England,2023,west ham,2,0,0
+England,2023,newcastle,1,0,0
+England,2023,crystal palace,3,2,0.666666666666667
+England,2023,nott'm forest,6,0,0
+England,2023,everton,2,0,0
+England,2023,man utd,3,1,0.333333333333333
+England,2023,Wolves,5,0,0
+England,2023,liverpool,4,0,0
+England,2023,chelsea,7,2,0.285714285714286
+England,2023,arsenal,2,0,0
+England,2023,man city,4,0,0
+England,2023,Brighton,4,0,0
+England,2023,fulham,3,3,1
+England,2023,tottenham,4,0,0
+England,2023,brentford,3,1,0.333333333333333
+England,2023,aston villa,2,0,0
+England,2023,bournemouth,3,0,0
+England,2023,burnley,3,1,0.333333333333333
+England,2024,crystal palace,5,0,0
+England,2024,fulham,4,1,0.25
+England,2024,everton,3,0,0
+England,2024,chelsea,6,0,0
+England,2024,bournemouth,3,0,0
+England,2024,man city,1,0,0
+England,2024,man utd,5,0,0
+England,2024,arsenal,3,0,0
+England,2024,newcastle,3,2,0.666666666666667
+England,2024,tottenham,1,0,0
+England,2024,aston villa,5,1,0.2
+England,2024,Wolves,3,0,0
+England,2024,west ham,4,2,0.5
+England,2024,nott'm forest,3,1,0.333333333333333
+England,2024,liverpool,2,0,0
+England,2024,brentford,2,0,0
+England,2024,Brighton,2,0,0
+France,2018,Lyon,3,0,0
+France,2018,angers sco,4,3,0.75
+France,2018,PSG,4,0,0
+France,2018,toulouse,3,1,0.333333333333333
+France,2018,r. strasbourg,3,1,0.333333333333333
+France,2018,stade rennais,4,2,0.5
+France,2018,Monaco,5,0,0
+France,2018,Nice,1,0,0
+France,2018,Lille,3,0,0
+France,2018,Marseille,2,0,0
+France,2018,fc nantes,1,0,0
+France,2019,Monaco,7,0,0
+France,2019,Lyon,5,0,0
+France,2019,stade rennais,6,3,0.5
+France,2019,Lille,3,0,0
+France,2019,fc nantes,2,1,0.5
+France,2019,toulouse,1,0,0
+France,2019,PSG,5,0,0
+France,2019,Marseille,1,0,0
+France,2019,r. strasbourg,1,0,0
+France,2019,Nice,3,0,0
+France,2019,stade brestois,5,0,0
+France,2019,angers sco,4,0,0
+France,2019,fc metz,1,1,1
+France,2020,Lyon,2,0,0
+France,2020,fc metz,3,1,0.333333333333333
+France,2020,Lens,3,0,0
+France,2020,Monaco,3,0,0
+France,2020,PSG,3,0,0
+France,2020,stade rennais,3,1,0.333333333333333
+France,2020,Nice,4,0,0
+France,2020,angers sco,5,4,0.8
+France,2020,r. strasbourg,1,0,0
+France,2020,fc nantes,3,1,0.333333333333333
+France,2020,Lille,2,0,0
+France,2020,stade brestois,3,1,0.333333333333333
+France,2020,fc lorient,2,2,1
+France,2020,Marseille,1,0,0
+France,2021,Monaco,2,0,0
+France,2021,PSG,5,0,0
+France,2021,Lens,1,0,0
+France,2021,Nice,4,0,0
+France,2021,Marseille,2,0,0
+France,2021,angers sco,2,1,0.5
+France,2021,fc nantes,1,0,0
+France,2021,stade rennais,3,1,0.333333333333333
+France,2021,fc metz,1,1,1
+France,2021,Lyon,2,0,0
+France,2021,r. strasbourg,2,1,0.5
+France,2021,stade brestois,2,0,0
+France,2022,fc lorient,3,1,0.333333333333333
+France,2022,stade brestois,2,0,0
+France,2022,Lens,3,0,0
+France,2022,Lyon,2,0,0
+France,2022,Marseille,7,0,0
+France,2022,stade rennais,5,4,0.8
+France,2022,aj auxerre,4,0,0
+France,2022,Lille,6,0,0
+France,2022,angers sco,3,0,0
+France,2022,Nice,6,0,0
+France,2022,PSG,4,0,0
+France,2022,fc nantes,1,0,0
+France,2022,Monaco,3,0,0
+France,2022,r. strasbourg,2,0,0
+France,2023,Lyon,2,0,0
+France,2023,Monaco,4,0,0
+France,2023,Marseille,6,0,0
+France,2023,Nice,2,0,0
+France,2023,Lille,3,0,0
+France,2023,PSG,8,0,0
+France,2023,fc lorient,3,0,0
+France,2023,stade rennais,3,0,0
+France,2023,le havre ac,1,0,0
+France,2023,stade brestois,2,2,1
+France,2023,Lens,4,0,0
+France,2023,fc nantes,3,0,0
+France,2023,fc metz,2,0,0
+France,2023,r. strasbourg,1,0,0
+France,2023,toulouse,2,0,0
+France,2024,Nice,4,0,0
+France,2024,Lens,2,0,0
+France,2024,r. strasbourg,6,1,0.166666666666667
+France,2024,Lyon,8,0,0
+France,2024,PSG,2,0,0
+France,2024,Marseille,2,0,0
+France,2024,stade brestois,5,2,0.4
+France,2024,aj auxerre,2,0,0
+France,2024,angers sco,1,0,0
+France,2024,Monaco,2,0,0
+France,2024,Lille,1,0,0
+Germany,2018,Leverkusen,3,0,0
+Germany,2018,werder bremen,4,0,0
+Germany,2018,dortmund,4,1,0.25
+Germany,2018,augsburg,2,1,0.5
+Germany,2018,stuttgart,4,0,0
+Germany,2018,bayern munich,1,0,0
+Germany,2018,Frankfurt,3,0,0
+Germany,2018,wolfsburg,4,0,0
+Germany,2018,Mainz,1,0,0
+Germany,2018,leipzig,1,0,0
+Germany,2018,Hoffenheim,1,0,0
+Germany,2018,Mönchengladbach,1,0,0
+Germany,2018,freiburg,2,1,0.5
+Germany,2019,augsburg,5,2,0.4
+Germany,2019,bayern munich,2,0,0
+Germany,2019,Frankfurt,4,0,0
+Germany,2019,Hoffenheim,2,0,0
+Germany,2019,Mainz,5,0,0
+Germany,2019,freiburg,4,3,0.75
+Germany,2019,union berlin,5,3,0.6
+Germany,2019,dortmund,5,3,0.6
+Germany,2019,werder bremen,2,1,0.5
+Germany,2019,leipzig,3,0,0
+Germany,2019,Mönchengladbach,3,0,0
+Germany,2019,Leverkusen,3,0,0
+Germany,2019,wolfsburg,2,0,0
+Germany,2019,1.fc köln,2,0,0
+Germany,2020,Frankfurt,2,0,0
+Germany,2020,freiburg,2,0,0
+Germany,2020,union berlin,3,1,0.333333333333333
+Germany,2020,leipzig,2,0,0
+Germany,2020,werder bremen,2,0,0
+Germany,2020,augsburg,4,0,0
+Germany,2020,bayern munich,5,0,0
+Germany,2020,Hoffenheim,1,0,0
+Germany,2020,stuttgart,2,2,1
+Germany,2020,1.fc köln,2,2,1
+Germany,2020,dortmund,2,0,0
+Germany,2020,wolfsburg,1,0,0
+Germany,2020,Leverkusen,1,0,0
+Germany,2021,wolfsburg,2,1,0.5
+Germany,2021,Mainz,2,0,0
+Germany,2021,union berlin,6,2,0.333333333333333
+Germany,2021,leipzig,5,1,0.2
+Germany,2021,Hoffenheim,1,0,0
+Germany,2021,Mönchengladbach,2,0,0
+Germany,2021,bayern munich,2,0,0
+Germany,2021,stuttgart,2,1,0.5
+Germany,2021,Leverkusen,2,0,0
+Germany,2021,1.fc köln,1,0,0
+Germany,2021,Frankfurt,2,0,0
+Germany,2021,dortmund,1,0,0
+Germany,2022,dortmund,6,2,0.333333333333333
+Germany,2022,Frankfurt,4,0,0
+Germany,2022,Mainz,7,0,0
+Germany,2022,stuttgart,1,0,0
+Germany,2022,freiburg,2,1,0.5
+Germany,2022,wolfsburg,1,0,0
+Germany,2022,leipzig,3,1,0.333333333333333
+Germany,2022,1.fc köln,4,2,0.5
+Germany,2022,Hoffenheim,2,0,0
+Germany,2022,augsburg,4,0,0
+Germany,2022,union berlin,3,1,0.333333333333333
+Germany,2022,werder bremen,2,0,0
+Germany,2022,bayern munich,3,0,0
+Germany,2022,Mönchengladbach,2,0,0
+Germany,2023,Frankfurt,5,0,0
+Germany,2023,Leverkusen,3,0,0
+Germany,2023,wolfsburg,4,0,0
+Germany,2023,Hoffenheim,2,0,0
+Germany,2023,heidenheim,2,1,0.5
+Germany,2023,dortmund,4,1,0.25
+Germany,2023,augsburg,4,2,0.5
+Germany,2023,bayern munich,4,2,0.5
+Germany,2023,leipzig,7,1,0.142857142857143
+Germany,2023,stuttgart,3,1,0.333333333333333
+Germany,2023,1.fc köln,2,1,0.5
+Germany,2023,union berlin,4,0,0
+Germany,2023,Mainz,1,0,0
+Germany,2023,werder bremen,1,0,0
+Germany,2023,freiburg,2,1,0.5
+Germany,2023,Mönchengladbach,2,0,0
+Germany,2024,heidenheim,2,0,0
+Germany,2024,stuttgart,6,1,0.166666666666667
+Germany,2024,st. pauli,2,0,0
+Germany,2024,Frankfurt,2,0,0
+Germany,2024,dortmund,4,0,0
+Germany,2024,bayern munich,4,0,0
+Germany,2024,augsburg,5,0,0
+Germany,2024,union berlin,2,0,0
+Germany,2024,Leverkusen,3,0,0
+Germany,2024,Mönchengladbach,3,0,0
+Germany,2024,Hoffenheim,3,0,0
+Germany,2024,werder bremen,2,0,0
+Germany,2024,freiburg,3,0,0
+Germany,2024,Mainz,1,0,0
+Italy,2018,cagliari,3,0,0
+Italy,2018,torino,5,1,0.2
+Italy,2018,sassuolo,7,3,0.428571428571429
+Italy,2018,roma,7,2,0.285714285714286
+Italy,2018,Parma,4,0,0
+Italy,2018,udinese,2,0,0
+Italy,2018,fiorentina,4,2,0.5
+Italy,2018,ac milan,6,1,0.166666666666667
+Italy,2018,lazio,5,1,0.2
+Italy,2018,inter,4,2,0.5
+Italy,2018,bologna,3,1,0.333333333333333
+Italy,2019,genoa,5,0,0
+Italy,2019,sassuolo,5,1,0.2
+Italy,2019,juventus,7,1,0.142857142857143
+Italy,2019,napoli,7,4,0.571428571428571
+Italy,2019,ac milan,3,1,0.333333333333333
+Italy,2019,hellas verona,6,2,0.333333333333333
+Italy,2019,roma,4,3,0.75
+Italy,2019,inter,7,0,0
+Italy,2019,udinese,3,1,0.333333333333333
+Italy,2019,lecce,2,2,1
+Italy,2019,Parma,4,0,0
+Italy,2019,bologna,4,1,0.25
+Italy,2019,cagliari,1,0,0
+Italy,2019,atalanta,1,0,0
+Italy,2019,lazio,1,0,0
+Italy,2020,fiorentina,6,3,0.5
+Italy,2020,lazio,2,1,0.5
+Italy,2020,torino,3,1,0.333333333333333
+Italy,2020,roma,6,1,0.166666666666667
+Italy,2020,inter,7,0,0
+Italy,2020,genoa,5,2,0.4
+Italy,2020,sassuolo,3,1,0.333333333333333
+Italy,2020,ac milan,3,0,0
+Italy,2020,Parma,5,0,0
+Italy,2020,napoli,2,0,0
+Italy,2020,udinese,1,0,0
+Italy,2020,bologna,1,1,1
+Italy,2021,inter,2,2,1
+Italy,2021,bologna,2,0,0
+Italy,2021,genoa,6,0,0
+Italy,2021,roma,5,1,0.2
+Italy,2021,ac milan,5,0,0
+Italy,2021,atalanta,4,2,0.5
+Italy,2021,sassuolo,4,0,0
+Italy,2021,hellas verona,5,4,0.8
+Italy,2021,lazio,4,2,0.5
+Italy,2021,udinese,5,1,0.2
+Italy,2021,napoli,2,2,1
+Italy,2022,udinese,4,1,0.25
+Italy,2022,cremonese,8,0,0
+Italy,2022,lazio,5,2,0.4
+Italy,2022,inter,3,2,0.666666666666667
+Italy,2022,bologna,1,0,0
+Italy,2022,napoli,3,0,0
+Italy,2022,torino,2,1,0.5
+Italy,2022,sassuolo,3,0,0
+Italy,2022,ac milan,3,1,0.333333333333333
+Italy,2022,hellas verona,4,2,0.5
+Italy,2022,juventus,5,1,0.2
+Italy,2022,lecce,1,0,0
+Italy,2022,fiorentina,2,1,0.5
+Italy,2022,roma,4,2,0.5
+Italy,2023,hellas verona,4,1,0.25
+Italy,2023,udinese,3,0,0
+Italy,2023,torino,6,0,0
+Italy,2023,cagliari,3,1,0.333333333333333
+Italy,2023,fiorentina,2,1,0.5
+Italy,2023,juventus,4,0,0
+Italy,2023,sassuolo,8,2,0.25
+Italy,2023,lazio,2,0,0
+Italy,2023,napoli,4,0,0
+Italy,2023,roma,3,0,0
+Italy,2023,bologna,2,0,0
+Italy,2023,atalanta,5,0,0
+Italy,2024,atalanta,7,2,0.285714285714286
+Italy,2024,juventus,4,1,0.25
+Italy,2024,bologna,4,0,0
+Italy,2024,cagliari,3,0,0
+Italy,2024,torino,6,1,0.166666666666667
+Italy,2024,como,9,1,0.111111111111111
+Italy,2024,lecce,2,0,0
+Italy,2024,lazio,3,1,0.333333333333333
+Italy,2024,roma,5,1,0.2
+Italy,2024,udinese,2,0,0
+Italy,2024,genoa,3,0,0
+Italy,2024,Parma,1,0,0
+Italy,2024,hellas verona,2,0,0
+Spain,2018,atlético,5,0,0
+Spain,2018,villarreal,5,1,0.2
+Spain,2018,rayo vallecano,5,0,0
+Spain,2018,valencia,6,1,0.166666666666667
+Spain,2018,sevilla fc,4,1,0.25
+Spain,2018,barcelona,3,0,0
+Spain,2018,Alavés,3,0,0
+Spain,2018,espanyol,2,1,0.5
+Spain,2018,real madrid,4,0,0
+Spain,2018,real betis,4,3,0.75
+Spain,2018,levante,2,0,0
+Spain,2018,real sociedad,1,0,0
+Spain,2018,athletic club,3,2,0.666666666666667
+Spain,2018,celta de vigo,2,1,0.5
+Spain,2018,girona,1,1,1
+Spain,2018,getafe,5,4,0.8
+Spain,2019,real sociedad,3,1,0.333333333333333
+Spain,2019,espanyol,3,1,0.333333333333333
+Spain,2019,getafe,1,1,1
+Spain,2019,barcelona,4,1,0.25
+Spain,2019,ca osasuna,6,4,0.666666666666667
+Spain,2019,celta de vigo,3,1,0.333333333333333
+Spain,2019,valencia,6,3,0.5
+Spain,2019,levante,5,4,0.8
+Spain,2019,real madrid,3,0,0
+Spain,2019,atlético,3,1,0.333333333333333
+Spain,2019,real betis,4,1,0.25
+Spain,2019,sevilla fc,7,0,0
+Spain,2019,villarreal,3,1,0.333333333333333
+Spain,2019,Alavés,2,0,0
+Spain,2019,rcd mallorca,2,0,0
+Spain,2020,sevilla fc,4,2,0.5
+Spain,2020,Alavés,1,0,0
+Spain,2020,atlético,2,1,0.5
+Spain,2020,getafe,2,0,0
+Spain,2020,real betis,2,0,0
+Spain,2020,ca osasuna,4,3,0.75
+Spain,2020,celta de vigo,1,1,1
+Spain,2020,barcelona,1,0,0
+Spain,2020,real sociedad,1,0,0
+Spain,2020,elche cf,3,1,0.333333333333333
+Spain,2020,levante,2,0,0
+Spain,2020,villarreal,3,1,0.333333333333333
+Spain,2020,athletic club,1,0,0
+Spain,2021,elche cf,2,0,0
+Spain,2021,getafe,3,0,0
+Spain,2021,real betis,4,1,0.25
+Spain,2021,real madrid,2,0,0
+Spain,2021,real sociedad,1,0,0
+Spain,2021,espanyol,4,1,0.25
+Spain,2021,sevilla fc,3,0,0
+Spain,2021,rcd mallorca,4,3,0.75
+Spain,2021,levante,2,1,0.5
+Spain,2021,valencia,1,0,0
+Spain,2021,atlético,2,0,0
+Spain,2021,barcelona,4,1,0.25
+Spain,2021,Alavés,1,0,0
+Spain,2021,ca osasuna,1,1,1
+Spain,2021,villarreal,3,1,0.333333333333333
+Spain,2022,barcelona,7,0,0
+Spain,2022,valencia,3,1,0.333333333333333
+Spain,2022,real sociedad,4,1,0.25
+Spain,2022,rayo vallecano,4,2,0.5
+Spain,2022,celta de vigo,2,0,0
+Spain,2022,espanyol,3,1,0.333333333333333
+Spain,2022,sevilla fc,3,1,0.333333333333333
+Spain,2022,real madrid,2,0,0
+Spain,2022,atlético,2,0,0
+Spain,2022,villarreal,2,0,0
+Spain,2022,girona,5,1,0.2
+Spain,2022,rcd mallorca,4,0,0
+Spain,2022,real betis,2,1,0.5
+Spain,2022,getafe,3,1,0.333333333333333
+Spain,2022,elche cf,1,0,0
+Spain,2022,ca osasuna,2,2,1
+Spain,2023,rayo vallecano,4,3,0.75
+Spain,2023,barcelona,3,1,0.333333333333333
+Spain,2023,celta de vigo,4,0,0
+Spain,2023,atlético,4,1,0.25
+Spain,2023,real betis,3,1,0.333333333333333
+Spain,2023,girona,5,1,0.2
+Spain,2023,valencia,2,0,0
+Spain,2023,Alavés,5,0,0
+Spain,2023,villarreal,4,2,0.5
+Spain,2023,getafe,2,0,0
+Spain,2023,real madrid,2,0,0
+Spain,2023,sevilla fc,5,0,0
+Spain,2023,ca osasuna,2,2,1
+Spain,2023,athletic club,1,0,0
+Spain,2023,real sociedad,2,0,0
+Spain,2023,rcd mallorca,3,1,0.333333333333333
+Spain,2024,athletic club,1,0,0
+Spain,2024,real sociedad,3,0,0
+Spain,2024,valencia,3,0,0
+Spain,2024,Alavés,4,0,0
+Spain,2024,celta de vigo,2,0,0
+Spain,2024,real betis,5,0,0
+Spain,2024,villarreal,6,1,0.166666666666667
+Spain,2024,atlético,4,1,0.25
+Spain,2024,rcd mallorca,4,1,0.25
+Spain,2024,real madrid,2,0,0
+Spain,2024,barcelona,2,0,0
+Spain,2024,sevilla fc,2,0,0
+Spain,2024,girona,1,0,0
+Spain,2024,getafe,2,2,1
+Spain,2024,ca osasuna,1,0,0

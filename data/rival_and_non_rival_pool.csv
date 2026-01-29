@@ -1,0 +1,286 @@
+country,season,buyer_clean,seller_clean,player_name,player_position,non_rival_options,global_non_rival_options,total_rival_options
+England,2018,crystal palace,west ham,Cheikhou Kouyaté,Defensive Midfield,0,18,1
+England,2019,crystal palace,everton,James McCarthy,Central Midfield,2,26,1
+England,2019,aston villa,bournemouth,Tyrone Mings,Centre-Back,2,28,3
+England,2019,arsenal,chelsea,David Luiz,Centre-Back,2,28,3
+England,2019,man utd,leicester,Harry Maguire,Centre-Back,2,28,3
+England,2019,newcastle,west ham,Andy Carroll,Centre-Forward,0,32,1
+England,2019,everton,arsenal,Alex Iwobi,Left Winger,0,8,1
+England,2020,burnley,brighton,Dale Stephens,Central Midfield,1,16,2
+England,2020,newcastle,burnley,Jeff Hendrick,Central Midfield,1,16,2
+England,2020,aston villa,arsenal,Emiliano Martínez,Goalkeeper,1,13,2
+England,2020,burnley,wolves,Will Norris,Goalkeeper,1,13,2
+England,2020,chelsea,leicester,Ben Chilwell,Left-Back,0,8,1
+England,2020,fulham,brighton,Anthony Knockaert,Right Winger,0,10,2
+England,2020,leeds,wolves,Hélder Costa,Right Winger,0,10,2
+England,2021,aston villa,southampton,Danny Ings,Centre-Forward,0,20,1
+England,2021,man utd,aston villa,Tom Heaton,Goalkeeper,1,12,1
+England,2021,everton,crystal palace,Andros Townsend,Right Winger,0,7,2
+England,2021,leeds,man utd,Daniel James,Right Winger,0,7,2
+England,2022,man utd,brentford,Christian Eriksen,Attacking Midfield,3,14,2
+England,2022,nott'm forest,wolves,Morgan Gibbs-White,Attacking Midfield,3,14,2
+England,2022,chelsea,aston villa,Carney Chukwuemeka,Central Midfield,0,20,1
+England,2022,fulham,west ham,Issa Diop,Centre-Back,1,44,2
+England,2022,nott'm forest,wolves,Willy Boly,Centre-Back,1,44,2
+England,2022,arsenal,man city,Gabriel Jesus,Centre-Forward,2,40,1
+England,2022,tottenham,brighton,Yves Bissouma,Defensive Midfield,3,24,2
+England,2022,nott'm forest,crystal palace,Cheikhou Kouyaté,Defensive Midfield,3,24,2
+England,2022,newcastle,aston villa,Matt Targett,Left-Back,1,12,4
+England,2022,chelsea,brighton,Marc Cucurella,Left-Back,1,12,4
+England,2022,west ham,chelsea,Emerson,Left-Back,1,12,4
+England,2022,arsenal,man city,Oleksandr Zinchenko,Left-Back,1,12,4
+England,2022,bournemouth,west ham,Ryan Fredericks,Right-Back,0,17,1
+England,2023,man utd,chelsea,Mason Mount,Attacking Midfield,1,22,1
+England,2023,brentford,wolves,Nathan Collins,Centre-Back,1,34,1
+England,2023,fulham,wolves,Raúl Jiménez,Centre-Forward,2,38,1
+England,2023,crystal palace,bournemouth,Jefferson Lerma,Defensive Midfield,0,24,3
+England,2023,chelsea,brighton,Moisés Caicedo,Defensive Midfield,0,24,3
+England,2023,burnley,sheff utd,Sander Berge,Defensive Midfield,0,24,3
+England,2023,chelsea,brighton,Robert Sánchez,Goalkeeper,2,15,2
+England,2023,crystal palace,man utd,Dean Henderson,Goalkeeper,2,15,2
+England,2023,fulham,everton,Alex Iwobi,Left Winger,1,11,1
+England,2023,fulham,wolves,Adama Traoré,Right Winger,2,14,1
+England,2024,nott'm forest,newcastle,Elliot Anderson,Central Midfield,2,24,1
+England,2024,fulham,crystal palace,Joachim Andersen,Centre-Back,3,45,2
+England,2024,west ham,wolves,Maximilian Kilman,Centre-Back,3,45,2
+England,2024,newcastle,nott'm forest,Odysseas Vlachodimos,Goalkeeper,1,11,1
+England,2024,aston villa,chelsea,Ian Maatsen,Left-Back,1,17,2
+England,2024,newcastle,chelsea,Lewis Hall,Left-Back,1,17,2
+England,2024,west ham,man utd,Aaron Wan-Bissaka,Right-Back,0,16,1
+France,2018,r. strasbourg,fc nantes,Adrien Thomasson,Attacking Midfield,0,6,1
+France,2018,angers sco,r. strasbourg,Stéphane Bahoken,Centre-Forward,2,22,2
+France,2018,stade rennais,stade reims,Jordan,Centre-Forward,2,22,2
+France,2018,angers sco,saint-étienne,Vincent Pajot,Defensive Midfield,0,18,1
+France,2018,toulouse,dijon,Baptiste Reynet,Goalkeeper,0,20,1
+France,2018,angers sco,amiens sc,Harrison Manzala,Right Winger,0,8,2
+France,2018,stade rennais,lyon,Romain Del Castillo,Right Winger,0,8,2
+France,2019,stade rennais,angers sco,Flavien Tait,Central Midfield,2,26,2
+France,2019,fc nantes,dijon,Mehdi Abeid,Central Midfield,2,26,2
+France,2019,fc metz,saint-étienne,Habib Maïga,Defensive Midfield,2,12,1
+France,2019,stade rennais,stade reims,Edouard Mendy,Goalkeeper,0,18,1
+France,2019,stade rennais,lyon,Jérémy Morel,Left-Back,2,18,1
+France,2020,fc nantes,stade brestois,Jean-Charles Castelletto,Centre-Back,2,17,1
+France,2020,angers sco,saint-étienne,Loïs Diony,Centre-Forward,1,28,1
+France,2020,angers sco,g. bordeaux,Paul Bernardoni,Goalkeeper,1,13,1
+France,2020,stade brestois,nîmes olympique,Romain Philippoteaux,Left Midfield,0,0,1
+France,2020,stade rennais,lyon,Martin Terrier,Left Winger,0,8,3
+France,2020,fc metz,saint-étienne,Vágner Dias,Left Winger,0,8,3
+France,2020,fc lorient,stade rennais,Armand Laurienté,Left Winger,0,8,3
+France,2020,angers sco,stade rennais,Souleyman Doumbia,Left-Back,0,8,2
+France,2020,fc lorient,stade rennais,Jérémy Morel,Left-Back,0,8,2
+France,2020,angers sco,fc lorient,Jimmy Cabot,Right Midfield,0,0,1
+France,2021,stade rennais,lens,Loïc Badé,Centre-Back,1,29,2
+France,2021,r. strasbourg,stade rennais,Gerzino Nyamsi,Centre-Back,1,29,2
+France,2021,fc metz,g. bordeaux,Nicolas de Préville,Centre-Forward,1,20,1
+France,2021,angers sco,stade reims,Billal Brahimi,Right Winger,1,7,1
+France,2022,stade rennais,lens,Christopher Wooh,Centre-Back,3,44,1
+France,2022,stade rennais,nice,Amine Gouiri,Centre-Forward,2,40,2
+France,2022,stade rennais,psg,Arnaud Kalimuendo,Centre-Forward,2,40,2
+France,2022,stade rennais,marseille,Steve Mandanda,Goalkeeper,0,19,2
+France,2022,fc lorient,monaco,Vito Mannone,Goalkeeper,0,19,2
+France,2023,stade brestois,lille,Jonas Martin,Defensive Midfield,0,24,1
+France,2023,stade brestois,stade reims,Bradley Locko,Left-Back,0,10,1
+France,2024,stade brestois,lens,Julien Le Cardinal,Centre-Back,2,45,2
+France,2024,r. strasbourg,lyon,Mamadou Sarr,Centre-Back,2,45,2
+France,2024,stade brestois,lens,Massadio Haïdara,Left-Back,1,17,1
+Germany,2018,augsburg,hertha bsc,Julian Schieber,Centre-Forward,2,22,1
+Germany,2018,freiburg,werder bremen,Jérôme Gondorf,Defensive Midfield,1,18,1
+Germany,2018,dortmund,frankfurt,Marius Wolf,Right-Back,0,16,1
+Germany,2019,dortmund,leverkusen,Julian Brandt,Attacking Midfield,0,6,2
+Germany,2019,dortmund,mönchengladbach,Thorgan Hazard,Attacking Midfield,0,6,2
+Germany,2019,union berlin,hertha bsc,Julius Kade,Central Midfield,1,26,1
+Germany,2019,union berlin,augsburg,Marvin Friedrich,Centre-Back,1,28,4
+Germany,2019,dortmund,bayern munich,Mats Hummels,Centre-Back,1,28,4
+Germany,2019,augsburg,union berlin,Marvin Friedrich,Centre-Back,1,28,4
+Germany,2019,freiburg,wolfsburg,Luca Itter,Centre-Back,1,28,4
+Germany,2019,augsburg,freiburg,Florian Niederlechner,Centre-Forward,0,32,2
+Germany,2019,union berlin,mainz,Anthony Ujah,Centre-Forward,0,32,2
+Germany,2019,freiburg,hoffenheim,Vincenzo Grifo,Left Winger,0,8,1
+Germany,2019,freiburg,augsburg,Jonathan Schmid,Right Midfield,0,1,1
+Germany,2019,werder bremen,fc schalke 04,Benjamin Goller,Right Winger,0,14,1
+Germany,2020,1.fc köln,hertha bsc,Ondrej Duda,Central Midfield,1,16,1
+Germany,2020,union berlin,wolfsburg,Robin Knoche,Centre-Back,2,17,1
+Germany,2020,1.fc köln,union berlin,Sebastian Andersson,Centre-Forward,1,28,1
+Germany,2020,stuttgart,hoffenheim,Gregor Kobel,Goalkeeper,3,13,1
+Germany,2020,stuttgart,freiburg,Pascal Stenzel,Right-Back,1,11,1
+Germany,2021,wolfsburg,1.fc köln,Sebastiaan Bornauw,Centre-Back,2,29,1
+Germany,2021,leipzig,frankfurt,André Silva,Centre-Forward,1,20,1
+Germany,2021,union berlin,frankfurt,Frederik Rönnow,Goalkeeper,1,12,2
+Germany,2021,stuttgart,mainz,Florian Müller,Goalkeeper,1,12,2
+Germany,2021,union berlin,mainz,Levin Öztunali,Left Winger,0,8,1
+Germany,2022,union berlin,freiburg,Janik Haberer,Central Midfield,2,20,2
+Germany,2022,leipzig,wolfsburg,Xaver Schlager,Central Midfield,2,20,2
+Germany,2022,dortmund,bayern munich,Niklas Süle,Centre-Back,1,44,4
+Germany,2022,dortmund,freiburg,Nico Schlotterbeck,Centre-Back,1,44,4
+Germany,2022,1.fc köln,mainz,Luca Kilian,Centre-Back,1,44,4
+Germany,2022,freiburg,mönchengladbach,Matthias Ginter,Centre-Back,1,44,4
+Germany,2022,1.fc köln,hoffenheim,Sargis Adamyan,Centre-Forward,4,40,1
+Germany,2023,stuttgart,freiburg,Woo-yeong Jeong,Attacking Midfield,1,22,1
+Germany,2023,dortmund,bayern munich,Marcel Sabitzer,Central Midfield,1,27,1
+Germany,2023,1.fc köln,union berlin,Dominique Heintz,Centre-Back,2,34,2
+Germany,2023,heidenheim,wolfsburg,Tim Siersleben,Centre-Back,2,34,2
+Germany,2023,augsburg,mainz,Finn Dahmen,Goalkeeper,2,15,2
+Germany,2023,freiburg,stuttgart,Florian Müller,Goalkeeper,2,15,2
+Germany,2023,augsburg,union berlin,Sven Michel,Left Winger,0,11,1
+Germany,2023,bayern munich,dortmund,Raphaël Guerreiro,Left-Back,0,10,2
+Germany,2023,leipzig,frankfurt,Christopher Lenz,Left-Back,0,10,2
+Germany,2023,bayern munich,leipzig,Konrad Laimer,Right-Back,0,13,1
+Germany,2024,stuttgart,werder bremen,Nick Woltemade,Centre-Forward,4,34,1
+Italy,2018,fiorentina,fc empoli,Riccardo Saponara,Attacking Midfield,2,6,3
+Italy,2018,roma,inter,Nicolò Zaniolo,Attacking Midfield,2,6,3
+Italy,2018,sassuolo,sampdoria,Filip Djuricic,Attacking Midfield,2,6,3
+Italy,2018,inter,roma,Radja Nainggolan,Central Midfield,0,24,1
+Italy,2018,inter,lazio,Stefan de Vrij,Centre-Back,6,32,1
+Italy,2018,torino,ac milan,M'Baye Niang,Centre-Forward,3,22,3
+Italy,2018,sassuolo,fiorentina,Khouma Babacar,Centre-Forward,3,22,3
+Italy,2018,bologna,sassuolo,Diego Falcinelli,Centre-Forward,3,22,3
+Italy,2018,lazio,fiorentina,Milan Badelj,Defensive Midfield,2,18,1
+Italy,2018,ac milan,napoli,Pepe Reina,Goalkeeper,2,20,1
+Italy,2018,sassuolo,bologna,Federico Di Francesco,Left Winger,0,10,1
+Italy,2018,roma,inter,Davide Santon,Left-Back,2,12,1
+Italy,2018,fiorentina,fc empoli,Vincent Laurini,Right-Back,0,16,1
+Italy,2019,ac milan,atalanta,Franck Kessié,Central Midfield,1,26,1
+Italy,2019,udinese,bologna,Sebastien De Maio,Centre-Back,4,28,5
+Italy,2019,lecce,brescia,Biagio Meccariello,Centre-Back,4,28,5
+Italy,2019,lecce,genoa,Luca Rossettini,Centre-Back,4,28,5
+Italy,2019,napoli,roma,Konstantinos Manolas,Centre-Back,4,28,5
+Italy,2019,bologna,udinese,Danilo,Centre-Back,4,28,5
+Italy,2019,napoli,genoa,Franco Ferrari,Centre-Forward,3,32,1
+Italy,2019,sassuolo,ac milan,Manuel Locatelli,Defensive Midfield,1,12,3
+Italy,2019,roma,atalanta,Bryan Cristante,Defensive Midfield,1,12,3
+Italy,2019,roma,napoli,Amadou Diawara,Defensive Midfield,1,12,3
+Italy,2019,napoli,udinese,Alex Meret,Goalkeeper,4,18,2
+Italy,2019,napoli,udinese,Orestis Karnezis,Goalkeeper,4,18,2
+Italy,2019,hellas verona,parma,Antonio Di Gaudio,Left Winger,0,8,2
+Italy,2019,hellas verona,sassuolo,Antonino Ragusa,Left Winger,0,8,2
+Italy,2019,roma,juventus,Leonardo Spinazzola,Left-Back,2,18,2
+Italy,2019,juventus,roma,Luca Pellegrini,Left-Back,2,18,2
+Italy,2020,torino,sampdoria,Karol Linetty,Central Midfield,5,16,2
+Italy,2020,fiorentina,sassuolo,Alfred Duncan,Central Midfield,5,16,2
+Italy,2020,roma,atalanta,Gianluca Mancini,Centre-Back,1,17,2
+Italy,2020,genoa,bologna,Mattia Bani,Centre-Back,1,17,2
+Italy,2020,genoa,bologna,Mattia Destro,Centre-Forward,3,28,3
+Italy,2020,fiorentina,genoa,Christian Kouamé,Centre-Forward,3,28,3
+Italy,2020,sassuolo,roma,Grégoire Defrel,Centre-Forward,3,28,3
+Italy,2020,lazio,ac milan,Pepe Reina,Goalkeeper,0,13,1
+Italy,2020,fiorentina,sassuolo,Pol Lirola,Right-Back,0,11,2
+Italy,2020,bologna,torino,Lorenzo De Silvestri,Right-Back,0,11,2
+Italy,2021,hellas verona,udinese,Antonín Barák,Attacking Midfield,0,5,1
+Italy,2021,roma,atalanta,Roger Ibañez,Centre-Back,4,29,6
+Italy,2021,hellas verona,fiorentina,Federico Ceccherini,Centre-Back,4,29,6
+Italy,2021,atalanta,hellas verona,Matteo Lovato,Centre-Back,4,29,6
+Italy,2021,atalanta,juventus,Cristian Romero,Centre-Back,4,29,6
+Italy,2021,napoli,roma,Juan Jesus,Centre-Back,4,29,6
+Italy,2021,hellas verona,sassuolo,Giangiacomo Magnani,Centre-Back,4,29,6
+Italy,2021,inter,roma,Edin Džeko,Centre-Forward,2,20,2
+Italy,2021,hellas verona,udinese,Kevin Lasagna,Centre-Forward,2,20,2
+Italy,2021,inter,ac milan,Hakan Çalhanoğlu,Defensive Midfield,0,10,1
+Italy,2021,udinese,hellas verona,Marco Silvestri,Goalkeeper,3,12,1
+Italy,2021,napoli,inter,Matteo Politano,Right Winger,0,7,2
+Italy,2021,lazio,roma,Pedro,Right Winger,0,7,2
+Italy,2021,lazio,napoli,Elseid Hysaj,Right-Back,1,11,1
+Italy,2022,lazio,inter,Matías Vecino,Central Midfield,3,20,1
+Italy,2022,lazio,ac milan,Alessio Romagnoli,Centre-Back,3,44,1
+Italy,2022,hellas verona,salernitana,Milan Djuric,Centre-Forward,2,40,2
+Italy,2022,roma,torino,Andrea Belotti,Centre-Forward,2,40,2
+Italy,2022,torino,fc empoli,Samuele Ricci,Defensive Midfield,1,24,2
+Italy,2022,fiorentina,juventus,Rolando Mandragora,Defensive Midfield,1,24,2
+Italy,2022,inter,atalanta,Robin Gosens,Left-Back,1,12,2
+Italy,2022,udinese,hellas verona,Destiny Udogie,Left-Back,1,12,2
+Italy,2022,juventus,fiorentina,Federico Chiesa,Right Winger,0,8,1
+Italy,2022,ac milan,roma,Alessandro Florenzi,Right-Back,0,17,1
+Italy,2022,roma,juventus,Paulo Dybala,Second Striker,0,0,3
+Italy,2022,inter,lazio,Joaquín Correa,Second Striker,0,0,3
+Italy,2022,hellas verona,sampdoria,Gianluca Caprari,Second Striker,0,0,3
+Italy,2023,sassuolo,fc empoli,Nedim Bajrami,Attacking Midfield,3,22,1
+Italy,2023,sassuolo,frosinone,Daniel Boloca,Defensive Midfield,3,24,2
+Italy,2023,cagliari,hellas verona,Ibrahim Sulemana,Defensive Midfield,3,24,2
+Italy,2023,fiorentina,fc empoli,Fabiano Parisi,Left-Back,0,10,1
+Italy,2023,hellas verona,genoa,Yayah Kallon,Right Winger,1,14,1
+Italy,2024,juventus,atalanta,Teun Koopmeiners,Attacking Midfield,1,11,1
+Italy,2024,lazio,fiorentina,Gaetano Castrovilli,Central Midfield,0,24,2
+Italy,2024,como,torino,Ben Lhassine Kone,Central Midfield,0,24,2
+Italy,2024,torino,udinese,Adam Masina,Centre-Back,5,45,1
+Italy,2024,atalanta,roma,Rui Patrício,Goalkeeper,0,11,1
+Italy,2024,atalanta,inter,Juan Cuadrado,Right Midfield,1,1,1
+Italy,2024,roma,juventus,Matías Soulé,Right Winger,2,16,1
+Spain,2018,real betis,real sociedad,Sergio Canales,Attacking Midfield,0,6,1
+Spain,2018,getafe,valencia,Nemanja Maksimovic,Central Midfield,2,24,1
+Spain,2018,sevilla fc,celta de vigo,Sergi Gómez,Centre-Back,3,32,1
+Spain,2018,valencia,atlético,Kévin Gameiro,Centre-Forward,1,22,3
+Spain,2018,espanyol,celta de vigo,Borja Iglesias,Centre-Forward,1,22,3
+Spain,2018,villarreal,espanyol,Gerard Moreno,Centre-Forward,1,22,3
+Spain,2018,getafe,real sociedad,Markel Bergara,Defensive Midfield,1,18,2
+Spain,2018,athletic club,sd eibar,Dani García,Defensive Midfield,1,18,2
+Spain,2018,real betis,espanyol,Pau López,Goalkeeper,2,20,2
+Spain,2018,getafe,sevilla fc,David Soria,Goalkeeper,2,20,2
+Spain,2018,real betis,sd eibar,Takashi Inui,Left Winger,1,10,1
+Spain,2018,girona,rayo vallecano,Johan Mojica,Left-Back,0,12,2
+Spain,2018,celta de vigo,sd eibar,David Juncà,Left-Back,0,12,2
+Spain,2018,athletic club,sd eibar,Ander Capa,Right-Back,3,16,2
+Spain,2018,getafe,sd eibar,Iván Alejo,Right-Back,3,16,2
+Spain,2019,ca osasuna,real betis,Darko Brasanac,Central Midfield,1,26,1
+Spain,2019,getafe,athletic club,Xabi Etxeita,Centre-Back,3,28,3
+Spain,2019,ca osasuna,celta de vigo,Facundo Roncaglia,Centre-Back,3,28,3
+Spain,2019,levante,valencia,Rúben Vezo,Centre-Back,3,28,3
+Spain,2019,valencia,celta de vigo,Maxi Gómez,Centre-Forward,3,32,3
+Spain,2019,levante,real betis,Sergio León,Centre-Forward,3,32,3
+Spain,2019,celta de vigo,valencia,Santi Mina,Centre-Forward,3,32,3
+Spain,2019,levante,celta de vigo,Nemanja Radoja,Defensive Midfield,1,12,1
+Spain,2019,real sociedad,athletic club,Álex Remiro,Goalkeeper,2,18,2
+Spain,2019,espanyol,cd leganés,Andrés Prieto,Goalkeeper,2,18,2
+Spain,2019,real betis,real sociedad,Juanmi,Left Winger,1,8,2
+Spain,2019,valencia,villarreal,Denis Cheryshev,Left Winger,1,8,2
+Spain,2019,levante,ca osasuna,Carlos Clerc,Left-Back,3,18,1
+Spain,2019,ca osasuna,getafe,Rober Ibáñez,Right Winger,0,14,3
+Spain,2019,ca osasuna,levante,Rubén García,Right Winger,0,14,3
+Spain,2019,valencia,levante,Jason Remeseiro,Right Winger,0,14,3
+Spain,2019,atlético,real madrid,Marcos Llorente,Right-Back,0,16,2
+Spain,2019,villarreal,sd eibar,Rubén Peña,Right-Back,0,16,2
+Spain,2019,barcelona,atlético,Antoine Griezmann,Second Striker,0,1,1
+Spain,2020,sevilla fc,real madrid,Óscar Rodríguez,Attacking Midfield,0,13,1
+Spain,2020,sevilla fc,barcelona,Ivan Rakitic,Central Midfield,1,16,1
+Spain,2020,ca osasuna,real sociedad,Raúl Navas,Centre-Back,0,17,1
+Spain,2020,atlético,barcelona,Luis Suárez,Centre-Forward,2,28,2
+Spain,2020,ca osasuna,getafe,Enric Gallego,Centre-Forward,2,28,2
+Spain,2020,elche cf,real valladolid,Luismi Sánchez,Defensive Midfield,1,13,1
+Spain,2020,villarreal,real sociedad,Gerónimo Rulli,Goalkeeper,0,13,1
+Spain,2020,celta de vigo,granada cf,Álvaro Vadillo,Left Winger,0,8,1
+Spain,2020,ca osasuna,elche cf,Juan Cruz,Left-Back,1,8,1
+Spain,2021,rcd mallorca,valencia,Kang-in Lee,Attacking Midfield,0,5,1
+Spain,2021,villarreal,real betis,Aïssa Mandi,Centre-Back,1,29,1
+Spain,2021,rcd mallorca,getafe,Ángel Rodríguez,Centre-Forward,1,20,3
+Spain,2021,levante,granada cf,Roberto Soldado,Centre-Forward,1,20,3
+Spain,2021,ca osasuna,rcd mallorca,Ante Budimir,Centre-Forward,1,20,3
+Spain,2021,espanyol,celta de vigo,Álvaro Vadillo,Left Winger,0,8,1
+Spain,2021,real betis,barcelona,Juan Miranda,Left-Back,2,13,1
+Spain,2021,rcd mallorca,getafe,Amath Ndiaye,Right Winger,1,7,1
+Spain,2021,barcelona,real betis,Emerson Royal,Right-Back,2,11,1
+Spain,2022,getafe,sevilla fc,Munir El Haddadi,Attacking Midfield,2,14,1
+Spain,2022,rayo vallecano,athletic club,Unai López,Central Midfield,0,20,1
+Spain,2022,valencia,getafe,Hugo Duro,Centre-Forward,4,40,2
+Spain,2022,real betis,real sociedad,Willian José,Centre-Forward,4,40,2
+Spain,2022,espanyol,ud almería,José Carlos Lazo,Left Winger,1,14,2
+Spain,2022,ca osasuna,villarreal,Moi Gómez,Left Winger,1,14,2
+Spain,2022,rayo vallecano,cádiz cf,Salvi Sánchez,Right Winger,0,8,3
+Spain,2022,real sociedad,real madrid,Takefusa Kubo,Right Winger,0,8,3
+Spain,2022,sevilla fc,real sociedad,Adnan Januzaj,Right Winger,0,8,3
+Spain,2022,ca osasuna,villarreal,Rubén Peña,Right-Back,2,17,1
+Spain,2022,girona,valencia,Manu Vallejo,Second Striker,0,0,1
+Spain,2023,villarreal,celta de vigo,Denis Suárez,Attacking Midfield,1,22,2
+Spain,2023,girona,villarreal,Iván Martín,Attacking Midfield,1,22,2
+Spain,2023,real betis,getafe,Sergi Altimira,Central Midfield,3,27,2
+Spain,2023,villarreal,girona,Ramón Terrats,Central Midfield,3,27,2
+Spain,2023,rayo vallecano,alavés,Florian Lejeune,Centre-Back,1,34,3
+Spain,2023,rayo vallecano,ca osasuna,Aridane Hernández,Centre-Back,1,34,3
+Spain,2023,ca osasuna,rayo vallecano,Alejandro Catena,Centre-Back,1,34,3
+Spain,2023,ca osasuna,real betis,Raúl García,Centre-Forward,4,38,1
+Spain,2023,barcelona,girona,Oriol Romeu,Defensive Midfield,1,24,1
+Spain,2023,rayo vallecano,cádiz cf,Alfonso Espino,Left-Back,3,10,2
+Spain,2023,rcd mallorca,valencia,Toni Lato,Left-Back,3,10,2
+Spain,2023,atlético,barcelona,Antoine Griezmann,Second Striker,0,3,1
+Spain,2024,villarreal,real betis,Ayoze Pérez,Centre-Forward,2,34,2
+Spain,2024,atlético,villarreal,Alexander Sørloth,Centre-Forward,2,34,2
+Spain,2024,getafe,real sociedad,Diego Rico,Left-Back,3,17,1
+Spain,2024,getafe,real sociedad,Álex Sola,Right Winger,1,16,2
+Spain,2024,rcd mallorca,real sociedad,Robert Navarro,Right Winger,1,16,2

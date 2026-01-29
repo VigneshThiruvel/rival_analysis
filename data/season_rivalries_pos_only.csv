@@ -1,0 +1,1441 @@
+country,league,season,team_a,team_b,pos_diff
+England,Games of Matchday 38 Premier League 17/18,2017,Man City,Man Utd,1
+England,Games of Matchday 38 Premier League 17/18,2017,Man City,Tottenham,2
+England,Games of Matchday 38 Premier League 17/18,2017,Man Utd,Tottenham,1
+England,Games of Matchday 38 Premier League 17/18,2017,Liverpool,Man Utd,2
+England,Games of Matchday 38 Premier League 17/18,2017,Liverpool,Tottenham,1
+England,Games of Matchday 38 Premier League 17/18,2017,Chelsea,Tottenham,2
+England,Games of Matchday 38 Premier League 17/18,2017,Chelsea,Liverpool,1
+England,Games of Matchday 38 Premier League 17/18,2017,Arsenal,Liverpool,2
+England,Games of Matchday 38 Premier League 17/18,2017,Arsenal,Chelsea,1
+England,Games of Matchday 38 Premier League 17/18,2017,Burnley,Chelsea,2
+England,Games of Matchday 38 Premier League 17/18,2017,Arsenal,Burnley,1
+England,Games of Matchday 38 Premier League 17/18,2017,Arsenal,Everton,2
+England,Games of Matchday 38 Premier League 17/18,2017,Burnley,Everton,1
+England,Games of Matchday 38 Premier League 17/18,2017,Burnley,Leicester,2
+England,Games of Matchday 38 Premier League 17/18,2017,Everton,Leicester,1
+England,Games of Matchday 38 Premier League 17/18,2017,Everton,Newcastle,2
+England,Games of Matchday 38 Premier League 17/18,2017,Leicester,Newcastle,1
+England,Games of Matchday 38 Premier League 17/18,2017,Crystal Palace,Leicester,2
+England,Games of Matchday 38 Premier League 17/18,2017,Crystal Palace,Newcastle,1
+England,Games of Matchday 38 Premier League 17/18,2017,Bournemouth,Newcastle,2
+England,Games of Matchday 38 Premier League 17/18,2017,Bournemouth,Crystal Palace,1
+England,Games of Matchday 38 Premier League 17/18,2017,Crystal Palace,West Ham,2
+England,Games of Matchday 38 Premier League 17/18,2017,Bournemouth,West Ham,1
+England,Games of Matchday 38 Premier League 17/18,2017,Bournemouth,Watford,2
+England,Games of Matchday 38 Premier League 17/18,2017,Watford,West Ham,1
+England,Games of Matchday 38 Premier League 17/18,2017,Brighton,West Ham,2
+England,Games of Matchday 38 Premier League 17/18,2017,Brighton,Watford,1
+England,Games of Matchday 38 Premier League 17/18,2017,Huddersfield,Watford,2
+England,Games of Matchday 38 Premier League 17/18,2017,Brighton,Huddersfield,1
+England,Games of Matchday 38 Premier League 17/18,2017,Brighton,Southampton,2
+England,Games of Matchday 38 Premier League 17/18,2017,Huddersfield,Southampton,1
+England,Games of Matchday 38 Premier League 17/18,2017,Huddersfield,Swansea,2
+England,Games of Matchday 38 Premier League 17/18,2017,Southampton,Swansea,1
+England,Games of Matchday 38 Premier League 17/18,2017,Southampton,Stoke City,2
+England,Games of Matchday 38 Premier League 17/18,2017,Stoke City,Swansea,1
+England,Games of Matchday 38 Premier League 17/18,2017,Swansea,West Brom,2
+England,Games of Matchday 38 Premier League 17/18,2017,Stoke City,West Brom,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Atlético,Barcelona,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Barcelona,Real Madrid,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Atlético,Real Madrid,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Atlético,Valencia,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Real Madrid,Valencia,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Real Madrid,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Valencia,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Real Betis,Valencia,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Real Betis,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Sevilla FC,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Real Betis,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Getafe,Real Betis,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Getafe,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,SD Eibar,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Getafe,SD Eibar,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Getafe,Girona,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Girona,SD Eibar,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Espanyol,SD Eibar,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Espanyol,Girona,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Girona,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Espanyol,Real Sociedad,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Celta de Vigo,Espanyol,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Celta de Vigo,Real Sociedad,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Alavés,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Alavés,Celta de Vigo,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Celta de Vigo,Levante,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Alavés,Levante,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Alavés,Athletic Club,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Athletic Club,Levante,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,CD Leganés,Levante,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Athletic Club,CD Leganés,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Athletic Club,Dep. La Coruña,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,CD Leganés,Dep. La Coruña,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,CD Leganés,UD Las Palmas,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Dep. La Coruña,UD Las Palmas,1
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Dep. La Coruña,Málaga CF,2
+Spain,Games of Matchday 38 LaLiga 17/18,2017,Málaga CF,UD Las Palmas,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Bayern Munich,FC Schalke 04,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Bayern Munich,Hoffenheim,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,FC Schalke 04,Hoffenheim,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Dortmund,FC Schalke 04,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Dortmund,Hoffenheim,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Hoffenheim,Leverkusen,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Dortmund,Leverkusen,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Dortmund,Leipzig,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Leipzig,Leverkusen,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Leverkusen,Stuttgart,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Leipzig,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Frankfurt,Leipzig,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Frankfurt,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Mönchengladbach,Stuttgart,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Frankfurt,Mönchengladbach,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Frankfurt,Hertha BSC,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Hertha BSC,Mönchengladbach,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Mönchengladbach,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Hertha BSC,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Augsburg,Hertha BSC,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Augsburg,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Hannover 96,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Augsburg,Hannover 96,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Augsburg,Mainz,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Hannover 96,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Freiburg,Hannover 96,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Freiburg,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Mainz,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Freiburg,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Freiburg,Hamburg,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,Hamburg,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,1.FC Köln,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 17/18,2017,1.FC Köln,Hamburg,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Juventus,Napoli,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Juventus,Roma,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Napoli,Roma,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Inter,Napoli,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Inter,Roma,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Lazio,Roma,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Inter,Lazio,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,AC Milan,Inter,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,AC Milan,Lazio,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Atalanta,Lazio,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,AC Milan,Atalanta,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,AC Milan,Fiorentina,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Atalanta,Fiorentina,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Atalanta,Torino,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Fiorentina,Torino,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Fiorentina,Sampdoria,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Sampdoria,Torino,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Sassuolo,Torino,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Sampdoria,Sassuolo,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Genoa,Sampdoria,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Genoa,Sassuolo,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Chievo Verona,Sassuolo,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Chievo Verona,Genoa,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Genoa,Udinese,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Chievo Verona,Udinese,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Bologna,Chievo Verona,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Bologna,Udinese,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Cagliari,Udinese,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Bologna,Cagliari,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Bologna,SPAL,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Cagliari,SPAL,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Cagliari,Crotone,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Crotone,SPAL,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Hellas Verona,SPAL,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Crotone,Hellas Verona,1
+Italy,Games of Matchday 38 Serie A 17/18,2017,Benevento,Crotone,2
+Italy,Games of Matchday 38 Serie A 17/18,2017,Benevento,Hellas Verona,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Monaco,PSG,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Lyon,PSG,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Lyon,Monaco,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Marseille,Monaco,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Lyon,Marseille,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Lyon,Stade Rennais,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Marseille,Stade Rennais,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,G. Bordeaux,Marseille,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,G. Bordeaux,Stade Rennais,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Saint-Étienne,Stade Rennais,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,G. Bordeaux,Saint-Étienne,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,G. Bordeaux,Nice,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Nice,Saint-Étienne,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,FC Nantes,Saint-Étienne,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,FC Nantes,Nice,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Montpellier,Nice,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,FC Nantes,Montpellier,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Dijon,FC Nantes,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Dijon,Montpellier,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Guingamp,Montpellier,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Dijon,Guingamp,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Amiens SC,Dijon,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Amiens SC,Guingamp,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Angers SCO,Guingamp,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Amiens SC,Angers SCO,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Amiens SC,R. Strasbourg,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Angers SCO,R. Strasbourg,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Angers SCO,SM Caen,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,R. Strasbourg,SM Caen,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Lille,R. Strasbourg,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Lille,SM Caen,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,SM Caen,Toulouse,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Lille,Toulouse,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,Lille,Troyes,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,Toulouse,Troyes,1
+France,Games of Matchday 38 Ligue 1 17/18,2017,FC Metz,Toulouse,2
+France,Games of Matchday 38 Ligue 1 17/18,2017,FC Metz,Troyes,1
+England,Games of Matchday 38 Premier League 18/19,2018,Liverpool,Man City,1
+England,Games of Matchday 38 Premier League 18/19,2018,Chelsea,Man City,2
+England,Games of Matchday 38 Premier League 18/19,2018,Chelsea,Liverpool,1
+England,Games of Matchday 38 Premier League 18/19,2018,Liverpool,Tottenham,2
+England,Games of Matchday 38 Premier League 18/19,2018,Chelsea,Tottenham,1
+England,Games of Matchday 38 Premier League 18/19,2018,Arsenal,Chelsea,2
+England,Games of Matchday 38 Premier League 18/19,2018,Arsenal,Tottenham,1
+England,Games of Matchday 38 Premier League 18/19,2018,Man Utd,Tottenham,2
+England,Games of Matchday 38 Premier League 18/19,2018,Arsenal,Man Utd,1
+England,Games of Matchday 38 Premier League 18/19,2018,Arsenal,Wolves,2
+England,Games of Matchday 38 Premier League 18/19,2018,Man Utd,Wolves,1
+England,Games of Matchday 38 Premier League 18/19,2018,Everton,Man Utd,2
+England,Games of Matchday 38 Premier League 18/19,2018,Everton,Wolves,1
+England,Games of Matchday 38 Premier League 18/19,2018,Leicester,Wolves,2
+England,Games of Matchday 38 Premier League 18/19,2018,Everton,Leicester,1
+England,Games of Matchday 38 Premier League 18/19,2018,Everton,West Ham,2
+England,Games of Matchday 38 Premier League 18/19,2018,Leicester,West Ham,1
+England,Games of Matchday 38 Premier League 18/19,2018,Leicester,Watford,2
+England,Games of Matchday 38 Premier League 18/19,2018,Watford,West Ham,1
+England,Games of Matchday 38 Premier League 18/19,2018,Crystal Palace,West Ham,2
+England,Games of Matchday 38 Premier League 18/19,2018,Crystal Palace,Watford,1
+England,Games of Matchday 38 Premier League 18/19,2018,Newcastle,Watford,2
+England,Games of Matchday 38 Premier League 18/19,2018,Crystal Palace,Newcastle,1
+England,Games of Matchday 38 Premier League 18/19,2018,Bournemouth,Crystal Palace,2
+England,Games of Matchday 38 Premier League 18/19,2018,Bournemouth,Newcastle,1
+England,Games of Matchday 38 Premier League 18/19,2018,Burnley,Newcastle,2
+England,Games of Matchday 38 Premier League 18/19,2018,Bournemouth,Burnley,1
+England,Games of Matchday 38 Premier League 18/19,2018,Bournemouth,Southampton,2
+England,Games of Matchday 38 Premier League 18/19,2018,Burnley,Southampton,1
+England,Games of Matchday 38 Premier League 18/19,2018,Brighton,Burnley,2
+England,Games of Matchday 38 Premier League 18/19,2018,Brighton,Southampton,1
+England,Games of Matchday 38 Premier League 18/19,2018,Cardiff,Southampton,2
+England,Games of Matchday 38 Premier League 18/19,2018,Brighton,Cardiff,1
+England,Games of Matchday 38 Premier League 18/19,2018,Brighton,Fulham,2
+England,Games of Matchday 38 Premier League 18/19,2018,Cardiff,Fulham,1
+England,Games of Matchday 38 Premier League 18/19,2018,Cardiff,Huddersfield,2
+England,Games of Matchday 38 Premier League 18/19,2018,Fulham,Huddersfield,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Atlético,Barcelona,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Barcelona,Real Madrid,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Atlético,Real Madrid,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Atlético,Valencia,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Real Madrid,Valencia,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Getafe,Real Madrid,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Getafe,Valencia,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Sevilla FC,Valencia,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Getafe,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Espanyol,Getafe,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Espanyol,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Athletic Club,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Athletic Club,Espanyol,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Espanyol,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Athletic Club,Real Sociedad,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Athletic Club,Real Betis,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Real Betis,Real Sociedad,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Alavés,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Alavés,Real Betis,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Real Betis,SD Eibar,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Alavés,SD Eibar,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Alavés,CD Leganés,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,CD Leganés,SD Eibar,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,SD Eibar,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,CD Leganés,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,CD Leganés,Levante,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Levante,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Real Valladolid,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Levante,Real Valladolid,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Celta de Vigo,Levante,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Celta de Vigo,Real Valladolid,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Girona,Real Valladolid,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Celta de Vigo,Girona,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Celta de Vigo,SD Huesca,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Girona,SD Huesca,1
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Girona,Rayo Vallecano,2
+Spain,Games of Matchday 38 LaLiga 18/19,2018,Rayo Vallecano,SD Huesca,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Bayern Munich,Dortmund,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Bayern Munich,Leipzig,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Dortmund,Leipzig,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Dortmund,Leverkusen,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Leipzig,Leverkusen,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Leipzig,Mönchengladbach,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Leverkusen,Mönchengladbach,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Leverkusen,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Mönchengladbach,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Frankfurt,Mönchengladbach,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Frankfurt,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Werder Bremen,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Frankfurt,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Frankfurt,Hoffenheim,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Hoffenheim,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,F. Düsseldorf,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,F. Düsseldorf,Hoffenheim,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Hertha BSC,Hoffenheim,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,F. Düsseldorf,Hertha BSC,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,F. Düsseldorf,Mainz,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Hertha BSC,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Freiburg,Hertha BSC,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Freiburg,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,FC Schalke 04,Mainz,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,FC Schalke 04,Freiburg,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Augsburg,Freiburg,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Augsburg,FC Schalke 04,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,FC Schalke 04,Stuttgart,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Augsburg,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Augsburg,Hannover 96,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,Hannover 96,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,1.FC Nuremberg,Stuttgart,2
+Germany,Games of Matchday 34 Bundesliga 18/19,2018,1.FC Nuremberg,Hannover 96,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Juventus,Napoli,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Atalanta,Juventus,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Atalanta,Napoli,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Inter,Napoli,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Atalanta,Inter,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,AC Milan,Atalanta,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,AC Milan,Inter,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Inter,Roma,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,AC Milan,Roma,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,AC Milan,Torino,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Roma,Torino,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Lazio,Roma,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Lazio,Torino,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Sampdoria,Torino,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Lazio,Sampdoria,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Bologna,Lazio,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Bologna,Sampdoria,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Sampdoria,Sassuolo,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Bologna,Sassuolo,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Bologna,Udinese,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Sassuolo,Udinese,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Sassuolo,SPAL,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,SPAL,Udinese,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Parma,Udinese,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Parma,SPAL,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Cagliari,SPAL,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Cagliari,Parma,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Fiorentina,Parma,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Cagliari,Fiorentina,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Cagliari,Genoa,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Fiorentina,Genoa,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,FC Empoli,Fiorentina,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,FC Empoli,Genoa,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Frosinone,Genoa,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,FC Empoli,Frosinone,1
+Italy,Games of Matchday 38 Serie A 18/19,2018,Chievo Verona,FC Empoli,2
+Italy,Games of Matchday 38 Serie A 18/19,2018,Chievo Verona,Frosinone,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Lille,PSG,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Lyon,PSG,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Lille,Lyon,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Lille,Saint-Étienne,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Lyon,Saint-Étienne,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Lyon,Marseille,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Marseille,Saint-Étienne,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Montpellier,Saint-Étienne,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Marseille,Montpellier,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Marseille,Nice,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Montpellier,Nice,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Montpellier,Stade Reims,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Nice,Stade Reims,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Nice,Nîmes Olympique,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Nîmes Olympique,Stade Reims,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Stade Reims,Stade Rennais,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Nîmes Olympique,Stade Rennais,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Nîmes Olympique,R. Strasbourg,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,R. Strasbourg,Stade Rennais,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,FC Nantes,Stade Rennais,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,FC Nantes,R. Strasbourg,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Angers SCO,R. Strasbourg,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Angers SCO,FC Nantes,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,FC Nantes,G. Bordeaux,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Angers SCO,G. Bordeaux,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Amiens SC,Angers SCO,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Amiens SC,G. Bordeaux,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,G. Bordeaux,Toulouse,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Amiens SC,Toulouse,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Amiens SC,Monaco,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Monaco,Toulouse,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Dijon,Toulouse,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Dijon,Monaco,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Monaco,SM Caen,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Dijon,SM Caen,1
+France,Games of Matchday 38 Ligue 1 18/19,2018,Dijon,Guingamp,2
+France,Games of Matchday 38 Ligue 1 18/19,2018,Guingamp,SM Caen,1
+England,Games of Matchday 38 Premier League 19/20,2019,Liverpool,Man City,1
+England,Games of Matchday 38 Premier League 19/20,2019,Liverpool,Man Utd,2
+England,Games of Matchday 38 Premier League 19/20,2019,Man City,Man Utd,1
+England,Games of Matchday 38 Premier League 19/20,2019,Chelsea,Man City,2
+England,Games of Matchday 38 Premier League 19/20,2019,Chelsea,Man Utd,1
+England,Games of Matchday 38 Premier League 19/20,2019,Leicester,Man Utd,2
+England,Games of Matchday 38 Premier League 19/20,2019,Chelsea,Leicester,1
+England,Games of Matchday 38 Premier League 19/20,2019,Chelsea,Tottenham,2
+England,Games of Matchday 38 Premier League 19/20,2019,Leicester,Tottenham,1
+England,Games of Matchday 38 Premier League 19/20,2019,Leicester,Wolves,2
+England,Games of Matchday 38 Premier League 19/20,2019,Tottenham,Wolves,1
+England,Games of Matchday 38 Premier League 19/20,2019,Arsenal,Tottenham,2
+England,Games of Matchday 38 Premier League 19/20,2019,Arsenal,Wolves,1
+England,Games of Matchday 38 Premier League 19/20,2019,Sheff Utd,Wolves,2
+England,Games of Matchday 38 Premier League 19/20,2019,Arsenal,Sheff Utd,1
+England,Games of Matchday 38 Premier League 19/20,2019,Arsenal,Burnley,2
+England,Games of Matchday 38 Premier League 19/20,2019,Burnley,Sheff Utd,1
+England,Games of Matchday 38 Premier League 19/20,2019,Sheff Utd,Southampton,2
+England,Games of Matchday 38 Premier League 19/20,2019,Burnley,Southampton,1
+England,Games of Matchday 38 Premier League 19/20,2019,Burnley,Everton,2
+England,Games of Matchday 38 Premier League 19/20,2019,Everton,Southampton,1
+England,Games of Matchday 38 Premier League 19/20,2019,Newcastle,Southampton,2
+England,Games of Matchday 38 Premier League 19/20,2019,Everton,Newcastle,1
+England,Games of Matchday 38 Premier League 19/20,2019,Crystal Palace,Everton,2
+England,Games of Matchday 38 Premier League 19/20,2019,Crystal Palace,Newcastle,1
+England,Games of Matchday 38 Premier League 19/20,2019,Brighton,Newcastle,2
+England,Games of Matchday 38 Premier League 19/20,2019,Brighton,Crystal Palace,1
+England,Games of Matchday 38 Premier League 19/20,2019,Crystal Palace,West Ham,2
+England,Games of Matchday 38 Premier League 19/20,2019,Brighton,West Ham,1
+England,Games of Matchday 38 Premier League 19/20,2019,Aston Villa,Brighton,2
+England,Games of Matchday 38 Premier League 19/20,2019,Aston Villa,West Ham,1
+England,Games of Matchday 38 Premier League 19/20,2019,Bournemouth,West Ham,2
+England,Games of Matchday 38 Premier League 19/20,2019,Aston Villa,Bournemouth,1
+England,Games of Matchday 38 Premier League 19/20,2019,Aston Villa,Watford,2
+England,Games of Matchday 38 Premier League 19/20,2019,Bournemouth,Watford,1
+England,Games of Matchday 38 Premier League 19/20,2019,Bournemouth,Norwich,2
+England,Games of Matchday 38 Premier League 19/20,2019,Norwich,Watford,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Barcelona,Real Madrid,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Atlético,Real Madrid,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Atlético,Barcelona,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Barcelona,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Atlético,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Atlético,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Sevilla FC,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Real Sociedad,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Real Sociedad,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Granada CF,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Granada CF,Real Sociedad,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Getafe,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Getafe,Granada CF,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Granada CF,Valencia,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Getafe,Valencia,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,CA Osasuna,Getafe,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,CA Osasuna,Valencia,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Athletic Club,Valencia,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Athletic Club,CA Osasuna,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,CA Osasuna,Levante,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Athletic Club,Levante,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Athletic Club,Real Valladolid,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Levante,Real Valladolid,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Levante,SD Eibar,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Real Valladolid,SD Eibar,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Real Betis,Real Valladolid,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Real Betis,SD Eibar,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Alavés,SD Eibar,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Alavés,Real Betis,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Celta de Vigo,Real Betis,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Alavés,Celta de Vigo,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Alavés,CD Leganés,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,CD Leganés,Celta de Vigo,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Celta de Vigo,RCD Mallorca,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,CD Leganés,RCD Mallorca,1
+Spain,Games of Matchday 38 LaLiga 19/20,2019,CD Leganés,Espanyol,2
+Spain,Games of Matchday 38 LaLiga 19/20,2019,Espanyol,RCD Mallorca,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Bayern Munich,Dortmund,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Bayern Munich,Leipzig,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Dortmund,Leipzig,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Dortmund,Mönchengladbach,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Leipzig,Mönchengladbach,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Leipzig,Leverkusen,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Leverkusen,Mönchengladbach,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Hoffenheim,Mönchengladbach,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Hoffenheim,Leverkusen,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Leverkusen,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Hoffenheim,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Freiburg,Hoffenheim,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Freiburg,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Frankfurt,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Frankfurt,Freiburg,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Freiburg,Hertha BSC,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Frankfurt,Hertha BSC,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Frankfurt,Union Berlin,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Hertha BSC,Union Berlin,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,FC Schalke 04,Hertha BSC,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,FC Schalke 04,Union Berlin,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Mainz,Union Berlin,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,FC Schalke 04,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,1.FC Köln,FC Schalke 04,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,1.FC Köln,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Augsburg,Mainz,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,1.FC Köln,Augsburg,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,1.FC Köln,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Augsburg,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,Augsburg,F. Düsseldorf,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,F. Düsseldorf,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,SC Paderborn,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 19/20,2019,F. Düsseldorf,SC Paderborn,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Inter,Juventus,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Atalanta,Juventus,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Atalanta,Inter,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Inter,Lazio,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Atalanta,Lazio,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Atalanta,Roma,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Lazio,Roma,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,AC Milan,Lazio,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,AC Milan,Roma,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Napoli,Roma,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,AC Milan,Napoli,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,AC Milan,Sassuolo,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Napoli,Sassuolo,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Hellas Verona,Napoli,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Hellas Verona,Sassuolo,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Fiorentina,Sassuolo,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Fiorentina,Hellas Verona,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Hellas Verona,Parma,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Fiorentina,Parma,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Bologna,Fiorentina,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Bologna,Parma,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Parma,Udinese,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Bologna,Udinese,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Bologna,Cagliari,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Cagliari,Udinese,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Sampdoria,Udinese,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Cagliari,Sampdoria,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Cagliari,Torino,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Sampdoria,Torino,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Genoa,Sampdoria,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Genoa,Torino,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Lecce,Torino,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Genoa,Lecce,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Brescia,Genoa,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Brescia,Lecce,1
+Italy,Games of Matchday 38 Serie A 19/20,2019,Lecce,SPAL,2
+Italy,Games of Matchday 38 Serie A 19/20,2019,Brescia,SPAL,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Marseille,PSG,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,PSG,Stade Rennais,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Marseille,Stade Rennais,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Lille,Marseille,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Lille,Stade Rennais,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Lyon,Stade Rennais,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Lille,Lyon,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Lille,Montpellier,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Lyon,Montpellier,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Lyon,Monaco,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Monaco,Montpellier,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Montpellier,Stade Reims,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Monaco,Stade Reims,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Monaco,Nice,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Nice,Stade Reims,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,R. Strasbourg,Stade Reims,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Nice,R. Strasbourg,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,FC Nantes,Nice,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,FC Nantes,R. Strasbourg,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,G. Bordeaux,R. Strasbourg,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,FC Nantes,G. Bordeaux,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Angers SCO,FC Nantes,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Angers SCO,G. Bordeaux,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,G. Bordeaux,Stade Brestois,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Angers SCO,Stade Brestois,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Angers SCO,FC Metz,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,FC Metz,Stade Brestois,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Saint-Étienne,Stade Brestois,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,FC Metz,Saint-Étienne,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Dijon,FC Metz,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Dijon,Saint-Étienne,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Nîmes Olympique,Saint-Étienne,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Dijon,Nîmes Olympique,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Amiens SC,Dijon,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Amiens SC,Nîmes Olympique,1
+France,Games of Matchday 27 Ligue 1 19/20,2019,Nîmes Olympique,Toulouse,2
+France,Games of Matchday 27 Ligue 1 19/20,2019,Amiens SC,Toulouse,1
+England,Games of Matchday 38 Premier League 20/21,2020,Man City,Man Utd,1
+England,Games of Matchday 38 Premier League 20/21,2020,Liverpool,Man City,2
+England,Games of Matchday 38 Premier League 20/21,2020,Liverpool,Man Utd,1
+England,Games of Matchday 38 Premier League 20/21,2020,Chelsea,Man Utd,2
+England,Games of Matchday 38 Premier League 20/21,2020,Chelsea,Liverpool,1
+England,Games of Matchday 38 Premier League 20/21,2020,Leicester,Liverpool,2
+England,Games of Matchday 38 Premier League 20/21,2020,Chelsea,Leicester,1
+England,Games of Matchday 38 Premier League 20/21,2020,Chelsea,West Ham,2
+England,Games of Matchday 38 Premier League 20/21,2020,Leicester,West Ham,1
+England,Games of Matchday 38 Premier League 20/21,2020,Leicester,Tottenham,2
+England,Games of Matchday 38 Premier League 20/21,2020,Tottenham,West Ham,1
+England,Games of Matchday 38 Premier League 20/21,2020,Arsenal,West Ham,2
+England,Games of Matchday 38 Premier League 20/21,2020,Arsenal,Tottenham,1
+England,Games of Matchday 38 Premier League 20/21,2020,Leeds,Tottenham,2
+England,Games of Matchday 38 Premier League 20/21,2020,Arsenal,Leeds,1
+England,Games of Matchday 38 Premier League 20/21,2020,Arsenal,Everton,2
+England,Games of Matchday 38 Premier League 20/21,2020,Everton,Leeds,1
+England,Games of Matchday 38 Premier League 20/21,2020,Aston Villa,Leeds,2
+England,Games of Matchday 38 Premier League 20/21,2020,Aston Villa,Everton,1
+England,Games of Matchday 38 Premier League 20/21,2020,Everton,Newcastle,2
+England,Games of Matchday 38 Premier League 20/21,2020,Aston Villa,Newcastle,1
+England,Games of Matchday 38 Premier League 20/21,2020,Aston Villa,Wolves,2
+England,Games of Matchday 38 Premier League 20/21,2020,Newcastle,Wolves,1
+England,Games of Matchday 38 Premier League 20/21,2020,Crystal Palace,Newcastle,2
+England,Games of Matchday 38 Premier League 20/21,2020,Crystal Palace,Wolves,1
+England,Games of Matchday 38 Premier League 20/21,2020,Southampton,Wolves,2
+England,Games of Matchday 38 Premier League 20/21,2020,Crystal Palace,Southampton,1
+England,Games of Matchday 38 Premier League 20/21,2020,Brighton,Crystal Palace,2
+England,Games of Matchday 38 Premier League 20/21,2020,Brighton,Southampton,1
+England,Games of Matchday 38 Premier League 20/21,2020,Burnley,Southampton,2
+England,Games of Matchday 38 Premier League 20/21,2020,Brighton,Burnley,1
+England,Games of Matchday 38 Premier League 20/21,2020,Brighton,Fulham,2
+England,Games of Matchday 38 Premier League 20/21,2020,Burnley,Fulham,1
+England,Games of Matchday 38 Premier League 20/21,2020,Burnley,West Brom,2
+England,Games of Matchday 38 Premier League 20/21,2020,Fulham,West Brom,1
+England,Games of Matchday 38 Premier League 20/21,2020,Fulham,Sheff Utd,2
+England,Games of Matchday 38 Premier League 20/21,2020,Sheff Utd,West Brom,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Atlético,Real Madrid,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Atlético,Barcelona,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Barcelona,Real Madrid,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Real Madrid,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Barcelona,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Barcelona,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Real Sociedad,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Real Betis,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Real Betis,Real Sociedad,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Real Sociedad,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Real Betis,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Celta de Vigo,Real Betis,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Celta de Vigo,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Athletic Club,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Athletic Club,Celta de Vigo,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Celta de Vigo,Granada CF,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Athletic Club,Granada CF,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Athletic Club,CA Osasuna,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,CA Osasuna,Granada CF,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Cádiz CF,Granada CF,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,CA Osasuna,Cádiz CF,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,CA Osasuna,Valencia,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Cádiz CF,Valencia,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Cádiz CF,Levante,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Levante,Valencia,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Getafe,Valencia,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Getafe,Levante,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Alavés,Levante,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Alavés,Getafe,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Elche CF,Getafe,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Alavés,Elche CF,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Alavés,SD Huesca,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Elche CF,SD Huesca,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Elche CF,Real Valladolid,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Real Valladolid,SD Huesca,1
+Spain,Games of Matchday 38 LaLiga 20/21,2020,SD Eibar,SD Huesca,2
+Spain,Games of Matchday 38 LaLiga 20/21,2020,Real Valladolid,SD Eibar,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Bayern Munich,Leipzig,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Bayern Munich,Dortmund,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Dortmund,Leipzig,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Leipzig,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Dortmund,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Dortmund,Frankfurt,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Frankfurt,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Leverkusen,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Frankfurt,Leverkusen,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Frankfurt,Union Berlin,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Leverkusen,Union Berlin,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Leverkusen,Mönchengladbach,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Mönchengladbach,Union Berlin,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Stuttgart,Union Berlin,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Mönchengladbach,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Freiburg,Mönchengladbach,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Freiburg,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Hoffenheim,Stuttgart,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Freiburg,Hoffenheim,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Freiburg,Mainz,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Hoffenheim,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Augsburg,Hoffenheim,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Augsburg,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Hertha BSC,Mainz,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Augsburg,Hertha BSC,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Arm. Bielefeld,Augsburg,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Arm. Bielefeld,Hertha BSC,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,1.FC Köln,Hertha BSC,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,1.FC Köln,Arm. Bielefeld,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,Arm. Bielefeld,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,1.FC Köln,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,1.FC Köln,FC Schalke 04,2
+Germany,Games of Matchday 34 Bundesliga 20/21,2020,FC Schalke 04,Werder Bremen,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,AC Milan,Inter,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Atalanta,Inter,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,AC Milan,Atalanta,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,AC Milan,Juventus,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Atalanta,Juventus,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Atalanta,Napoli,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Juventus,Napoli,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Juventus,Lazio,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Lazio,Napoli,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Napoli,Roma,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Lazio,Roma,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Lazio,Sassuolo,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Roma,Sassuolo,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Roma,Sampdoria,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Sampdoria,Sassuolo,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Hellas Verona,Sassuolo,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Hellas Verona,Sampdoria,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Genoa,Sampdoria,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Genoa,Hellas Verona,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Bologna,Hellas Verona,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Bologna,Genoa,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Fiorentina,Genoa,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Bologna,Fiorentina,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Bologna,Udinese,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Fiorentina,Udinese,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Fiorentina,Spezia Calcio,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Spezia Calcio,Udinese,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Cagliari,Udinese,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Cagliari,Spezia Calcio,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Spezia Calcio,Torino,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Cagliari,Torino,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Benevento,Cagliari,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Benevento,Torino,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Crotone,Torino,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Benevento,Crotone,1
+Italy,Games of Matchday 38 Serie A 20/21,2020,Benevento,Parma,2
+Italy,Games of Matchday 38 Serie A 20/21,2020,Crotone,Parma,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Lille,PSG,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Lille,Monaco,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,Monaco,PSG,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Lyon,PSG,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,Lyon,Monaco,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Marseille,Monaco,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,Lyon,Marseille,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Lyon,Stade Rennais,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,Marseille,Stade Rennais,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Lens,Marseille,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,Lens,Stade Rennais,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Montpellier,Stade Rennais,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,Lens,Montpellier,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Lens,Nice,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,Montpellier,Nice,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,FC Metz,Montpellier,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,FC Metz,Nice,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Nice,Saint-Étienne,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,FC Metz,Saint-Étienne,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,FC Metz,G. Bordeaux,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,G. Bordeaux,Saint-Étienne,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Angers SCO,Saint-Étienne,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,Angers SCO,G. Bordeaux,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,G. Bordeaux,Stade Reims,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,Angers SCO,Stade Reims,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Angers SCO,R. Strasbourg,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,R. Strasbourg,Stade Reims,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,FC Lorient,Stade Reims,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,FC Lorient,R. Strasbourg,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,R. Strasbourg,Stade Brestois,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,FC Lorient,Stade Brestois,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,FC Lorient,FC Nantes,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,FC Nantes,Stade Brestois,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Nîmes Olympique,Stade Brestois,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,FC Nantes,Nîmes Olympique,1
+France,Games of Matchday 38 Ligue 1 20/21,2020,Dijon,FC Nantes,2
+France,Games of Matchday 38 Ligue 1 20/21,2020,Dijon,Nîmes Olympique,1
+England,Games of Matchday 38 Premier League 21/22,2021,Liverpool,Man City,1
+England,Games of Matchday 38 Premier League 21/22,2021,Chelsea,Man City,2
+England,Games of Matchday 38 Premier League 21/22,2021,Chelsea,Liverpool,1
+England,Games of Matchday 38 Premier League 21/22,2021,Liverpool,Tottenham,2
+England,Games of Matchday 38 Premier League 21/22,2021,Chelsea,Tottenham,1
+England,Games of Matchday 38 Premier League 21/22,2021,Arsenal,Chelsea,2
+England,Games of Matchday 38 Premier League 21/22,2021,Arsenal,Tottenham,1
+England,Games of Matchday 38 Premier League 21/22,2021,Man Utd,Tottenham,2
+England,Games of Matchday 38 Premier League 21/22,2021,Arsenal,Man Utd,1
+England,Games of Matchday 38 Premier League 21/22,2021,Arsenal,West Ham,2
+England,Games of Matchday 38 Premier League 21/22,2021,Man Utd,West Ham,1
+England,Games of Matchday 38 Premier League 21/22,2021,Leicester,Man Utd,2
+England,Games of Matchday 38 Premier League 21/22,2021,Leicester,West Ham,1
+England,Games of Matchday 38 Premier League 21/22,2021,Brighton,West Ham,2
+England,Games of Matchday 38 Premier League 21/22,2021,Brighton,Leicester,1
+England,Games of Matchday 38 Premier League 21/22,2021,Leicester,Wolves,2
+England,Games of Matchday 38 Premier League 21/22,2021,Brighton,Wolves,1
+England,Games of Matchday 38 Premier League 21/22,2021,Brighton,Newcastle,2
+England,Games of Matchday 38 Premier League 21/22,2021,Newcastle,Wolves,1
+England,Games of Matchday 38 Premier League 21/22,2021,Crystal Palace,Wolves,2
+England,Games of Matchday 38 Premier League 21/22,2021,Crystal Palace,Newcastle,1
+England,Games of Matchday 38 Premier League 21/22,2021,Brentford,Newcastle,2
+England,Games of Matchday 38 Premier League 21/22,2021,Brentford,Crystal Palace,1
+England,Games of Matchday 38 Premier League 21/22,2021,Aston Villa,Crystal Palace,2
+England,Games of Matchday 38 Premier League 21/22,2021,Aston Villa,Brentford,1
+England,Games of Matchday 38 Premier League 21/22,2021,Brentford,Southampton,2
+England,Games of Matchday 38 Premier League 21/22,2021,Aston Villa,Southampton,1
+England,Games of Matchday 38 Premier League 21/22,2021,Aston Villa,Everton,2
+England,Games of Matchday 38 Premier League 21/22,2021,Everton,Southampton,1
+England,Games of Matchday 38 Premier League 21/22,2021,Leeds,Southampton,2
+England,Games of Matchday 38 Premier League 21/22,2021,Everton,Leeds,1
+England,Games of Matchday 38 Premier League 21/22,2021,Burnley,Everton,2
+England,Games of Matchday 38 Premier League 21/22,2021,Burnley,Leeds,1
+England,Games of Matchday 38 Premier League 21/22,2021,Leeds,Watford,2
+England,Games of Matchday 38 Premier League 21/22,2021,Burnley,Watford,1
+England,Games of Matchday 38 Premier League 21/22,2021,Burnley,Norwich,2
+England,Games of Matchday 38 Premier League 21/22,2021,Norwich,Watford,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Barcelona,Real Madrid,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Atlético,Real Madrid,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Atlético,Barcelona,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Barcelona,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Atlético,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Atlético,Real Betis,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Real Betis,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Real Sociedad,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Real Betis,Real Sociedad,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Real Betis,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Real Sociedad,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Athletic Club,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Athletic Club,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Valencia,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Athletic Club,Valencia,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Athletic Club,CA Osasuna,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,CA Osasuna,Valencia,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Celta de Vigo,Valencia,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,CA Osasuna,Celta de Vigo,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,CA Osasuna,Rayo Vallecano,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Celta de Vigo,Rayo Vallecano,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Celta de Vigo,Elche CF,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Elche CF,Rayo Vallecano,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Espanyol,Rayo Vallecano,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Elche CF,Espanyol,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Elche CF,Getafe,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Espanyol,Getafe,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Espanyol,RCD Mallorca,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Getafe,RCD Mallorca,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Cádiz CF,Getafe,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Cádiz CF,RCD Mallorca,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Granada CF,RCD Mallorca,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Cádiz CF,Granada CF,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Cádiz CF,Levante,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Granada CF,Levante,1
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Alavés,Granada CF,2
+Spain,Games of Matchday 38 LaLiga 21/22,2021,Alavés,Levante,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Bayern Munich,Dortmund,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Bayern Munich,Leverkusen,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Dortmund,Leverkusen,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Dortmund,Leipzig,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Leipzig,Leverkusen,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Leverkusen,Union Berlin,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Leipzig,Union Berlin,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Freiburg,Leipzig,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Freiburg,Union Berlin,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,1.FC Köln,Union Berlin,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,1.FC Köln,Freiburg,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Freiburg,Mainz,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,1.FC Köln,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,1.FC Köln,Hoffenheim,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Hoffenheim,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Mainz,Mönchengladbach,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Hoffenheim,Mönchengladbach,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Frankfurt,Hoffenheim,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Frankfurt,Mönchengladbach,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Mönchengladbach,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Frankfurt,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Frankfurt,VfL Bochum,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,VfL Bochum,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Augsburg,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Augsburg,VfL Bochum,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Stuttgart,VfL Bochum,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Augsburg,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Augsburg,Hertha BSC,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Hertha BSC,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Arm. Bielefeld,Stuttgart,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Arm. Bielefeld,Hertha BSC,1
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Greuther Fürth,Hertha BSC,2
+Germany,Games of Matchday 34 Bundesliga 21/22,2021,Arm. Bielefeld,Greuther Fürth,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,AC Milan,Inter,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,AC Milan,Napoli,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Inter,Napoli,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Inter,Juventus,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Juventus,Napoli,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Lazio,Napoli,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Juventus,Lazio,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Juventus,Roma,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Lazio,Roma,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Fiorentina,Lazio,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Fiorentina,Roma,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Atalanta,Roma,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Atalanta,Fiorentina,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Fiorentina,Hellas Verona,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Atalanta,Hellas Verona,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Atalanta,Torino,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Hellas Verona,Torino,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Hellas Verona,Sassuolo,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Sassuolo,Torino,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Torino,Udinese,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Sassuolo,Udinese,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Bologna,Sassuolo,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Bologna,Udinese,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,FC Empoli,Udinese,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Bologna,FC Empoli,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Bologna,Sampdoria,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,FC Empoli,Sampdoria,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,FC Empoli,Spezia Calcio,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Sampdoria,Spezia Calcio,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Salernitana,Sampdoria,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Salernitana,Spezia Calcio,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Cagliari,Spezia Calcio,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Cagliari,Salernitana,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Genoa,Salernitana,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Cagliari,Genoa,1
+Italy,Games of Matchday 38 Serie A 21/22,2021,Cagliari,Venezia,2
+Italy,Games of Matchday 38 Serie A 21/22,2021,Genoa,Venezia,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Marseille,PSG,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Monaco,PSG,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Marseille,Monaco,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Marseille,Stade Rennais,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Monaco,Stade Rennais,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Monaco,Nice,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Nice,Stade Rennais,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,R. Strasbourg,Stade Rennais,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Nice,R. Strasbourg,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Lens,Nice,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Lens,R. Strasbourg,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Lyon,R. Strasbourg,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Lens,Lyon,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,FC Nantes,Lens,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,FC Nantes,Lyon,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Lille,Lyon,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,FC Nantes,Lille,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,FC Nantes,Stade Brestois,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Lille,Stade Brestois,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Lille,Stade Reims,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Stade Brestois,Stade Reims,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Montpellier,Stade Brestois,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Montpellier,Stade Reims,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Angers SCO,Stade Reims,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Angers SCO,Montpellier,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Montpellier,Troyes,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Angers SCO,Troyes,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Angers SCO,FC Lorient,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,FC Lorient,Troyes,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Clermont Foot,Troyes,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Clermont Foot,FC Lorient,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,FC Lorient,Saint-Étienne,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,Clermont Foot,Saint-Étienne,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,Clermont Foot,FC Metz,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,FC Metz,Saint-Étienne,1
+France,Games of Matchday 38 Ligue 1 21/22,2021,G. Bordeaux,Saint-Étienne,2
+France,Games of Matchday 38 Ligue 1 21/22,2021,FC Metz,G. Bordeaux,1
+England,Games of Matchday 38 Premier League 22/23,2022,Arsenal,Man City,1
+England,Games of Matchday 38 Premier League 22/23,2022,Man City,Man Utd,2
+England,Games of Matchday 38 Premier League 22/23,2022,Arsenal,Man Utd,1
+England,Games of Matchday 38 Premier League 22/23,2022,Arsenal,Newcastle,2
+England,Games of Matchday 38 Premier League 22/23,2022,Man Utd,Newcastle,1
+England,Games of Matchday 38 Premier League 22/23,2022,Liverpool,Man Utd,2
+England,Games of Matchday 38 Premier League 22/23,2022,Liverpool,Newcastle,1
+England,Games of Matchday 38 Premier League 22/23,2022,Brighton,Newcastle,2
+England,Games of Matchday 38 Premier League 22/23,2022,Brighton,Liverpool,1
+England,Games of Matchday 38 Premier League 22/23,2022,Aston Villa,Liverpool,2
+England,Games of Matchday 38 Premier League 22/23,2022,Aston Villa,Brighton,1
+England,Games of Matchday 38 Premier League 22/23,2022,Brighton,Tottenham,2
+England,Games of Matchday 38 Premier League 22/23,2022,Aston Villa,Tottenham,1
+England,Games of Matchday 38 Premier League 22/23,2022,Aston Villa,Brentford,2
+England,Games of Matchday 38 Premier League 22/23,2022,Brentford,Tottenham,1
+England,Games of Matchday 38 Premier League 22/23,2022,Fulham,Tottenham,2
+England,Games of Matchday 38 Premier League 22/23,2022,Brentford,Fulham,1
+England,Games of Matchday 38 Premier League 22/23,2022,Brentford,Crystal Palace,2
+England,Games of Matchday 38 Premier League 22/23,2022,Crystal Palace,Fulham,1
+England,Games of Matchday 38 Premier League 22/23,2022,Chelsea,Fulham,2
+England,Games of Matchday 38 Premier League 22/23,2022,Chelsea,Crystal Palace,1
+England,Games of Matchday 38 Premier League 22/23,2022,Crystal Palace,Wolves,2
+England,Games of Matchday 38 Premier League 22/23,2022,Chelsea,Wolves,1
+England,Games of Matchday 38 Premier League 22/23,2022,Chelsea,West Ham,2
+England,Games of Matchday 38 Premier League 22/23,2022,West Ham,Wolves,1
+England,Games of Matchday 38 Premier League 22/23,2022,Bournemouth,Wolves,2
+England,Games of Matchday 38 Premier League 22/23,2022,Bournemouth,West Ham,1
+England,Games of Matchday 38 Premier League 22/23,2022,Nott'm Forest,West Ham,2
+England,Games of Matchday 38 Premier League 22/23,2022,Bournemouth,Nott'm Forest,1
+England,Games of Matchday 38 Premier League 22/23,2022,Bournemouth,Everton,2
+England,Games of Matchday 38 Premier League 22/23,2022,Everton,Nott'm Forest,1
+England,Games of Matchday 38 Premier League 22/23,2022,Leicester,Nott'm Forest,2
+England,Games of Matchday 38 Premier League 22/23,2022,Everton,Leicester,1
+England,Games of Matchday 38 Premier League 22/23,2022,Everton,Leeds,2
+England,Games of Matchday 38 Premier League 22/23,2022,Leeds,Leicester,1
+England,Games of Matchday 38 Premier League 22/23,2022,Leicester,Southampton,2
+England,Games of Matchday 38 Premier League 22/23,2022,Leeds,Southampton,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Barcelona,Real Madrid,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Atlético,Barcelona,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Atlético,Real Madrid,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Real Madrid,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Atlético,Real Sociedad,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Atlético,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Real Sociedad,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Real Betis,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Real Betis,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,CA Osasuna,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,CA Osasuna,Real Betis,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Athletic Club,Real Betis,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Athletic Club,CA Osasuna,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,CA Osasuna,RCD Mallorca,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Athletic Club,RCD Mallorca,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Athletic Club,Girona,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Girona,RCD Mallorca,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,RCD Mallorca,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Girona,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Girona,Rayo Vallecano,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Rayo Vallecano,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Celta de Vigo,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Celta de Vigo,Rayo Vallecano,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Rayo Vallecano,Valencia,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Celta de Vigo,Valencia,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Celta de Vigo,Getafe,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Getafe,Valencia,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Cádiz CF,Valencia,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Cádiz CF,Getafe,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Getafe,UD Almería,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Cádiz CF,UD Almería,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Cádiz CF,Real Valladolid,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Real Valladolid,UD Almería,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Espanyol,UD Almería,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Espanyol,Real Valladolid,1
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Elche CF,Real Valladolid,2
+Spain,Games of Matchday 38 LaLiga 22/23,2022,Elche CF,Espanyol,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Bayern Munich,Dortmund,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Bayern Munich,Leipzig,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Dortmund,Leipzig,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Dortmund,Union Berlin,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Leipzig,Union Berlin,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Freiburg,Leipzig,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Freiburg,Union Berlin,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Leverkusen,Union Berlin,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Freiburg,Leverkusen,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Frankfurt,Freiburg,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Frankfurt,Leverkusen,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Leverkusen,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Frankfurt,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Frankfurt,Mainz,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Mainz,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Mönchengladbach,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Mainz,Mönchengladbach,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,1.FC Köln,Mainz,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,1.FC Köln,Mönchengladbach,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Hoffenheim,Mönchengladbach,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,1.FC Köln,Hoffenheim,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,1.FC Köln,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Hoffenheim,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Hoffenheim,VfL Bochum,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,VfL Bochum,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Augsburg,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Augsburg,VfL Bochum,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Stuttgart,VfL Bochum,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Augsburg,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Augsburg,FC Schalke 04,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,FC Schalke 04,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,Hertha BSC,Stuttgart,2
+Germany,Games of Matchday 34 Bundesliga 22/23,2022,FC Schalke 04,Hertha BSC,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Lazio,Napoli,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Inter,Napoli,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Inter,Lazio,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,AC Milan,Lazio,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,AC Milan,Inter,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Atalanta,Inter,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,AC Milan,Atalanta,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,AC Milan,Roma,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Atalanta,Roma,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Atalanta,Juventus,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Juventus,Roma,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Fiorentina,Roma,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Fiorentina,Juventus,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Bologna,Juventus,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Bologna,Fiorentina,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Fiorentina,Torino,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Bologna,Torino,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Bologna,Monza,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Monza,Torino,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Torino,Udinese,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Monza,Udinese,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Monza,Sassuolo,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Sassuolo,Udinese,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,FC Empoli,Udinese,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,FC Empoli,Sassuolo,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Salernitana,Sassuolo,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,FC Empoli,Salernitana,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,FC Empoli,Lecce,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Lecce,Salernitana,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Salernitana,Spezia Calcio,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Lecce,Spezia Calcio,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Hellas Verona,Lecce,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Hellas Verona,Spezia Calcio,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Cremonese,Spezia Calcio,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Cremonese,Hellas Verona,1
+Italy,Games of Matchday 38 Serie A 22/23,2022,Hellas Verona,Sampdoria,2
+Italy,Games of Matchday 38 Serie A 22/23,2022,Cremonese,Sampdoria,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Lens,PSG,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Marseille,PSG,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,Lens,Marseille,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Lens,Stade Rennais,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,Marseille,Stade Rennais,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Lille,Marseille,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,Lille,Stade Rennais,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Monaco,Stade Rennais,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,Lille,Monaco,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Lille,Lyon,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,Lyon,Monaco,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Clermont Foot,Monaco,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,Clermont Foot,Lyon,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Lyon,Nice,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,Clermont Foot,Nice,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Clermont Foot,FC Lorient,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,FC Lorient,Nice,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Nice,Stade Reims,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,FC Lorient,Stade Reims,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,FC Lorient,Montpellier,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,Montpellier,Stade Reims,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Stade Reims,Toulouse,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,Montpellier,Toulouse,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,Montpellier,Stade Brestois,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,Stade Brestois,Toulouse,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,R. Strasbourg,Toulouse,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,R. Strasbourg,Stade Brestois,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,FC Nantes,Stade Brestois,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,FC Nantes,R. Strasbourg,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,AJ Auxerre,R. Strasbourg,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,AJ Auxerre,FC Nantes,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,AC Ajaccio,FC Nantes,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,AC Ajaccio,AJ Auxerre,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,AJ Auxerre,Troyes,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,AC Ajaccio,Troyes,1
+France,Games of Matchday 38 Ligue 1 22/23,2022,AC Ajaccio,Angers SCO,2
+France,Games of Matchday 38 Ligue 1 22/23,2022,Angers SCO,Troyes,1
+England,Games of Matchday 38 Premier League 23/24,2023,Arsenal,Man City,1
+England,Games of Matchday 38 Premier League 23/24,2023,Liverpool,Man City,2
+England,Games of Matchday 38 Premier League 23/24,2023,Arsenal,Liverpool,1
+England,Games of Matchday 38 Premier League 23/24,2023,Arsenal,Aston Villa,2
+England,Games of Matchday 38 Premier League 23/24,2023,Aston Villa,Liverpool,1
+England,Games of Matchday 38 Premier League 23/24,2023,Liverpool,Tottenham,2
+England,Games of Matchday 38 Premier League 23/24,2023,Aston Villa,Tottenham,1
+England,Games of Matchday 38 Premier League 23/24,2023,Aston Villa,Chelsea,2
+England,Games of Matchday 38 Premier League 23/24,2023,Chelsea,Tottenham,1
+England,Games of Matchday 38 Premier League 23/24,2023,Newcastle,Tottenham,2
+England,Games of Matchday 38 Premier League 23/24,2023,Chelsea,Newcastle,1
+England,Games of Matchday 38 Premier League 23/24,2023,Chelsea,Man Utd,2
+England,Games of Matchday 38 Premier League 23/24,2023,Man Utd,Newcastle,1
+England,Games of Matchday 38 Premier League 23/24,2023,Newcastle,West Ham,2
+England,Games of Matchday 38 Premier League 23/24,2023,Man Utd,West Ham,1
+England,Games of Matchday 38 Premier League 23/24,2023,Crystal Palace,Man Utd,2
+England,Games of Matchday 38 Premier League 23/24,2023,Crystal Palace,West Ham,1
+England,Games of Matchday 38 Premier League 23/24,2023,Brighton,West Ham,2
+England,Games of Matchday 38 Premier League 23/24,2023,Brighton,Crystal Palace,1
+England,Games of Matchday 38 Premier League 23/24,2023,Bournemouth,Crystal Palace,2
+England,Games of Matchday 38 Premier League 23/24,2023,Bournemouth,Brighton,1
+England,Games of Matchday 38 Premier League 23/24,2023,Brighton,Fulham,2
+England,Games of Matchday 38 Premier League 23/24,2023,Bournemouth,Fulham,1
+England,Games of Matchday 38 Premier League 23/24,2023,Bournemouth,Wolves,2
+England,Games of Matchday 38 Premier League 23/24,2023,Fulham,Wolves,1
+England,Games of Matchday 38 Premier League 23/24,2023,Everton,Fulham,2
+England,Games of Matchday 38 Premier League 23/24,2023,Everton,Wolves,1
+England,Games of Matchday 38 Premier League 23/24,2023,Brentford,Wolves,2
+England,Games of Matchday 38 Premier League 23/24,2023,Brentford,Everton,1
+England,Games of Matchday 38 Premier League 23/24,2023,Everton,Nott'm Forest,2
+England,Games of Matchday 38 Premier League 23/24,2023,Brentford,Nott'm Forest,1
+England,Games of Matchday 38 Premier League 23/24,2023,Brentford,Luton,2
+England,Games of Matchday 38 Premier League 23/24,2023,Luton,Nott'm Forest,1
+England,Games of Matchday 38 Premier League 23/24,2023,Burnley,Nott'm Forest,2
+England,Games of Matchday 38 Premier League 23/24,2023,Burnley,Luton,1
+England,Games of Matchday 38 Premier League 23/24,2023,Luton,Sheff Utd,2
+England,Games of Matchday 38 Premier League 23/24,2023,Burnley,Sheff Utd,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Barcelona,Real Madrid,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Girona,Real Madrid,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Barcelona,Girona,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Atlético,Barcelona,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Atlético,Girona,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Athletic Club,Girona,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Athletic Club,Atlético,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Atlético,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Athletic Club,Real Sociedad,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Athletic Club,Real Betis,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Real Betis,Real Sociedad,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Real Sociedad,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Real Betis,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Real Betis,Valencia,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Valencia,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Alavés,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Alavés,Valencia,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,CA Osasuna,Valencia,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Alavés,CA Osasuna,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Alavés,Getafe,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,CA Osasuna,Getafe,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,CA Osasuna,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Getafe,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Celta de Vigo,Getafe,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Celta de Vigo,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,RCD Mallorca,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Celta de Vigo,RCD Mallorca,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Celta de Vigo,UD Las Palmas,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,RCD Mallorca,UD Las Palmas,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Rayo Vallecano,RCD Mallorca,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Rayo Vallecano,UD Las Palmas,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Cádiz CF,UD Las Palmas,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Cádiz CF,Rayo Vallecano,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Rayo Vallecano,UD Almería,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Cádiz CF,UD Almería,1
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Cádiz CF,Granada CF,2
+Spain,Games of Matchday 38 LaLiga 23/24,2023,Granada CF,UD Almería,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Leverkusen,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Bayern Munich,Leverkusen,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Bayern Munich,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Leipzig,Stuttgart,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Bayern Munich,Leipzig,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Bayern Munich,Dortmund,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Dortmund,Leipzig,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Frankfurt,Leipzig,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Dortmund,Frankfurt,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Dortmund,Hoffenheim,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Frankfurt,Hoffenheim,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Frankfurt,Heidenheim,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Heidenheim,Hoffenheim,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Hoffenheim,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Heidenheim,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Freiburg,Heidenheim,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Freiburg,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Augsburg,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Augsburg,Freiburg,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Freiburg,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Augsburg,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Augsburg,Mainz,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Mainz,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Mönchengladbach,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Mainz,Mönchengladbach,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Mainz,Union Berlin,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Mönchengladbach,Union Berlin,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Mönchengladbach,VfL Bochum,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Union Berlin,VfL Bochum,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,1.FC Köln,Union Berlin,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,1.FC Köln,VfL Bochum,1
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,Darmstadt 98,VfL Bochum,2
+Germany,Games of Matchday 34 Bundesliga 23/24,2023,1.FC Köln,Darmstadt 98,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,AC Milan,Inter,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Inter,Juventus,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,AC Milan,Juventus,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,AC Milan,Atalanta,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Atalanta,Juventus,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Bologna,Juventus,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Atalanta,Bologna,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Atalanta,Roma,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Bologna,Roma,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Bologna,Lazio,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Lazio,Roma,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Fiorentina,Roma,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Fiorentina,Lazio,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Lazio,Torino,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Fiorentina,Torino,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Fiorentina,Napoli,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Napoli,Torino,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Genoa,Torino,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Genoa,Napoli,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Monza,Napoli,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Genoa,Monza,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Genoa,Hellas Verona,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Hellas Verona,Monza,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Lecce,Monza,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Hellas Verona,Lecce,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Hellas Verona,Udinese,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Lecce,Udinese,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Cagliari,Lecce,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Cagliari,Udinese,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,FC Empoli,Udinese,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Cagliari,FC Empoli,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Cagliari,Frosinone,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,FC Empoli,Frosinone,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,FC Empoli,Sassuolo,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Frosinone,Sassuolo,1
+Italy,Games of Matchday 38 Serie A 23/24,2023,Frosinone,Salernitana,2
+Italy,Games of Matchday 38 Serie A 23/24,2023,Salernitana,Sassuolo,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Monaco,PSG,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,PSG,Stade Brestois,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Monaco,Stade Brestois,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Lille,Monaco,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Lille,Stade Brestois,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Nice,Stade Brestois,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Lille,Nice,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Lille,Lyon,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Lyon,Nice,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Lens,Nice,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Lens,Lyon,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Lyon,Marseille,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Lens,Marseille,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Lens,Stade Reims,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Marseille,Stade Reims,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Marseille,Stade Rennais,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Stade Reims,Stade Rennais,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Stade Reims,Toulouse,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Stade Rennais,Toulouse,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Montpellier,Stade Rennais,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Montpellier,Toulouse,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,R. Strasbourg,Toulouse,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Montpellier,R. Strasbourg,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,FC Nantes,Montpellier,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,FC Nantes,R. Strasbourg,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Le Havre AC,R. Strasbourg,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,FC Nantes,Le Havre AC,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,FC Metz,FC Nantes,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,FC Metz,Le Havre AC,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,FC Lorient,Le Havre AC,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,FC Lorient,FC Metz,1
+France,Games of Matchday 34 Ligue 1 23/24,2023,Clermont Foot,FC Metz,2
+France,Games of Matchday 34 Ligue 1 23/24,2023,Clermont Foot,FC Lorient,1
+England,Games of Matchday 38 Premier League 24/25,2024,Arsenal,Liverpool,1
+England,Games of Matchday 38 Premier League 24/25,2024,Liverpool,Man City,2
+England,Games of Matchday 38 Premier League 24/25,2024,Arsenal,Man City,1
+England,Games of Matchday 38 Premier League 24/25,2024,Arsenal,Chelsea,2
+England,Games of Matchday 38 Premier League 24/25,2024,Chelsea,Man City,1
+England,Games of Matchday 38 Premier League 24/25,2024,Man City,Newcastle,2
+England,Games of Matchday 38 Premier League 24/25,2024,Chelsea,Newcastle,1
+England,Games of Matchday 38 Premier League 24/25,2024,Aston Villa,Chelsea,2
+England,Games of Matchday 38 Premier League 24/25,2024,Aston Villa,Newcastle,1
+England,Games of Matchday 38 Premier League 24/25,2024,Newcastle,Nott'm Forest,2
+England,Games of Matchday 38 Premier League 24/25,2024,Aston Villa,Nott'm Forest,1
+England,Games of Matchday 38 Premier League 24/25,2024,Aston Villa,Brighton,2
+England,Games of Matchday 38 Premier League 24/25,2024,Brighton,Nott'm Forest,1
+England,Games of Matchday 38 Premier League 24/25,2024,Bournemouth,Nott'm Forest,2
+England,Games of Matchday 38 Premier League 24/25,2024,Bournemouth,Brighton,1
+England,Games of Matchday 38 Premier League 24/25,2024,Brentford,Brighton,2
+England,Games of Matchday 38 Premier League 24/25,2024,Bournemouth,Brentford,1
+England,Games of Matchday 38 Premier League 24/25,2024,Bournemouth,Fulham,2
+England,Games of Matchday 38 Premier League 24/25,2024,Brentford,Fulham,1
+England,Games of Matchday 38 Premier League 24/25,2024,Brentford,Crystal Palace,2
+England,Games of Matchday 38 Premier League 24/25,2024,Crystal Palace,Fulham,1
+England,Games of Matchday 38 Premier League 24/25,2024,Everton,Fulham,2
+England,Games of Matchday 38 Premier League 24/25,2024,Crystal Palace,Everton,1
+England,Games of Matchday 38 Premier League 24/25,2024,Crystal Palace,West Ham,2
+England,Games of Matchday 38 Premier League 24/25,2024,Everton,West Ham,1
+England,Games of Matchday 38 Premier League 24/25,2024,Everton,Man Utd,2
+England,Games of Matchday 38 Premier League 24/25,2024,Man Utd,West Ham,1
+England,Games of Matchday 38 Premier League 24/25,2024,West Ham,Wolves,2
+England,Games of Matchday 38 Premier League 24/25,2024,Man Utd,Wolves,1
+England,Games of Matchday 38 Premier League 24/25,2024,Man Utd,Tottenham,2
+England,Games of Matchday 38 Premier League 24/25,2024,Tottenham,Wolves,1
+England,Games of Matchday 38 Premier League 24/25,2024,Leicester,Wolves,2
+England,Games of Matchday 38 Premier League 24/25,2024,Leicester,Tottenham,1
+England,Games of Matchday 38 Premier League 24/25,2024,Ipswich,Tottenham,2
+England,Games of Matchday 38 Premier League 24/25,2024,Ipswich,Leicester,1
+England,Games of Matchday 38 Premier League 24/25,2024,Leicester,Southampton,2
+England,Games of Matchday 38 Premier League 24/25,2024,Ipswich,Southampton,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Barcelona,Real Madrid,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Atlético,Barcelona,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Atlético,Real Madrid,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Athletic Club,Real Madrid,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Athletic Club,Atlético,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Atlético,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Athletic Club,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Athletic Club,Real Betis,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Real Betis,Villarreal,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Celta de Vigo,Villarreal,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Celta de Vigo,Real Betis,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Rayo Vallecano,Real Betis,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Celta de Vigo,Rayo Vallecano,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,CA Osasuna,Celta de Vigo,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,CA Osasuna,Rayo Vallecano,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Rayo Vallecano,RCD Mallorca,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,CA Osasuna,RCD Mallorca,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,CA Osasuna,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,RCD Mallorca,Real Sociedad,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,RCD Mallorca,Valencia,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Real Sociedad,Valencia,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Getafe,Real Sociedad,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Getafe,Valencia,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Espanyol,Valencia,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Espanyol,Getafe,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Alavés,Getafe,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Alavés,Espanyol,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Espanyol,Girona,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Alavés,Girona,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Alavés,Sevilla FC,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Girona,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,CD Leganés,Girona,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,CD Leganés,Sevilla FC,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Sevilla FC,UD Las Palmas,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,CD Leganés,UD Las Palmas,1
+Spain,Games of Matchday 38 LaLiga 24/25,2024,CD Leganés,Real Valladolid,2
+Spain,Games of Matchday 38 LaLiga 24/25,2024,Real Valladolid,UD Las Palmas,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Bayern Munich,Leverkusen,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Bayern Munich,Frankfurt,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Frankfurt,Leverkusen,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Dortmund,Leverkusen,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Dortmund,Frankfurt,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Frankfurt,Freiburg,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Dortmund,Freiburg,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Dortmund,Mainz,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Freiburg,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Freiburg,Leipzig,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Leipzig,Mainz,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Mainz,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Leipzig,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Leipzig,Stuttgart,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Stuttgart,Werder Bremen,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Mönchengladbach,Werder Bremen,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Mönchengladbach,Stuttgart,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Stuttgart,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Mönchengladbach,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Augsburg,Mönchengladbach,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Augsburg,Wolfsburg,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Union Berlin,Wolfsburg,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Augsburg,Union Berlin,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Augsburg,St. Pauli,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,St. Pauli,Union Berlin,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Hoffenheim,Union Berlin,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Hoffenheim,St. Pauli,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Heidenheim,St. Pauli,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Heidenheim,Hoffenheim,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Hoffenheim,Holstein Kiel,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Heidenheim,Holstein Kiel,1
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Heidenheim,VfL Bochum,2
+Germany,Games of Matchday 34 Bundesliga 24/25,2024,Holstein Kiel,VfL Bochum,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Inter,Napoli,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Atalanta,Napoli,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Atalanta,Inter,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Inter,Juventus,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Atalanta,Juventus,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Atalanta,Roma,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Juventus,Roma,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Fiorentina,Juventus,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Fiorentina,Roma,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Lazio,Roma,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Fiorentina,Lazio,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,AC Milan,Fiorentina,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,AC Milan,Lazio,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Bologna,Lazio,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,AC Milan,Bologna,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,AC Milan,Como,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Bologna,Como,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Bologna,Torino,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Como,Torino,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Como,Udinese,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Torino,Udinese,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Genoa,Torino,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Genoa,Udinese,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Hellas Verona,Udinese,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Genoa,Hellas Verona,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Cagliari,Genoa,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Cagliari,Hellas Verona,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Hellas Verona,Parma,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Cagliari,Parma,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Cagliari,Lecce,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Lecce,Parma,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,FC Empoli,Parma,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,FC Empoli,Lecce,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,Lecce,Venezia,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,FC Empoli,Venezia,1
+Italy,Games of Matchday 38 Serie A 24/25,2024,FC Empoli,Monza,2
+Italy,Games of Matchday 38 Serie A 24/25,2024,Monza,Venezia,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Marseille,PSG,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Monaco,PSG,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Marseille,Monaco,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Marseille,Nice,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Monaco,Nice,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Lille,Monaco,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Lille,Nice,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Lyon,Nice,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Lille,Lyon,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Lille,R. Strasbourg,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Lyon,R. Strasbourg,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Lens,Lyon,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Lens,R. Strasbourg,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,R. Strasbourg,Stade Brestois,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Lens,Stade Brestois,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Lens,Toulouse,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Stade Brestois,Toulouse,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,AJ Auxerre,Stade Brestois,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,AJ Auxerre,Toulouse,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Stade Rennais,Toulouse,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,AJ Auxerre,Stade Rennais,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,AJ Auxerre,FC Nantes,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,FC Nantes,Stade Rennais,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Angers SCO,Stade Rennais,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Angers SCO,FC Nantes,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,FC Nantes,Le Havre AC,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Angers SCO,Le Havre AC,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Angers SCO,Stade Reims,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Le Havre AC,Stade Reims,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Le Havre AC,Saint-Étienne,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Saint-Étienne,Stade Reims,1
+France,Games of Matchday 34 Ligue 1 24/25,2024,Montpellier,Stade Reims,2
+France,Games of Matchday 34 Ligue 1 24/25,2024,Montpellier,Saint-Étienne,1

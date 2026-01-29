@@ -1,0 +1,634 @@
+club,elo,club_clean,snapshot_date
+Barcelona,2031.65710449,barcelona,2018-09-01
+Real Madrid,2029.1796875,real madrid,2018-09-01
+Man City,1973.53356934,man city,2018-09-01
+Juventus,1964.05383301,juventus,2018-09-01
+Bayern,1953.04101562,bayern,2018-09-01
+Tottenham,1932.13452148,tottenham,2018-09-01
+Atletico,1931.73498535,atletico,2018-09-01
+Liverpool,1925.17114258,liverpool,2018-09-01
+Paris SG,1894.09057617,paris sg,2018-09-01
+Napoli,1865.90258789,napoli,2018-09-01
+Man United,1856.07958984,man united,2018-09-01
+Chelsea,1850.36499023,chelsea,2018-09-01
+Roma,1837.06384277,roma,2018-09-01
+Arsenal,1811.31616211,arsenal,2018-09-01
+Valencia,1790.07312012,valencia,2018-09-01
+Sevilla,1774.91796875,sevilla,2018-09-01
+Monaco,1767.66125488,monaco,2018-09-01
+Shakhtar,1763.42907715,shakhtar,2018-09-01
+Marseille,1755.34130859,marseille,2018-09-01
+Lyon,1754.83789062,lyon,2018-09-01
+Benfica,1754.54467773,benfica,2018-09-01
+Porto,1753.49890137,porto,2018-09-01
+Dortmund,1750.68041992,dortmund,2018-09-01
+Zenit,1750.00952148,zenit,2018-09-01
+Lazio,1743.6262207,lazio,2018-09-01
+Espanyol,1743.0546875,espanyol,2018-09-01
+Villarreal,1741.29016113,villarreal,2018-09-01
+Inter,1738.56066895,inter,2018-09-01
+Sociedad,1735.97619629,sociedad,2018-09-01
+Atalanta,1735.81530762,atalanta,2018-09-01
+Schalke,1732.16711426,schalke,2018-09-01
+Celta,1727.0123291,celta,2018-09-01
+Milan,1726.86474609,milan,2018-09-01
+Getafe,1723.94152832,getafe,2018-09-01
+Salzburg,1722.64550781,salzburg,2018-09-01
+Besiktas,1718.84899902,besiktas,2018-09-01
+Ajax,1718.01928711,ajax,2018-09-01
+Hoffenheim,1715.08764648,hoffenheim,2018-09-01
+CSKA Moskva,1715.07568359,cska moskva,2018-09-01
+Sporting,1713.70544434,sporting,2018-09-01
+Eibar,1711.41638184,eibar,2018-09-01
+Betis,1709.26257324,betis,2018-09-01
+Dynamo Kyiv,1708.21240234,dynamo kyiv,2018-09-01
+Leicester,1705.45605469,leicester,2018-09-01
+Levante,1705.03674316,levante,2018-09-01
+Alaves,1702.93212891,alaves,2018-09-01
+Everton,1701.75463867,everton,2018-09-01
+Leverkusen,1701.07678223,leverkusen,2018-09-01
+Bilbao,1701.03479004,bilbao,2018-09-01
+RB Leipzig,1692.55664062,rb leipzig,2018-09-01
+Fiorentina,1691.23095703,fiorentina,2018-09-01
+Spartak Moskva,1689.19592285,spartak moskva,2018-09-01
+Crystal Palace,1687.42492676,crystal palace,2018-09-01
+Bournemouth,1683.92297363,bournemouth,2018-09-01
+PSV,1679.14538574,psv,2018-09-01
+Gladbach,1676.9263916,gladbach,2018-09-01
+Torino,1675.81970215,torino,2018-09-01
+Girona,1670.00793457,girona,2018-09-01
+Crvena Zvezda,1658.31762695,crvena zvezda,2018-09-01
+FC Krasnodar,1657.67150879,fc krasnodar,2018-09-01
+Stuttgart,1657.56311035,stuttgart,2018-09-01
+Newcastle,1657.47814941,newcastle,2018-09-01
+Werder,1656.92993164,werder,2018-09-01
+Watford,1656.29248047,watford,2018-09-01
+PAOK,1655.19616699,paok,2018-09-01
+Young Boys,1653.18078613,young boys,2018-09-01
+Lok Moskva,1653.09521484,lok moskva,2018-09-01
+West Ham,1652.85656738,west ham,2018-09-01
+Burnley,1651.97192383,burnley,2018-09-01
+Galatasaray,1649.42700195,galatasaray,2018-09-01
+Frankfurt,1645.54858398,frankfurt,2018-09-01
+Rennes,1644.54992676,rennes,2018-09-01
+Bordeaux,1643.7833252,bordeaux,2018-09-01
+Bueyueksehir,1636.94775391,bueyueksehir,2018-09-01
+Brugge,1636.13061523,brugge,2018-09-01
+Olympiakos,1635.84289551,olympiakos,2018-09-01
+Southampton,1635.48791504,southampton,2018-09-01
+Genk,1634.83886719,genk,2018-09-01
+Fenerbahce,1633.83068848,fenerbahce,2018-09-01
+Saint-Etienne,1633.07043457,saint-etienne,2018-09-01
+Brighton,1631.77893066,brighton,2018-09-01
+Leganes,1631.76159668,leganes,2018-09-01
+AEK,1628.98950195,aek,2018-09-01
+Valladolid,1628.45397949,valladolid,2018-09-01
+Fulham,1627.83398438,fulham,2018-09-01
+Augsburg,1626.5567627,augsburg,2018-09-01
+Rostov,1624.20959473,rostov,2018-09-01
+Braga,1623.77453613,braga,2018-09-01
+Nice,1623.36206055,nice,2018-09-01
+Huesca,1622.32275391,huesca,2018-09-01
+Hertha,1619.48352051,hertha,2018-09-01
+Wolfsburg,1616.50024414,wolfsburg,2018-09-01
+Mainz,1610.65246582,mainz,2018-09-01
+APOEL,1607.27941895,apoel,2018-09-01
+Depor,1606.67456055,depor,2018-09-01
+Sassuolo,1606.00646973,sassuolo,2018-09-01
+West Brom,1605.01794434,west brom,2018-09-01
+Swansea,1603.21813965,swansea,2018-09-01
+Dijon,1600.5526123,dijon,2018-09-01
+Basel,1599.07397461,basel,2018-09-01
+Rayo Vallecano,1598.50073242,rayo vallecano,2018-09-01
+Montpellier,1596.6550293,montpellier,2018-09-01
+Gijon,1596.35913086,gijon,2018-09-01
+Malaga,1595.7043457,malaga,2018-09-01
+Reims,1594.15917969,reims,2018-09-01
+Sampdoria,1593.0357666,sampdoria,2018-09-01
+Wolves,1592.3392334,wolves,2018-09-01
+Anderlecht,1592.17614746,anderlecht,2018-09-01
+Hannover,1588.83703613,hannover,2018-09-01
+Empoli,1587.99523926,empoli,2018-09-01
+Zaragoza,1587.93603516,zaragoza,2018-09-01
+Viktoria Plzen,1587.36157227,viktoria plzen,2018-09-01
+Stoke,1585.40710449,stoke,2018-09-01
+Middlesbrough,1582.80371094,middlesbrough,2018-09-01
+Rubin Kazan,1582.35180664,rubin kazan,2018-09-01
+Gent,1579.03894043,gent,2018-09-01
+Standard,1578.11071777,standard,2018-09-01
+Cadiz,1576.16931152,cadiz,2018-09-01
+Dinamo Zagreb,1573.62878418,dinamo zagreb,2018-09-01
+Lille,1572.97192383,lille,2018-09-01
+Hamburg,1570.73291016,hamburg,2018-09-01
+Cardiff,1569.52514648,cardiff,2018-09-01
+Spal,1568.78149414,spal,2018-09-01
+Genoa,1568.65222168,genoa,2018-09-01
+Rapid Wien,1568.5222168,rapid wien,2018-09-01
+Freiburg,1567.65991211,freiburg,2018-09-01
+Aston Villa,1567.18603516,aston villa,2018-09-01
+Nantes,1564.7364502,nantes,2018-09-01
+Nimes,1564.71838379,nimes,2018-09-01
+Koeln,1563.38317871,koeln,2018-09-01
+Udinese,1561.65600586,udinese,2018-09-01
+FC Kobenhavn,1560.08972168,fc kobenhavn,2018-09-01
+Dynamo Moskva,1560.06213379,dynamo moskva,2018-09-01
+Tenerife,1557.97741699,tenerife,2018-09-01
+Terek Grozny,1557.93554688,terek grozny,2018-09-01
+Toulouse,1557.40722656,toulouse,2018-09-01
+Oviedo,1556.4407959,oviedo,2018-09-01
+Steaua,1554.94848633,steaua,2018-09-01
+Huddersfield,1554.47644043,huddersfield,2018-09-01
+Osasuna,1554.03479004,osasuna,2018-09-01
+Celtic,1551.22839355,celtic,2018-09-01
+Slavia Praha,1550.63061523,slavia praha,2018-09-01
+Chievo,1547.52331543,chievo,2018-09-01
+Guingamp,1547.26062012,guingamp,2018-09-01
+Las Palmas,1545.12866211,las palmas,2018-09-01
+Feyenoord,1545.12780762,feyenoord,2018-09-01
+Numancia,1544.29492188,numancia,2018-09-01
+Amiens,1543.41430664,amiens,2018-09-01
+Rosenborg,1543.14770508,rosenborg,2018-09-01
+Cagliari,1542.02246094,cagliari,2018-09-01
+Angers,1540.11938477,angers,2018-09-01
+Rijeka,1538.76501465,rijeka,2018-09-01
+Larnaca,1538.58361816,larnaca,2018-09-01
+Razgrad,1538.05969238,razgrad,2018-09-01
+Ufa,1538.04931641,ufa,2018-09-01
+Bologna,1537.40234375,bologna,2018-09-01
+Alkmaar,1537.13793945,alkmaar,2018-09-01
+AIK,1536.42590332,aik,2018-09-01
+Midtjylland,1533.50219727,midtjylland,2018-09-01
+Apollon Lemesos,1531.18041992,apollon lemesos,2018-09-01
+Granada,1527.68884277,granada,2018-09-01
+Tula,1527.62768555,tula,2018-09-01
+Crotone,1527.3963623,crotone,2018-09-01
+Brentford,1526.76635742,brentford,2018-09-01
+Alcorcon,1525.44750977,alcorcon,2018-09-01
+Brondby,1523.50085449,brondby,2018-09-01
+Trabzonspor,1519.83935547,trabzonspor,2018-09-01
+Sparta Praha,1517.37841797,sparta praha,2018-09-01
+Malmoe,1517.25585938,malmoe,2018-09-01
+Derby,1515.13305664,derby,2018-09-01
+Cordoba,1514.09985352,cordoba,2018-09-01
+Kasimpasa,1514.04016113,kasimpasa,2018-09-01
+Le Havre,1513.90161133,le havre,2018-09-01
+Leeds,1513.39489746,leeds,2018-09-01
+Strasbourg,1509.1229248,strasbourg,2018-09-01
+Metz,1508.3963623,metz,2018-09-01
+Olexandriya,1508.23364258,olexandriya,2018-09-01
+Tarragona,1508.18029785,tarragona,2018-09-01
+Sverdlovsk,1504.75170898,sverdlovsk,2018-09-01
+BATE,1503.68127441,bate,2018-09-01
+Lorient,1503.02539062,lorient,2018-09-01
+Nuernberg,1502.37145996,nuernberg,2018-09-01
+Panathinaikos,1499.58410645,panathinaikos,2018-09-01
+Orenburg,1499.02441406,orenburg,2018-09-01
+Partizan,1497.7467041,partizan,2018-09-01
+Karabakh Agdam,1497.73193359,karabakh agdam,2018-09-01
+Brest,1494.88195801,brest,2018-09-01
+Jablonec,1494.65405273,jablonec,2018-09-01
+Preston,1494.57409668,preston,2018-09-01
+Palermo,1494.49267578,palermo,2018-09-01
+Frosinone,1494.30371094,frosinone,2018-09-01
+Sturm Graz,1493.10778809,sturm graz,2018-09-01
+Millwall,1492.82116699,millwall,2018-09-01
+Caen,1492.77294922,caen,2018-09-01
+Vitesse,1491.87182617,vitesse,2018-09-01
+Holstein,1491.03808594,holstein,2018-09-01
+Almeria,1490.8026123,almeria,2018-09-01
+FK Astana,1490.37890625,fk astana,2018-09-01
+Reus Deportiu,1488.27941895,reus deportiu,2018-09-01
+Vorskla,1488.04455566,vorskla,2018-09-01
+Union Berlin,1487.26818848,union berlin,2018-09-01
+Sheffield Weds,1486.87438965,sheffield weds,2018-09-01
+Albacete,1485.73620605,albacete,2018-09-01
+Mallorca,1484.20397949,mallorca,2018-09-01
+Bristol City,1483.95825195,bristol city,2018-09-01
+Oostende,1482.84143066,oostende,2018-09-01
+LASK,1482.83447266,lask,2018-09-01
+Clermont,1480.58813477,clermont,2018-09-01
+Beer-Sheva,1479.55883789,beer-sheva,2018-09-01
+Lugo,1479.43310547,lugo,2018-09-01
+Zorya,1478.7689209,zorya,2018-09-01
+Zulte Waregem,1478.07067871,zulte waregem,2018-09-01
+Darmstadt,1477.65246582,darmstadt,2018-09-01
+Parma,1476.64575195,parma,2018-09-01
+Sheffield United,1475.95812988,sheffield united,2018-09-01
+Elche,1475.26635742,elche,2018-09-01
+Cittadella,1473.96520996,cittadella,2018-09-01
+Konyaspor,1473.34509277,konyaspor,2018-09-01
+Atromitos,1472.98132324,atromitos,2018-09-01
+Guimaraes,1472.94213867,guimaraes,2018-09-01
+Duesseldorf,1472.00231934,duesseldorf,2018-09-01
+CSKA Sofia,1471.81469727,cska sofia,2018-09-01
+Lens,1471.23815918,lens,2018-09-01
+M Tel Aviv,1470.95153809,m tel aviv,2018-09-01
+CFR Cluj,1470.81054688,cfr cluj,2018-09-01
+Extremadura,1468.76818848,extremadura,2018-09-01
+Utrecht,1467.39587402,utrecht,2018-09-01
+Hajduk,1467.10144043,hajduk,2018-09-01
+Rio Ave,1464.25585938,rio ave,2018-09-01
+Hull,1463.54040527,hull,2018-09-01
+Ostersund,1463.00891113,ostersund,2018-09-01
+Charleroi,1462.64660645,charleroi,2018-09-01
+Austria Wien,1462.23388672,austria wien,2018-09-01
+Venezia,1460.95874023,venezia,2018-09-01
+Zuerich,1459.4979248,zuerich,2018-09-01
+Ingolstadt,1458.60510254,ingolstadt,2018-09-01
+Kortrijk,1458.36462402,kortrijk,2018-09-01
+Majadahonda,1458.15026855,majadahonda,2018-09-01
+Maribor,1457.97497559,maribor,2018-09-01
+Norrkoeping,1457.95227051,norrkoeping,2018-09-01
+Akhisar,1455.09716797,akhisar,2018-09-01
+Bochum,1454.81811523,bochum,2018-09-01
+Yenisey,1454.55615234,yenisey,2018-09-01
+Norwich,1454.43835449,norwich,2018-09-01
+Anorthosis,1453.78100586,anorthosis,2018-09-01
+Maritimo,1452.54882812,maritimo,2018-09-01
+Antalyaspor,1451.6262207,antalyaspor,2018-09-01
+Verona,1450.67419434,verona,2018-09-01
+Malatyaspor,1450.38562012,malatyaspor,2018-09-01
+Kryliya Sovetov,1448.92321777,kryliya sovetov,2018-09-01
+Boavista,1448.64306641,boavista,2018-09-01
+Molde,1448.34765625,molde,2018-09-01
+Dinamo Bucuresti,1447.88525391,dinamo bucuresti,2018-09-01
+Paris FC,1446.55541992,paris fc,2018-09-01
+Haecken,1446.37011719,haecken,2018-09-01
+Luzern,1445.53833008,luzern,2018-09-01
+Benevento,1445.40197754,benevento,2018-09-01
+Bielefeld,1445.25891113,bielefeld,2018-09-01
+Rangers,1442.73937988,rangers,2018-09-01
+Goeztepe,1438.8371582,goeztepe,2018-09-01
+Sion,1437.29077148,sion,2018-09-01
+Xanthi,1436.38781738,xanthi,2018-09-01
+Videoton,1435.89318848,videoton,2018-09-01
+Antwerp,1435.60351562,antwerp,2018-09-01
+Sivasspor,1435.5144043,sivasspor,2018-09-01
+Foggia,1435.16455078,foggia,2018-09-01
+Ajaccio,1435.10314941,ajaccio,2018-09-01
+Heidenheim,1435.00244141,heidenheim,2018-09-01
+St Truiden,1433.76086426,st truiden,2018-09-01
+Sarpsborg,1432.8269043,sarpsborg,2018-09-01
+Astra,1432.34838867,astra,2018-09-01
+Perugia,1431.87072754,perugia,2018-09-01
+St Pauli,1431.59301758,st pauli,2018-09-01
+Osijek,1431.56311035,osijek,2018-09-01
+Troyes,1431.55456543,troyes,2018-09-01
+Trencin,1430.81665039,trencin,2018-09-01
+Anzhi,1430.01416016,anzhi,2018-09-01
+Kayseri,1429.51855469,kayseri,2018-09-01
+Nordsjaelland,1429.171875,nordsjaelland,2018-09-01
+Chaves,1428.77832031,chaves,2018-09-01
+Forest,1427.91467285,forest,2018-09-01
+Chateauroux,1426.14599609,chateauroux,2018-09-01
+Ipswich,1424.94018555,ipswich,2018-09-01
+Wolfsberg,1424.4095459,wolfsberg,2018-09-01
+Hammarby,1423.57580566,hammarby,2018-09-01
+Asteras Tripolis,1423.22888184,asteras tripolis,2018-09-01
+Thun,1422.00732422,thun,2018-09-01
+Lok Zagreb,1421.50109863,lok zagreb,2018-09-01
+Lokeren,1421.35583496,lokeren,2018-09-01
+Alanyaspor,1421.17480469,alanyaspor,2018-09-01
+Fuerth,1419.99157715,fuerth,2018-09-01
+Belenenses,1418.41333008,belenenses,2018-09-01
+Dinamo Minsk,1417.25732422,dinamo minsk,2018-09-01
+Levski,1417.10668945,levski,2018-09-01
+Trnava,1416.84069824,trnava,2018-09-01
+Aarhus,1415.3046875,aarhus,2018-09-01
+Craiova,1414.19213867,craiova,2018-09-01
+Aberdeen,1413.28491211,aberdeen,2018-09-01
+Spezia,1411.67211914,spezia,2018-09-01
+Viitorul,1411.19494629,viitorul,2018-09-01
+Panionios,1410.56616211,panionios,2018-09-01
+Jagiellonia,1410.44799805,jagiellonia,2018-09-01
+Mattersburg,1410.31677246,mattersburg,2018-09-01
+Djurgarden,1410.00012207,djurgarden,2018-09-01
+Brann,1409.17370605,brann,2018-09-01
+Bursaspor,1408.90820312,bursaspor,2018-09-01
+Lugano,1408.60668945,lugano,2018-09-01
+Niort,1407.36865234,niort,2018-09-01
+Regensburg,1406.83068848,regensburg,2018-09-01
+Salernitana,1406.57580566,salernitana,2018-09-01
+Feirense,1406.03955078,feirense,2018-09-01
+QPR,1405.0456543,qpr,2018-09-01
+Lech,1404.19360352,lech,2018-09-01
+Slovan Liberec,1403.75085449,slovan liberec,2018-09-01
+Ferencvaros,1403.66882324,ferencvaros,2018-09-01
+Grenoble,1402.2824707,grenoble,2018-09-01
+Sochaux,1401.7565918,sochaux,2018-09-01
+Birmingham,1399.96875,birmingham,2018-09-01
+Blackburn,1398.37817383,blackburn,2018-09-01
+Wigan,1398.09387207,wigan,2018-09-01
+Groningen,1396.4934082,groningen,2018-09-01
+Admira,1395.66845703,admira,2018-09-01
+Carpi,1395.51257324,carpi,2018-09-01
+Legia,1394.66992188,legia,2018-09-01
+Beziers,1393.77844238,beziers,2018-09-01
+Cercle Brugge,1392.18847656,cercle brugge,2018-09-01
+Altach,1391.20556641,altach,2018-09-01
+Aalborg,1391.07141113,aalborg,2018-09-01
+Brescia,1390.75268555,brescia,2018-09-01
+Sandhausen,1390.16772461,sandhausen,2018-09-01
+Reading,1389.11096191,reading,2018-09-01
+Pescara,1388.69543457,pescara,2018-09-01
+Tondela,1388.37634277,tondela,2018-09-01
+Duisburg,1387.67297363,duisburg,2018-09-01
+Heerenveen,1387.2644043,heerenveen,2018-09-01
+Auxerre,1386.62902832,auxerre,2018-09-01
+Cremonese,1386.12475586,cremonese,2018-09-01
+Dresden,1385.62487793,dresden,2018-09-01
+Giannina,1385.13916016,giannina,2018-09-01
+Heracles,1384.97558594,heracles,2018-09-01
+Ankaraguecue,1384.49584961,ankaraguecue,2018-09-01
+Gazelec,1382.80883789,gazelec,2018-09-01
+Bolton,1381.53845215,bolton,2018-09-01
+Grasshoppers,1381.38562012,grasshoppers,2018-09-01
+Willem II,1381.07104492,willem ii,2018-09-01
+Wisla,1379.55224609,wisla,2018-09-01
+Red Star,1379.18859863,red star,2018-09-01
+Soligorsk,1378.98986816,soligorsk,2018-09-01
+Desna,1378.56311035,desna,2018-09-01
+Ilichivets,1378.38842773,ilichivets,2018-09-01
+Ascoli,1378.22705078,ascoli,2018-09-01
+Chernomorets,1377.29272461,chernomorets,2018-09-01
+Moreirense,1376.47229004,moreirense,2018-09-01
+Haugesund,1376.22253418,haugesund,2018-09-01
+Padova,1375.18920898,padova,2018-09-01
+Lecce,1375.13647461,lecce,2018-09-01
+Beveren,1374.0098877,beveren,2018-09-01
+Olimpik Donetsk,1373.9921875,olimpik donetsk,2018-09-01
+Valenciennes,1373.77111816,valenciennes,2018-09-01
+Dunajska,1373.56774902,dunajska,2018-09-01
+Setubal,1373.52185059,setubal,2018-09-01
+Cosenza,1373.24108887,cosenza,2018-09-01
+Sigma Olomouc,1373.20751953,sigma olomouc,2018-09-01
+Olimpija Ljubljana,1372.00622559,olimpija ljubljana,2018-09-01
+Paderborn,1371.9263916,paderborn,2018-09-01
+Rotherham,1371.81542969,rotherham,2018-09-01
+Livorno,1371.28503418,livorno,2018-09-01
+FC Lviv,1370.30236816,fc lviv,2018-09-01
+Karpaty,1370.18847656,karpaty,2018-09-01
+Hartberg,1369.72888184,hartberg,2018-09-01
+Portimonense,1368.61279297,portimonense,2018-09-01
+Rizespor,1366.46618652,rizespor,2018-09-01
+StGallen,1366.35339355,stgallen,2018-09-01
+St Poelten,1365.95666504,st poelten,2018-09-01
+Stromsgodset,1365.65234375,stromsgodset,2018-09-01
+Erzurum BB,1365.6138916,erzurum bb,2018-09-01
+SonderjyskE,1365.32922363,sonderjyske,2018-09-01
+Aue,1364.91955566,aue,2018-09-01
+Santa Clara,1362.43334961,santa clara,2018-09-01
+Den Haag,1361.51269531,den haag,2018-09-01
+Wacker Innsbruck,1361.37792969,wacker innsbruck,2018-09-01
+Mlada Boleslav,1358.97265625,mlada boleslav,2018-09-01
+Randers,1358.52636719,randers,2018-09-01
+Nacional,1358.24938965,nacional,2018-09-01
+Gabala,1357.81506348,gabala,2018-09-01
+Valerenga,1357.67834473,valerenga,2018-09-01
+Aves,1357.39855957,aves,2018-09-01
+Magdeburg,1356.17346191,magdeburg,2018-09-01
+Beitar,1355.44628906,beitar,2018-09-01
+Slovan Bratislava,1354.31335449,slovan bratislava,2018-09-01
+Banik Ostrava,1353.87182617,banik ostrava,2018-09-01
+Orleans,1353.8145752,orleans,2018-09-01
+Domzale,1353.50317383,domzale,2018-09-01
+Beroe Stara Zagora,1352.57299805,beroe stara zagora,2018-09-01
+Lubin,1352.42114258,lubin,2018-09-01
+Elfsborg,1350.95532227,elfsborg,2018-09-01
+Excelsior,1350.41552734,excelsior,2018-09-01
+Hibernian,1349.99365234,hibernian,2018-09-01
+Odd Grenland,1349.04394531,odd grenland,2018-09-01
+Lechia,1348.61999512,lechia,2018-09-01
+Nis,1348.11938477,nis,2018-09-01
+Arsenal Kyiv,1346.75793457,arsenal kyiv,2018-09-01
+Levadeiakos,1345.01464844,levadeiakos,2018-09-01
+Botev Plovdiv,1344.88146973,botev plovdiv,2018-09-01
+Nancy,1344.80749512,nancy,2018-09-01
+Panetolikos,1343.62585449,panetolikos,2018-09-01
+Sundsvall,1341.93701172,sundsvall,2018-09-01
+Odense,1341.7130127,odense,2018-09-01
+Botosani,1339.51098633,botosani,2018-09-01
+Kalmar,1338.9017334,kalmar,2018-09-01
+Goeteborg,1338.89916992,goeteborg,2018-09-01
+Bohemians Praha,1338.52026367,bohemians praha,2018-09-01
+Horsens,1337.87683105,horsens,2018-09-01
+Tescoma Zlin,1336.44775391,tescoma zlin,2018-09-01
+Hapoel Haifa,1336.31030273,hapoel haifa,2018-09-01
+Kairat,1334.88464355,kairat,2018-09-01
+Sheriff Tiraspol,1333.65112305,sheriff tiraspol,2018-09-01
+Zwolle,1332.03210449,zwolle,2018-09-01
+Hearts,1331.41699219,hearts,2018-09-01
+Slaven Belupo,1330.81567383,slaven belupo,2018-09-01
+Teplice,1328.72705078,teplice,2018-09-01
+Larisa,1327.00231934,larisa,2018-09-01
+Shkendija,1326.70690918,shkendija,2018-09-01
+Mouscron,1326.56274414,mouscron,2018-09-01
+Slovacko,1326.47827148,slovacko,2018-09-01
+Eupen,1326.41577148,eupen,2018-09-01
+Plock,1326.36987305,plock,2018-09-01
+Aris,1325.91833496,aris,2018-09-01
+Xamax,1323.85839844,xamax,2018-09-01
+Esbjerg,1322.06188965,esbjerg,2018-09-01
+Breda,1316.99633789,breda,2018-09-01
+Iasi,1316.82983398,iasi,2018-09-01
+Kristiansund,1313.8392334,kristiansund,2018-09-01
+Piast Gliwice,1313.58752441,piast gliwice,2018-09-01
+Vaduz,1313.23522949,vaduz,2018-09-01
+OFI,1312.78271484,ofi,2018-09-01
+Oerebro,1312.01708984,oerebro,2018-09-01
+Tromso,1311.13427734,tromso,2018-09-01
+FK Vitebsk,1310.35778809,fk vitebsk,2018-09-01
+Cukaricki,1309.27514648,cukaricki,2018-09-01
+Sepsi,1306.4666748,sepsi,2018-09-01
+Kilmarnock,1306.10839844,kilmarnock,2018-09-01
+Torpedo Zhodino,1304.31945801,torpedo zhodino,2018-09-01
+Inter Zapresic,1303.7598877,inter zapresic,2018-09-01
+Venlo,1303.56225586,venlo,2018-09-01
+Slask,1303.29492188,slask,2018-09-01
+Apollon Athens,1301.43640137,apollon athens,2018-09-01
+Honved,1301.36608887,honved,2018-09-01
+Novi Sad,1299.08911133,novi sad,2018-09-01
+Gornik,1298.39038086,gornik,2018-09-01
+Gaz Metan,1298.33874512,gaz metan,2018-09-01
+Lillestrom,1297.85888672,lillestrom,2018-09-01
+Dinamo Brest,1296.44030762,dinamo brest,2018-09-01
+Korona,1295.33581543,korona,2018-09-01
+Bnei Yehuda,1294.67871094,bnei yehuda,2018-09-01
+Hobro,1293.46374512,hobro,2018-09-01
+M Petach Tikva,1292.90612793,m petach tikva,2018-09-01
+Vejle,1292.32543945,vejle,2018-09-01
+Neftchi,1292.28955078,neftchi,2018-09-01
+Stabaek,1290.75085449,stabaek,2018-09-01
+Tobol,1288.16137695,tobol,2018-09-01
+Karvina,1287.96081543,karvina,2018-09-01
+Lamia,1287.32897949,lamia,2018-09-01
+Irtysh,1286.81604004,irtysh,2018-09-01
+Vendsyssel,1286.0012207,vendsyssel,2018-09-01
+Ranheim,1285.84509277,ranheim,2018-09-01
+Chiajna,1283.74609375,chiajna,2018-09-01
+Suduva,1283.57006836,suduva,2018-09-01
+Netanya,1282.77990723,netanya,2018-09-01
+Dunarea Calarasi,1280.36816406,dunarea calarasi,2018-09-01
+De Graafschap,1278.59545898,de graafschap,2018-09-01
+Emmen,1277.39709473,emmen,2018-09-01
+Krusevac,1277.06311035,krusevac,2018-09-01
+Zlatibor,1276.4777832,zlatibor,2018-09-01
+Nova Gorica,1276.45996094,nova gorica,2018-09-01
+Ujpest,1274.66662598,ujpest,2018-09-01
+Rudes Zagreb,1274.31188965,rudes zagreb,2018-09-01
+Sittard,1270.47741699,sittard,2018-09-01
+Vozdovac Beograd,1269.55541992,vozdovac beograd,2018-09-01
+Cherno More,1266.79907227,cherno more,2018-09-01
+Pribram,1266.58996582,pribram,2018-09-01
+Dukla,1265.30175781,dukla,2018-09-01
+Pogon,1264.7364502,pogon,2018-09-01
+IK Sirius,1263.73962402,ik sirius,2018-09-01
+Cracovia,1261.43615723,cracovia,2018-09-01
+Dudelange,1261.1529541,dudelange,2018-09-01
+Bodoe Glimt,1260.29016113,bodoe glimt,2018-09-01
+Kiryat Shmona,1259.66210938,kiryat shmona,2018-09-01
+Hermannstadt,1259.34069824,hermannstadt,2018-09-01
+Dundalk,1258.82751465,dundalk,2018-09-01
+Inter Baku,1258.73461914,inter baku,2018-09-01
+St Johnstone,1257.94018555,st johnstone,2018-09-01
+Slavia Sofia,1256.94165039,slavia sofia,2018-09-01
+Debrecen,1254.22692871,debrecen,2018-09-01
+Maccabi Haifa,1250.28869629,maccabi haifa,2018-09-01
+Arka,1250.0234375,arka,2018-09-01
+HNK Gorica,1248.63220215,hnk gorica,2018-09-01
+Zalgiris Vilnius,1246.18945312,zalgiris vilnius,2018-09-01
+Celje,1245.08911133,celje,2018-09-01
+Vardar,1241.6348877,vardar,2018-09-01
+Kukesi,1241.20275879,kukesi,2018-09-01
+Lok Plovdiv,1240.48266602,lok plovdiv,2018-09-01
+Miedz Legnica,1240.30090332,miedz legnica,2018-09-01
+Mladost Lucani,1237.35632324,mladost lucani,2018-09-01
+FK Sarajevo,1236.93798828,fk sarajevo,2018-09-01
+Neman Grodno,1235.79345703,neman grodno,2018-09-01
+Zeljeznicar,1235.76745605,zeljeznicar,2018-09-01
+Paksi,1234.46154785,paksi,2018-09-01
+Raanana,1233.39440918,raanana,2018-09-01
+Sosnowiec,1233.28210449,sosnowiec,2018-09-01
+Trakai,1232.15698242,trakai,2018-09-01
+Hafnarfjoerdur,1231.44030762,hafnarfjoerdur,2018-09-01
+Slutsk,1229.87145996,slutsk,2018-09-01
+Ventspils,1229.69616699,ventspils,2018-09-01
+HJK Helsinki,1229.63842773,hjk helsinki,2018-09-01
+Istra 1961,1229.59069824,istra 1961,2018-09-01
+Bnei Sakhinin,1227.40930176,bnei sakhinin,2018-09-01
+Septemvri Sofia,1225.02648926,septemvri sofia,2018-09-01
+Voluntari,1222.87817383,voluntari,2018-09-01
+Opava,1220.66748047,opava,2018-09-01
+Motherwell,1219.77893066,motherwell,2018-09-01
+Dalkurd,1218.81323242,dalkurd,2018-09-01
+Etar,1218.7824707,etar,2018-09-01
+Hapoel Eran Hadera,1218.51904297,hapoel eran hadera,2018-09-01
+Livingston,1216.7208252,livingston,2018-09-01
+Chikhura,1215.5333252,chikhura,2018-09-01
+Brommapojkarna,1214.70080566,brommapojkarna,2018-09-01
+Siroki Brijeg,1212.30932617,siroki brijeg,2018-09-01
+Trelleborg,1211.81604004,trelleborg,2018-09-01
+Gorodeya,1210.93591309,gorodeya,2018-09-01
+Torpedo Kutaisi,1210.22558594,torpedo kutaisi,2018-09-01
+MTK,1208.88964844,mtk,2018-09-01
+Shkupi,1206.1829834,shkupi,2018-09-01
+Rabotnicki,1204.85559082,rabotnicki,2018-09-01
+H Tel Aviv,1204.0592041,h tel aviv,2018-09-01
+Sandefjord,1203.30090332,sandefjord,2018-09-01
+Dinamo Tbilisi,1202.96289062,dinamo tbilisi,2018-09-01
+Laci,1202.73010254,laci,2018-09-01
+Dunav Ruse,1201.02990723,dunav ruse,2018-09-01
+Cork City,1200.24450684,cork city,2018-09-01
+Mezokovesd-Zsory,1198.25183105,mezokovesd-zsory,2018-09-01
+Start,1195.50915527,start,2018-09-01
+Rudar Velenje,1194.32727051,rudar velenje,2018-09-01
+Macva Sabac,1193.91625977,macva sabac,2018-09-01
+Derry City,1193.77026367,derry city,2018-09-01
+St Mirren,1193.52905273,st mirren,2018-09-01
+Ashdod,1192.98950195,ashdod,2018-09-01
+Niedercorn,1192.63684082,niedercorn,2018-09-01
+Zrinjski Mostar,1187.38220215,zrinjski mostar,2018-09-01
+Stumbras,1186.578125,stumbras,2018-09-01
+FC Samtredia,1185.59155273,fc samtredia,2018-09-01
+Haladas,1183.18676758,haladas,2018-09-01
+Shamrock,1182.65881348,shamrock,2018-09-01
+Petrocub,1182.04833984,petrocub,2018-09-01
+Partizani Tirana,1181.56262207,partizani tirana,2018-09-01
+Diosgyori,1179.87011719,diosgyori,2018-09-01
+Aluminij,1178.67993164,aluminij,2018-09-01
+FK Minsk,1177.5604248,fk minsk,2018-09-01
+Puskas Akademia,1177.11523438,puskas akademia,2018-09-01
+Fola Esch,1175.41247559,fola esch,2018-09-01
+Zemun,1173.91394043,zemun,2018-09-01
+Mura,1173.75415039,mura,2018-09-01
+Rad,1173.31494141,rad,2018-09-01
+Radnik Surdulica,1173.27294922,radnik surdulica,2018-09-01
+Backa Palanka,1172.83056641,backa palanka,2018-09-01
+Vitosha Bistritsa,1172.78967285,vitosha bistritsa,2018-09-01
+Olimpia Balti,1171.55505371,olimpia balti,2018-09-01
+Luftetari,1171.17590332,luftetari,2018-09-01
+Kuopio,1170.24609375,kuopio,2018-09-01
+Dundee,1169.55773926,dundee,2018-09-01
+Gomel,1165.32995605,gomel,2018-09-01
+Hamilton,1164.5513916,hamilton,2018-09-01
+Proleter Novi Sad,1164.00244141,proleter novi sad,2018-09-01
+Ilves Tampere,1160.13317871,ilves tampere,2018-09-01
+Botev Vratsa,1157.53857422,botev vratsa,2018-09-01
+Lahti,1156.92089844,lahti,2018-09-01
+Krsko,1155.89746094,krsko,2018-09-01
+Isloch,1155.7545166,isloch,2018-09-01
+Stjarnan,1155.33825684,stjarnan,2018-09-01
+Valur,1155.25805664,valur,2018-09-01
+Vereya,1154.64770508,vereya,2018-09-01
+Vestmannaeyjar,1154.23254395,vestmannaeyjar,2018-09-01
+Smolevichi,1151.75683594,smolevichi,2018-09-01
+Kisvarda,1151.33178711,kisvarda,2018-09-01
+Milsami Orhei,1149.80834961,milsami orhei,2018-09-01
+FK Riga,1140.85437012,fk riga,2018-09-01
+Triglav,1130.33740234,triglav,2018-09-01
+Spartaks Jurmala,1126.17712402,spartaks jurmala,2018-09-01
+Dinamo Vranje,1125.11413574,dinamo vranje,2018-09-01
+R Letzebuerg,1123.27124023,r letzebuerg,2018-09-01
+Liepajas,1122.90234375,liepajas,2018-09-01
+Pyunik,1119.63061523,pyunik,2018-09-01
+Luch Minsk,1117.92297363,luch minsk,2018-09-01
+Prishtine,1111.52709961,prishtine,2018-09-01
+Torpedo Minsk,1106.90112305,torpedo minsk,2018-09-01
+Drita,1102.24316406,drita,2018-09-01
+Podgorica,1083.91027832,podgorica,2018-09-01
+Dnepr Mogilev,1080.98132324,dnepr mogilev,2018-09-01
+Levadia Tallinn,1075.2130127,levadia tallinn,2018-09-01
+Rudar Pljevlja,1074.29370117,rudar pljevlja,2018-09-01
+Mladost,1069.10705566,mladost,2018-09-01
+Sutjeska,1058.2277832,sutjeska,2018-09-01
+Alashkert,1049.1315918,alashkert,2018-09-01
+Nomme Kalju,1045.41149902,nomme kalju,2018-09-01
+Valletta,1043.51220703,valletta,2018-09-01
+Balzan,1037.98010254,balzan,2018-09-01
+Banants,1017.65270996,banants,2018-09-01
+The New Saints,1017.46716309,the new saints,2018-09-01
+Crusaders,1013.3949585,crusaders,2018-09-01
+Gzira United,1010.68231201,gzira united,2018-09-01
+Gandzasar Kapan,1010.20599365,gandzasar kapan,2018-09-01
+Gota,1007.7288208,gota,2018-09-01
+Connahs Quay,1004.33007812,connahs quay,2018-09-01
+Cliftonville,1000.13360596,cliftonville,2018-09-01
+Glenavon,999.681274414,glenavon,2018-09-01
+Birkirkara,994.759033203,birkirkara,2018-09-01
+Coleraine,993.976318359,coleraine,2018-09-01
+Cefn Druids,983.869140625,cefn druids,2018-09-01
+Trans Narva,973.611022949,trans narva,2018-09-01
+Flora Tallinn,951.318481445,flora tallinn,2018-09-01
+Bala,945.736328125,bala,2018-09-01
+Klaksvik,933.072937012,klaksvik,2018-09-01
+B 36 Torshavn,914.728637695,b 36 torshavn,2018-09-01
+Runavik,912.493408203,runavik,2018-09-01
+College Europa,907.228393555,college europa,2018-09-01
+Lincoln,899.425537109,lincoln,2018-09-01
+St Josephs,874.370849609,st josephs,2018-09-01
+Engordany,771.294799805,engordany,2018-09-01
+Santa Coloma,763.513977051,santa coloma,2018-09-01
+Matecosa Sant Julia,757.924133301,matecosa sant julia,2018-09-01
+Tre Fiori,742.625488281,tre fiori,2018-09-01
+Folgore,697.667236328,folgore,2018-09-01
+La Fiorita,696.548339844,la fiorita,2018-09-01

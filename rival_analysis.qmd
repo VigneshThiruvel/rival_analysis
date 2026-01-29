@@ -1,0 +1,1249 @@
+---
+title: "Why do teams buy from their rivals?"
+author: "Vignesh Thiruvel Selvam"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(worldfootballR)
+library(future)
+library(furrr)
+library(dplyr)
+library(data.table)
+library(stringr)
+library(httr)
+library(readr)
+library(fuzzyjoin)
+library(geosphere)
+```
+
+## Getting League data for each season
+
+We get league table data for the top 5 leagues from 2017/18 season to 2024/2025 season.
+
+```{r}
+league_path <- "~/sem3/research_project/rival_analysis/data/league_table.csv"
+if (!file.exists(league_path)) {
+  leagues <- c("England", "Spain", "Germany", "Italy", "France")
+  seasons <- 2017:2024
+  league_season_combos <- expand.grid(league = leagues, season = seasons)
+  
+  # Parallel fetching
+  results <- future_pmap_dfr(league_season_combos, function(league, season) {
+    tryCatch({
+      matchday <- case_when(
+        league == "Germany" ~ 34,
+        league == "France" & season == 2019 ~ 27,
+        league == "France" & season >= 2023 ~ 34,
+        TRUE ~ 38
+      )
+      message(paste("Fetching:", league, season))
+      df <- tm_matchday_table(country_name=league, start_year=season, matchday=matchday)
+      df$season <- season
+      df
+    }, error = function(e) {
+      message(paste("Error fetching", league, season, ":", e$message))
+      return(NULL)
+    })
+  })
+  fwrite(df, league_path)
+}
+```
+
+## Rivalry
+
+We define rivalry based on two conditions:
+
+-   In the previous season, teams that finished two places above or below a specific team are said to be its rivals.
+
+-   Teams that have an ELO of 100 points more or less than the specific team are said to be its rivals.
+
+-   Rivalry is considered only for teams that belong to the same league.
+
+```{r}
+
+# 1) read
+dt_raw <- fread("~/sem3/research_project/rival_analysis/data/league_table.csv")
+
+dt_raw[, team := str_squish(squad)]
+dt_raw[, season := as.character(season)]
+dt_raw[, league := as.character(league)]
+dt_raw[, pos := as.integer(rk)]
+
+if ("matchday" %in% names(dt_raw)) {
+  dt_final <- dt_raw[!is.na(pos), .SD[which.max(as.numeric(matchday))], 
+                     by = .(country, league, season, team)]
+} else {
+  dt_final <- dt_raw[!is.na(pos), .SD[1], by = .(country, league, season, team)]
+}
+# Keep only needed cols
+dt_final <- dt_final[, .(country, league, season, team, pos)]
+dt_final[, team_low := tolower(team)]
+dt_final[, country_low := tolower(country)]
+dt_final[, league_low := tolower(league)]
+
+# --- 3) Build interval table (y) and point table (x) with distinct column names ---
+# y: intervals owned by a team (pos_low .. pos_high)
+dt_y <- dt_final[, .(country, league, season,
+                     pos_low = pos - 2L,
+                     pos_high = pos + 2L,
+                     team_y = team,
+                     pos_y = pos)]
+# x: points to be matched into intervals
+dt_x <- dt_final[, .(country, league, season,
+                     pos_x = pos,
+                     team_x = team,
+                     pos_orig = pos)]
+# Create start/end for pts (required by foverlaps)
+dt_x[, pos_x_start := pos_x][, pos_x_end := pos_x]
+
+# Set keys including country/league/season then interval start/end
+setkey(dt_y, country, league, season, pos_low, pos_high)
+setkey(dt_x, country, league, season, pos_x_start, pos_x_end)
+
+# --- 4) Overlap join: match points to intervals within same country/league/season ---
+ov <- foverlaps(x = dt_x, y = dt_y,
+                by.x = c("country", "league", "season", "pos_x_start", "pos_x_end"),
+                by.y = c("country", "league", "season", "pos_low", "pos_high"),
+                nomatch = 0L)
+
+# --- 5) Select relevant columns, remove self-matches, deduplicate unordered pairs ---
+# ov contains columns from x and y; pick team_x (point) and team_y (interval owner)
+rivals <- ov[, .(country = country, league = league, season = season,
+                 team1 = team_x, pos1 = pos_x,
+                 team2 = team_y, pos2 = pos_y)]
+
+# remove identical teams and keep unordered unique pair per (country,league,season)
+rivals <- rivals[team1 != team2]
+rivals[, team_a := pmin(team1, team2)]
+rivals[, team_b := pmax(team1, team2)]
+rivals[, pos_diff := abs(as.integer(pos1) - as.integer(pos2))]
+rivals <- unique(rivals[, .(country, league, season, team_a, team_b, pos_diff)])
+setorder(rivals, country, league, season, team_a, team_b)
+
+# --- 6) Add lowercase keys and set key for fast lookup ---
+rivals[, team_a_low := tolower(team_a)]
+rivals[, team_b_low := tolower(team_b)]
+rivals[, country_low := tolower(country)]
+rivals[, league_low := tolower(league)]
+setkey(rivals, country_low, league_low, season, team_a_low, team_b_low)
+
+# --- 7) Helper lookup --
+# Usage: is_rival("England", "Premier League", "Arsenal", "Chelsea", "2020/2021")
+is_rival <- function(country_in, league_in, t1, t2, season_in) {
+  cl <- tolower(str_squish(country_in))
+  ll <- tolower(str_squish(league_in))
+  a <- tolower(str_squish(t1)); b <- tolower(str_squish(t2))
+  a1 <- ifelse(a < b, a, b); b1 <- ifelse(a < b, b, a)
+  res <- rivals[J(cl, ll, season_in, a1, b1), nomatch = 0L]
+  nrow(res) > 0L
+}
+
+
+# Save output
+fwrite(rivals, "season_rivalries.csv")
+```
+
+```{r}
+rivals
+```
+
+### ELO
+
+```{r}
+# ---------------- PARAMETERS ----------------
+seasons <- 2018:2024
+snapshot_month_day <- "-09-01"
+elo_thresh <- 100
+max_name_dist <- 0.18
+
+# ---------------- PATHS (uses uploaded files in ~/sem3/research_project/rival_analysis/data) ----------------
+league_csv <- "~/sem3/research_project/rival_analysis/data/league_table.csv"
+manual_map_path <- "~/sem3/research_project/rival_analysis/data/manual_club_map.csv"
+out_dir <- "~/sem3/research_project/rival_analysis/data"
+out_rivals_csv <- file.path(out_dir, "season_rivalries_elo_combined.csv")
+out_elo_raw_dir <- file.path(out_dir, "elo_snapshots")
+dir.create(out_elo_raw_dir, showWarnings = FALSE, recursive = TRUE)
+
+# ---------------- 1) load & prepare league table (dt_final) ----------------
+dt_raw <- fread(league_csv)
+dt_raw[, team := str_squish(squad)]
+dt_raw[, country := as.character(country)]
+dt_raw[, league := as.character(league)]
+dt_raw[, season := as.character(season)]
+dt_raw[, pos := as.integer(rk)]
+
+if ("matchday" %in% names(dt_raw)) {
+  dt_final <- dt_raw[!is.na(pos), .SD[which.max(as.numeric(matchday))], by = .(country, league, season, team)]
+} else {
+  dt_final <- dt_raw[!is.na(pos), .SD[1], by = .(country, league, season, team)]
+}
+dt_final <- dt_final[, .(country, league, season, team, pos)]
+dt_final[, team_clean := tolower(str_squish(team))]
+# Precompute season_start string on dt_final for lookups (e.g., "2017" from "2017/18")
+dt_final[, season_start_str := sub("([0-9]{4}).*", "\\1", season)]
+
+# ---------------- 2) fetch ClubElo snapshots (cached) ----------------
+fetch_elo_for_date <- function(date_str) {
+  destfile <- file.path(out_elo_raw_dir, paste0("clubelo_", date_str, ".csv"))
+  if (file.exists(destfile)) {
+    message("Using cached Elo snapshot: ", destfile)
+    df <- read_csv(destfile, show_col_types = FALSE)
+    setDT(df); return(df)
+  }
+  url <- paste0("http://api.clubelo.com/", date_str)
+  message("Fetching from API: ", url)
+  r <- httr::GET(url)
+  if (httr::status_code(r) != 200) stop("ClubElo request failed for date ", date_str, " (status ", httr::status_code(r), ")")
+  txt <- httr::content(r, as = "text", encoding = "UTF-8")
+  df <- read_csv(txt, show_col_types = FALSE)
+  setDT(df)
+  setnames(df, tolower(names(df)))
+  club_col <- grep("club|team|name", names(df), value = TRUE)[1]
+  elo_col  <- grep("elo|rating", names(df), value = TRUE)[1]
+  if (is.na(club_col) || is.na(elo_col)) stop("Unable to find club/elo columns in ClubElo CSV for date: ", date_str)
+  df <- df[, .(club = get(club_col), elo = as.numeric(get(elo_col)))]
+  df <- df[!is.na(elo) & !is.na(club)]
+  df[, club_clean := tolower(str_squish(gsub("\\(.*\\)", "", club)))]
+  df <- df[order(-elo)]
+  df[, snapshot_date := date_str]
+  write_csv(df, destfile)
+  message("Saved snapshot: ", destfile)
+  return(df)
+}
+
+# Fetch and cache all snapshots (only does network calls if missing)
+elo_all <- rbindlist(lapply(seasons, function(y) {
+  d <- paste0(y, snapshot_month_day)
+  message("Fetch snapshot: ", d)
+  Sys.sleep(0.5) # be kind to API
+  fetch_elo_for_date(d)
+}), use.names = TRUE, fill = TRUE)
+message("Total Elo rows fetched (or cached): ", nrow(elo_all))
+elo_all[, season_start := substr(snapshot_date, 1, 4)]
+
+# ---------------- 3) APPLY MANUAL MAPPINGS (rowwise, robust) ----------------
+manual_map_applied <- data.table()  # result holder
+if (file.exists(manual_map_path)) {
+  mm <- fread(manual_map_path)
+  # normalize columns: support snapshot_date or season_start
+  if (!("snapshot_date" %in% names(mm)) & ("season_start" %in% names(mm))) {
+    mm[, snapshot_date := paste0(season_start, snapshot_month_day)]
+  }
+  if (!("club" %in% names(mm)) | !("mapped_team" %in% names(mm))) {
+    stop("manual_club_map.csv must contain at minimum: club, mapped_team, and snapshot_date or season_start")
+  }
+  mm[, club_clean := tolower(str_squish(gsub("\\(.*\\)", "", club)))]
+  mm[, mapped_team_clean := tolower(str_squish(mapped_team))]
+  mm[, season_start := as.character(substring(snapshot_date, 1, 4))]
+  # rowwise validate and build manual_map_applied
+  valid_rows <- list()
+  for (i in seq_len(nrow(mm))) {
+    row <- mm[i]
+    ss <- as.character(row$season_start)
+    mt_clean <- row$mapped_team_clean
+    # check dt_final: does mapped team exist in that season_start?
+    cand <- dt_final[team_clean == mt_clean & season_start_str == ss]
+    if (nrow(cand) == 0L) next  # invalid mapping: mapped_team not present in league for that season
+    # find matching elo rows for the same snapshot + club_clean
+    erows <- elo_all[season_start == ss & club_clean == row$club_clean]
+    if (nrow(erows) == 0L) next  # no matching elo row to attach
+    # build manual match rows
+    for (er in seq_len(nrow(erows))) {
+      for (cd in seq_len(nrow(cand))) {
+        valid_rows[[length(valid_rows) + 1]] <- data.table(
+          snapshot_date = erows[er, snapshot_date],
+          club = erows[er, club],
+          club_clean = erows[er, club_clean],
+          elo = erows[er, elo],
+          team = cand[cd, team],
+          team_clean = cand[cd, team_clean],
+          country = cand[cd, country],
+          league = cand[cd, league],
+          dist = 0  # mark manual mapping as exact
+        )
+      }
+    }
+  }
+  if (length(valid_rows) > 0) {
+    manual_map_applied <- rbindlist(valid_rows, use.names = TRUE, fill = TRUE)
+    message("Applied ", nrow(manual_map_applied), " manual mapping rows from: ", manual_map_path)
+  } else {
+    message("No valid manual mappings found in: ", manual_map_path)
+  }
+} else {
+  message("No manual_club_map.csv found at: ", manual_map_path, " (continuing without manual mappings)")
+}
+
+# ---------------- 4) FUZZY MATCH remaining Elo clubs -> dt_final teams ----------------
+# Build candidate list excluding manual-mapped (by snapshot_date+club_clean)
+elo_to_match <- copy(elo_all[, .(snapshot_date, club, club_clean, elo, season_start)])
+if (nrow(manual_map_applied) > 0) {
+  keys_mm <- unique(manual_map_applied[, .(snapshot_date, club_clean)])
+  setkey(elo_to_match, snapshot_date, club_clean)
+  setkey(keys_mm, snapshot_date, club_clean)
+
+  # Proper anti-join (no need for fsetdiff)
+  elo_to_match <- elo_to_match[!keys_mm]
+}
+
+# Build teams by season_start
+teams_by_start <- unique(dt_final[, .(season_start_str, team, team_clean, country, league)])
+setnames(teams_by_start, "season_start_str", "season_start")
+
+matched_list <- list()
+unmatched_list <- list()
+for (yr in sort(unique(elo_to_match$season_start))) {
+  eloy <- elo_to_match[season_start == yr, .(snapshot_date, club, club_clean, elo)]
+  targ <- teams_by_start[season_start == yr, .(team, team_clean, country, league)]
+  if (nrow(targ) == 0L) { unmatched_list[[yr]] <- eloy; next }
+  mj <- stringdist_inner_join(eloy, targ, by = c("club_clean" = "team_clean"),
+                              method = "jw", max_dist = max_name_dist, distance_col = "dist")
+  setDT(mj); setorder(mj, snapshot_date, club, dist)
+  if (nrow(mj) > 0) {
+    mj <- mj[, .SD[1], by = .(snapshot_date, club)]  # best match per elo club
+    matched_list[[yr]] <- mj
+    matched_clubs <- unique(mj$club)
+    unmatched_list[[yr]] <- eloy[!club %in% matched_clubs]
+  } else {
+    unmatched_list[[yr]] <- eloy
+  }
+}
+
+matched_dt_fuzzy <- if (length(matched_list) > 0) rbindlist(matched_list, use.names = TRUE, fill = TRUE) else data.table()
+unmatched_dt <- if (length(unmatched_list) > 0) rbindlist(unmatched_list, use.names = TRUE, fill = TRUE) else data.table()
+
+# Combine manual-applied matches and fuzzy matches into matched_dt
+if (nrow(manual_map_applied) > 0 && nrow(matched_dt_fuzzy) > 0) {
+  matched_dt <- rbindlist(list(manual_map_applied, matched_dt_fuzzy[, .(snapshot_date, club, club_clean, elo, team, team_clean, country, league, dist)]),
+                          use.names = TRUE, fill = TRUE)
+} else if (nrow(manual_map_applied) > 0) {
+  matched_dt <- copy(manual_map_applied)
+} else {
+  matched_dt <- copy(matched_dt_fuzzy)
+}
+
+# Save remaining unmatched for inspection
+if (nrow(unmatched_dt) > 0) {
+  fwrite(unique(unmatched_dt), file.path(out_dir, "elo_unmatched_clubs_remaining.csv"))
+  message("Wrote remaining unmatched Elo clubs to: ", file.path(out_dir, "elo_unmatched_clubs_remaining.csv"))
+} else {
+  # produce empty file to indicate nothing remaining
+  fwrite(data.table(snapshot_date=character(), club=character(), club_clean=character(), elo=numeric()),
+         file.path(out_dir, "elo_unmatched_clubs_remaining.csv"))
+  message("No remaining unmatched Elo clubs; created empty file: ", file.path(out_dir, "elo_unmatched_clubs_remaining.csv"))
+}
+
+# ---------------- 5) set Elo-season = snapshot_year - 1 (numeric) for Elo outputs ONLY ----------------
+if (nrow(matched_dt) == 0) {
+  message("Warning: matched_dt is empty (no Elo->league matches). Elo-only will be empty.")
+}
+matched_dt[, snapshot_year := as.integer(substr(snapshot_date, 1, 4))]
+matched_dt[, elo_season := snapshot_year - 1L]  # e.g., 2018 -> 2017
+
+# ---------------- 6) build Elo-based rivals (use league internally) ----------------
+setDT(matched_dt)
+setkey(matched_dt, country, league, elo_season)
+
+pairs_elo <- matched_dt[matched_dt, on = .(country, league, elo_season), allow.cartesian = TRUE]
+# defensive renaming for join-produced columns
+setnames(pairs_elo,
+         old = c("club","elo","team","dist","i.club","i.elo","i.team","i.dist"),
+         new = c("club1","elo1","team1","dist1","club2","elo2","team2","dist2"),
+         skip_absent = TRUE)
+
+pairs_elo <- pairs_elo[team1 != team2]
+pairs_elo[, elo_diff := abs(as.numeric(elo1) - as.numeric(elo2))]
+
+elo_rivals_full <- pairs_elo[elo_diff <= elo_thresh,
+                             .(country, league, season = elo_season,
+                               team_a = pmin(team1, team2),
+                               team_b = pmax(team1, team2),
+                               elo_diff)]
+elo_rivals_full <- unique(elo_rivals_full)
+setorder(elo_rivals_full, country, league, season, team_a, team_b)
+
+# Save Elo-only WITHOUT league column, with season numeric = snapshot_year - 1
+elo_rivals_save <- elo_rivals_full[, .(country, season, team_a, team_b, elo_diff)]
+fwrite(elo_rivals_save, file.path(out_dir, "season_rivalries_elo_only.csv"))
+message("Saved Elo-only rivals (no league column) to: ", file.path(out_dir, "season_rivalries_elo_only.csv"))
+
+# ---------------- 7) build positional rivals (pos diff <=2) using dt_final-derived season numeric ----------------
+# Interpret pos-season numeric as the starting year (YYYY) from dt_final$season
+dt_final[, season_start_num := as.integer(sub("([0-9]{4}).*", "\\1", season))]
+dt_final[, pos_season := season_start_num - 0L]  # pos_season numeric = starting year (e.g., 2017 for "2017/18")
+
+pos_dt <- dt_final[, .(country, league, season = pos_season, team, pos)]
+pr <- pos_dt[pos_dt, on = .(country, league, season), allow.cartesian = TRUE]
+setnames(pr, c("team","i.team","pos","i.pos"), c("team1","team2","pos1","pos2"), skip_absent = TRUE)
+pr <- pr[team1 != team2]
+pr[, pos_diff := abs(as.integer(pos1) - as.integer(pos2))]
+pos_rivals_pairs <- pr[pos_diff <= 2,
+                       .(country, league, season, team_a = pmin(team1, team2), team_b = pmax(team1, team2), pos_diff)]
+pos_rivals_pairs <- unique(pos_rivals_pairs)
+fwrite(pos_rivals_pairs, file.path(out_dir, "season_rivalries_pos_only.csv"))
+message("Saved positional-only rivals to: ", file.path(out_dir, "season_rivalries_pos_only.csv"))
+
+# ---------------- 8) combine pos & elo rivals into final combined file (aligned numeric seasons) ----------------
+full <- merge(pos_rivals_pairs, elo_rivals_full,
+              by = c("country", "league", "season", "team_a", "team_b"), all = TRUE)
+
+full[is.na(pos_diff), pos_diff := 999L]
+full[is.na(elo_diff), elo_diff := 999L]
+full[, is_rival := (pos_diff <= 2) | (elo_diff <= elo_thresh)]
+setorder(full, country, league, season, team_a, team_b)
+fwrite(full, out_rivals_csv)
+message("Saved combined rival list to: ", out_rivals_csv)
+
+# ---------------- 9) diagnostics / dumps ----------------
+# write complete snapshot summary and manual-map info for auditing
+fwrite(unique(elo_all[, .(snapshot_date, club, club_clean, elo)]), file.path(out_dir, "elo_all_snapshot_summary.csv"))
+if (file.exists(manual_map_path)) {
+  mm <- fread(manual_map_path)
+  fwrite(mm, file.path(out_dir, "manual_club_map_used.csv"))
+}
+# remaining unmatched already saved above
+message("Pipeline complete. Inspect files in ", out_dir)
+
+
+```
+
+## Transfers
+
+We now get the transfer data for all teams in the top 5 leagues from 2018 to 2024 transfer windows.
+
+```{r}
+# Collect summer transfers (2018/19 .. 2024/25) using only country + season_start.
+# Uses existing column `squad` in ~/sem3/research_project/rival_analysis/data/league_table.csv (no new "team" column created).
+
+# ---------- PARAMETERS & PATHS ----------
+league_csv <- "~/sem3/research_project/rival_analysis/data/league_table.csv"   # your uploaded file (use existing 'squad' col)
+out_dir <- "~/sem3/research_project/rival_analysis/data"
+cache_dir <- file.path(out_dir, "transfers_cache")
+dir.create(cache_dir, recursive = TRUE, showWarnings = FALSE)
+
+season_starts <- 2018:2024      # represent seasons 2018/19 .. 2024/25
+sleep_sec <- 3                  # polite pause between requests
+max_retries <- 0
+retry_sleep <- 5
+
+out_csv <- file.path(out_dir, "transfers_summer_2018_2025.csv")
+
+# ---------- HELPERS ----------
+safe_fn <- function(x) gsub("[^A-Za-z0-9_\\-]", "_", substr(x, 1, 120))
+
+league_urls_cache_file <- function(country_name, start_year) {
+  file.path(cache_dir, paste0("league_urls_", safe_fn(country_name), "_", start_year, ".rds"))
+}
+team_transfers_cache_file <- function(team_url, season_start) {
+  file.path(cache_dir, paste0("team_transfers_", safe_fn(team_url), "_", season_start, ".rds"))
+}
+
+# cached call for league -> team urls
+get_league_team_urls_cached <- function(country_name, start_year) {
+  cachef <- league_urls_cache_file(country_name, start_year)
+  if (file.exists(cachef)) return(readRDS(cachef))
+  for (i in seq_len(max_retries)) {
+    try({
+      urls <- tm_league_team_urls(country_name = country_name, start_year = start_year)
+      saveRDS(urls, cachef)
+      Sys.sleep(sleep_sec)
+      return(urls)
+    }, silent = TRUE)
+    message("Retrying league-team-urls for ", country_name, " ", start_year, " (attempt ", i, ")")
+    Sys.sleep(retry_sleep)
+  }
+  warning("Failed to fetch league team URLs for ", country_name, " ", start_year)
+  return(NULL)
+}
+
+# cached call for team -> transfers (summer)
+get_team_transfers_cached <- function(team_url, season_start) {
+  cachef <- team_transfers_cache_file(team_url, season_start)
+  if (file.exists(cachef)) return(readRDS(cachef))
+  for (i in seq_len(max_retries)) {
+    try({
+      xf <- tm_team_transfers(team_url = team_url, transfer_window = "summer")
+      saveRDS(xf, cachef)
+      Sys.sleep(sleep_sec)
+      return(xf)
+    }, silent = TRUE)
+    message("Retrying team transfers for ", team_url, " (attempt ", i, ")")
+    Sys.sleep(retry_sleep)
+  }
+  message("No transfers found for team: ", team_url)
+  return(NULL)
+}
+
+# cheap fuzzy compare to decide whether a returned team name matches a squad in your league table
+close_name_match <- function(x, candidates, max_dist = 0.18) {
+  # x: single string, candidates: vector of strings
+  if (is.na(x) || x == "") return(FALSE)
+  # use jaro-winkler via stringdist if available; fallback to grepl substring match
+  if (requireNamespace("stringdist", quietly = TRUE)) {
+    d <- stringdist::stringdist(tolower(str_squish(x)), tolower(str_squish(candidates)), method = "jw")
+    any(d <= max_dist)
+  } else {
+    any(grepl(tolower(str_squish(x)), tolower(candidates), fixed = TRUE))
+  }
+}
+
+# ---------- 1) Read league table and derive country+season_start combos ----------
+dt <- fread(league_csv)
+# use existing 'squad' column (do not create new 'team' column)
+if (!"squad" %in% names(dt)) stop("'squad' column not found in league_table.csv")
+dt[, squad_clean := tolower(str_squish(squad))]
+dt[, season_start := as.integer(sub("([0-9]{4}).*", "\\1", season))]   # extracts starting year like 2018 from "2018/19"
+dt <- dt[season_start %in% season_starts]
+
+country_seasons <- unique(dt[, .(country, season_start)])
+setorder(country_seasons, country, season_start)
+
+# Build quick lookup of squads per country+season for filtering
+squads_by_country_season <- dt[, .(squad_list = list(unique(squad_clean))), by = .(country, season_start)]
+setkey(squads_by_country_season, country, season_start)
+
+# ---------- 2) iterate country+season, fetch team URLs, then fetch summer transfers ----------
+all_transfers <- list()
+for (r in seq_len(nrow(country_seasons))) {
+  cs <- country_seasons[r]
+  cntry <- cs$country
+  sstart <- cs$season_start
+  message("Processing: ", cntry, " | season_start ", sstart)
+  urls_tbl <- get_league_team_urls_cached(cntry, sstart)
+  if (is.null(urls_tbl) || length(urls_tbl) == 0) {
+    message(" No team URLs returned for country ", cntry, " season ", sstart, " — skipping")
+    next
+  }
+
+  # normalize returned structure to a data.table with at least a team_url column and optionally a display name
+  if (is.character(urls_tbl)) {
+    team_urls_df <- unique(data.table(team_url = urls_tbl))
+  } else if (is.data.frame(urls_tbl) || is.data.table(urls_tbl)) {
+    # try to detect url column and name column
+    url_col <- intersect(names(urls_tbl), c("team_url", "url", "link", "teamlink", "team_url_href"))[1]
+    name_col <- intersect(names(urls_tbl), c("team", "club", "club_name", "team_name", "name"))[1]
+    if (!is.na(url_col)) {
+      team_urls_df <- unique(data.table(team_url = as.character(urls_tbl[[url_col]])))
+      if (!is.na(name_col)) team_urls_df[, team_name := as.character(urls_tbl[[name_col]])]
+    } else {
+      # fallback: use first column as url
+      team_urls_df <- unique(data.table(team_url = as.character(urls_tbl[[1]])))
+    }
+  } else {
+    message(" Unrecognized return type from tm_league_team_urls() — skipping this country-season.")
+    next
+  }
+
+  # OPTIONAL: filter returned URLs to squads that exist in your league_table for that country+season
+  # This avoids scraping unrelated clubs. Keep enabled by default.
+  filter_local <- TRUE
+  if (filter_local && "team_name" %in% names(team_urls_df)) {
+    squads_local <- squads_by_country_season[J(cntry, sstart), squad_list][[1]]
+    # keep only urls whose team_name roughly matches any squad
+    keep_mask <- sapply(team_urls_df$team_name, function(nm) close_name_match(nm, squads_local))
+    if (all(!keep_mask)) {
+      # if filter removed all, fall back to not filtering (safer)
+      message("  Local filtering removed all returned team URLs — falling back to unfiltered list")
+      team_urls_final <- unique(team_urls_df$team_url)
+    } else {
+      team_urls_final <- unique(team_urls_df$team_url[keep_mask])
+    }
+  } else {
+    # if no display name provided by the function, use all returned urls
+    team_urls_final <- unique(team_urls_df$team_url)
+  }
+
+  # for each team_url, fetch summer transfers (cached)
+  for (tu in team_urls_final) {
+    message("  Fetching summer transfers for: ", tu)
+    xf <- get_team_transfers_cached(tu, sstart)
+    if (is.null(xf)) next
+    dt_xf <- as.data.table(xf)
+    # add context columns so you know which country+season they belong to
+    dt_xf[, team_url := tu]
+    dt_xf[, country := cntry]
+    dt_xf[, season_start := sstart]
+    setnames(dt_xf, tolower(names(dt_xf)))
+    all_transfers[[length(all_transfers) + 1]] <- dt_xf
+  }
+}
+
+# ---------- 3) combine and save ----------
+if (length(all_transfers) == 0) {
+  warning("No transfers fetched. Check that tm_league_team_urls() and tm_team_transfers() work in your environment.")
+} else {
+  transfers_dt <- rbindlist(all_transfers, use.names = TRUE, fill = TRUE)
+  # add season numeric and save
+  transfers_dt[, season := season_start]
+  fwrite(transfers_dt, out_csv)
+  message("Saved summer transfers to: ", out_csv)
+  message("Cached per-team rds files are in: ", cache_dir)
+}
+
+```
+
+### Filtering out transfers - only within teams from the top5 leagues
+
+The above data contains transfers that happened for teams from the top 5 leagues. But, it doesn't necessarily mean that all such transfers happened within the top 5 leagues. Teams also buy players from other leagues. So, we add a filter such that both the seller and buyer teams must be within the top 5 leagues for our observation.
+
+```{r}
+transfers_path <- "~/sem3/research_project/rival_analysis/data/transfers_summer_2018_2025.csv"
+transfers  <- fread(transfers_path)
+league_table <- fread("~/sem3/research_project/rival_analysis/data/league_table.csv")
+top5_leagues <- c("Premier League", "LaLiga", "Bundesliga", "Ligue 1", "Serie A")
+
+top5_league_transfers <- filter(transfers,
+       league %in% top5_leagues,
+       league_2 %in% top5_leagues)
+fwrite(top5_league_transfers, "~/sem3/research_project/rival_analysis/data/top5_league_transfers.csv")
+```
+
+## Mapping
+
+Before we proceed with analysis, we try to map the team names between the different tables we have gathered so far.
+
+```{r}
+
+## ===================== PATHS ===================== ##
+rivals_path    <- "~/sem3/research_project/rival_analysis/data/season_rivalries_elo_combined.csv"
+transfers_path <- "~/sem3/research_project/rival_analysis/data/top5_league_transfers.csv"
+league_path <- "~/sem3/research_project/rival_analysis/data/league_table.csv"
+out_dir     <- "~/sem3/research_project/rival_analysis/data"
+
+## ===================== 1. LOAD DATA ===================== ##
+league <- fread(league_path)
+xf     <- fread(transfers_path)
+
+## ===================== 2. BUILD CANONICAL TEAM LIST ===================== ##
+# League table defines truth
+league[, team_clean := tolower(str_squish(squad))]
+league[, country := as.character(country)]
+
+canon_teams <- unique(
+  league[, .(country, team_clean)]
+)
+
+## ===================== 3. EXTRACT RAW TRANSFER TEAM NAMES ===================== ##
+xf[, buyer_raw  := tolower(str_squish(team_name))]
+xf[, seller_raw := tolower(str_squish(club_2))]
+xf[, country    := as.character(country)]
+
+raw_teams <- unique(rbind(
+  xf[, .(country, raw = buyer_raw)]
+))
+
+valid_canon <- canon_teams[, .(country, team_clean)]
+
+raw_teams <- raw_teams[
+  country %in% valid_canon$country
+]
+
+normalize <- function(x) {
+  x |>
+    tolower() |>
+    str_replace_all("&", "and") |>
+    str_replace_all("[^a-z ]", "") |>
+    str_squish()
+}
+
+valid_canon[, team_norm := normalize(team_clean)]
+raw_teams[, raw_norm := normalize(raw)]
+
+
+## ===================== 4. FUZZY MATCH (RAW → CANONICAL) ===================== ##
+team_map <- stringdist_inner_join(
+  raw_teams,
+  valid_canon,
+  by = c("raw" = "team_clean"),
+  method = "jw",
+  max_dist = 0.2,
+  distance_col = "dist"
+)
+
+# IMPORTANT: force data.table
+setDT(team_map)
+
+## ===================== 5. FIX country.x / country.y ===================== ##
+# Keep only same-country matches
+team_map <- team_map[country.x == country.y]
+
+# Clean column names
+setnames(team_map, "country.x", "country")
+team_map[, country.y := NULL]
+team_map[, country.dist := NULL]
+team_map[, raw.dist := NULL]
+
+# Keep best match per (country, raw)
+setorder(team_map, country, raw, dist)
+team_map <- team_map[, .SD[1], by = .(country, raw)]
+
+
+## ===================== 6. QA CHECKS ===================== ##
+# Unmatched raw names (inspect & manually fix if needed)
+unmatched <- raw_teams[!raw %in% team_map$raw]
+# fwrite(unmatched, file.path(out_dir, "unmatched_transfer_teams.csv"))
+
+cat("Unmatched raw team names saved to unmatched_transfer_teams.csv\n")
+```
+
+```{r}
+## ===================== 7. APPLY MAPPING TO TRANSFERS ===================== ##
+manual_map <- fread("~/sem3/research_project/rival_analysis/data/unmatched_transfer_teams.csv")
+
+# Rivalries: teams
+riv <- fread(rivals_path)
+riv[, team_a_clean := tolower(str_squish(team_a))]
+riv[, team_b_clean := tolower(str_squish(team_b))]
+riv[, season       := as.integer(season)]
+
+## ===================== 3. BUILD DEDUPLICATED RIVAL LOOKUP ===================== ##
+# Collapse to unique rival pairs per country-season-teamA-teamB
+riv_unique <- riv[
+  is_rival == TRUE,
+  .(country, season, team_a_clean, team_b_clean)
+]
+
+# Ensure uniqueness (this removes pos+elo duplicates)
+riv_unique <- unique(riv_unique)
+
+# Build bidirectional lookup
+riv_long <- rbind(
+  riv_unique[, .(country, season, from = team_a_clean, to = team_b_clean, is_rival = TRUE)],
+  riv_unique[, .(country, season, from = team_b_clean, to = team_a_clean, is_rival = TRUE)]
+)
+
+team_map_final <- unique(rbind(
+  team_map[, .(country, raw, team_clean)],
+  manual_map
+))
+
+xf <- merge(
+  xf,
+  team_map_final,
+  by.x = c("country", "buyer_raw"),
+  by.y = c("country", "raw"),
+  all.x = TRUE
+)
+setnames(xf, "team_clean", "buyer_clean")
+dup_last <- duplicated(names(xf), fromLast = TRUE)
+xf <- xf[, !dup_last, with = FALSE]
+# Sellers (needed for rivalry tagging)
+# xf <- merge(
+#  xf,
+#  team_map_final,
+# by.x = c("country", "seller_raw"),
+# by.y = c("country", "raw"),
+#  all.x = TRUE
+#)
+setnames(xf, "seller_raw", "seller_clean")
+dup <- duplicated(names(xf))
+xf <- xf[, !dup, with = FALSE]
+
+xf[, is_rival := NULL]
+xf <- merge(
+  xf,
+  riv_long,
+  by.x = c("country", "season", "seller_clean", "buyer_clean"),
+  by.y = c("country", "season", "from", "to"),
+  all.x = TRUE
+)
+xf[, is_rival := !is.na(is_rival)]
+xf[, pos_clean        := tolower(str_squish(player_position))]
+
+fwrite(xf, "~/sem3/research_project/rival_analysis/data/top5_league_transfers_clean.csv")
+```
+
+## Opportunity Set
+
+Next, we build the opportunity set. We try to find alternative choices for a rival transfer. We count:
+
+-   Total rival options available (rivalry is local to a league)
+
+-   Non-rival options available within the league
+
+-   Global non-rival options (top 5 leagues)
+
+```{r}
+
+## ===================== 0. FILE PATHS ===================== ##
+# Change these to your real paths if needed
+transfers_path <- "~/sem3/research_project/rival_analysis/data/top5_league_transfers_clean.csv"
+league_dt <- fread("~/sem3/research_project/rival_analysis/data/league_table.csv")
+
+league_dt[, team_clean := tolower(str_squish(squad))]
+league_dt[, season := as.integer(sub("([0-9]{4}).*", "\\1", season))]
+
+## ===================== 1. LOAD DATA ===================== ##
+riv <- fread(rivals_path)
+xf  <- fread(transfers_path)
+
+# Your transfers file is already summer-only, but in case you kept both windows:
+if ("window" %in% names(xf)) {
+  xf <- xf[window == "Summer"]
+}
+if ("transfer_type" %in% names(xf)) {
+  xf <- xf[transfer_type == "Arrivals"]
+}
+
+# Exclude loans from the analysis
+if ("is_loan" %in% names(xf)) {
+  xf <- xf[is_loan == FALSE | is.na(is_loan)]
+}
+
+## ===================== 2. CLEAN & STANDARDISE ===================== ##
+
+# Rivalries: teams
+riv[, team_a_clean := tolower(str_squish(team_a))]
+riv[, team_b_clean := tolower(str_squish(team_b))]
+riv[, season       := as.integer(season)]
+
+## ===================== 3. BUILD DEDUPLICATED RIVAL LOOKUP ===================== ##
+# Collapse to unique rival pairs per country-season-teamA-teamB
+riv_unique <- riv[
+  is_rival == TRUE,
+  .(country, season, team_a_clean, team_b_clean)
+]
+
+# Ensure uniqueness (this removes pos+elo duplicates)
+riv_unique <- unique(riv_unique)
+
+
+## ===================== SAME-LEAGUE FLAG (FIXED) ===================== ##
+# Build lookup of all same-league team pairs (ignoring rivalry)
+same_league_pairs <- riv_unique[
+  ,
+  .(country, season,
+    seller_clean = team_a_clean,
+    buyer_clean  = team_b_clean)
+]
+
+same_league_pairs <- unique(rbind(
+  same_league_pairs,
+  same_league_pairs[, .(country, season,
+                        seller_clean = buyer_clean,
+                        buyer_clean  = seller_clean)]
+))
+
+# Add explicit indicator column
+same_league_pairs[, same_league := TRUE]
+
+# Merge indicator into transfers
+xf <- merge(
+  xf,
+  same_league_pairs,
+  by = c("country", "season", "seller_clean", "buyer_clean"),
+  all.x = TRUE
+)
+
+# Proper logical flag
+xf[, same_league := !is.na(same_league)]
+
+## ===================== LEAGUE MEMBERSHIP FLAGS ===================== ##
+
+# buyer in league
+xf <- merge(
+  xf,
+  league_dt[, .(country, season, buyer_clean = team_clean, buyer_in_league = TRUE)],
+  by = c("country", "season", "buyer_clean"),
+  all.x = TRUE
+)
+
+# seller in league
+xf <- merge(
+  xf,
+  league_dt[, .(country, season, seller_clean = team_clean, seller_in_league = TRUE)],
+  by = c("country", "season", "seller_clean"),
+  all.x = TRUE
+)
+
+# define same-league transfer
+xf[, same_league := buyer_in_league == TRUE & seller_in_league == TRUE]
+
+# replace NAs
+xf[is.na(same_league), same_league := FALSE]
+
+## ===================== OPTION POOLS (FIXED) ===================== ##
+
+# (1) League-restricted non-rival options
+non_rival_pool <- xf[
+  same_league == TRUE & is_rival == FALSE,
+  .(non_rival_options = .N),
+  by = .(country, season, pos_clean)
+]
+
+# (2) Global non-rival options
+global_non_rival_pool <- xf[
+  is_rival == FALSE,
+  .(global_non_rival_options = .N),
+  by = .(season, pos_clean)
+]
+
+total_rival_pool <- xf[
+  same_league == TRUE & is_rival == TRUE,
+  .(total_rival_options = .N),
+  by = .(country, season, pos_clean)
+]
+
+
+
+## ---------------- Q1: HOW MANY TRANSFERS ARE FROM RIVALS? ---------------- ##
+# Per team-season
+rival_counts_team_season <- xf[
+  ,
+  .(
+    total_transfers = .N,
+    rival_transfers = sum(is_rival),
+    share_rival     = sum(is_rival) / .N
+  ),
+  by = .(country, season, buyer_clean)
+]
+
+# Overall per country-season (optional)
+rival_counts_season <- xf[
+  ,
+  .(
+    total_transfers = .N,
+    rival_transfers = sum(is_rival),
+    share_rival     = sum(is_rival) / .N
+  ),
+  by = .(country, season)
+]
+
+# You can inspect or save these:
+fwrite(rival_counts_team_season, "~/sem3/research_project/rival_analysis/data/teamwise_transfer_ratio.csv")
+
+cols_to_drop <- c("same_league", "buyer_in_league", "seller_in_league")
+fwrite(xf[, !..cols_to_drop], "~/sem3/research_project/rival_analysis/data/transfers_summer_2018_2025.csv")
+# fwrite(rival_counts_season,      "~/sem3/research_project/rival_analysis/data/rival_transfer_counts_season.csv")
+
+
+## ---------------- Q2: OPTIONS FOR RIVAL TRANSFERS ---------------- ##
+
+# Rival transfers only
+rival_transfers <- xf[is_rival == TRUE]
+
+# Join league-restricted options
+rival_with_options <- merge(
+  rival_transfers,
+  non_rival_pool,
+  by = c("country", "season", "pos_clean"),
+  all.x = TRUE
+)
+
+# Join global options
+rival_with_options <- merge(
+  rival_with_options,
+  global_non_rival_pool,
+  by = c("season", "pos_clean"),
+  all.x = TRUE
+)
+
+rival_with_options <- merge(
+  rival_with_options,
+  total_rival_pool,
+  by = c("country", "season", "pos_clean"),
+  all.x = TRUE
+)
+
+# Replace NAs with zeros
+rival_with_options[
+  is.na(non_rival_options), non_rival_options := 0L
+][
+  is.na(global_non_rival_options), global_non_rival_options := 0L
+][
+  is.na(total_rival_options), total_rival_options := 0L
+]
+
+# Final tidy table
+result_q2 <- rival_with_options[
+  ,
+  .(
+    country,
+    season,
+    buyer_clean,
+    seller_clean,
+    player_name,
+    player_position,
+    non_rival_options,           # league/country restricted
+    global_non_rival_options,     # league-agnostic
+    total_rival_options
+  )
+]
+
+
+# Optional save
+fwrite(result_q2, "~/sem3/research_project/rival_analysis/data/rival_and_non_rival_pool.csv")
+
+
+## --------- QUICK GLANCE AT RESULTS --------- ##
+cat("\n=== Q1: Share of rival transfers per country-season ===\n")
+print(rival_counts_team_season)
+print(rival_counts_season)
+
+cat("\n=== Q2: Example rival transfers & their non-rival options ===\n")
+print(result_q2)
+
+```
+
+## Transfer Impact
+
+```{r}
+
+## ===================== PATHS ===================== ##
+league_path <- "~/sem3/research_project/rival_analysis/data/league_table.csv"
+xf_path     <- "~/sem3/research_project/rival_analysis/data/top5_league_transfers_clean.csv"
+rivals_path <- "~/sem3/research_project/rival_analysis/data/season_rivalries_elo_combined.csv"
+
+## ===================== 1. LEAGUE PERFORMANCE ===================== ##
+league <- fread(league_path)
+
+# clean team names
+league[, team_clean := tolower(str_squish(squad))]
+
+# season is ALREADY correct (season start year)
+league[, season_start := as.integer(season)]
+
+# points per match
+league[, ppm := pts / p]
+
+# final table per team-season
+league_final <- league[
+  ,
+  .SD[which.max(matchday)],
+  by = .(country, season_start, team_clean)
+][
+  ,
+  .(country, season_start, team_clean, ppm)
+]
+
+## ===================== 2. TRANSFERS ===================== ##
+xf <- fread(xf_path)
+
+# restrict to relevant transfers
+xf <- xf[
+  window == "Summer" &
+  transfer_type == "Arrivals" &
+  (is_loan == FALSE | is.na(is_loan))
+]
+xf[, season       := as.integer(season)]
+
+## ===================== 4. ATTACH PERFORMANCE ===================== ##
+# AFTER season (same season)
+xf <- merge(
+  xf,
+  league_final,
+  by.x = c("country", "buyer_clean", "season"),
+  by.y = c("country", "team_clean", "season_start"),
+  all.x = TRUE
+)
+setnames(xf, "ppm", "ppm_after")
+
+# BEFORE season (season - 1)
+xf[, season_before := season - 1]
+
+xf <- merge(
+  xf,
+  league_final,
+  by.x = c("country", "buyer_clean", "season_before"),
+  by.y = c("country", "team_clean", "season_start"),
+  all.x = TRUE
+)
+setnames(xf, "ppm", "ppm_before")
+
+# impact
+xf[, delta_ppm := ppm_after - ppm_before]
+
+## ===================== 5. IMPACT DATASET ===================== ##
+impact_all <- xf[
+  !is.na(delta_ppm),
+  .(
+    country,
+    season,
+    buyer_team = team_name,
+    player_name,
+    position = player_position,
+    is_rival,
+    ppm_before,
+    ppm_after,
+    delta_ppm
+  )
+]
+
+## ===================== 6. RIVAL VS NON-RIVAL ===================== ##
+impact_summary <- impact_all[
+  ,
+  .(
+    avg_delta_ppm    = mean(delta_ppm),
+    median_delta_ppm = median(delta_ppm),
+    n                = .N
+  ),
+  by = .(is_rival)
+]
+
+impact_by_season <- impact_all[
+  ,
+  .(
+    avg_delta_ppm = mean(delta_ppm),
+    n = .N
+  ),
+  by = .(country, season, is_rival)
+]
+
+## ===================== OUTPUT ===================== ##
+cat("\n=== Rival vs Non-Rival Impact (All Seasons) ===\n")
+print(impact_summary)
+
+cat("\n=== Rival vs Non-Rival Impact by Season ===\n")
+print(impact_by_season[order(season)])
+fwrite(impact_by_season, "~/sem3/research_project/rival_analysis/data/transfer_impact.csv")
+```
+
+```{r}
+# How many observations survive?
+table(is.na(xf$delta_ppm))
+
+# England example
+impact_all[country == "England", .N, by = .(season, is_rival)]
+
+# Quick spot check
+head(impact_all)
+
+```
+
+## Rival preference
+
+```{r}
+team_rival_profile <- xf[
+  ,
+  .(
+    total_transfers = .N,
+    rival_transfers = sum(is_rival),
+    rival_share     = mean(is_rival)
+  ),
+  by = .(country, buyer_clean)
+]
+
+# Minimum activity filter (important)
+team_rival_profile <- team_rival_profile[total_transfers >= 10]
+
+# Top "competitive" teams
+team_rival_profile[order(-rival_share)]
+fwrite(team_rival_profile, "~/sem3/research_project/rival_analysis/data/rival_transfer_preference.csv")
+```
+
+## Weighted Analysis
+
+```{r}
+dt <- fread("~/sem3/research_project/rival_analysis/data/rival_and_non_rival_pool.csv")
+dt
+dt[, league_lvl_weight := log(1 + non_rival_options)]
+dt[, global_weight := log(1 + global_non_rival_options)]
+```
+
+```{r}
+dt[order(-league_lvl_weight)]
+```
+
+### Rival preference based on weight
+
+```{r}
+xf_all <- xf[
+  window == "Summer" &
+  transfer_type == "Arrivals" &
+  (is_loan == FALSE | is.na(is_loan)),
+  .(
+    country,
+    season,
+    buyer_clean,
+    seller_clean,
+    player_name,
+    position = player_position,
+    is_rival
+  )
+]
+dt_rival <- dt[
+  ,
+  .(
+    country,
+    season,
+    buyer_clean,
+    seller_clean,
+    player_name,
+    position = player_position,
+    league_lvl_weight,
+    global_weight
+  )
+]
+
+xf_combined <- merge(
+  xf_all,
+  dt_rival,
+  by = c(
+    "country",
+    "season",
+    "buyer_clean",
+    "seller_clean",
+    "player_name",
+    "position"
+  ),
+  all.x = TRUE
+)
+xf_combined[, is_rival := !is.na(league_lvl_weight)]
+
+# Assign weights = 1 for non-rival transfers
+xf_combined[is.na(league_lvl_weight), league_lvl_weight := 1]
+xf_combined[is.na(global_weight),     global_weight     := 1]
+xf_combined
+```
+
+League-level
+
+```{r}
+club_pref_league <- xf_combined[
+  ,
+  .(
+    total_transfers = .N,
+    rival_transfers = sum(is_rival),
+    league_weighted_rival = sum(league_lvl_weight * is_rival),
+    avg_league_weight = mean(league_lvl_weight)
+  ),
+  by = .(country, buyer_clean)
+]
+
+club_pref_league[
+  ,
+  league_pref_index := league_weighted_rival / total_transfers
+][order(-league_pref_index)]
+
+fwrite(club_pref_league[
+  ,
+  league_pref_index := league_weighted_rival / total_transfers
+][order(-league_pref_index)],
+"~/sem3/research_project/rival_analysis/data/weighted_rival_preference_league_level.csv")
+```
+
+Global-level
+
+```{r}
+club_pref_global <- xf_combined[
+  ,
+  .(
+    total_transfers = .N,
+    rival_transfers = sum(is_rival),
+    global_weighted_rival = sum(global_weight * is_rival),
+    avg_global_weight = mean(global_weight)
+  ),
+  by = .(country, buyer_clean)
+]
+
+club_pref_global[,
+  global_pref_index := global_weighted_rival / total_transfers
+][order(-global_pref_index)]
+
+fwrite(club_pref_global[,
+  global_pref_index := global_weighted_rival / total_transfers
+][order(-global_pref_index)], "~/sem3/research_project/rival_analysis/data/weighted_rival_preference_global_level.csv")
+```

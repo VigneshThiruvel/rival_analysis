@@ -1,0 +1,631 @@
+club,elo,club_clean,snapshot_date
+Man City,2084.97290039,man city,2023-09-01
+Liverpool,1954.30114746,liverpool,2023-09-01
+Bayern,1942.46520996,bayern,2023-09-01
+Arsenal,1921.01159668,arsenal,2023-09-01
+Real Madrid,1917.42382812,real madrid,2023-09-01
+Napoli,1911.29858398,napoli,2023-09-01
+Inter,1889.9822998,inter,2023-09-01
+Newcastle,1876.95678711,newcastle,2023-09-01
+Man United,1868.74890137,man united,2023-09-01
+Barcelona,1865.52929688,barcelona,2023-09-01
+Atletico,1858.0637207,atletico,2023-09-01
+Milan,1845.29052734,milan,2023-09-01
+Dortmund,1839.03637695,dortmund,2023-09-01
+Tottenham,1836.46740723,tottenham,2023-09-01
+Aston Villa,1835.71435547,aston villa,2023-09-01
+Brentford,1832.10632324,brentford,2023-09-01
+Porto,1831.67810059,porto,2023-09-01
+Brighton,1828.58312988,brighton,2023-09-01
+RB Leipzig,1823.25415039,rb leipzig,2023-09-01
+Paris SG,1804.54443359,paris sg,2023-09-01
+West Ham,1803.2421875,west ham,2023-09-01
+Juventus,1802.89978027,juventus,2023-09-01
+Benfica,1801.06494141,benfica,2023-09-01
+Chelsea,1786.49438477,chelsea,2023-09-01
+Roma,1773.17712402,roma,2023-09-01
+PSV,1772.43310547,psv,2023-09-01
+Sociedad,1770.73168945,sociedad,2023-09-01
+Leverkusen,1770.33947754,leverkusen,2023-09-01
+Crystal Palace,1762.41333008,crystal palace,2023-09-01
+Sporting,1757.99511719,sporting,2023-09-01
+Atalanta,1757.43151855,atalanta,2023-09-01
+Villarreal,1756.74768066,villarreal,2023-09-01
+Union Berlin,1756.6315918,union berlin,2023-09-01
+Fiorentina,1755.66601562,fiorentina,2023-09-01
+Lazio,1754.92822266,lazio,2023-09-01
+Freiburg,1743.82800293,freiburg,2023-09-01
+Feyenoord,1741.05627441,feyenoord,2023-09-01
+Ajax,1739.58837891,ajax,2023-09-01
+Fulham,1738.86462402,fulham,2023-09-01
+Lens,1737.41174316,lens,2023-09-01
+Leicester,1737.03833008,leicester,2023-09-01
+Betis,1736.77380371,betis,2023-09-01
+Salzburg,1730.19213867,salzburg,2023-09-01
+Sevilla,1729.8692627,sevilla,2023-09-01
+Wolfsburg,1723.69445801,wolfsburg,2023-09-01
+Frankfurt,1722.86499023,frankfurt,2023-09-01
+Wolves,1713.98352051,wolves,2023-09-01
+Burnley,1713.48669434,burnley,2023-09-01
+Bilbao,1711.06750488,bilbao,2023-09-01
+Rennes,1705.72851562,rennes,2023-09-01
+Marseille,1704.59033203,marseille,2023-09-01
+Bologna,1697.27404785,bologna,2023-09-01
+Fenerbahce,1696.10424805,fenerbahce,2023-09-01
+Zenit,1695.89831543,zenit,2023-09-01
+Galatasaray,1691.45593262,galatasaray,2023-09-01
+Girona,1690.09960938,girona,2023-09-01
+Lille,1686.90515137,lille,2023-09-01
+Torino,1682.34619141,torino,2023-09-01
+Everton,1682.2376709,everton,2023-09-01
+Braga,1677.02319336,braga,2023-09-01
+Forest,1675.13842773,forest,2023-09-01
+Mainz,1673.41210938,mainz,2023-09-01
+Gladbach,1670.75756836,gladbach,2023-09-01
+Monaco,1667.61987305,monaco,2023-09-01
+Osasuna,1666.46362305,osasuna,2023-09-01
+Lyon,1666.22436523,lyon,2023-09-01
+St Gillis,1665.20153809,st gillis,2023-09-01
+Valencia,1664.69934082,valencia,2023-09-01
+Brugge,1662.5670166,brugge,2023-09-01
+Monza,1661.35168457,monza,2023-09-01
+Besiktas,1658.42663574,besiktas,2023-09-01
+Koeln,1653.96813965,koeln,2023-09-01
+Bournemouth,1653.27856445,bournemouth,2023-09-01
+Alkmaar,1652.76916504,alkmaar,2023-09-01
+Gent,1652.50427246,gent,2023-09-01
+Nice,1651.92919922,nice,2023-09-01
+Antwerp,1648.07592773,antwerp,2023-09-01
+Getafe,1646.51306152,getafe,2023-09-01
+Celta,1643.83764648,celta,2023-09-01
+Udinese,1643.40698242,udinese,2023-09-01
+Leeds,1641.65563965,leeds,2023-09-01
+Hoffenheim,1640.4206543,hoffenheim,2023-09-01
+Sassuolo,1638.62182617,sassuolo,2023-09-01
+Twente,1637.38269043,twente,2023-09-01
+Stuttgart,1636.77868652,stuttgart,2023-09-01
+Southampton,1634.54541016,southampton,2023-09-01
+Rayo Vallecano,1634.17993164,rayo vallecano,2023-09-01
+Rangers,1632.29833984,rangers,2023-09-01
+Mallorca,1631.70043945,mallorca,2023-09-01
+Sheffield United,1630.7019043,sheffield united,2023-09-01
+Cadiz,1630.50561523,cadiz,2023-09-01
+Verona,1629.87487793,verona,2023-09-01
+Slavia Praha,1628.68225098,slavia praha,2023-09-01
+FC Kobenhavn,1627.39501953,fc kobenhavn,2023-09-01
+Young Boys,1624.71594238,young boys,2023-09-01
+Celtic,1623.14355469,celtic,2023-09-01
+Espanyol,1620.91589355,espanyol,2023-09-01
+Levante,1619.82177734,levante,2023-09-01
+Salernitana,1615.7755127,salernitana,2023-09-01
+Reims,1613.0489502,reims,2023-09-01
+Genk,1610.44897461,genk,2023-09-01
+Empoli,1608.51879883,empoli,2023-09-01
+Strasbourg,1608.50012207,strasbourg,2023-09-01
+Granada,1607.75280762,granada,2023-09-01
+Sparta Praha,1604.2244873,sparta praha,2023-09-01
+Montpellier,1603.18151855,montpellier,2023-09-01
+Hamburg,1602.36901855,hamburg,2023-09-01
+Genoa,1601.92626953,genoa,2023-09-01
+Bochum,1601.24902344,bochum,2023-09-01
+Almeria,1600.85803223,almeria,2023-09-01
+Frosinone,1600.39465332,frosinone,2023-09-01
+Lecce,1597.32592773,lecce,2023-09-01
+Luton,1597.25415039,luton,2023-09-01
+Lorient,1595.60961914,lorient,2023-09-01
+Werder,1594.59655762,werder,2023-09-01
+Alaves,1594.58532715,alaves,2023-09-01
+Shakhtar,1588.90246582,shakhtar,2023-09-01
+Maccabi Haifa,1587.67248535,maccabi haifa,2023-09-01
+Anderlecht,1587.63024902,anderlecht,2023-09-01
+Augsburg,1587.1661377,augsburg,2023-09-01
+Sturm Graz,1587.13757324,sturm graz,2023-09-01
+Crvena Zvezda,1585.31518555,crvena zvezda,2023-09-01
+Olympiakos,1584.28442383,olympiakos,2023-09-01
+Brest,1582.44787598,brest,2023-09-01
+Valladolid,1581.82629395,valladolid,2023-09-01
+M Tel Aviv,1578.47888184,m tel aviv,2023-09-01
+Coventry,1576.02636719,coventry,2023-09-01
+Bodoe Glimt,1575.46459961,bodoe glimt,2023-09-01
+Adana Demirspor,1574.85717773,adana demirspor,2023-09-01
+Dinamo Zagreb,1574.42468262,dinamo zagreb,2023-09-01
+Cagliari,1574.30200195,cagliari,2023-09-01
+Las Palmas,1572.15783691,las palmas,2023-09-01
+Toulouse,1570.74023438,toulouse,2023-09-01
+Nordsjaelland,1569.02697754,nordsjaelland,2023-09-01
+CSKA Moskva,1568.91430664,cska moskva,2023-09-01
+Sparta Rotterdam,1567.86047363,sparta rotterdam,2023-09-01
+Karabakh Agdam,1566.01318359,karabakh agdam,2023-09-01
+Clermont,1560.55200195,clermont,2023-09-01
+Elche,1558.1340332,elche,2023-09-01
+Heidenheim,1556.52770996,heidenheim,2023-09-01
+Schalke,1554.28198242,schalke,2023-09-01
+Norwich,1554.10522461,norwich,2023-09-01
+Cercle Brugge,1553.78137207,cercle brugge,2023-09-01
+FC Krasnodar,1552.515625,fc krasnodar,2023-09-01
+St Pauli,1551.97167969,st pauli,2023-09-01
+Rakow,1551.8470459,rakow,2023-09-01
+Midtjylland,1551.6953125,midtjylland,2023-09-01
+Molde,1551.60766602,molde,2023-09-01
+Hertha,1551.00939941,hertha,2023-09-01
+AEK,1550.72497559,aek,2023-09-01
+Duesseldorf,1550.69348145,duesseldorf,2023-09-01
+West Brom,1548.85705566,west brom,2023-09-01
+Middlesbrough,1544.6282959,middlesbrough,2023-09-01
+Metz,1543.91870117,metz,2023-09-01
+Darmstadt,1541.73022461,darmstadt,2023-09-01
+PAOK,1541.20153809,paok,2023-09-01
+Tenerife,1541.08435059,tenerife,2023-09-01
+Panathinaikos,1539.55444336,panathinaikos,2023-09-01
+Eibar,1537.14660645,eibar,2023-09-01
+Millwall,1532.2734375,millwall,2023-09-01
+Spartak Moskva,1530.24560547,spartak moskva,2023-09-01
+Trabzonspor,1529.84802246,trabzonspor,2023-09-01
+Lech,1529.60327148,lech,2023-09-01
+Swansea,1528.93530273,swansea,2023-09-01
+Beer-Sheva,1528.68469238,beer-sheva,2023-09-01
+Blackburn,1528.19104004,blackburn,2023-09-01
+Bueyueksehir,1527.8704834,bueyueksehir,2023-09-01
+Zaragoza,1527.85913086,zaragoza,2023-09-01
+Sunderland,1527.5949707,sunderland,2023-09-01
+Guimaraes,1524.56469727,guimaraes,2023-09-01
+Parma,1523.91064453,parma,2023-09-01
+Lok Moskva,1523.0090332,lok moskva,2023-09-01
+Cremonese,1521.75769043,cremonese,2023-09-01
+Fatih Karaguemruek,1520.20141602,fatih karaguemruek,2023-09-01
+Spezia,1518.59924316,spezia,2023-09-01
+Konyaspor,1517.76391602,konyaspor,2023-09-01
+Nantes,1517.04138184,nantes,2023-09-01
+Utrecht,1516.24230957,utrecht,2023-09-01
+Andorra CF,1515.43737793,andorra cf,2023-09-01
+Oviedo,1515.35949707,oviedo,2023-09-01
+Watford,1512.9954834,watford,2023-09-01
+Preston,1512.40930176,preston,2023-09-01
+LASK,1510.17541504,lask,2023-09-01
+Brondby,1509.67919922,brondby,2023-09-01
+Hull,1507.51367188,hull,2023-09-01
+Hajduk,1506.26806641,hajduk,2023-09-01
+Viktoria Plzen,1504.96606445,viktoria plzen,2023-09-01
+Lugano,1504.32287598,lugano,2023-09-01
+Legia,1502.81176758,legia,2023-09-01
+Leganes,1502.11901855,leganes,2023-09-01
+Bari,1502.11608887,bari,2023-09-01
+Charleroi,1500.78833008,charleroi,2023-09-01
+Vitesse,1500.57971191,vitesse,2023-09-01
+Sampdoria,1498.01342773,sampdoria,2023-09-01
+Venezia,1497.38525391,venezia,2023-09-01
+Paderborn,1497.0045166,paderborn,2023-09-01
+Sheriff Tiraspol,1496.28063965,sheriff tiraspol,2023-09-01
+Zuerich,1494.21398926,zuerich,2023-09-01
+Famalicao,1493.95251465,famalicao,2023-09-01
+Stoke,1493.89855957,stoke,2023-09-01
+Albacete,1493.28894043,albacete,2023-09-01
+Santander,1492.95666504,santander,2023-09-01
+Boavista,1491.66320801,boavista,2023-09-01
+Auxerre,1491.45068359,auxerre,2023-09-01
+Bristol City,1490.88708496,bristol city,2023-09-01
+Elfsborg,1490.43322754,elfsborg,2023-09-01
+Dynamo Moskva,1488.41796875,dynamo moskva,2023-09-01
+Razgrad,1488.34069824,razgrad,2023-09-01
+Huesca,1487.41540527,huesca,2023-09-01
+StGallen,1485.89831543,stgallen,2023-09-01
+Holstein,1485.77722168,holstein,2023-09-01
+Terek Grozny,1485.76855469,terek grozny,2023-09-01
+Suedtirol,1485.29858398,suedtirol,2023-09-01
+Aarhus,1484.90600586,aarhus,2023-09-01
+Huddersfield,1483.09802246,huddersfield,2023-09-01
+Birmingham,1479.96374512,birmingham,2023-09-01
+Bordeaux,1479.64868164,bordeaux,2023-09-01
+Le Havre,1479.25646973,le havre,2023-09-01
+Karlsruhe,1478.89257812,karlsruhe,2023-09-01
+Larnaca,1476.78222656,larnaca,2023-09-01
+Haecken,1476.15771484,haecken,2023-09-01
+Heerenveen,1475.92077637,heerenveen,2023-09-01
+Dynamo Kyiv,1475.87805176,dynamo kyiv,2023-09-01
+Rapid Wien,1475.70227051,rapid wien,2023-09-01
+Arouca,1473.94189453,arouca,2023-09-01
+St Truiden,1473.5144043,st truiden,2023-09-01
+Fuerth,1469.48547363,fuerth,2023-09-01
+Mechelen,1469.42370605,mechelen,2023-09-01
+Viborg,1468.22070312,viborg,2023-09-01
+Pisa,1467.43652344,pisa,2023-09-01
+Servette,1465.18029785,servette,2023-09-01
+Gil Vicente,1464.80102539,gil vicente,2023-09-01
+Silkeborg,1463.69189453,silkeborg,2023-09-01
+Kasimpasa,1463.28100586,kasimpasa,2023-09-01
+Leuven,1462.22741699,leuven,2023-09-01
+Sivasspor,1461.22253418,sivasspor,2023-09-01
+Rostov,1461.12365723,rostov,2023-09-01
+Viking,1460.24182129,viking,2023-09-01
+Caen,1459.47912598,caen,2023-09-01
+Cartagena,1459.23168945,cartagena,2023-09-01
+Gijon,1458.55090332,gijon,2023-09-01
+Burgos,1458.46057129,burgos,2023-09-01
+Mirandes,1458.03808594,mirandes,2023-09-01
+Cardiff,1455.82507324,cardiff,2023-09-01
+Odense,1455.68103027,odense,2023-09-01
+Palermo,1454.46447754,palermo,2023-09-01
+Standard,1452.83166504,standard,2023-09-01
+Ipswich,1452.3494873,ipswich,2023-09-01
+Antalyaspor,1451.68762207,antalyaspor,2023-09-01
+Luzern,1451.03625488,luzern,2023-09-01
+Alanyaspor,1449.16174316,alanyaspor,2023-09-01
+Malmoe,1448.78637695,malmoe,2023-09-01
+Sverdlovsk,1448.1484375,sverdlovsk,2023-09-01
+Magdeburg,1448.0201416,magdeburg,2023-09-01
+Piast Gliwice,1446.39123535,piast gliwice,2023-09-01
+Troyes,1445.62414551,troyes,2023-09-01
+Kayseri,1444.62023926,kayseri,2023-09-01
+Djurgarden,1444.37512207,djurgarden,2023-09-01
+Westerlo,1442.29833984,westerlo,2023-09-01
+Villarreal B,1442.08337402,villarreal b,2023-09-01
+CFR Cluj,1441.66137695,cfr cluj,2023-09-01
+Austria Wien,1441.53051758,austria wien,2023-09-01
+Basel,1441.22485352,basel,2023-09-01
+Slovacko,1440.96789551,slovacko,2023-09-01
+Ferrol,1440.40893555,ferrol,2023-09-01
+Saint-Etienne,1439.51855469,saint-etienne,2023-09-01
+Como,1439.50256348,como,2023-09-01
+Sochi,1438.04467773,sochi,2023-09-01
+Hannover,1437.73754883,hannover,2023-09-01
+APOEL,1436.99926758,apoel,2023-09-01
+Rotherham,1436.76708984,rotherham,2023-09-01
+Omonia,1436.6739502,omonia,2023-09-01
+Kryliya Sovetov,1436.1784668,kryliya sovetov,2023-09-01
+Amorebieta,1435.5234375,amorebieta,2023-09-01
+Aris Limassol,1435.42944336,aris limassol,2023-09-01
+Steaua,1434.7635498,steaua,2023-09-01
+Nuernberg,1432.67358398,nuernberg,2023-09-01
+Cittadella,1432.54626465,cittadella,2023-09-01
+Guingamp,1432.51318359,guingamp,2023-09-01
+Zorya,1432.27502441,zorya,2023-09-01
+Nijmegen,1431.76489258,nijmegen,2023-09-01
+Go Ahead Eagles,1431.37792969,go ahead eagles,2023-09-01
+Plymouth,1430.41882324,plymouth,2023-09-01
+Casa Pia,1430.1920166,casa pia,2023-09-01
+Modena,1429.96899414,modena,2023-09-01
+Ascoli,1427.71557617,ascoli,2023-09-01
+Rostock,1427.01916504,rostock,2023-09-01
+Sigma Olomouc,1426.8885498,sigma olomouc,2023-09-01
+Rio Ave,1426.27587891,rio ave,2023-09-01
+Bastia,1425.63330078,bastia,2023-09-01
+Eldense,1424.98803711,eldense,2023-09-01
+Partizan,1424.19750977,partizan,2023-09-01
+Hammarby,1423.40905762,hammarby,2023-09-01
+Craiova,1422.1920166,craiova,2023-09-01
+Chaves,1421.53234863,chaves,2023-09-01
+Tromso,1421.14013672,tromso,2023-09-01
+Wolfsberg,1420.36584473,wolfsberg,2023-09-01
+Pogon,1419.08776855,pogon,2023-09-01
+Lautern,1418.95141602,lautern,2023-09-01
+Vizela,1418.52062988,vizela,2023-09-01
+Angers,1417.57897949,angers,2023-09-01
+Sittard,1416.36499023,sittard,2023-09-01
+Istanbulspor,1415.56213379,istanbulspor,2023-09-01
+Randers,1414.58544922,randers,2023-09-01
+Ajaccio,1414.07836914,ajaccio,2023-09-01
+Ankaraguecue,1412.8338623,ankaraguecue,2023-09-01
+Osijek,1411.88464355,osijek,2023-09-01
+Ferencvaros,1411.54101562,ferencvaros,2023-09-01
+Alcorcon,1411.21618652,alcorcon,2023-09-01
+QPR,1410.35217285,qpr,2023-09-01
+Klagenfurt,1409.42492676,klagenfurt,2023-09-01
+Heracles,1407.98913574,heracles,2023-09-01
+Brescia,1407.18261719,brescia,2023-09-01
+Rijeka,1407.07739258,rijeka,2023-09-01
+Aris,1406.11083984,aris,2023-09-01
+Orenburg,1404.97692871,orenburg,2023-09-01
+Zwolle,1404.07983398,zwolle,2023-09-01
+Moreirense,1403.01391602,moreirense,2023-09-01
+Lillestrom,1402.75561523,lillestrom,2023-09-01
+CSKA Sofia,1402.02587891,cska sofia,2023-09-01
+Rosenborg,1401.52368164,rosenborg,2023-09-01
+Farense,1401.33630371,farense,2023-09-01
+Waalwijk,1400.9597168,waalwijk,2023-09-01
+Catanzaro,1400.82446289,catanzaro,2023-09-01
+Paris FC,1400.28747559,paris fc,2023-09-01
+Estoril,1399.98925781,estoril,2023-09-01
+Sheffield Weds,1399.49987793,sheffield weds,2023-09-01
+Estrela Amadora,1399.19165039,estrela amadora,2023-09-01
+Trnava,1399.1640625,trnava,2023-09-01
+Cosenza,1398.56835938,cosenza,2023-09-01
+Cracovia,1397.5123291,cracovia,2023-09-01
+Grasshoppers,1387.92749023,grasshoppers,2023-09-01
+Almere,1387.61083984,almere,2023-09-01
+Grenoble,1387.3536377,grenoble,2023-09-01
+Viitorul,1386.80554199,viitorul,2023-09-01
+Excelsior,1385.99157715,excelsior,2023-09-01
+Nizhny Novgorod,1384.76806641,nizhny novgorod,2023-09-01
+Eupen,1384.20300293,eupen,2023-09-01
+Sarpsborg,1382.92907715,sarpsborg,2023-09-01
+Jagiellonia,1382.82531738,jagiellonia,2023-09-01
+Dnipro,1380.62536621,dnipro,2023-09-01
+Wehen,1378.10778809,wehen,2023-09-01
+Brann,1377.31640625,brann,2023-09-01
+Slovan Bratislava,1376.20495605,slovan bratislava,2023-09-01
+Levski,1376.18884277,levski,2023-09-01
+Braunschweig,1375.24377441,braunschweig,2023-09-01
+Sepsi,1374.55932617,sepsi,2023-09-01
+Portimonense,1372.07507324,portimonense,2023-09-01
+Volendam,1371.90539551,volendam,2023-09-01
+FK Astana,1371.68212891,fk astana,2023-09-01
+Ternana,1370.91467285,ternana,2023-09-01
+Lecco,1369.37207031,lecco,2023-09-01
+Norrkoeping,1369.29626465,norrkoeping,2023-09-01
+Zilina,1369.06225586,zilina,2023-09-01
+Molenbeek,1367.23217773,molenbeek,2023-09-01
+Banik Ostrava,1366.05615234,banik ostrava,2023-09-01
+Warta,1365.86523438,warta,2023-09-01
+Lyngby,1364.0847168,lyngby,2023-09-01
+Bohemians Praha,1363.90759277,bohemians praha,2023-09-01
+Rubin Kazan,1363.62475586,rubin kazan,2023-09-01
+Pau,1363.38037109,pau,2023-09-01
+Radomiak,1363.1541748,radomiak,2023-09-01
+Mlada Boleslav,1363.02392578,mlada boleslav,2023-09-01
+Netanya,1362.79467773,netanya,2023-09-01
+Celje,1362.50952148,celje,2023-09-01
+Rodez,1361.79956055,rodez,2023-09-01
+Gornik,1361.14526367,gornik,2023-09-01
+Odd Grenland,1360.77709961,odd grenland,2023-09-01
+Kortrijk,1360.12255859,kortrijk,2023-09-01
+Lubin,1358.52661133,lubin,2023-09-01
+Reggiana,1357.13012695,reggiana,2023-09-01
+Fakel Voronezh,1356.55554199,fakel voronezh,2023-09-01
+Rizespor,1356.17871094,rizespor,2023-09-01
+Amiens,1356.06323242,amiens,2023-09-01
+Wattens,1352.48425293,wattens,2023-09-01
+Rapid Bucuresti,1352.03955078,rapid bucuresti,2023-09-01
+AIK,1351.17346191,aik,2023-09-01
+Feralpisalo,1350.57641602,feralpisalo,2023-09-01
+Lustenau,1349.32275391,lustenau,2023-09-01
+Winterthur,1347.70922852,winterthur,2023-09-01
+Yverdon Sport,1347.44775391,yverdon sport,2023-09-01
+Valenciennes,1346.5177002,valenciennes,2023-09-01
+Valerenga,1346.08984375,valerenga,2023-09-01
+Osnabrueck,1345.96435547,osnabrueck,2023-09-01
+Slask,1345.24511719,slask,2023-09-01
+Maribor,1343.20568848,maribor,2023-09-01
+Backa Topola,1342.92028809,backa topola,2023-09-01
+Baltika,1342.49938965,baltika,2023-09-01
+Hartberg,1342.3651123,hartberg,2023-09-01
+Neftchi,1342.31933594,neftchi,2023-09-01
+Hradec Kralove,1341.94152832,hradec kralove,2023-09-01
+Slovan Liberec,1340.64794922,slovan liberec,2023-09-01
+Sabah,1340.21130371,sabah,2023-09-01
+Laval,1340.04089355,laval,2023-09-01
+Elversberg,1339.52087402,elversberg,2023-09-01
+Samsunspor,1339.49377441,samsunspor,2023-09-01
+Dunajska,1338.4552002,dunajska,2023-09-01
+Stal Mielec,1338.36437988,stal mielec,2023-09-01
+Hearts,1337.21630859,hearts,2023-09-01
+Vaduz,1336.74255371,vaduz,2023-09-01
+Annecy,1334.59240723,annecy,2023-09-01
+Pendikspor,1334.09179688,pendikspor,2023-09-01
+Mjaellby,1333.96948242,mjaellby,2023-09-01
+US Quevilly,1333.68139648,us quevilly,2023-09-01
+Hibernian,1331.26635742,hibernian,2023-09-01
+Goeteborg,1331.22644043,goeteborg,2023-09-01
+Altach,1328.82714844,altach,2023-09-01
+Aberdeen,1328.37634277,aberdeen,2023-09-01
+CSKA 1948 Sofia,1327.16149902,cska 1948 sofia,2023-09-01
+Ashdod,1327.01611328,ashdod,2023-09-01
+Olimpija Ljubljana,1326.95239258,olimpija ljubljana,2023-09-01
+Kalmar,1325.75305176,kalmar,2023-09-01
+Hapoel Haifa,1325.29150391,hapoel haifa,2023-09-01
+Cherno More,1324.20703125,cherno more,2023-09-01
+Lok Zagreb,1324.1361084,lok zagreb,2023-09-01
+H Tel Aviv,1323.10302734,h tel aviv,2023-09-01
+Motherwell,1320.72814941,motherwell,2023-09-01
+Haugesund,1319.44873047,haugesund,2023-09-01
+Hvidovre,1317.35876465,hvidovre,2023-09-01
+HNK Gorica,1316.90490723,hnk gorica,2023-09-01
+Hatayspor,1316.57299805,hatayspor,2023-09-01
+Cukaricki,1316.24084473,cukaricki,2023-09-01
+Puskas Akademia,1314.0567627,puskas akademia,2023-09-01
+Olexandriya,1313.79309082,olexandriya,2023-09-01
+Vorskla,1313.54467773,vorskla,2023-09-01
+Stromsgodset,1311.76916504,stromsgodset,2023-09-01
+Vejle,1311.53991699,vejle,2023-09-01
+Lausanne,1311.47546387,lausanne,2023-09-01
+Hapoel Jerusalem,1310.65063477,hapoel jerusalem,2023-09-01
+Korona,1308.90881348,korona,2023-09-01
+Lausanne Ouchy,1308.51086426,lausanne ouchy,2023-09-01
+Jablonec,1307.52429199,jablonec,2023-09-01
+Bnei Sakhinin,1307.33288574,bnei sakhinin,2023-09-01
+Kecskemeti,1307.04223633,kecskemeti,2023-09-01
+Kuopio,1306.14868164,kuopio,2023-09-01
+Debrecen,1304.50671387,debrecen,2023-09-01
+Teplice,1301.84912109,teplice,2023-09-01
+Beitar,1301.71228027,beitar,2023-09-01
+HJK Helsinki,1301.60021973,hjk helsinki,2023-09-01
+Lok Plovdiv,1300.6697998,lok plovdiv,2023-09-01
+Gabala,1300.4362793,gabala,2023-09-01
+Istra 1961,1299.78063965,istra 1961,2023-09-01
+OFI,1298.82116699,ofi,2023-09-01
+St Mirren,1298.70593262,st mirren,2023-09-01
+BW Linz,1295.43737793,bw linz,2023-09-01
+Gaziantep FK,1295.34155273,gaziantep fk,2023-09-01
+Rukh Lviv,1293.24951172,rukh lviv,2023-09-01
+Giannina,1288.77844238,giannina,2023-09-01
+Voluntari,1288.31616211,voluntari,2023-09-01
+Paksi,1287.88366699,paksi,2023-09-01
+FK Riga,1285.85852051,fk riga,2023-09-01
+Pardubice,1284.83728027,pardubice,2023-09-01
+Varnamo,1284.32824707,varnamo,2023-09-01
+Kolos,1283.82946777,kolos,2023-09-01
+Varazdin,1282.31262207,varazdin,2023-09-01
+Slaven Belupo,1281.72399902,slaven belupo,2023-09-01
+IK Sirius,1281.5982666,ik sirius,2023-09-01
+Ruch,1280.6463623,ruch,2023-09-01
+Ham-Kam,1278.49865723,ham-kam,2023-09-01
+Dunkerque,1278.14147949,dunkerque,2023-09-01
+Asteras Tripolis,1278.08959961,asteras tripolis,2023-09-01
+Puszcza Niepolomice,1277.61560059,puszcza niepolomice,2023-09-01
+Atromitos,1276.62927246,atromitos,2023-09-01
+Widzew,1275.69177246,widzew,2023-09-01
+Kryvbas,1275.53845215,kryvbas,2023-09-01
+Hermannstadt,1273.22460938,hermannstadt,2023-09-01
+Tescoma Zlin,1272.52404785,tescoma zlin,2023-09-01
+Novi Sad,1271.60742188,novi sad,2023-09-01
+Sandefjord,1271.546875,sandefjord,2023-09-01
+Ceske Budejovice,1271.31286621,ceske budejovice,2023-09-01
+Polissya Zhytomyr,1270.4753418,polissya zhytomyr,2023-09-01
+LKS,1269.52075195,lks,2023-09-01
+Hapoel Eran Hadera,1268.84899902,hapoel eran hadera,2023-09-01
+NFC Volos,1267.34448242,nfc volos,2023-09-01
+Videoton,1267.10839844,videoton,2023-09-01
+Craiova 1948,1265.3404541,craiova 1948,2023-09-01
+Concarneau,1263.90759277,concarneau,2023-09-01
+Kisvarda,1262.40637207,kisvarda,2023-09-01
+Tobol,1262.16796875,tobol,2023-09-01
+Stabaek,1262.10778809,stabaek,2023-09-01
+Ujpest,1262.0625,ujpest,2023-09-01
+Zrinjski Mostar,1258.6541748,zrinjski mostar,2023-09-01
+Aktobe,1258.29101562,aktobe,2023-09-01
+Kilmarnock,1257.27563477,kilmarnock,2023-09-01
+Livingston,1256.65930176,livingston,2023-09-01
+Mura,1256.33984375,mura,2023-09-01
+Koper,1255.6328125,koper,2023-09-01
+Pyunik,1255.30773926,pyunik,2023-09-01
+Maccabi Bnei Raina,1252.98803711,maccabi bnei raina,2023-09-01
+Ordabasy,1252.76391602,ordabasy,2023-09-01
+Domzale,1250.11682129,domzale,2023-09-01
+Arda,1248.92749023,arda,2023-09-01
+BATE,1248.45239258,bate,2023-09-01
+Universitatea Cluj,1244.71459961,universitatea cluj,2023-09-01
+Petrolul Ploiesti,1244.70178223,petrolul ploiesti,2023-09-01
+Obolon Kyiv,1241.9083252,obolon kyiv,2023-09-01
+UTA Arad,1239.78283691,uta arad,2023-09-01
+Dinamo Minsk,1239.5748291,dinamo minsk,2023-09-01
+Chernomorets,1238.98461914,chernomorets,2023-09-01
+Brommapojkarna,1237.64831543,brommapojkarna,2023-09-01
+M Petach Tikva,1235.05249023,m petach tikva,2023-09-01
+Lamia,1234.76379395,lamia,2023-09-01
+Zeljeznicar,1234.71191406,zeljeznicar,2023-09-01
+Petrocub,1234.45910645,petrocub,2023-09-01
+Akureyri,1234.39501953,akureyri,2023-09-01
+Ross County,1233.89111328,ross county,2023-09-01
+Degerfors,1233.65161133,degerfors,2023-09-01
+H Petach Tikva,1233.35400391,h petach tikva,2023-09-01
+Botosani,1232.16137695,botosani,2023-09-01
+St Johnstone,1230.99475098,st johnstone,2023-09-01
+Breidablik,1230.02612305,breidablik,2023-09-01
+FK Sarajevo,1229.33117676,fk sarajevo,2023-09-01
+Diosgyori,1228.38452148,diosgyori,2023-09-01
+RFS,1228.13769531,rfs,2023-09-01
+Mezokovesd-Zsory,1227.67504883,mezokovesd-zsory,2023-09-01
+Zimbru,1226.43933105,zimbru,2023-09-01
+Metalist 1925,1226.37475586,metalist 1925,2023-09-01
+Shkendija,1226.29931641,shkendija,2023-09-01
+Halmstad,1226.0411377,halmstad,2023-09-01
+Vikingur,1225.62609863,vikingur,2023-09-01
+Honka Espoo,1219.21582031,honka espoo,2023-09-01
+LNZ,1218.67749023,lnz,2023-09-01
+MTK,1216.45727539,mtk,2023-09-01
+Karvina,1214.71362305,karvina,2023-09-01
+Milsami Orhei,1213.57250977,milsami orhei,2023-09-01
+Haka,1212.14367676,haka,2023-09-01
+Veres,1210.74841309,veres,2023-09-01
+Zalgiris Vilnius,1210.27575684,zalgiris vilnius,2023-09-01
+Aalesund,1207.58569336,aalesund,2023-09-01
+Dundee,1206.20861816,dundee,2023-09-01
+Panserraikos,1205.68725586,panserraikos,2023-09-01
+Panetolikos,1201.3404541,panetolikos,2023-09-01
+Radomlje,1200.7701416,radomlje,2023-09-01
+Alashkert,1200.12182617,alashkert,2023-09-01
+Varbergs,1199.7668457,varbergs,2023-09-01
+Zalaegerszegi,1199.73022461,zalaegerszegi,2023-09-01
+Partizani Tirana,1197.4609375,partizani tirana,2023-09-01
+Slavia Sofia,1195.54296875,slavia sofia,2023-09-01
+Derry City,1194.78149414,derry city,2023-09-01
+Dila Gori,1194.50598145,dila gori,2023-09-01
+Bravo,1192.42822266,bravo,2023-09-01
+Auda,1192.19238281,auda,2023-09-01
+Drita,1191.71264648,drita,2023-09-01
+Vozdovac Beograd,1189.06359863,vozdovac beograd,2023-09-01
+Otelul Galati,1185.25976562,otelul galati,2023-09-01
+Kifisias,1180.6229248,kifisias,2023-09-01
+Mynai,1180.37927246,mynai,2023-09-01
+Borac Banja Luka,1180.14990234,borac banja luka,2023-09-01
+Batumi,1178.2746582,batumi,2023-09-01
+Dundalk,1176.00512695,dundalk,2023-09-01
+Egnatia,1174.42944336,egnatia,2023-09-01
+Shamrock,1173.89001465,shamrock,2023-09-01
+Ballkani,1172.87023926,ballkani,2023-09-01
+Torpedo Kutaisi,1171.62963867,torpedo kutaisi,2023-09-01
+Vllaznia,1169.25964355,vllaznia,2023-09-01
+St Patricks,1167.4251709,st patricks,2023-09-01
+Iasi,1166.10791016,iasi,2023-09-01
+Dinamo Bucuresti,1164.66308594,dinamo bucuresti,2023-09-01
+Ararat,1160.66955566,ararat,2023-09-01
+Rudes Zagreb,1160.6574707,rudes zagreb,2023-09-01
+Beroe Stara Zagora,1160.5411377,beroe stara zagora,2023-09-01
+Radnik Surdulica,1159.52355957,radnik surdulica,2023-09-01
+Botev Plovdiv,1155.78112793,botev plovdiv,2023-09-01
+Tirana,1155.55859375,tirana,2023-09-01
+Valmieras,1153.99584961,valmieras,2023-09-01
+Novi Pazar,1153.97436523,novi pazar,2023-09-01
+Banants,1152.08911133,banants,2023-09-01
+Mladost Lucani,1151.35791016,mladost lucani,2023-09-01
+Levski Krumovgrad,1148.68444824,levski krumovgrad,2023-09-01
+Klaksvik,1148.47021484,klaksvik,2023-09-01
+Hamrun,1145.34057617,hamrun,2023-09-01
+Neman Grodno,1139.85681152,neman grodno,2023-09-01
+Panevezys,1138.43078613,panevezys,2023-09-01
+Dinamo Tbilisi,1134.5390625,dinamo tbilisi,2023-09-01
+Hebar,1133.34521484,hebar,2023-09-01
+Flora Tallinn,1131.42407227,flora tallinn,2023-09-01
+Struga,1122.38134766,struga,2023-09-01
+Zlatibor,1121.6550293,zlatibor,2023-09-01
+Linfield,1119.01037598,linfield,2023-09-01
+Aluminij,1112.64599609,aluminij,2023-09-01
+Hegelmann,1112.26757812,hegelmann,2023-09-01
+Nis,1109.84118652,nis,2023-09-01
+Makedonija,1105.08398438,makedonija,2023-09-01
+Torpedo Zhodino,1104.54260254,torpedo zhodino,2023-09-01
+Shkupi,1102.18518066,shkupi,2023-09-01
+Krusevac,1101.38793945,krusevac,2023-09-01
+Kauno Zalgiris,1099.0090332,kauno zalgiris,2023-09-01
+Lok Sofia,1094.49353027,lok sofia,2023-09-01
+Kragujevac,1092.98168945,kragujevac,2023-09-01
+Etar,1092.90405273,etar,2023-09-01
+IMT,1092.47998047,imt,2023-09-01
+Niedercorn,1092.47595215,niedercorn,2023-09-01
+Rogaska,1091.63183594,rogaska,2023-09-01
+Gzira United,1091.49047852,gzira united,2023-09-01
+Ivanjica,1090.78723145,ivanjica,2023-09-01
+Botev Vratsa,1087.19042969,botev vratsa,2023-09-01
+Balzan,1086.40185547,balzan,2023-09-01
+Crusaders,1086.08044434,crusaders,2023-09-01
+Dudelange,1085.82019043,dudelange,2023-09-01
+Dukagjini,1084.37695312,dukagjini,2023-09-01
+Swift Hesperange,1079.76623535,swift hesperange,2023-09-01
+The New Saints,1079.25256348,the new saints,2023-09-01
+Birkirkara,1078.01794434,birkirkara,2023-09-01
+Differdang,1073.77246094,differdang,2023-09-01
+Blagoevgrad,1072.42773438,blagoevgrad,2023-09-01
+Glentoran,1066.91369629,glentoran,2023-09-01
+B 36 Torshavn,1066.84960938,b 36 torshavn,2023-09-01
+KF Gjilani,1062.39404297,kf gjilani,2023-09-01
+Larne,1055.97705078,larne,2023-09-01
+Zeleznicar Pancevo,1042.0090332,zeleznicar pancevo,2023-09-01
+HB Torshavn,1041.53735352,hb torshavn,2023-09-01
+Gota,1026.86169434,gota,2023-09-01
+Trans Narva,1017.82794189,trans narva,2023-09-01
+Paide Linnameeskond,1013.82318115,paide linnameeskond,2023-09-01
+Arsenal Tivat,1012.71374512,arsenal tivat,2023-09-01
+FC Infonet,1001.38671875,fc infonet,2023-09-01
+Haverfordwest,989.730102539,haverfordwest,2023-09-01
+Connahs Quay,982.006530762,connahs quay,2023-09-01
+Podgorica,977.909179688,podgorica,2023-09-01
+Sutjeska,963.651672363,sutjeska,2023-09-01
+Penybont,962.094421387,penybont,2023-09-01
+Lincoln,950.542419434,lincoln,2023-09-01
+College Europa,907.217163086,college europa,2023-09-01
+Santa Coloma,898.331298828,santa coloma,2023-09-01
+Escaldes,880.996765137,escaldes,2023-09-01
+FCB Magpies,859.597900391,fcb magpies,2023-09-01
+Atletic Club Escaldes,844.898071289,atletic club escaldes,2023-09-01
+Cosmos,696.616455078,cosmos,2023-09-01
+Tre Penne,685.460083008,tre penne,2023-09-01
+La Fiorita,666.000732422,la fiorita,2023-09-01
