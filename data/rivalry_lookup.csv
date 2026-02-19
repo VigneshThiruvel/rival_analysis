@@ -1,0 +1,1271 @@
+country,season_start,team_a,team_b,is_rival
+France,2017,lille,r. strasbourg,TRUE
+France,2017,lille,sm caen,TRUE
+France,2017,lille,toulouse,TRUE
+France,2017,angers sco,lille,TRUE
+France,2017,amiens sc,lille,TRUE
+France,2017,r. strasbourg,sm caen,TRUE
+France,2017,r. strasbourg,toulouse,TRUE
+France,2017,angers sco,r. strasbourg,TRUE
+Spain,2017,athletic club,cd leganés,TRUE
+Spain,2017,athletic club,celta de vigo,TRUE
+Spain,2017,athletic club,real sociedad,TRUE
+Spain,2017,athletic club,dep. la coruña,TRUE
+Spain,2017,celta de vigo,real sociedad,TRUE
+Spain,2017,cd leganés,celta de vigo,TRUE
+Spain,2017,celta de vigo,real betis,TRUE
+France,2017,sm caen,toulouse,TRUE
+Spain,2017,cd leganés,real sociedad,TRUE
+Spain,2017,cd leganés,dep. la coruña,TRUE
+Spain,2017,real betis,real sociedad,TRUE
+England,2017,bournemouth,crystal palace,TRUE
+England,2017,bournemouth,newcastle,TRUE
+England,2017,bournemouth,leicester,TRUE
+England,2017,bournemouth,west ham,TRUE
+England,2017,bournemouth,watford,TRUE
+England,2017,crystal palace,newcastle,TRUE
+England,2017,crystal palace,leicester,TRUE
+England,2017,crystal palace,west ham,TRUE
+England,2017,crystal palace,watford,TRUE
+Italy,2017,bologna,cagliari,TRUE
+Italy,2017,bologna,chievo verona,TRUE
+Italy,2017,bologna,udinese,TRUE
+Italy,2017,bologna,crotone,TRUE
+Italy,2017,bologna,spal,TRUE
+Italy,2017,cagliari,chievo verona,TRUE
+Italy,2017,cagliari,udinese,TRUE
+Italy,2017,cagliari,spal,TRUE
+Italy,2017,cagliari,crotone,TRUE
+Italy,2017,inter,lazio,TRUE
+Italy,2017,atalanta,inter,TRUE
+Italy,2017,fiorentina,inter,TRUE
+Italy,2017,inter,roma,TRUE
+Italy,2017,atalanta,lazio,TRUE
+Italy,2017,lazio,roma,TRUE
+Italy,2017,fiorentina,lazio,TRUE
+Germany,2023,heidenheim,werder bremen,TRUE
+Germany,2023,heidenheim,hoffenheim,TRUE
+Germany,2023,augsburg,heidenheim,TRUE
+Germany,2023,heidenheim,mönchengladbach,TRUE
+Germany,2023,heidenheim,vfl bochum,TRUE
+Germany,2023,vfl bochum,werder bremen,TRUE
+Germany,2023,augsburg,werder bremen,TRUE
+Germany,2023,mainz,werder bremen,TRUE
+Germany,2023,hoffenheim,werder bremen,TRUE
+England,2017,watford,west ham,TRUE
+England,2017,brighton,watford,TRUE
+England,2017,newcastle,watford,TRUE
+England,2017,newcastle,west ham,TRUE
+England,2017,brighton,west ham,TRUE
+Spain,2017,alavés,levante,TRUE
+Spain,2017,alavés,sd eibar,TRUE
+Spain,2017,alavés,espanyol,TRUE
+Spain,2017,alavés,girona,TRUE
+Spain,2017,levante,sd eibar,TRUE
+Spain,2017,espanyol,levante,TRUE
+Spain,2017,girona,levante,TRUE
+France,2017,lyon,marseille,TRUE
+France,2017,lyon,monaco,TRUE
+France,2017,marseille,monaco,TRUE
+Italy,2018,fc empoli,genoa,TRUE
+Italy,2018,fc empoli,spal,TRUE
+Italy,2018,fc empoli,udinese,TRUE
+Italy,2018,fc empoli,sassuolo,TRUE
+Italy,2018,genoa,udinese,TRUE
+Italy,2018,genoa,spal,TRUE
+Italy,2018,cagliari,genoa,TRUE
+Italy,2018,bologna,genoa,TRUE
+Italy,2017,chievo verona,udinese,TRUE
+Italy,2017,chievo verona,genoa,TRUE
+Italy,2017,chievo verona,spal,TRUE
+Italy,2017,genoa,udinese,TRUE
+Italy,2017,genoa,spal,TRUE
+Italy,2017,spal,udinese,TRUE
+England,2019,aston villa,bournemouth,TRUE
+England,2019,aston villa,watford,TRUE
+England,2019,bournemouth,crystal palace,TRUE
+England,2019,bournemouth,newcastle,TRUE
+England,2019,bournemouth,watford,TRUE
+England,2019,bournemouth,west ham,TRUE
+France,2018,nîmes olympique,stade reims,TRUE
+France,2018,nîmes olympique,r. strasbourg,TRUE
+France,2018,angers sco,nîmes olympique,TRUE
+France,2018,fc nantes,nîmes olympique,TRUE
+France,2018,r. strasbourg,stade reims,TRUE
+France,2018,angers sco,stade reims,TRUE
+France,2018,montpellier,stade reims,TRUE
+France,2018,fc nantes,stade reims,TRUE
+England,2018,bournemouth,crystal palace,TRUE
+England,2018,bournemouth,newcastle,TRUE
+England,2018,bournemouth,watford,TRUE
+England,2018,bournemouth,west ham,TRUE
+England,2018,bournemouth,leicester,TRUE
+England,2018,crystal palace,leicester,TRUE
+England,2018,crystal palace,newcastle,TRUE
+England,2018,crystal palace,west ham,TRUE
+England,2018,crystal palace,everton,TRUE
+England,2017,swansea,west brom,TRUE
+England,2017,southampton,swansea,TRUE
+England,2017,huddersfield,swansea,TRUE
+England,2017,southampton,west brom,TRUE
+England,2017,huddersfield,west brom,TRUE
+England,2017,everton,leicester,TRUE
+England,2017,burnley,everton,TRUE
+England,2017,brighton,newcastle,TRUE
+England,2018,everton,leicester,TRUE
+England,2018,everton,wolves,TRUE
+England,2018,leicester,wolves,TRUE
+England,2018,leicester,newcastle,TRUE
+England,2017,liverpool,tottenham,TRUE
+England,2017,chelsea,liverpool,TRUE
+England,2017,liverpool,man utd,TRUE
+England,2017,arsenal,liverpool,TRUE
+England,2017,liverpool,man city,TRUE
+England,2017,man utd,tottenham,TRUE
+England,2017,chelsea,tottenham,TRUE
+England,2017,arsenal,tottenham,TRUE
+England,2017,man city,tottenham,TRUE
+France,2021,clermont foot,fc lorient,TRUE
+France,2021,clermont foot,troyes,TRUE
+France,2021,angers sco,clermont foot,TRUE
+France,2021,clermont foot,g. bordeaux,TRUE
+France,2021,clermont foot,saint-étienne,TRUE
+France,2021,fc lorient,troyes,TRUE
+France,2021,angers sco,fc lorient,TRUE
+France,2021,fc lorient,g. bordeaux,TRUE
+France,2021,fc lorient,fc nantes,TRUE
+France,2021,stade reims,troyes,TRUE
+France,2017,amiens sc,guingamp,TRUE
+France,2017,amiens sc,angers sco,TRUE
+France,2017,amiens sc,fc nantes,TRUE
+France,2017,amiens sc,toulouse,TRUE
+France,2017,angers sco,guingamp,TRUE
+France,2017,fc nantes,guingamp,TRUE
+Italy,2021,cagliari,salernitana,TRUE
+Italy,2021,cagliari,spezia calcio,TRUE
+Italy,2021,cagliari,fc empoli,TRUE
+Italy,2021,cagliari,genoa,TRUE
+Italy,2021,bologna,cagliari,TRUE
+Italy,2021,salernitana,spezia calcio,TRUE
+Italy,2021,salernitana,venezia,TRUE
+Italy,2021,genoa,salernitana,TRUE
+Germany,2017,hoffenheim,leverkusen,TRUE
+Germany,2017,hoffenheim,leipzig,TRUE
+Germany,2017,dortmund,hoffenheim,TRUE
+Germany,2017,hoffenheim,stuttgart,TRUE
+Germany,2017,leipzig,leverkusen,TRUE
+Germany,2017,dortmund,leverkusen,TRUE
+Germany,2017,leverkusen,stuttgart,TRUE
+Spain,2018,alavés,levante,TRUE
+Spain,2018,alavés,sd eibar,TRUE
+Spain,2018,alavés,espanyol,TRUE
+Spain,2018,alavés,getafe,TRUE
+Spain,2018,levante,sd eibar,TRUE
+Spain,2018,espanyol,levante,TRUE
+Spain,2018,girona,levante,TRUE
+Spain,2018,levante,real valladolid,TRUE
+Italy,2018,spal,udinese,TRUE
+Italy,2018,bologna,udinese,TRUE
+Italy,2018,cagliari,udinese,TRUE
+France,2017,g. bordeaux,saint-étienne,TRUE
+France,2017,g. bordeaux,nice,TRUE
+France,2017,nice,saint-étienne,TRUE
+France,2017,montpellier,saint-étienne,TRUE
+France,2017,dijon,saint-étienne,TRUE
+France,2017,montpellier,nice,TRUE
+France,2017,dijon,nice,TRUE
+France,2017,nice,stade rennais,TRUE
+Italy,2018,bologna,cagliari,TRUE
+Italy,2018,bologna,spal,TRUE
+Italy,2018,cagliari,parma,TRUE
+Italy,2018,cagliari,spal,TRUE
+England,2022,bournemouth,nott'm forest,TRUE
+England,2022,bournemouth,crystal palace,TRUE
+England,2022,aston villa,bournemouth,TRUE
+England,2022,bournemouth,everton,TRUE
+England,2022,bournemouth,west ham,TRUE
+England,2022,nott'm forest,wolves,TRUE
+England,2022,nott'm forest,southampton,TRUE
+Italy,2019,bologna,cagliari,TRUE
+Italy,2019,bologna,udinese,TRUE
+Italy,2019,bologna,genoa,TRUE
+Italy,2019,bologna,sassuolo,TRUE
+Italy,2019,bologna,parma,TRUE
+Italy,2019,cagliari,parma,TRUE
+Italy,2019,cagliari,udinese,TRUE
+Italy,2019,cagliari,genoa,TRUE
+Italy,2019,cagliari,spal,TRUE
+Italy,2020,bologna,udinese,TRUE
+Italy,2020,bologna,cagliari,TRUE
+Italy,2020,bologna,genoa,TRUE
+Italy,2020,bologna,spezia calcio,TRUE
+Italy,2020,bologna,crotone,TRUE
+Italy,2020,cagliari,udinese,TRUE
+Italy,2020,genoa,udinese,TRUE
+Italy,2020,spezia calcio,udinese,TRUE
+Italy,2020,sassuolo,udinese,TRUE
+Spain,2021,cádiz cf,rayo vallecano,TRUE
+Spain,2021,cádiz cf,elche cf,TRUE
+Spain,2021,cádiz cf,rcd mallorca,TRUE
+Spain,2021,alavés,cádiz cf,TRUE
+Spain,2021,cádiz cf,levante,TRUE
+Spain,2021,elche cf,rayo vallecano,TRUE
+Spain,2021,rayo vallecano,rcd mallorca,TRUE
+Spain,2021,ca osasuna,rayo vallecano,TRUE
+Spain,2021,granada cf,rayo vallecano,TRUE
+England,2018,newcastle,west ham,TRUE
+England,2018,newcastle,watford,TRUE
+Spain,2018,celta de vigo,real sociedad,TRUE
+Spain,2018,cd leganés,celta de vigo,TRUE
+Spain,2018,athletic club,celta de vigo,TRUE
+Spain,2018,celta de vigo,real valladolid,TRUE
+Spain,2018,athletic club,real sociedad,TRUE
+Spain,2018,cd leganés,real sociedad,TRUE
+Spain,2018,real betis,real sociedad,TRUE
+England,2018,watford,west ham,TRUE
+England,2018,brighton,watford,TRUE
+England,2018,west ham,wolves,TRUE
+England,2017,brighton,southampton,TRUE
+France,2022,clermont foot,fc lorient,TRUE
+France,2022,clermont foot,troyes,TRUE
+France,2022,clermont foot,toulouse,TRUE
+France,2022,angers sco,clermont foot,TRUE
+France,2022,fc lorient,troyes,TRUE
+France,2022,fc lorient,toulouse,TRUE
+France,2022,fc lorient,stade reims,TRUE
+France,2022,fc lorient,stade brestois,TRUE
+Germany,2024,holstein kiel,vfl bochum,TRUE
+Germany,2024,heidenheim,holstein kiel,TRUE
+Germany,2024,holstein kiel,st. pauli,TRUE
+Germany,2024,hoffenheim,holstein kiel,TRUE
+Germany,2024,augsburg,vfl bochum,TRUE
+Germany,2024,st. pauli,vfl bochum,TRUE
+Germany,2024,vfl bochum,werder bremen,TRUE
+Germany,2020,1.fc köln,arm. bielefeld,TRUE
+Germany,2020,arm. bielefeld,hertha bsc,TRUE
+Germany,2020,arm. bielefeld,mainz,TRUE
+Germany,2020,arm. bielefeld,augsburg,TRUE
+Germany,2020,arm. bielefeld,stuttgart,TRUE
+Italy,2019,genoa,udinese,TRUE
+Italy,2019,sassuolo,udinese,TRUE
+Italy,2019,spal,udinese,TRUE
+Germany,2017,augsburg,hertha bsc,TRUE
+Germany,2017,augsburg,werder bremen,TRUE
+Germany,2017,augsburg,hannover 96,TRUE
+Germany,2017,augsburg,mainz,TRUE
+Germany,2017,augsburg,frankfurt,TRUE
+Germany,2017,hertha bsc,werder bremen,TRUE
+Germany,2017,hannover 96,hertha bsc,TRUE
+Germany,2017,frankfurt,hertha bsc,TRUE
+Germany,2017,hertha bsc,mainz,TRUE
+Germany,2017,leipzig,stuttgart,TRUE
+Germany,2017,frankfurt,leipzig,TRUE
+Germany,2017,dortmund,leipzig,TRUE
+England,2021,crystal palace,newcastle,TRUE
+England,2021,brentford,crystal palace,TRUE
+England,2021,brighton,crystal palace,TRUE
+England,2021,aston villa,crystal palace,TRUE
+England,2021,crystal palace,southampton,TRUE
+England,2021,brentford,newcastle,TRUE
+England,2021,brighton,newcastle,TRUE
+England,2021,newcastle,southampton,TRUE
+England,2021,aston villa,newcastle,TRUE
+Italy,2020,cagliari,spezia calcio,TRUE
+Italy,2020,cagliari,genoa,TRUE
+Italy,2020,cagliari,parma,TRUE
+Italy,2019,genoa,parma,TRUE
+Italy,2019,parma,sassuolo,TRUE
+France,2017,dijon,montpellier,TRUE
+France,2017,dijon,fc nantes,TRUE
+France,2017,fc nantes,montpellier,TRUE
+France,2017,montpellier,stade rennais,TRUE
+Italy,2021,bologna,udinese,TRUE
+Italy,2021,bologna,fc empoli,TRUE
+Italy,2021,bologna,spezia calcio,TRUE
+Italy,2021,fc empoli,udinese,TRUE
+Italy,2021,genoa,udinese,TRUE
+Italy,2021,spezia calcio,udinese,TRUE
+Germany,2017,frankfurt,stuttgart,TRUE
+Germany,2017,frankfurt,werder bremen,TRUE
+Germany,2017,stuttgart,werder bremen,TRUE
+England,2020,crystal palace,newcastle,TRUE
+England,2020,crystal palace,west ham,TRUE
+England,2020,crystal palace,everton,TRUE
+England,2020,aston villa,crystal palace,TRUE
+England,2020,brighton,crystal palace,TRUE
+England,2020,brighton,newcastle,TRUE
+England,2020,newcastle,west ham,TRUE
+England,2020,newcastle,southampton,TRUE
+England,2020,aston villa,newcastle,TRUE
+Italy,2018,inter,lazio,TRUE
+Italy,2018,atalanta,inter,TRUE
+Italy,2018,inter,roma,TRUE
+Italy,2018,atalanta,lazio,TRUE
+Italy,2018,lazio,roma,TRUE
+Italy,2021,fc empoli,genoa,TRUE
+Italy,2021,fc empoli,spezia calcio,TRUE
+England,2019,crystal palace,newcastle,TRUE
+England,2019,crystal palace,west ham,TRUE
+England,2019,crystal palace,everton,TRUE
+England,2019,crystal palace,watford,TRUE
+England,2019,newcastle,west ham,TRUE
+England,2019,newcastle,watford,TRUE
+England,2019,brighton,newcastle,TRUE
+England,2019,watford,west ham,TRUE
+England,2019,west ham,wolves,TRUE
+Italy,2017,fiorentina,torino,TRUE
+Italy,2017,atalanta,fiorentina,TRUE
+Italy,2017,atalanta,torino,TRUE
+Italy,2017,sampdoria,torino,TRUE
+Italy,2017,ac milan,torino,TRUE
+Spain,2019,ca osasuna,levante,TRUE
+Spain,2019,ca osasuna,granada cf,TRUE
+Spain,2019,ca osasuna,real sociedad,TRUE
+Spain,2019,ca osasuna,sd eibar,TRUE
+Spain,2019,athletic club,ca osasuna,TRUE
+Spain,2019,alavés,levante,TRUE
+Spain,2019,levante,sd eibar,TRUE
+Spain,2019,granada cf,levante,TRUE
+Spain,2019,levante,real valladolid,TRUE
+Spain,2022,cádiz cf,rayo vallecano,TRUE
+Spain,2022,cádiz cf,ud almería,TRUE
+Spain,2022,cádiz cf,rcd mallorca,TRUE
+Spain,2022,cádiz cf,elche cf,TRUE
+Spain,2022,cádiz cf,real valladolid,TRUE
+Spain,2022,rayo vallecano,rcd mallorca,TRUE
+Spain,2022,rayo vallecano,ud almería,TRUE
+Spain,2022,elche cf,rayo vallecano,TRUE
+Spain,2022,ca osasuna,rayo vallecano,TRUE
+France,2017,angers sco,toulouse,TRUE
+France,2018,r. strasbourg,sm caen,TRUE
+France,2018,r. strasbourg,toulouse,TRUE
+France,2018,angers sco,r. strasbourg,TRUE
+France,2018,sm caen,toulouse,TRUE
+France,2018,lille,sm caen,TRUE
+France,2023,clermont foot,fc lorient,TRUE
+France,2023,clermont foot,toulouse,TRUE
+France,2023,clermont foot,le havre ac,TRUE
+France,2023,clermont foot,fc metz,TRUE
+France,2023,fc lorient,le havre ac,TRUE
+France,2023,fc lorient,fc metz,TRUE
+France,2023,fc lorient,toulouse,TRUE
+France,2023,fc lorient,stade reims,TRUE
+Italy,2019,genoa,spal,TRUE
+Germany,2018,hoffenheim,leverkusen,TRUE
+Germany,2018,hoffenheim,leipzig,TRUE
+Germany,2018,dortmund,hoffenheim,TRUE
+Germany,2018,hoffenheim,stuttgart,TRUE
+Germany,2018,leipzig,leverkusen,TRUE
+Germany,2018,dortmund,leverkusen,TRUE
+Germany,2018,frankfurt,leverkusen,TRUE
+England,2021,brentford,brighton,TRUE
+England,2021,brentford,southampton,TRUE
+Spain,2020,ca osasuna,levante,TRUE
+Spain,2020,ca osasuna,granada cf,TRUE
+Spain,2020,athletic club,ca osasuna,TRUE
+Spain,2020,ca osasuna,real sociedad,TRUE
+Spain,2020,granada cf,levante,TRUE
+Spain,2020,alavés,levante,TRUE
+Spain,2020,levante,sd eibar,TRUE
+Spain,2020,cádiz cf,levante,TRUE
+Spain,2017,málaga cf,ud las palmas,TRUE
+Spain,2017,dep. la coruña,málaga cf,TRUE
+Spain,2017,dep. la coruña,ud las palmas,TRUE
+Germany,2020,augsburg,hertha bsc,TRUE
+Germany,2020,hertha bsc,mainz,TRUE
+Germany,2020,hertha bsc,union berlin,TRUE
+Germany,2020,hertha bsc,werder bremen,TRUE
+Spain,2022,espanyol,ud almería,TRUE
+Spain,2022,espanyol,rcd mallorca,TRUE
+Spain,2022,espanyol,getafe,TRUE
+Spain,2022,elche cf,espanyol,TRUE
+Spain,2022,getafe,ud almería,TRUE
+Spain,2022,rcd mallorca,ud almería,TRUE
+Spain,2019,granada cf,real sociedad,TRUE
+Spain,2019,athletic club,granada cf,TRUE
+Italy,2019,brescia,spal,TRUE
+Italy,2019,brescia,lecce,TRUE
+England,2019,everton,leicester,TRUE
+England,2019,everton,wolves,TRUE
+England,2019,leicester,wolves,TRUE
+Spain,2017,getafe,sd eibar,TRUE
+Spain,2017,espanyol,sd eibar,TRUE
+Spain,2017,girona,sd eibar,TRUE
+England,2018,brighton,cardiff,TRUE
+England,2018,brighton,southampton,TRUE
+England,2018,cardiff,fulham,TRUE
+Spain,2017,getafe,villarreal,TRUE
+Spain,2017,espanyol,getafe,TRUE
+Spain,2017,getafe,sevilla fc,TRUE
+Spain,2017,getafe,girona,TRUE
+Spain,2020,granada cf,real sociedad,TRUE
+Spain,2020,athletic club,granada cf,TRUE
+Spain,2018,athletic club,cd leganés,TRUE
+Spain,2018,cd leganés,real valladolid,TRUE
+Spain,2017,espanyol,girona,TRUE
+Italy,2022,bologna,udinese,TRUE
+Italy,2022,bologna,fc empoli,TRUE
+Italy,2022,bologna,hellas verona,TRUE
+Italy,2022,bologna,sassuolo,TRUE
+Italy,2022,fc empoli,udinese,TRUE
+Italy,2022,hellas verona,udinese,TRUE
+Italy,2022,spezia calcio,udinese,TRUE
+Italy,2022,lecce,udinese,TRUE
+Germany,2018,dortmund,leipzig,TRUE
+Germany,2018,frankfurt,leipzig,TRUE
+Germany,2022,vfl bochum,werder bremen,TRUE
+Germany,2022,augsburg,vfl bochum,TRUE
+Germany,2022,hertha bsc,vfl bochum,TRUE
+Germany,2022,stuttgart,vfl bochum,TRUE
+Germany,2022,mainz,vfl bochum,TRUE
+Germany,2022,hertha bsc,werder bremen,TRUE
+Germany,2022,augsburg,werder bremen,TRUE
+Germany,2022,stuttgart,werder bremen,TRUE
+France,2019,nîmes olympique,stade reims,TRUE
+France,2019,nîmes olympique,r. strasbourg,TRUE
+France,2019,angers sco,nîmes olympique,TRUE
+France,2019,r. strasbourg,stade reims,TRUE
+France,2019,angers sco,stade reims,TRUE
+France,2019,montpellier,stade reims,TRUE
+France,2019,fc nantes,stade reims,TRUE
+Italy,2020,genoa,parma,TRUE
+Italy,2020,benevento,spezia calcio,TRUE
+Italy,2020,benevento,parma,TRUE
+Italy,2020,hellas verona,spezia calcio,TRUE
+Spain,2018,espanyol,sd eibar,TRUE
+Spain,2018,getafe,sd eibar,TRUE
+Spain,2018,girona,sd eibar,TRUE
+France,2021,angers sco,stade brestois,TRUE
+France,2021,angers sco,stade reims,TRUE
+France,2021,angers sco,r. strasbourg,TRUE
+England,2023,bournemouth,nott'm forest,TRUE
+England,2023,bournemouth,crystal palace,TRUE
+England,2023,bournemouth,everton,TRUE
+England,2023,bournemouth,west ham,TRUE
+England,2023,bournemouth,wolves,TRUE
+England,2023,nott'm forest,wolves,TRUE
+England,2023,burnley,nott'm forest,TRUE
+England,2023,luton,nott'm forest,TRUE
+France,2018,amiens sc,guingamp,TRUE
+France,2018,amiens sc,angers sco,TRUE
+France,2018,amiens sc,toulouse,TRUE
+France,2018,amiens sc,fc nantes,TRUE
+France,2018,amiens sc,dijon,TRUE
+France,2018,dijon,guingamp,TRUE
+France,2018,guingamp,toulouse,TRUE
+France,2018,nice,saint-étienne,TRUE
+France,2018,montpellier,nice,TRUE
+France,2018,g. bordeaux,nice,TRUE
+France,2018,nice,stade rennais,TRUE
+France,2018,g. bordeaux,saint-étienne,TRUE
+France,2018,montpellier,saint-étienne,TRUE
+France,2018,saint-étienne,stade rennais,TRUE
+Italy,2024,cagliari,parma,TRUE
+Italy,2024,cagliari,venezia,TRUE
+Italy,2024,cagliari,fc empoli,TRUE
+Italy,2024,cagliari,udinese,TRUE
+Italy,2024,cagliari,genoa,TRUE
+Italy,2024,parma,venezia,TRUE
+Italy,2024,fc empoli,parma,TRUE
+Italy,2024,parma,udinese,TRUE
+Italy,2024,genoa,parma,TRUE
+Germany,2018,augsburg,hertha bsc,TRUE
+Germany,2018,augsburg,hannover 96,TRUE
+Germany,2018,augsburg,mainz,TRUE
+Germany,2018,augsburg,werder bremen,TRUE
+Germany,2018,augsburg,f. düsseldorf,TRUE
+Germany,2018,f. düsseldorf,hertha bsc,TRUE
+Germany,2018,hertha bsc,werder bremen,TRUE
+Germany,2018,hertha bsc,mainz,TRUE
+Germany,2018,hertha bsc,mönchengladbach,TRUE
+Germany,2021,arm. bielefeld,hertha bsc,TRUE
+Germany,2021,arm. bielefeld,augsburg,TRUE
+Germany,2021,1.fc köln,arm. bielefeld,TRUE
+Germany,2021,arm. bielefeld,greuther fürth,TRUE
+Germany,2021,augsburg,hertha bsc,TRUE
+Germany,2021,hertha bsc,vfl bochum,TRUE
+Germany,2021,hertha bsc,mainz,TRUE
+Germany,2021,hertha bsc,stuttgart,TRUE
+Spain,2019,alavés,sd eibar,TRUE
+Spain,2019,alavés,espanyol,TRUE
+Spain,2019,alavés,rcd mallorca,TRUE
+Spain,2018,girona,sd huesca,TRUE
+Spain,2018,girona,real valladolid,TRUE
+Spain,2018,girona,rayo vallecano,TRUE
+Spain,2018,rayo vallecano,sd huesca,TRUE
+Spain,2018,real valladolid,sd huesca,TRUE
+Spain,2023,cádiz cf,rayo vallecano,TRUE
+Spain,2023,cádiz cf,ud las palmas,TRUE
+Spain,2023,cádiz cf,ud almería,TRUE
+Spain,2023,cádiz cf,rcd mallorca,TRUE
+Spain,2023,alavés,cádiz cf,TRUE
+Spain,2023,rayo vallecano,rcd mallorca,TRUE
+Spain,2023,rayo vallecano,ud las palmas,TRUE
+Spain,2023,rayo vallecano,ud almería,TRUE
+Spain,2023,ca osasuna,rayo vallecano,TRUE
+Spain,2017,sevilla fc,villarreal,TRUE
+Italy,2024,como,udinese,TRUE
+Italy,2024,como,genoa,TRUE
+Italy,2024,como,torino,TRUE
+Italy,2024,fc empoli,udinese,TRUE
+Italy,2024,genoa,udinese,TRUE
+France,2019,angers sco,stade brestois,TRUE
+France,2019,angers sco,r. strasbourg,TRUE
+France,2019,amiens sc,angers sco,TRUE
+France,2019,r. strasbourg,stade brestois,TRUE
+France,2019,fc nantes,stade brestois,TRUE
+France,2019,g. bordeaux,stade brestois,TRUE
+France,2019,fc metz,stade brestois,TRUE
+France,2021,g. bordeaux,saint-étienne,TRUE
+Italy,2020,crotone,parma,TRUE
+France,2020,angers sco,stade brestois,TRUE
+France,2020,angers sco,fc lorient,TRUE
+France,2020,angers sco,r. strasbourg,TRUE
+France,2020,angers sco,stade reims,TRUE
+France,2020,angers sco,fc nantes,TRUE
+France,2020,r. strasbourg,stade brestois,TRUE
+France,2020,fc lorient,stade brestois,TRUE
+France,2020,fc nantes,stade brestois,TRUE
+France,2020,fc metz,stade brestois,TRUE
+Spain,2020,elche cf,sd eibar,TRUE
+Spain,2020,elche cf,real valladolid,TRUE
+Spain,2020,cádiz cf,elche cf,TRUE
+Spain,2020,alavés,elche cf,TRUE
+Spain,2020,alavés,sd eibar,TRUE
+Spain,2020,real valladolid,sd eibar,TRUE
+Spain,2020,cádiz cf,sd eibar,TRUE
+Spain,2020,real valladolid,sd huesca,TRUE
+Spain,2020,cádiz cf,real valladolid,TRUE
+Spain,2020,celta de vigo,real valladolid,TRUE
+Germany,2017,freiburg,hannover 96,TRUE
+Germany,2017,freiburg,hamburg,TRUE
+Germany,2017,freiburg,mainz,TRUE
+Germany,2017,hannover 96,mainz,TRUE
+Germany,2017,hannover 96,mönchengladbach,TRUE
+Spain,2018,espanyol,getafe,TRUE
+Spain,2018,espanyol,sevilla fc,TRUE
+Spain,2019,espanyol,sd eibar,TRUE
+Spain,2019,getafe,sd eibar,TRUE
+Spain,2023,rcd mallorca,ud las palmas,TRUE
+Spain,2023,ca osasuna,ud las palmas,TRUE
+Germany,2017,hamburg,mainz,TRUE
+Spain,2021,ca osasuna,granada cf,TRUE
+Spain,2021,ca osasuna,levante,TRUE
+Spain,2021,athletic club,ca osasuna,TRUE
+Spain,2021,ca osasuna,real sociedad,TRUE
+Spain,2021,granada cf,levante,TRUE
+Spain,2021,athletic club,granada cf,TRUE
+Spain,2021,granada cf,real sociedad,TRUE
+Germany,2023,hoffenheim,vfl bochum,TRUE
+Germany,2023,hoffenheim,mönchengladbach,TRUE
+Germany,2023,frankfurt,hoffenheim,TRUE
+Italy,2023,cagliari,salernitana,TRUE
+Italy,2023,cagliari,fc empoli,TRUE
+Italy,2023,cagliari,genoa,TRUE
+Italy,2023,cagliari,udinese,TRUE
+Italy,2023,bologna,cagliari,TRUE
+Italy,2023,fc empoli,salernitana,TRUE
+France,2020,montpellier,nice,TRUE
+France,2020,fc nantes,montpellier,TRUE
+France,2020,montpellier,stade rennais,TRUE
+France,2020,montpellier,saint-étienne,TRUE
+France,2020,nice,saint-étienne,TRUE
+France,2020,lens,nice,TRUE
+France,2020,g. bordeaux,nice,TRUE
+Spain,2023,alavés,rcd mallorca,TRUE
+Spain,2023,rcd mallorca,ud almería,TRUE
+Spain,2021,alavés,elche cf,TRUE
+Spain,2021,elche cf,rcd mallorca,TRUE
+Spain,2021,elche cf,levante,TRUE
+Spain,2021,alavés,levante,TRUE
+Spain,2024,rayo vallecano,rcd mallorca,TRUE
+Spain,2024,ca osasuna,rayo vallecano,TRUE
+Spain,2024,rayo vallecano,ud las palmas,TRUE
+Spain,2024,celta de vigo,rayo vallecano,TRUE
+Spain,2024,alavés,rcd mallorca,TRUE
+Spain,2024,cd leganés,rcd mallorca,TRUE
+Spain,2024,celta de vigo,rcd mallorca,TRUE
+Spain,2024,espanyol,rcd mallorca,TRUE
+France,2018,lyon,marseille,TRUE
+France,2018,lyon,monaco,TRUE
+France,2018,marseille,monaco,TRUE
+France,2020,fc lorient,fc nantes,TRUE
+France,2020,fc lorient,g. bordeaux,TRUE
+France,2020,fc lorient,stade reims,TRUE
+France,2020,fc nantes,stade reims,TRUE
+England,2018,fulham,huddersfield,TRUE
+France,2019,montpellier,nice,TRUE
+France,2019,fc nantes,montpellier,TRUE
+France,2019,montpellier,stade rennais,TRUE
+France,2019,montpellier,saint-étienne,TRUE
+France,2019,nice,saint-étienne,TRUE
+France,2019,g. bordeaux,nice,TRUE
+Spain,2023,getafe,ud almería,TRUE
+Spain,2023,granada cf,ud almería,TRUE
+Spain,2020,alavés,cádiz cf,TRUE
+Germany,2019,leipzig,leverkusen,TRUE
+Germany,2019,dortmund,leipzig,TRUE
+Germany,2019,hoffenheim,leipzig,TRUE
+Germany,2019,hoffenheim,leverkusen,TRUE
+Germany,2019,dortmund,leverkusen,TRUE
+Germany,2019,frankfurt,leverkusen,TRUE
+Germany,2019,leverkusen,mönchengladbach,TRUE
+Italy,2017,sampdoria,sassuolo,TRUE
+England,2023,brentford,crystal palace,TRUE
+England,2023,crystal palace,wolves,TRUE
+England,2023,brighton,crystal palace,TRUE
+England,2023,crystal palace,newcastle,TRUE
+England,2024,bournemouth,crystal palace,TRUE
+England,2024,bournemouth,nott'm forest,TRUE
+England,2024,bournemouth,everton,TRUE
+England,2024,bournemouth,west ham,TRUE
+England,2024,bournemouth,wolves,TRUE
+England,2024,brentford,crystal palace,TRUE
+England,2024,crystal palace,wolves,TRUE
+England,2024,brighton,crystal palace,TRUE
+England,2024,crystal palace,everton,TRUE
+Germany,2023,augsburg,vfl bochum,TRUE
+Germany,2023,mainz,vfl bochum,TRUE
+England,2022,brentford,crystal palace,TRUE
+England,2022,crystal palace,newcastle,TRUE
+England,2022,crystal palace,wolves,TRUE
+England,2022,brighton,crystal palace,TRUE
+Germany,2018,f. düsseldorf,mainz,TRUE
+Germany,2018,f. düsseldorf,freiburg,TRUE
+Spain,2022,celta de vigo,rcd mallorca,TRUE
+Germany,2019,frankfurt,hoffenheim,TRUE
+Germany,2019,dortmund,hoffenheim,TRUE
+Germany,2022,augsburg,hertha bsc,TRUE
+Germany,2022,augsburg,stuttgart,TRUE
+Germany,2022,augsburg,mainz,TRUE
+England,2022,brentford,newcastle,TRUE
+England,2022,brentford,brighton,TRUE
+England,2022,aston villa,brentford,TRUE
+France,2022,ac ajaccio,angers sco,TRUE
+France,2022,ac ajaccio,troyes,TRUE
+France,2022,ac ajaccio,aj auxerre,TRUE
+France,2022,angers sco,stade brestois,TRUE
+England,2019,brighton,southampton,TRUE
+England,2019,sheff utd,southampton,TRUE
+France,2018,fc nantes,montpellier,TRUE
+France,2018,montpellier,stade rennais,TRUE
+Germany,2024,heidenheim,hoffenheim,TRUE
+Germany,2024,heidenheim,werder bremen,TRUE
+Germany,2024,heidenheim,st. pauli,TRUE
+Germany,2024,augsburg,heidenheim,TRUE
+Germany,2024,hoffenheim,st. pauli,TRUE
+Germany,2024,hoffenheim,mönchengladbach,TRUE
+Spain,2018,getafe,sevilla fc,TRUE
+Spain,2018,getafe,villarreal,TRUE
+Spain,2018,sevilla fc,villarreal,TRUE
+Italy,2023,fc empoli,genoa,TRUE
+Italy,2023,fc empoli,udinese,TRUE
+Italy,2023,fc empoli,lecce,TRUE
+Italy,2023,genoa,udinese,TRUE
+Italy,2023,genoa,lecce,TRUE
+Italy,2023,bologna,genoa,TRUE
+France,2022,aj auxerre,troyes,TRUE
+Italy,2022,fc empoli,spezia calcio,TRUE
+Italy,2022,fc empoli,lecce,TRUE
+Italy,2022,fc empoli,salernitana,TRUE
+Italy,2022,salernitana,spezia calcio,TRUE
+Italy,2022,cremonese,spezia calcio,TRUE
+Italy,2022,lecce,spezia calcio,TRUE
+England,2020,everton,leicester,TRUE
+England,2020,everton,leeds,TRUE
+England,2020,everton,west ham,TRUE
+England,2020,everton,wolves,TRUE
+England,2020,leicester,wolves,TRUE
+France,2018,angers sco,toulouse,TRUE
+Germany,2023,augsburg,mainz,TRUE
+Germany,2023,augsburg,stuttgart,TRUE
+England,2023,luton,sheff utd,TRUE
+England,2023,burnley,luton,TRUE
+England,2022,everton,wolves,TRUE
+England,2022,leicester,wolves,TRUE
+Spain,2019,athletic club,real sociedad,TRUE
+Spain,2019,celta de vigo,real sociedad,TRUE
+Spain,2019,cd leganés,real sociedad,TRUE
+Italy,2023,bologna,udinese,TRUE
+Italy,2023,lecce,udinese,TRUE
+Italy,2019,inter,lazio,TRUE
+Italy,2019,atalanta,inter,TRUE
+Italy,2019,inter,roma,TRUE
+Italy,2019,ac milan,inter,TRUE
+Italy,2019,lazio,roma,TRUE
+Italy,2019,atalanta,lazio,TRUE
+Italy,2019,ac milan,lazio,TRUE
+England,2024,ipswich,leicester,TRUE
+England,2024,ipswich,southampton,TRUE
+England,2024,everton,leicester,TRUE
+England,2024,leicester,west ham,TRUE
+Italy,2022,lecce,salernitana,TRUE
+Italy,2022,salernitana,sampdoria,TRUE
+France,2020,r. strasbourg,stade reims,TRUE
+France,2020,nîmes olympique,r. strasbourg,TRUE
+England,2021,brighton,southampton,TRUE
+Germany,2019,hertha bsc,union berlin,TRUE
+Germany,2019,augsburg,hertha bsc,TRUE
+Germany,2019,f. düsseldorf,hertha bsc,TRUE
+Germany,2019,hertha bsc,mainz,TRUE
+Germany,2019,hertha bsc,werder bremen,TRUE
+Germany,2019,mainz,union berlin,TRUE
+Germany,2019,f. düsseldorf,union berlin,TRUE
+Germany,2019,freiburg,union berlin,TRUE
+Germany,2019,augsburg,union berlin,TRUE
+France,2019,lille,r. strasbourg,TRUE
+Germany,2024,augsburg,werder bremen,TRUE
+Germany,2024,mainz,werder bremen,TRUE
+England,2022,brighton,newcastle,TRUE
+England,2022,aston villa,newcastle,TRUE
+Germany,2021,augsburg,vfl bochum,TRUE
+Germany,2021,augsburg,mainz,TRUE
+Germany,2021,augsburg,stuttgart,TRUE
+Germany,2021,stuttgart,vfl bochum,TRUE
+Germany,2021,mainz,vfl bochum,TRUE
+France,2017,fc nantes,stade rennais,TRUE
+Italy,2018,chievo verona,frosinone,TRUE
+Germany,2017,1.fc köln,hamburg,TRUE
+Germany,2019,f. düsseldorf,mainz,TRUE
+Germany,2019,freiburg,mainz,TRUE
+Germany,2019,augsburg,mainz,TRUE
+Spain,2021,alavés,rcd mallorca,TRUE
+Spain,2021,espanyol,rcd mallorca,TRUE
+Italy,2022,cremonese,lecce,TRUE
+France,2020,nîmes olympique,stade reims,TRUE
+Germany,2019,augsburg,f. düsseldorf,TRUE
+Germany,2019,augsburg,freiburg,TRUE
+Italy,2024,fc empoli,lecce,TRUE
+Italy,2024,fc empoli,genoa,TRUE
+England,2020,brighton,southampton,TRUE
+England,2020,brighton,fulham,TRUE
+England,2020,aston villa,brighton,TRUE
+Spain,2019,athletic club,cd leganés,TRUE
+Spain,2019,athletic club,celta de vigo,TRUE
+Italy,2023,frosinone,lecce,TRUE
+Spain,2019,cd leganés,celta de vigo,TRUE
+Spain,2019,cd leganés,real valladolid,TRUE
+Spain,2019,cd leganés,rcd mallorca,TRUE
+Spain,2019,celta de vigo,real valladolid,TRUE
+Spain,2019,celta de vigo,rcd mallorca,TRUE
+Italy,2024,hellas verona,lecce,TRUE
+England,2024,nott'm forest,wolves,TRUE
+England,2024,everton,nott'm forest,TRUE
+England,2024,fulham,nott'm forest,TRUE
+Germany,2018,freiburg,mainz,TRUE
+Germany,2018,freiburg,hannover 96,TRUE
+Germany,2018,hannover 96,mainz,TRUE
+England,2020,southampton,west brom,TRUE
+England,2020,sheff utd,southampton,TRUE
+England,2022,brighton,fulham,TRUE
+England,2022,aston villa,brighton,TRUE
+England,2023,everton,wolves,TRUE
+England,2023,west ham,wolves,TRUE
+Italy,2017,atalanta,roma,TRUE
+Germany,2024,augsburg,st. pauli,TRUE
+Spain,2022,elche cf,real valladolid,TRUE
+Spain,2022,girona,real valladolid,TRUE
+Germany,2019,f. düsseldorf,freiburg,TRUE
+France,2021,r. strasbourg,stade brestois,TRUE
+France,2021,fc nantes,stade brestois,TRUE
+France,2021,stade brestois,stade reims,TRUE
+England,2023,brentford,brighton,TRUE
+England,2023,brentford,newcastle,TRUE
+England,2023,aston villa,brentford,TRUE
+England,2023,brighton,newcastle,TRUE
+England,2023,brighton,fulham,TRUE
+England,2023,aston villa,brighton,TRUE
+England,2022,everton,leeds,TRUE
+England,2022,everton,leicester,TRUE
+Spain,2022,getafe,valencia,TRUE
+France,2018,dijon,g. bordeaux,TRUE
+England,2018,arsenal,chelsea,TRUE
+England,2018,arsenal,tottenham,TRUE
+England,2018,arsenal,man utd,TRUE
+England,2018,arsenal,liverpool,TRUE
+England,2018,chelsea,tottenham,TRUE
+England,2018,chelsea,man utd,TRUE
+England,2018,chelsea,liverpool,TRUE
+France,2019,g. bordeaux,saint-étienne,TRUE
+France,2019,saint-étienne,stade rennais,TRUE
+Spain,2019,espanyol,rcd mallorca,TRUE
+Spain,2019,espanyol,getafe,TRUE
+Spain,2021,alavés,espanyol,TRUE
+England,2018,liverpool,tottenham,TRUE
+England,2018,liverpool,man utd,TRUE
+England,2018,liverpool,man city,TRUE
+England,2018,man utd,tottenham,TRUE
+England,2018,man city,tottenham,TRUE
+England,2024,brentford,brighton,TRUE
+England,2024,brentford,newcastle,TRUE
+England,2024,brentford,fulham,TRUE
+England,2024,aston villa,brentford,TRUE
+England,2024,brighton,newcastle,TRUE
+England,2024,brighton,fulham,TRUE
+England,2024,aston villa,brighton,TRUE
+Germany,2020,mainz,union berlin,TRUE
+Germany,2020,freiburg,mainz,TRUE
+Germany,2020,augsburg,mainz,TRUE
+Germany,2018,1.fc nuremberg,hannover 96,TRUE
+Germany,2018,1.fc nuremberg,stuttgart,TRUE
+Germany,2020,freiburg,union berlin,TRUE
+Germany,2020,stuttgart,union berlin,TRUE
+Spain,2019,rcd mallorca,real valladolid,TRUE
+Germany,2022,hertha bsc,stuttgart,TRUE
+Germany,2020,augsburg,stuttgart,TRUE
+Germany,2020,augsburg,freiburg,TRUE
+England,2021,everton,leeds,TRUE
+England,2021,everton,leicester,TRUE
+England,2021,everton,west ham,TRUE
+England,2021,everton,wolves,TRUE
+England,2021,aston villa,leeds,TRUE
+England,2021,leeds,west ham,TRUE
+England,2017,arsenal,chelsea,TRUE
+England,2017,arsenal,man utd,TRUE
+England,2017,chelsea,man utd,TRUE
+England,2019,arsenal,chelsea,TRUE
+England,2019,arsenal,tottenham,TRUE
+England,2019,arsenal,man utd,TRUE
+England,2019,chelsea,tottenham,TRUE
+England,2019,chelsea,man utd,TRUE
+England,2019,chelsea,liverpool,TRUE
+Germany,2020,leipzig,leverkusen,TRUE
+Germany,2020,dortmund,leipzig,TRUE
+Germany,2020,hoffenheim,leipzig,TRUE
+Germany,2020,leipzig,mönchengladbach,TRUE
+Germany,2020,hoffenheim,leverkusen,TRUE
+Germany,2020,frankfurt,leverkusen,TRUE
+Germany,2020,dortmund,leverkusen,TRUE
+Germany,2020,leverkusen,mönchengladbach,TRUE
+England,2020,aston villa,west ham,TRUE
+England,2020,leeds,west ham,TRUE
+Germany,2018,frankfurt,werder bremen,TRUE
+Germany,2018,mönchengladbach,werder bremen,TRUE
+France,2018,fc nantes,stade rennais,TRUE
+England,2023,aston villa,newcastle,TRUE
+Italy,2018,fiorentina,torino,TRUE
+Italy,2018,atalanta,fiorentina,TRUE
+Italy,2018,atalanta,torino,TRUE
+Italy,2018,sampdoria,torino,TRUE
+Italy,2018,ac milan,torino,TRUE
+Germany,2020,frankfurt,hoffenheim,TRUE
+Germany,2020,hoffenheim,mönchengladbach,TRUE
+England,2020,sheff utd,west brom,TRUE
+England,2020,fulham,west brom,TRUE
+England,2020,aston villa,leeds,TRUE
+France,2021,r. strasbourg,stade reims,TRUE
+France,2021,fc nantes,r. strasbourg,TRUE
+France,2021,fc nantes,stade reims,TRUE
+England,2018,man city,man utd,TRUE
+Spain,2024,cd leganés,celta de vigo,TRUE
+Spain,2024,cd leganés,real valladolid,TRUE
+Spain,2024,alavés,cd leganés,TRUE
+Spain,2024,ca osasuna,celta de vigo,TRUE
+England,2019,man utd,tottenham,TRUE
+England,2019,liverpool,man utd,TRUE
+England,2019,man city,man utd,TRUE
+England,2019,liverpool,tottenham,TRUE
+England,2019,man city,tottenham,TRUE
+England,2021,aston villa,watford,TRUE
+England,2021,aston villa,west ham,TRUE
+Germany,2024,augsburg,mainz,TRUE
+Italy,2023,frosinone,hellas verona,TRUE
+Italy,2023,frosinone,monza,TRUE
+France,2022,aj auxerre,toulouse,TRUE
+France,2022,r. strasbourg,toulouse,TRUE
+Spain,2020,athletic club,real sociedad,TRUE
+Spain,2020,athletic club,celta de vigo,TRUE
+Spain,2020,celta de vigo,real sociedad,TRUE
+Spain,2020,real betis,real sociedad,TRUE
+England,2021,leicester,wolves,TRUE
+Germany,2023,freiburg,union berlin,TRUE
+Italy,2022,cremonese,hellas verona,TRUE
+Italy,2022,cremonese,sampdoria,TRUE
+Spain,2024,alavés,espanyol,TRUE
+Spain,2024,alavés,getafe,TRUE
+Spain,2024,alavés,real valladolid,TRUE
+Spain,2024,espanyol,getafe,TRUE
+Germany,2022,freiburg,union berlin,TRUE
+Germany,2022,freiburg,mainz,TRUE
+Germany,2022,1.fc köln,freiburg,TRUE
+Germany,2022,freiburg,mönchengladbach,TRUE
+Germany,2022,mainz,union berlin,TRUE
+Germany,2022,frankfurt,union berlin,TRUE
+Germany,2022,1.fc köln,union berlin,TRUE
+France,2019,fc nantes,stade rennais,TRUE
+France,2022,stade brestois,stade reims,TRUE
+France,2022,r. strasbourg,stade brestois,TRUE
+France,2022,fc nantes,stade brestois,TRUE
+France,2022,montpellier,stade reims,TRUE
+France,2022,r. strasbourg,stade reims,TRUE
+France,2022,fc nantes,stade reims,TRUE
+Italy,2020,sampdoria,sassuolo,TRUE
+England,2017,man city,man utd,TRUE
+Spain,2023,getafe,valencia,TRUE
+Spain,2023,alavés,getafe,TRUE
+England,2021,southampton,watford,TRUE
+Italy,2021,sampdoria,sassuolo,TRUE
+Germany,2021,1.fc köln,freiburg,TRUE
+England,2021,chelsea,tottenham,TRUE
+England,2021,arsenal,chelsea,TRUE
+England,2021,chelsea,man utd,TRUE
+England,2021,chelsea,liverpool,TRUE
+England,2021,arsenal,tottenham,TRUE
+England,2021,man utd,tottenham,TRUE
+England,2021,liverpool,tottenham,TRUE
+Spain,2024,ca osasuna,getafe,TRUE
+Spain,2024,ca osasuna,valencia,TRUE
+France,2019,lyon,marseille,TRUE
+France,2019,lyon,monaco,TRUE
+France,2019,marseille,monaco,TRUE
+Spain,2023,alavés,girona,TRUE
+Germany,2019,frankfurt,werder bremen,TRUE
+England,2021,watford,west ham,TRUE
+France,2020,fc metz,lens,TRUE
+England,2024,aston villa,newcastle,TRUE
+Italy,2023,bologna,torino,TRUE
+Italy,2017,ac milan,sampdoria,TRUE
+France,2021,montpellier,nice,TRUE
+France,2021,montpellier,stade rennais,TRUE
+France,2021,lens,nice,TRUE
+France,2021,nice,stade rennais,TRUE
+Germany,2023,frankfurt,mönchengladbach,TRUE
+France,2023,montpellier,stade reims,TRUE
+France,2023,le havre ac,montpellier,TRUE
+France,2023,montpellier,nice,TRUE
+France,2023,stade brestois,stade reims,TRUE
+France,2023,r. strasbourg,stade reims,TRUE
+France,2023,fc nantes,stade reims,TRUE
+England,2020,chelsea,man utd,TRUE
+England,2020,arsenal,chelsea,TRUE
+England,2020,chelsea,tottenham,TRUE
+England,2020,chelsea,liverpool,TRUE
+England,2020,man utd,tottenham,TRUE
+England,2020,arsenal,man utd,TRUE
+England,2020,liverpool,man utd,TRUE
+England,2020,man city,man utd,TRUE
+England,2020,arsenal,tottenham,TRUE
+England,2024,everton,wolves,TRUE
+Germany,2021,leipzig,leverkusen,TRUE
+Germany,2021,dortmund,leipzig,TRUE
+Germany,2021,leipzig,mönchengladbach,TRUE
+Germany,2021,hoffenheim,leverkusen,TRUE
+Germany,2021,dortmund,leverkusen,TRUE
+Germany,2021,leverkusen,mönchengladbach,TRUE
+Germany,2021,frankfurt,leverkusen,TRUE
+England,2021,arsenal,man utd,TRUE
+Spain,2019,getafe,sevilla fc,TRUE
+Spain,2019,getafe,villarreal,TRUE
+England,2020,liverpool,tottenham,TRUE
+Spain,2022,ca osasuna,celta de vigo,TRUE
+Spain,2019,sevilla fc,villarreal,TRUE
+Spain,2019,sevilla fc,valencia,TRUE
+Italy,2020,fiorentina,sampdoria,TRUE
+Italy,2020,fiorentina,torino,TRUE
+Germany,2018,frankfurt,stuttgart,TRUE
+Germany,2018,frankfurt,mönchengladbach,TRUE
+England,2023,everton,west ham,TRUE
+Germany,2021,freiburg,union berlin,TRUE
+Germany,2021,freiburg,mainz,TRUE
+Germany,2021,mainz,union berlin,TRUE
+Spain,2023,ca osasuna,granada cf,TRUE
+Spain,2023,ca osasuna,celta de vigo,TRUE
+Spain,2023,athletic club,ca osasuna,TRUE
+England,2022,leicester,west ham,TRUE
+Italy,2019,atalanta,torino,TRUE
+Italy,2019,ac milan,atalanta,TRUE
+Italy,2019,atalanta,roma,TRUE
+Spain,2024,getafe,valencia,TRUE
+Spain,2021,athletic club,real sociedad,TRUE
+Spain,2021,athletic club,celta de vigo,TRUE
+Spain,2021,real betis,real sociedad,TRUE
+Spain,2021,celta de vigo,real sociedad,TRUE
+Spain,2022,athletic club,ca osasuna,TRUE
+Spain,2022,athletic club,real sociedad,TRUE
+Spain,2022,athletic club,real betis,TRUE
+France,2023,le havre ac,toulouse,TRUE
+France,2023,fc nantes,le havre ac,TRUE
+France,2022,fc nantes,r. strasbourg,TRUE
+France,2022,nice,r. strasbourg,TRUE
+Spain,2024,real valladolid,ud las palmas,TRUE
+France,2022,aj auxerre,fc nantes,TRUE
+England,2022,chelsea,tottenham,TRUE
+England,2022,chelsea,man utd,TRUE
+England,2022,arsenal,chelsea,TRUE
+England,2022,chelsea,liverpool,TRUE
+England,2022,arsenal,tottenham,TRUE
+England,2022,man utd,tottenham,TRUE
+England,2022,liverpool,tottenham,TRUE
+Germany,2024,freiburg,union berlin,TRUE
+Germany,2024,freiburg,mainz,TRUE
+Germany,2024,frankfurt,freiburg,TRUE
+France,2023,r. strasbourg,stade brestois,TRUE
+France,2023,fc nantes,stade brestois,TRUE
+France,2021,fc metz,lens,TRUE
+Italy,2020,atalanta,inter,TRUE
+Italy,2020,atalanta,lazio,TRUE
+Italy,2020,ac milan,atalanta,TRUE
+Italy,2020,atalanta,roma,TRUE
+Italy,2020,inter,lazio,TRUE
+Italy,2020,inter,roma,TRUE
+Italy,2020,ac milan,inter,TRUE
+Italy,2020,inter,napoli,TRUE
+Italy,2023,lazio,roma,TRUE
+Italy,2023,atalanta,lazio,TRUE
+Italy,2023,ac milan,lazio,TRUE
+Italy,2023,inter,lazio,TRUE
+Italy,2023,juventus,lazio,TRUE
+Italy,2023,atalanta,roma,TRUE
+Italy,2023,juventus,roma,TRUE
+Italy,2023,ac milan,roma,TRUE
+France,2019,amiens sc,dijon,TRUE
+France,2019,amiens sc,toulouse,TRUE
+Italy,2018,atalanta,roma,TRUE
+France,2022,montpellier,nice,TRUE
+England,2024,west ham,wolves,TRUE
+Spain,2020,celta de vigo,real betis,TRUE
+Italy,2020,lazio,roma,TRUE
+Italy,2020,ac milan,lazio,TRUE
+Italy,2022,lazio,roma,TRUE
+Italy,2022,atalanta,lazio,TRUE
+Italy,2022,inter,lazio,TRUE
+Italy,2022,ac milan,lazio,TRUE
+Italy,2022,juventus,lazio,TRUE
+Italy,2022,atalanta,roma,TRUE
+Italy,2022,juventus,roma,TRUE
+Italy,2022,inter,roma,TRUE
+Italy,2022,ac milan,roma,TRUE
+Italy,2018,ac milan,sampdoria,TRUE
+Spain,2024,girona,real valladolid,TRUE
+France,2019,fc metz,toulouse,TRUE
+Germany,2022,dortmund,leipzig,TRUE
+Germany,2022,dortmund,leverkusen,TRUE
+Germany,2022,leipzig,leverkusen,TRUE
+Spain,2021,celta de vigo,real betis,TRUE
+England,2021,liverpool,man utd,TRUE
+Germany,2021,greuther fürth,stuttgart,TRUE
+Italy,2024,lazio,roma,TRUE
+Italy,2024,atalanta,lazio,TRUE
+Italy,2024,ac milan,lazio,TRUE
+Italy,2024,juventus,lazio,TRUE
+Italy,2024,atalanta,roma,TRUE
+Italy,2024,juventus,roma,TRUE
+Italy,2024,fiorentina,roma,TRUE
+Italy,2024,ac milan,roma,TRUE
+Germany,2019,frankfurt,mönchengladbach,TRUE
+Italy,2021,lazio,roma,TRUE
+Italy,2021,atalanta,lazio,TRUE
+Italy,2021,inter,lazio,TRUE
+Italy,2021,ac milan,lazio,TRUE
+Italy,2021,atalanta,roma,TRUE
+Italy,2021,inter,roma,TRUE
+Italy,2021,ac milan,roma,TRUE
+Italy,2021,juventus,roma,TRUE
+Italy,2023,hellas verona,sassuolo,TRUE
+Italy,2022,sampdoria,sassuolo,TRUE
+France,2023,fc nantes,r. strasbourg,TRUE
+France,2023,r. strasbourg,toulouse,TRUE
+France,2023,nice,r. strasbourg,TRUE
+Italy,2019,fiorentina,torino,TRUE
+Italy,2019,fiorentina,sampdoria,TRUE
+Italy,2019,sampdoria,torino,TRUE
+Italy,2019,ac milan,torino,TRUE
+Germany,2023,dortmund,leipzig,TRUE
+Germany,2023,dortmund,leverkusen,TRUE
+Germany,2023,bayern munich,dortmund,TRUE
+Germany,2023,leipzig,leverkusen,TRUE
+Germany,2022,hoffenheim,stuttgart,TRUE
+Germany,2024,mainz,mönchengladbach,TRUE
+Italy,2022,atalanta,inter,TRUE
+Italy,2022,ac milan,atalanta,TRUE
+Italy,2022,atalanta,juventus,TRUE
+France,2024,aj auxerre,fc nantes,TRUE
+France,2024,aj auxerre,toulouse,TRUE
+France,2024,aj auxerre,saint-étienne,TRUE
+France,2024,aj auxerre,angers sco,TRUE
+France,2024,aj auxerre,le havre ac,TRUE
+France,2024,fc nantes,le havre ac,TRUE
+France,2024,fc nantes,r. strasbourg,TRUE
+France,2024,angers sco,fc nantes,TRUE
+France,2024,fc nantes,stade reims,TRUE
+France,2024,montpellier,stade reims,TRUE
+France,2024,le havre ac,montpellier,TRUE
+France,2024,montpellier,saint-étienne,TRUE
+France,2024,stade brestois,stade reims,TRUE
+France,2024,stade reims,toulouse,TRUE
+France,2024,r. strasbourg,stade reims,TRUE
+Germany,2022,1.fc köln,mainz,TRUE
+Italy,2024,atalanta,juventus,TRUE
+Italy,2024,ac milan,atalanta,TRUE
+Italy,2024,atalanta,inter,TRUE
+Germany,2024,dortmund,leipzig,TRUE
+Germany,2024,dortmund,leverkusen,TRUE
+Germany,2024,bayern munich,dortmund,TRUE
+Germany,2024,leipzig,leverkusen,TRUE
+Spain,2020,getafe,villarreal,TRUE
+France,2024,le havre ac,saint-étienne,TRUE
+France,2024,le havre ac,toulouse,TRUE
+Germany,2021,frankfurt,hoffenheim,TRUE
+Germany,2021,hoffenheim,mönchengladbach,TRUE
+Italy,2021,atalanta,inter,TRUE
+Italy,2021,ac milan,atalanta,TRUE
+Italy,2021,atalanta,juventus,TRUE
+Italy,2020,juventus,roma,TRUE
+Spain,2018,atlético,real madrid,TRUE
+Spain,2018,atlético,valencia,TRUE
+Spain,2018,atlético,barcelona,TRUE
+Spain,2018,barcelona,real madrid,TRUE
+Spain,2018,real madrid,valencia,TRUE
+Italy,2020,sampdoria,torino,TRUE
+Spain,2021,getafe,valencia,TRUE
+Germany,2023,1.fc köln,mainz,TRUE
+Italy,2023,atalanta,inter,TRUE
+Italy,2023,ac milan,atalanta,TRUE
+Italy,2023,atalanta,juventus,TRUE
+Spain,2017,atlético,real madrid,TRUE
+Spain,2017,atlético,valencia,TRUE
+Spain,2017,atlético,barcelona,TRUE
+Spain,2017,barcelona,real madrid,TRUE
+Spain,2023,real betis,real sociedad,TRUE
+Spain,2023,real betis,villarreal,TRUE
+Spain,2023,athletic club,real betis,TRUE
+Spain,2023,real sociedad,villarreal,TRUE
+Spain,2023,athletic club,real sociedad,TRUE
+Germany,2022,hoffenheim,leverkusen,TRUE
+Germany,2022,leverkusen,mönchengladbach,TRUE
+Germany,2022,frankfurt,leverkusen,TRUE
+England,2022,arsenal,man utd,TRUE
+France,2022,nice,stade rennais,TRUE
+France,2022,lens,nice,TRUE
+France,2022,lens,stade rennais,TRUE
+France,2022,marseille,stade rennais,TRUE
+France,2023,nice,stade rennais,TRUE
+France,2023,lens,nice,TRUE
+France,2023,lens,stade rennais,TRUE
+France,2023,marseille,stade rennais,TRUE
+France,2023,lyon,stade rennais,TRUE
+Spain,2023,sevilla fc,villarreal,TRUE
+Spain,2023,athletic club,villarreal,TRUE
+Italy,2023,fiorentina,torino,TRUE
+France,2024,r. strasbourg,toulouse,TRUE
+Italy,2019,juventus,roma,TRUE
+Spain,2022,real betis,real sociedad,TRUE
+Spain,2022,real betis,villarreal,TRUE
+Spain,2022,real sociedad,villarreal,TRUE
+Germany,2023,1.fc köln,darmstadt 98,TRUE
+Italy,2018,juventus,roma,TRUE
+Italy,2024,fiorentina,torino,TRUE
+Italy,2024,bologna,torino,TRUE
+Germany,2020,frankfurt,stuttgart,TRUE
+Germany,2020,frankfurt,mönchengladbach,TRUE
+Italy,2022,fiorentina,torino,TRUE
+Italy,2021,fiorentina,torino,TRUE
+Spain,2019,atlético,real madrid,TRUE
+Spain,2019,atlético,barcelona,TRUE
+Spain,2019,atlético,valencia,TRUE
+Spain,2019,barcelona,real madrid,TRUE
+Spain,2024,real betis,villarreal,TRUE
+Spain,2024,real betis,real sociedad,TRUE
+Spain,2024,athletic club,real betis,TRUE
+Spain,2024,real sociedad,villarreal,TRUE
+Spain,2024,athletic club,villarreal,TRUE
+Spain,2024,sevilla fc,villarreal,TRUE
+Italy,2024,bologna,fiorentina,TRUE
+Spain,2024,athletic club,real sociedad,TRUE
+Spain,2021,real betis,villarreal,TRUE
+France,2024,r. strasbourg,stade brestois,TRUE
+France,2024,angers sco,stade brestois,TRUE
+France,2024,nice,stade brestois,TRUE
+Italy,2021,ac milan,inter,TRUE
+Italy,2021,inter,juventus,TRUE
+England,2022,liverpool,man utd,TRUE
+England,2024,man utd,tottenham,TRUE
+England,2024,arsenal,man utd,TRUE
+England,2024,chelsea,man utd,TRUE
+England,2024,arsenal,tottenham,TRUE
+England,2024,chelsea,tottenham,TRUE
+France,2020,lyon,marseille,TRUE
+France,2020,lyon,monaco,TRUE
+France,2020,marseille,monaco,TRUE
+Spain,2022,sevilla fc,villarreal,TRUE
+Germany,2022,hoffenheim,mönchengladbach,TRUE
+Germany,2022,frankfurt,hoffenheim,TRUE
+France,2024,nice,r. strasbourg,TRUE
+Spain,2020,sevilla fc,villarreal,TRUE
+Spain,2020,sevilla fc,valencia,TRUE
+England,2023,man utd,tottenham,TRUE
+England,2023,arsenal,man utd,TRUE
+England,2023,chelsea,man utd,TRUE
+England,2023,liverpool,man utd,TRUE
+England,2023,arsenal,tottenham,TRUE
+England,2023,chelsea,tottenham,TRUE
+England,2023,liverpool,tottenham,TRUE
+France,2024,nice,stade rennais,TRUE
+France,2024,lens,nice,TRUE
+France,2024,lyon,nice,TRUE
+France,2024,lens,stade rennais,TRUE
+France,2024,marseille,stade rennais,TRUE
+France,2024,lyon,stade rennais,TRUE
+Spain,2020,atlético,real madrid,TRUE
+Spain,2020,atlético,barcelona,TRUE
+Spain,2020,barcelona,real madrid,TRUE
+Germany,2021,frankfurt,mönchengladbach,TRUE
+Italy,2017,juventus,roma,TRUE
+Spain,2023,atlético,barcelona,TRUE
+Spain,2023,atlético,real madrid,TRUE
+Spain,2023,barcelona,real madrid,TRUE
+Italy,2024,ac milan,juventus,TRUE
+Italy,2024,inter,juventus,TRUE
+England,2019,liverpool,man city,TRUE
+Germany,2022,frankfurt,mönchengladbach,TRUE
+France,2024,lyon,marseille,TRUE
+France,2024,lyon,monaco,TRUE
+France,2024,lille,lyon,TRUE
+France,2024,marseille,monaco,TRUE
+France,2024,lens,marseille,TRUE
+Spain,2022,atlético,barcelona,TRUE
+Spain,2022,atlético,real madrid,TRUE
+Spain,2022,atlético,sevilla fc,TRUE
+Spain,2022,barcelona,real madrid,TRUE
+Germany,2023,darmstadt 98,wolfsburg,TRUE
+Spain,2021,sevilla fc,villarreal,TRUE
+Spain,2021,atlético,sevilla fc,TRUE
+France,2023,lens,marseille,TRUE
+France,2023,lens,monaco,TRUE
+Italy,2020,ac milan,napoli,TRUE
+England,2023,arsenal,chelsea,TRUE
+England,2023,arsenal,liverpool,TRUE
+Spain,2024,atlético,barcelona,TRUE
+Spain,2024,atlético,real madrid,TRUE
+Spain,2024,barcelona,real madrid,TRUE
+France,2024,lens,monaco,TRUE
+Italy,2022,ac milan,inter,TRUE
+Italy,2022,ac milan,napoli,TRUE
+Italy,2022,inter,juventus,TRUE
+France,2022,lyon,monaco,TRUE
+France,2022,lyon,marseille,TRUE
+France,2022,lille,lyon,TRUE
+France,2022,marseille,monaco,TRUE
+France,2024,lille,monaco,TRUE
+Spain,2021,atlético,real madrid,TRUE
+Spain,2021,atlético,barcelona,TRUE
+Spain,2021,barcelona,real madrid,TRUE
+France,2023,lyon,monaco,TRUE
+France,2023,lyon,marseille,TRUE
+France,2023,lille,lyon,TRUE
+France,2023,marseille,monaco,TRUE
+Italy,2023,ac milan,inter,TRUE
+Italy,2023,ac milan,juventus,TRUE
+Italy,2023,inter,juventus,TRUE
+France,2021,lyon,marseille,TRUE
+France,2021,lyon,monaco,TRUE
+France,2021,marseille,monaco,TRUE
+Italy,2021,ac milan,napoli,TRUE
+Italy,2024,ac milan,inter,TRUE
+England,2020,liverpool,man city,TRUE
+England,2024,arsenal,liverpool,TRUE
+England,2024,arsenal,man city,TRUE
+England,2021,liverpool,man city,TRUE
+England,2024,liverpool,man city,TRUE
+England,2023,liverpool,man city,TRUE
+England,2022,liverpool,man city,TRUE
