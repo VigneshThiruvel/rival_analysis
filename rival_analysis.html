@@ -711,7 +711,7 @@ The following object is masked from 'package:future':
 <span id="cb39-15"><a href="#cb39-15" aria-hidden="true" tabindex="-1"></a>        xj <span class="ot">&lt;-</span> X[j, ]</span>
 <span id="cb39-16"><a href="#cb39-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb39-17"><a href="#cb39-17" aria-hidden="true" tabindex="-1"></a>        <span class="co"># identify observed dimensions</span></span>
-<span id="cb39-18"><a href="#cb39-18" aria-hidden="true" tabindex="-1"></a>        <span class="co"># ignore dimension if BOTH are zero (structural zero)</span></span>
+<span id="cb39-18"><a href="#cb39-18" aria-hidden="true" tabindex="-1"></a>        <span class="co"># ignore dimension if BOTH are NA (structurally missing)</span></span>
 <span id="cb39-19"><a href="#cb39-19" aria-hidden="true" tabindex="-1"></a>        observed <span class="ot">&lt;-</span> <span class="sc">!</span>(<span class="fu">is.na</span>(xi) <span class="sc">&amp;</span> <span class="fu">is.na</span>(xj))</span>
 <span id="cb39-20"><a href="#cb39-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb39-21"><a href="#cb39-21" aria-hidden="true" tabindex="-1"></a>        k <span class="ot">&lt;-</span> <span class="fu">sum</span>(observed)</span>
@@ -951,7 +951,7 @@ The following object is masked from 'package:future':
 <span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>season_starts <span class="ot">&lt;-</span> <span class="dv">2018</span><span class="sc">:</span><span class="dv">2024</span>      <span class="co"># represent seasons 2018/19 .. 2024/25</span></span>
 <span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>sleep_sec <span class="ot">&lt;-</span> <span class="dv">3</span>                  <span class="co"># polite pause between requests</span></span>
-<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>max_retries <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>max_retries <span class="ot">&lt;-</span> <span class="dv">0</span>                <span class="co"># when we ran this for the first time, we had retries. now we set it to 0 to fetch data only from the cache and avoid hitting API calls for missing data</span></span>
 <span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>retry_sleep <span class="ot">&lt;-</span> <span class="dv">5</span></span>
 <span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a>out_csv <span class="ot">&lt;-</span> <span class="fu">file.path</span>(out_dir, <span class="st">"transfers_summer_2018_2025.csv"</span>)</span>

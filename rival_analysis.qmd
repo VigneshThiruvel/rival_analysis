@@ -456,7 +456,7 @@ rivalry_scores <- rival_vectors[
         xj <- X[j, ]
 
         # identify observed dimensions
-        # ignore dimension if BOTH are zero (structural zero)
+        # ignore dimension if BOTH are NA (structurally missing)
         observed <- !(is.na(xi) & is.na(xj))
 
         k <- sum(observed)
@@ -640,7 +640,7 @@ dir.create(cache_dir, recursive = TRUE, showWarnings = FALSE)
 
 season_starts <- 2018:2024      # represent seasons 2018/19 .. 2024/25
 sleep_sec <- 3                  # polite pause between requests
-max_retries <- 0
+max_retries <- 0                # when we ran this for the first time, we had retries. now we set it to 0 to fetch data only from the cache and avoid hitting API calls for missing data
 retry_sleep <- 5
 
 out_csv <- file.path(out_dir, "transfers_summer_2018_2025.csv")
