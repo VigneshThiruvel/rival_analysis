@@ -26,7 +26,7 @@ library(survival)
 We get league table data for the top 5 leagues from 2017/18 season to 2024/2025 season.
 
 ```{r}
-league_path <- "~/sem3/research_project/rival_analysis/data/league_table.csv"
+league_path <- "data/league_table.csv"
 if (!file.exists(league_path)) {
   leagues <- c("England", "Spain", "Germany", "Italy", "France")
   seasons <- 2017:2024
@@ -50,24 +50,26 @@ if (!file.exists(league_path)) {
       return(NULL)
     })
   })
-  fwrite(df, league_path)
+  fwrite(results, league_path)
 }
 ```
 
 ## Rivalry
 
-We define rivalry based on three conditions:
+Rivalry is defined based on the followin strategy:
 
--   In the previous season, teams that finished two places above or below a specific team are said to be its rivals.
-
--   Teams that have an ELO of 100 points more or less than the specific team are said to be its rivals.
-
--   Rivalry is considered only for teams that belong to the same league.
+1.  We already have the league table history for teams. We now get the ELO rating of teams for all these seasons.
+2.  Next, we define a vector: \<points scored by a team this season, points scored by the team previous season, points scored by the team 2 seasons ago, current ELO\>.
+3.  Based on this, we calculate distances between teams. Note: We ignore missing data altogether. We have 2 such cases:
+    1.  We only have the data starting from the end of the 2017/18 season. Thus, for this season, the 2nd and 3rd values in the vector are not present. We leave this as is.
+    2.  Also, we could have missing data for a team that was newly promoted to the league. We again ignore missing values in the vector.
+4.  Next, we attribute this distance score over multiple seasons to smoothen out the rivalry score, so that there aren't drastic changes in rivalry across seasons.
+5.  Next, we calculate a continuous rivalry proximity score, a rank-based percentile of the smoothened distance. Then, we invert it so that when the score is closer to 1, then the 2 teams are closer rivals.
 
 ```{r}
 
 # 1) read
-dt_raw <- fread("~/sem3/research_project/rival_analysis/data/league_table.csv")
+dt_raw <- fread("data/league_table.csv")
 
 dt_raw[, team := str_squish(squad)]
 dt_raw[, season := as.character(season)]
@@ -81,78 +83,13 @@ if ("matchday" %in% names(dt_raw)) {
   dt_final <- dt_raw[!is.na(pos), .SD[1], by = .(country, league, season, team)]
 }
 # Keep only needed cols
-dt_final <- dt_final[, .(country, league, season, team, pos)]
+dt_final <- dt_final[, .(country, league, season, team, pos, pts)]
 dt_final[, team_low := tolower(team)]
 dt_final[, country_low := tolower(country)]
 dt_final[, league_low := tolower(league)]
-
-# --- 3) Build interval table (y) and point table (x) with distinct column names ---
-# y: intervals owned by a team (pos_low .. pos_high)
-dt_y <- dt_final[, .(country, league, season,
-                     pos_low = pos - 2L,
-                     pos_high = pos + 2L,
-                     team_y = team,
-                     pos_y = pos)]
-# x: points to be matched into intervals
-dt_x <- dt_final[, .(country, league, season,
-                     pos_x = pos,
-                     team_x = team,
-                     pos_orig = pos)]
-# Create start/end for pts (required by foverlaps)
-dt_x[, pos_x_start := pos_x][, pos_x_end := pos_x]
-
-# Set keys including country/league/season then interval start/end
-setkey(dt_y, country, league, season, pos_low, pos_high)
-setkey(dt_x, country, league, season, pos_x_start, pos_x_end)
-
-# --- 4) Overlap join: match points to intervals within same country/league/season ---
-ov <- foverlaps(x = dt_x, y = dt_y,
-                by.x = c("country", "league", "season", "pos_x_start", "pos_x_end"),
-                by.y = c("country", "league", "season", "pos_low", "pos_high"),
-                nomatch = 0L)
-
-# --- 5) Select relevant columns, remove self-matches, deduplicate unordered pairs ---
-# ov contains columns from x and y; pick team_x (point) and team_y (interval owner)
-rivals <- ov[, .(country = country, league = league, season = season,
-                 team1 = team_x, pos1 = pos_x,
-                 team2 = team_y, pos2 = pos_y)]
-
-# remove identical teams and keep unordered unique pair per (country,league,season)
-rivals <- rivals[team1 != team2]
-rivals[, team_a := pmin(team1, team2)]
-rivals[, team_b := pmax(team1, team2)]
-rivals[, pos_diff := abs(as.integer(pos1) - as.integer(pos2))]
-rivals <- unique(rivals[, .(country, league, season, team_a, team_b, pos_diff)])
-setorder(rivals, country, league, season, team_a, team_b)
-
-# --- 6) Add lowercase keys and set key for fast lookup ---
-rivals[, team_a_low := tolower(team_a)]
-rivals[, team_b_low := tolower(team_b)]
-rivals[, country_low := tolower(country)]
-rivals[, league_low := tolower(league)]
-setkey(rivals, country_low, league_low, season, team_a_low, team_b_low)
-
-# --- 7) Helper lookup --
-# Usage: is_rival("England", "Premier League", "Arsenal", "Chelsea", "2020/2021")
-is_rival <- function(country_in, league_in, t1, t2, season_in) {
-  cl <- tolower(str_squish(country_in))
-  ll <- tolower(str_squish(league_in))
-  a <- tolower(str_squish(t1)); b <- tolower(str_squish(t2))
-  a1 <- ifelse(a < b, a, b); b1 <- ifelse(a < b, b, a)
-  res <- rivals[J(cl, ll, season_in, a1, b1), nomatch = 0L]
-  nrow(res) > 0L
-}
-
-
-# Save output
-fwrite(rivals, "~/sem3/research_project/rival_analysis/data/season_rivalries.csv")
 ```
 
-```{r}
-rivals
-```
-
-### ELO
+### Getting ELO
 
 ```{r}
 # ---------------- PARAMETERS ----------------
@@ -160,10 +97,10 @@ seasons <- 2018:2025
 snapshot_month_day <- "-09-01"
 max_name_dist <- 0.18
 
-# ---------------- PATHS (uses uploaded files in ~/sem3/research_project/rival_analysis/data) ----------------
-league_csv <- "~/sem3/research_project/rival_analysis/data/league_table.csv"
-manual_map_path <- "~/sem3/research_project/rival_analysis/data/manual_club_map.csv"
-out_dir <- "~/sem3/research_project/rival_analysis/data"
+# ---------------- PATHS (uses uploaded files in data) ----------------
+league_csv <- "data/league_table.csv"
+manual_map_path <- "data/manual_club_map.csv"
+out_dir <- "data"
 out_rivals_csv <- file.path(out_dir, "rivalry_lookup.csv")
 out_elo_raw_dir <- file.path(out_dir, "elo_snapshots")
 dir.create(out_elo_raw_dir, showWarnings = FALSE, recursive = TRUE)
@@ -345,7 +282,7 @@ matched_dt[, snapshot_year := as.integer(substr(snapshot_date, 1, 4))]
 matched_dt[, elo_season := snapshot_year - 1L]  # e.g., 2018 -> 2017
 ```
 
-### Rivalry Vector
+### Creating Rivalry Vector
 
 ```{r}
 
@@ -410,28 +347,6 @@ rival_base <- merge(rival_base, elo_dt,
 
 rival_base <- unique(rival_base, by = c("team_clean", "season_start"))
 
-
-# ------- Impute missing POINTS using league-season quartile ------------
-
-# compute league-season quartiles
-pts_quartiles <- rival_base[
-  , .(
-      q_pts_t1 = quantile(pts_t1, 0.25, na.rm = TRUE),
-      q_pts_t2 = quantile(pts_t2, 0.25, na.rm = TRUE)
-    ),
-  by = .(country, season_start)
-]
-
-rival_base <- merge(rival_base, pts_quartiles,
-                    by = c("country", "season_start"),
-                    all.x = TRUE)
-
-# impute
-rival_base[is.na(pts_t1), pts_t1 := q_pts_t1]
-rival_base[is.na(pts_t2), pts_t2 := q_pts_t2]
-
-# ------ Impute missing ELO using season quartile -------
-
 elo_quartiles <- rival_base[
   , .(q_elo = quantile(elo, 0.25, na.rm = TRUE)),
   by = .(season_start)
@@ -488,12 +403,12 @@ rival_vectors <- rival_base[
 
     # ---- set structural missing to 0 AFTER scaling ----
     if(season_start == 2017) {
-      z_t1 <- 0
-      z_t2 <- 0
+      z_t1 <- NA_real_
+      z_t2 <- NA_real_
     }
     
     if(season_start == 2018) {
-      z_t2 <- 0
+      z_t2 <- NA_real_
     }
 
     list(
@@ -517,7 +432,7 @@ rival_vectors
 rival_base
 ```
 
-### Rivalry score
+### Calculating Rivalry score
 
 Modified euclidean:
 
@@ -542,7 +457,7 @@ rivalry_scores <- rival_vectors[
 
         # identify observed dimensions
         # ignore dimension if BOTH are zero (structural zero)
-        observed <- !(xi == 0 & xj == 0)
+        observed <- !(is.na(xi) & is.na(xj))
 
         k <- sum(observed)
 
@@ -569,7 +484,7 @@ rivalry_scores <- rival_vectors[
 rivalry_scores
 ```
 
-Rolling rivalry score:
+Smoothened rivalry score:
 
 ```{r}
 rivalry_scores[
@@ -596,7 +511,63 @@ rivalry_scores[
 rivalry_scores
 ```
 
+### Continuous Rivalry Proximity
+
+```{r}
+# Expand to team-centric format (same as before)
+rival_long <- rbindlist(list(
+  rivalry_scores[, .(country, season_start, team = tA, rival = tB, rivalry_smooth)],
+  rivalry_scores[, .(country, season_start, team = tB, rival = tA, rivalry_smooth)]
+))
+
+rival_sym <- rival_long[
+  rival_long,
+  on = .(country, season_start,
+         team = rival,
+         rival = team),
+  nomatch = 0,
+  allow.cartesian = TRUE
+][
+  ,
+  .(
+    country,
+    season_start,
+    team_a = pmin(team, rival),
+    team_b = pmax(team, rival),
+    rivalry_symmetric = mean(c(rivalry_smooth, i.rivalry_smooth))
+  ),
+  by = .(country, season_start, team, rival)
+][
+  ,
+  .SD[1],
+  by = .(country, season_start, team_a, team_b)
+]
+
+rival_sym[
+  ,
+  rivalry_percentile := frank(rivalry_symmetric, ties.method = "average") / .N,
+  by = .(country, season_start)
+]
+
+# Invert so 1 = closest rival
+rival_sym[
+  ,
+  rivalry_proximity := 1 - rivalry_percentile,
+  by = .(country, season_start)
+]
+
+rival_continuous <- rival_sym[
+  ,
+  .(country, season_start, team_a, team_b, rivalry_proximity)
+]
+
+fwrite(rival_continuous, "data/rivalry_continuous.csv")
+rival_continuous[order(rivalry_proximity, decreasing = TRUE)]
+```
+
 ### k closest
+
+\*(right now knn is calculated and not used anywhere)
 
 why knn?
 
@@ -648,21 +619,22 @@ rival_undirected <- rival_mutual[
 fwrite(rival_undirected, out_rivals_csv)
 ```
 
-winter transfer????
-
-5610, 1042
-
 ## Transfers
 
-We now get the transfer data for all teams in the top 5 leagues from 2018 to 2024 transfer windows.
+We now get the transfer data for all teams in the top 5 leagues from 2018 to 2024 transfer windows. We only fetch the summer window transfers. We don't consider winter transfers for our models because:
+
+1.  Winter transfers are based on a team's position in the middle of a season. Often, it is considered to be a temporary solution (to fill up an injured player's spot or a desperate transfer to avoid relegation, etc.,.).
+2.  It could even affect a team's options in the next summer window, due to constrained budget (already spent on players in the winter transfer), overcrowded positions (a player was bought due to an injury to an existing player, but the injured player has now returned, etc.).
+
+Thus, it is altogether a different strategy compared to summer transfers and beyond the scope of what we are trying to establish in this analysis.
 
 ```{r}
 # Collect summer transfers (2018/19 .. 2024/25) using only country + season_start.
-# Uses existing column `squad` in ~/sem3/research_project/rival_analysis/data/league_table.csv (no new "team" column created).
+# Uses existing column `squad` in data/league_table.csv (no new "team" column created).
 
 # ---------- PARAMETERS & PATHS ----------
-league_csv <- "~/sem3/research_project/rival_analysis/data/league_table.csv"   # your uploaded file (use existing 'squad' col)
-out_dir <- "~/sem3/research_project/rival_analysis/data"
+league_csv <- "data/league_table.csv"   # your uploaded file (use existing 'squad' col)
+out_dir <- "data"
 cache_dir <- file.path(out_dir, "transfers_cache")
 dir.create(cache_dir, recursive = TRUE, showWarnings = FALSE)
 
@@ -827,35 +799,33 @@ if (length(all_transfers) == 0) {
 
 ```
 
-### Filtering out transfers - only within teams from the top5 leagues
+### Filtering Transfers
 
-The above data contains transfers that happened for teams from the top 5 leagues. But, it doesn't necessarily mean that all such transfers happened within the top 5 leagues. Teams also buy players from other leagues. So, we add a filter such that both the seller and buyer teams must be within the top 5 leagues for our observation.
+We add the below filter to ensure that we only have the data for the arrivals in top 5 leagues, and nothing else. (The seller can be from any league. The transfer type need not be permanent.)
 
 ```{r}
-transfers_path <- "~/sem3/research_project/rival_analysis/data/transfers_summer_2018_2025.csv"
+transfers_path <- "data/transfers_summer_2018_2025.csv"
 transfers  <- fread(transfers_path)
-league_table <- fread("~/sem3/research_project/rival_analysis/data/league_table.csv")
+league_table <- fread("data/league_table.csv")
 top5_leagues <- c("Premier League", "LaLiga", "Bundesliga", "Ligue 1", "Serie A")
 
 top5_league_transfers <- filter(transfers,
        league %in% top5_leagues,
-       league_2 %in% top5_leagues,
-       is_loan == FALSE,
        transfer_type == "Arrivals")
-fwrite(top5_league_transfers, "~/sem3/research_project/rival_analysis/data/top5_league_transfers.csv")
+fwrite(top5_league_transfers, "data/top5_league_transfers.csv")
 ```
 
-## Mapping
+### Mapping
 
 Before we proceed with analysis, we try to map the team names between the different tables we have gathered so far.
 
 ```{r}
 
 ## ===================== PATHS ===================== ##
-rivals_path    <- "~/sem3/research_project/rival_analysis/data/rivalry_lookup.csv"
-transfers_path <- "~/sem3/research_project/rival_analysis/data/top5_league_transfers.csv"
-league_path <- "~/sem3/research_project/rival_analysis/data/league_table.csv"
-out_dir     <- "~/sem3/research_project/rival_analysis/data"
+rivals_path    <- "data/rivalry_continuous.csv"
+transfers_path <- "data/top5_league_transfers.csv"
+league_path <- "data/league_table.csv"
+out_dir     <- "data"
 
 ## ===================== 1. LOAD DATA ===================== ##
 league <- fread(league_path)
@@ -923,47 +893,32 @@ team_map[, raw.dist := NULL]
 # Keep best match per (country, raw)
 setorder(team_map, country, raw, dist)
 team_map <- team_map[, .SD[1], by = .(country, raw)]
-
-
-## ===================== 6. QA CHECKS ===================== ##
-# Unmatched raw names (inspect & manually fix if needed)
-unmatched <- raw_teams[!raw %in% team_map$raw]
-# fwrite(unmatched, file.path(out_dir, "unmatched_transfer_teams.csv"))
-
-cat("Unmatched raw team names saved to unmatched_transfer_teams.csv\n")
 ```
 
 ```{r}
-## ===================== 7. APPLY MAPPING TO TRANSFERS ===================== ##
-manual_map <- fread("~/sem3/research_project/rival_analysis/data/unmatched_transfer_teams.csv")
+riv <- fread(rivals_path)   # rivalry_continuous.csv
+manual_map <- fread("data/unmatched_transfer_teams.csv")
 
-# Rivalries: teams
-riv <- fread(rivals_path)
+# Clean rivalry team names
 riv[, team_a_clean := tolower(str_squish(team_a))]
 riv[, team_b_clean := tolower(str_squish(team_b))]
-riv[, season       := as.integer(season_start)]
+riv[, season := as.integer(season_start)]
 
-## ===================== 3. BUILD DEDUPLICATED RIVAL LOOKUP ===================== ##
-# Collapse to unique rival pairs per country-season-teamA-teamB
-riv_unique <- riv[
-  is_rival == TRUE,
-  .(country, season, team_a_clean, team_b_clean)
-]
-
-# Ensure uniqueness (this removes pos+elo duplicates)
-riv_unique <- unique(riv_unique)
-
-# Build bidirectional lookup
-riv_long <- rbind(
-  riv_unique[, .(country, season, from = team_a_clean, to = team_b_clean, is_rival = TRUE)],
-  riv_unique[, .(country, season, from = team_b_clean, to = team_a_clean, is_rival = TRUE)]
+# Keep only needed columns
+riv_unique <- unique(
+  riv[, .(country, season, team_a_clean, team_b_clean, rivalry_proximity)]
 )
+
+# ===================== 2. CLEAN TRANSFER TEAM NAMES ===================== #
 
 team_map_final <- unique(rbind(
   team_map[, .(country, raw, team_clean)],
   manual_map
 ))
 
+team_map_final[, team_clean := tolower(str_squish(team_clean))]
+
+# Buyer clean
 xf <- merge(
   xf,
   team_map_final,
@@ -972,242 +927,194 @@ xf <- merge(
   all.x = TRUE
 )
 setnames(xf, "team_clean", "buyer_clean")
-dup_last <- duplicated(names(xf), fromLast = TRUE)
-xf <- xf[, !dup_last, with = FALSE]
-# Sellers (needed for rivalry tagging)
-# xf <- merge(
-#  xf,
-#  team_map_final,
-# by.x = c("country", "seller_raw"),
-# by.y = c("country", "raw"),
-#  all.x = TRUE
-#)
 setnames(xf, "seller_raw", "seller_clean")
-dup <- duplicated(names(xf))
-xf <- xf[, !dup, with = FALSE]
 
-xf[, is_rival := NULL]
+# Remove duplicate columns from merges
+xf <- xf[, !duplicated(names(xf), fromLast = TRUE), with = FALSE]
+
+# ===================== 3. MAKE TRANSFER PAIRS UNDIRECTED ===================== #
+
+# Create ordered pair to match rivalry file
+xf[, team_low  := pmin(buyer_clean, seller_clean)]
+xf[, team_high := pmax(buyer_clean, seller_clean)]
+
+# ===================== 4. MERGE CONTINUOUS RIVALRY ===================== #
+
 xf <- merge(
   xf,
-  riv_long,
-  by.x = c("country", "season", "seller_clean", "buyer_clean"),
-  by.y = c("country", "season", "from", "to"),
+  riv_unique,
+  by.x = c("country", "season", "team_low", "team_high"),
+  by.y = c("country", "season", "team_a_clean", "team_b_clean"),
   all.x = TRUE
 )
-xf[, is_rival := !is.na(is_rival)]
-xf[, pos_clean        := tolower(str_squish(player_position))]
 
-fwrite(xf, "~/sem3/research_project/rival_analysis/data/top5_league_transfers_clean.csv")
-```
+# ===================== 5. HANDLE CROSS-LEAGUE TRANSFERS ===================== #
 
-## Opportunity Set
+# If seller is from a different league (country_2 != country),
+# rivalry should be NA explicitly
 
-Next, we build the opportunity set. We try to find alternative choices for a rival transfer. We count:
+xf[country_2 != country, rivalry_proximity := NA_real_]
 
--   Total rival options available (rivalry is local to a league)
+# ===================== 6. CLEANUP ===================== #
 
--   Non-rival options available within the league
+xf[, c("team_low", "team_high") := NULL]
 
--   Global non-rival options (top 5 leagues)
+xf[, pos_clean := tolower(str_squish(player_position))]
 
-```{r}
-
-# Load data
-transfers <- read_csv("~/sem3/research_project/rival_analysis/data/top5_league_transfers_clean.csv")
-rivalry_lookup <- read_csv("~/sem3/research_project/rival_analysis/data/rivalry_lookup.csv")
-transfers <- transfers %>%
-  mutate(transfer_id = row_number())
-
-# -------------------------
-# Helper function to get rivals of a team
-# -------------------------
-get_rivals <- function(team_name, rivalry_df) {
-  rivalry_df %>%
-    filter(team_a == team_name | team_b == team_name) %>%
-    mutate(rival = if_else(team_a == team_name, team_b, team_a)) %>%
-    pull(rival) %>%
-    unique()
-}
-
-# -------------------------
-# Only evaluate rival transfers
-# -------------------------
-rival_transfers <- transfers %>%
-  filter(is_rival == TRUE)
-
-# -------------------------
-# Main loop (robust version)
-# -------------------------
-results <- rival_transfers %>%
-  rowwise() %>%
-  mutate(
-
-    # Get rival clubs of buyer
-    rivals_vec = list(get_rivals(buyer_clean, rivalry_lookup)),
-
-    # -----------------------
-    # League-constrained pool
-    # -----------------------
-    league_pool = list(
-      transfers %>%
-        filter(
-          transfer_id != transfer_id,
-          season == season,
-          pos_clean == pos_clean,
-          country_2 == country
-        )
-    ),
-
-    # Count rival options
-    total_rival_options = sum(
-      transfers$transfer_id != transfer_id &
-      transfers$season == season &
-      transfers$pos_clean == pos_clean &
-      transfers$country_2 == country &
-      transfers$seller_clean %in% rivals_vec
-    ),
-
-    # Count non-rival options
-    non_rival_options = sum(
-      transfers$transfer_id != transfer_id &
-      transfers$season == season &
-      transfers$pos_clean == pos_clean &
-      transfers$country_2 == country &
-      !(transfers$seller_clean %in% rivals_vec)
-    ),
-
-    # -----------------------
-    # Global pool (no league + no rival restriction)
-    # -----------------------
-    global_pool_options = sum(
-      transfers$transfer_id != transfer_id &
-      transfers$season == season &
-      transfers$pos_clean == pos_clean
-    )
-
-  ) %>%
-  ungroup() %>%
-  select(-league_pool)
-```
-
-```{r}
-options_pool <- results %>%
-  select(
-    country,
-    season,
-    buyer_clean,
-    seller_clean,
-    player_name,
-    pos_clean,
-    non_rival_options,      # league restricted
-    global_pool_options,    # league-agnostic
-    total_rival_options
-  )
-fwrite(options_pool, "~/sem3/research_project/rival_analysis/data/options_pool.csv")
-```
-
-```{r}
-options_pool
-```
-
-```{r}
-#filter(top5_league_transfers,
-#       league_2 == "Premier League",
-#       pos_clean == "centre-back",
-#       season == 2019)
+# Save
+fwrite(xf, "data/top5_league_transfers_clean.csv")
+xf
 ```
 
 ## Conditional Multinomial choice model
 
-Within each transfer decision, are rival sellers more likely to be the chosen alternative, controlling for player characteristics?
+1.  Choice set: transfers within top 5 leagues (both buyers and sellers are in the top 5 leagues). Seller is also from the same league as the buyer.
 
 ```{r}
-transfers <- read_csv("~/sem3/research_project/rival_analysis/data/top5_league_transfers_clean.csv")
+transfers <- read_csv("data/top5_league_transfers_clean.csv")
+rivalry_lookup <- read_csv("data/rivalry_continuous.csv")
 
-transfers <- transfers %>%
-  mutate(transfer_id = row_number())
+transfers_1 <- transfers %>%
+  filter(
+    league_2 %in% top5_leagues,
+    is_loan == FALSE
+  ) %>%
+  mutate(
+    transfer_id = row_number(),
+    log_fee = log(transfer_fee + 1)
+  )
 
-choice_data <- transfers %>%
-  #filter(is_rival == TRUE) %>%
+band_width <- 1
+
+choice_data_1 <- transfers_1 %>%
   rowwise() %>%
   do({
-
+    
     current <- .
     
-    pool <- transfers %>%
+    focal_log_fee  <- current$log_fee[[1]]
+    focal_season   <- current$season[[1]]
+    focal_pos      <- current$pos_clean[[1]]
+    focal_country  <- current$country[[1]]
+    focal_id       <- current$transfer_id[[1]]
+    
+    pool <- transfers_1 %>%
       filter(
-        season == current$season,
-        pos_clean == current$pos_clean,
-        #country_2 == current$country,
-        transfer_id != current$transfer_id
+        season == focal_season,
+        pos_clean == focal_pos,
+        country_2 == focal_country,
+        transfer_id != focal_id,
+        !is.na(log_fee),
+        abs(log_fee - focal_log_fee) <= band_width
       )
     
-    # Add chosen player back into pool
     pool <- bind_rows(pool, current)
     
     pool %>%
       mutate(
-        choice_id = current$transfer_id,
-        chosen = ifelse(transfer_id == current$transfer_id, 1, 0)
+        choice_id = focal_id,
+        chosen = ifelse(transfer_id == focal_id, 1, 0)
       )
-  }) %>% 
+    
+  }) %>%
   ungroup()
 
-choice_data <- choice_data %>%
+choice_data_1 <- choice_data_1 %>%
   mutate(
     nat_match = ifelse(player_nationality == country, 1, 0),
+    rivalry_proximity = ifelse(is.na(rivalry_proximity), 0, rivalry_proximity)
+  )
+```
+
+```{r}
+fwrite(choice_data_1,"data/choice_data.csv")
+choice_data_1
+```
+
+```{r}
+model_1 <- clogit(
+  chosen ~ player_age +
+    minutes_played + nat_match +
+    goals +
+    log_fee + 
+    rivalry_proximity + 
+    strata(choice_id),
+  data = choice_data_1
+)
+
+summary(model_1)
+```
+
+2.  All arrivals to top 5 leagues (including loans). The Seller can be from any league. We also choose the top 10 alternatives for each transfer.
+
+```{r}
+transfers <- transfers %>%
+  mutate(
+    transfer_id = row_number(),
     log_fee = log(transfer_fee + 1)
   )
 
-get_rivals <- function(team_name, rivalry_df) {
-  rivalry_df %>%
-    filter(team_a == team_name | team_b == team_name) %>%
-    mutate(rival = if_else(team_a == team_name, team_b, team_a)) %>%
-    pull(rival) %>%
-    unique()
-}
+set.seed(123)
+band_width <- 1
+K <- 10
 
-choice_data <- choice_data %>%
+choice_data_2 <- transfers %>%
   rowwise() %>%
-  mutate(
-    rival = ifelse(
-      seller_clean %in% get_rivals(buyer_clean, rivalry_lookup),
-      1, 0
-    )
-  ) %>%
+  do({
+    
+    current <- .
+    
+    focal_log_fee  <- current$log_fee[[1]]
+    focal_season   <- current$season[[1]]
+    focal_pos      <- current$pos_clean[[1]]
+    focal_id       <- current$transfer_id[[1]]
+    
+    # Candidate alternatives
+    pool_all <- transfers %>%
+      filter(
+        season == focal_season,
+        pos_clean == focal_pos,
+        transfer_id != focal_id,
+        !is.na(log_fee),
+        abs(log_fee - focal_log_fee) <= band_width
+      )
+    
+    # Randomly sample up to K alternatives
+    if (nrow(pool_all) > K) {
+      pool_sample <- pool_all %>% slice_sample(n = K)
+    } else {
+      pool_sample <- pool_all
+    }
+    
+    # Add chosen transfer back
+    pool <- bind_rows(pool_sample, current)
+    
+    pool %>%
+      mutate(
+        choice_id = focal_id,
+        chosen = ifelse(transfer_id == focal_id, 1, 0)
+      )
+    
+  }) %>%
   ungroup()
+
+choice_data_2 <- choice_data_2 %>%
+  mutate(
+    nat_match = ifelse(player_nationality == country, 1, 0),
+    rivalry_proximity = ifelse(is.na(rivalry_proximity), 0, rivalry_proximity)
+  )
 ```
 
 ```{r}
-model <- clogit(
-  rival ~ player_age +
-    minutes_played + goals + nat_match +
-    log_fee + 
-    chosen +
-    #rival + 
-    strata(choice_id),
-  data = choice_data
-)
-
-summary(model)
-```
-
-```{r}
-fwrite(choice_data,"~/sem3/research_project/rival_analysis/data/choice_data.csv")
-choice_data
-```
-
-Within each transfer decision (choice set), how do player characteristics and rivalry affect the probability that a player is chosen?
-
-```{r}
-model2 <- clogit(
+model_2 <- clogit(
   chosen ~ player_age +
-    minutes_played + goals + nat_match +
+    minutes_played + nat_match +
+    goals +
     log_fee + 
-    rival + 
+    rivalry_proximity + 
     strata(choice_id),
-  data = choice_data
+  data = choice_data_2
 )
 
-summary(model2)
+summary(model_2)
 ```
