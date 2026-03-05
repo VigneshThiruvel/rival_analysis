@@ -185,8 +185,9 @@ The following object is masked from 'package:future':
 <span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="cn">NULL</span>)</span>
 <span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    })</span>
 <span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  })</span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fwrite</span>(results, league_path)</span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  results[, league_name <span class="sc">:</span><span class="er">=</span> league <span class="sc">|&gt;</span> <span class="fu">str_remove</span>(<span class="st">"Games of Matchday </span><span class="sc">\\</span><span class="st">d+ "</span>) <span class="sc">|&gt;</span> <span class="fu">str_remove</span>(<span class="st">" </span><span class="sc">\\</span><span class="st">d{2}/</span><span class="sc">\\</span><span class="st">d{2}"</span>)]</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fwrite</span>(results, league_path)</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="rivalry" class="level2">
@@ -545,7 +546,7 @@ The following object is masked from 'package:future':
 <span id="cb34-68"><a href="#cb34-68" aria-hidden="true" tabindex="-1"></a>                    <span class="at">by =</span> <span class="st">"season_start"</span>,</span>
 <span id="cb34-69"><a href="#cb34-69" aria-hidden="true" tabindex="-1"></a>                    <span class="at">all.x =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb34-70"><a href="#cb34-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-71"><a href="#cb34-71" aria-hidden="true" tabindex="-1"></a>rival_base[<span class="fu">is.na</span>(elo), elo <span class="sc">:</span><span class="er">=</span> q_elo]</span>
+<span id="cb34-71"><a href="#cb34-71" aria-hidden="true" tabindex="-1"></a><span class="co"># rival_base[is.na(elo), elo := q_elo]</span></span>
 <span id="cb34-72"><a href="#cb34-72" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-73"><a href="#cb34-73" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-74"><a href="#cb34-74" aria-hidden="true" tabindex="-1"></a><span class="co"># flag seasons where lagged points are structurally missing</span></span>
@@ -576,40 +577,33 @@ The following object is masked from 'package:future':
 <span id="cb34-99"><a href="#cb34-99" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ---- impute non-structural missing ----</span></span>
 <span id="cb34-100"><a href="#cb34-100" aria-hidden="true" tabindex="-1"></a>    pts_t1_imp <span class="ot">&lt;-</span> pts_t1</span>
 <span id="cb34-101"><a href="#cb34-101" aria-hidden="true" tabindex="-1"></a>    pts_t2_imp <span class="ot">&lt;-</span> pts_t2</span>
-<span id="cb34-102"><a href="#cb34-102" aria-hidden="true" tabindex="-1"></a>    elo_imp    <span class="ot">&lt;-</span> elo</span>
-<span id="cb34-103"><a href="#cb34-103" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb34-104"><a href="#cb34-104" aria-hidden="true" tabindex="-1"></a>    <span class="co">#q_t1  &lt;- quantile(pts_t1, 0.25, na.rm = TRUE)</span></span>
-<span id="cb34-105"><a href="#cb34-105" aria-hidden="true" tabindex="-1"></a>    <span class="co">#q_t2  &lt;- quantile(pts_t2, 0.25, na.rm = TRUE)</span></span>
-<span id="cb34-106"><a href="#cb34-106" aria-hidden="true" tabindex="-1"></a>    <span class="co">#q_elo &lt;- quantile(elo,    0.25, na.rm = TRUE)</span></span>
-<span id="cb34-107"><a href="#cb34-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-108"><a href="#cb34-108" aria-hidden="true" tabindex="-1"></a>    elo_imp[<span class="fu">is.na</span>(elo_imp)] <span class="ot">&lt;-</span> q_elo</span>
-<span id="cb34-109"><a href="#cb34-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-110"><a href="#cb34-110" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ---- z-score scaling (after imputation) ----</span></span>
-<span id="cb34-111"><a href="#cb34-111" aria-hidden="true" tabindex="-1"></a>    z_t  <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">scale</span>(pts_t))</span>
-<span id="cb34-112"><a href="#cb34-112" aria-hidden="true" tabindex="-1"></a>    z_t1 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">scale</span>(pts_t1_imp))</span>
-<span id="cb34-113"><a href="#cb34-113" aria-hidden="true" tabindex="-1"></a>    z_t2 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">scale</span>(pts_t2_imp))</span>
-<span id="cb34-114"><a href="#cb34-114" aria-hidden="true" tabindex="-1"></a>    z_e  <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">scale</span>(elo_imp))</span>
-<span id="cb34-115"><a href="#cb34-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-116"><a href="#cb34-116" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ---- set structural missing to 0 AFTER scaling ----</span></span>
-<span id="cb34-117"><a href="#cb34-117" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(season_start <span class="sc">==</span> <span class="dv">2017</span>) {</span>
-<span id="cb34-118"><a href="#cb34-118" aria-hidden="true" tabindex="-1"></a>      z_t1 <span class="ot">&lt;-</span> <span class="cn">NA_real_</span></span>
-<span id="cb34-119"><a href="#cb34-119" aria-hidden="true" tabindex="-1"></a>      z_t2 <span class="ot">&lt;-</span> <span class="cn">NA_real_</span></span>
-<span id="cb34-120"><a href="#cb34-120" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb34-121"><a href="#cb34-121" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb34-122"><a href="#cb34-122" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(season_start <span class="sc">==</span> <span class="dv">2018</span>) {</span>
-<span id="cb34-123"><a href="#cb34-123" aria-hidden="true" tabindex="-1"></a>      z_t2 <span class="ot">&lt;-</span> <span class="cn">NA_real_</span></span>
-<span id="cb34-124"><a href="#cb34-124" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb34-125"><a href="#cb34-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-126"><a href="#cb34-126" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list</span>(</span>
-<span id="cb34-127"><a href="#cb34-127" aria-hidden="true" tabindex="-1"></a>      team_clean,</span>
-<span id="cb34-128"><a href="#cb34-128" aria-hidden="true" tabindex="-1"></a>      <span class="at">z_pts_t  =</span> z_t,</span>
-<span id="cb34-129"><a href="#cb34-129" aria-hidden="true" tabindex="-1"></a>      <span class="at">z_pts_t1 =</span> z_t1,</span>
-<span id="cb34-130"><a href="#cb34-130" aria-hidden="true" tabindex="-1"></a>      <span class="at">z_pts_t2 =</span> z_t2,</span>
-<span id="cb34-131"><a href="#cb34-131" aria-hidden="true" tabindex="-1"></a>      <span class="at">z_elo    =</span> z_e</span>
-<span id="cb34-132"><a href="#cb34-132" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb34-133"><a href="#cb34-133" aria-hidden="true" tabindex="-1"></a>  },</span>
-<span id="cb34-134"><a href="#cb34-134" aria-hidden="true" tabindex="-1"></a>  by <span class="ot">=</span> .(country, season_start)</span>
-<span id="cb34-135"><a href="#cb34-135" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb34-102"><a href="#cb34-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-103"><a href="#cb34-103" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ---- z-score scaling (after imputation) ----</span></span>
+<span id="cb34-104"><a href="#cb34-104" aria-hidden="true" tabindex="-1"></a>    z_t  <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">scale</span>(pts_t))</span>
+<span id="cb34-105"><a href="#cb34-105" aria-hidden="true" tabindex="-1"></a>    z_t1 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">scale</span>(pts_t1_imp))</span>
+<span id="cb34-106"><a href="#cb34-106" aria-hidden="true" tabindex="-1"></a>    z_t2 <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">scale</span>(pts_t2_imp))</span>
+<span id="cb34-107"><a href="#cb34-107" aria-hidden="true" tabindex="-1"></a>    z_e  <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">scale</span>(elo))</span>
+<span id="cb34-108"><a href="#cb34-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-109"><a href="#cb34-109" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ---- set structural missing to 0 AFTER scaling ----</span></span>
+<span id="cb34-110"><a href="#cb34-110" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(season_start <span class="sc">==</span> <span class="dv">2017</span>) {</span>
+<span id="cb34-111"><a href="#cb34-111" aria-hidden="true" tabindex="-1"></a>      z_t1 <span class="ot">&lt;-</span> <span class="cn">NA_real_</span></span>
+<span id="cb34-112"><a href="#cb34-112" aria-hidden="true" tabindex="-1"></a>      z_t2 <span class="ot">&lt;-</span> <span class="cn">NA_real_</span></span>
+<span id="cb34-113"><a href="#cb34-113" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb34-114"><a href="#cb34-114" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb34-115"><a href="#cb34-115" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(season_start <span class="sc">==</span> <span class="dv">2018</span>) {</span>
+<span id="cb34-116"><a href="#cb34-116" aria-hidden="true" tabindex="-1"></a>      z_t2 <span class="ot">&lt;-</span> <span class="cn">NA_real_</span></span>
+<span id="cb34-117"><a href="#cb34-117" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb34-118"><a href="#cb34-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-119"><a href="#cb34-119" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list</span>(</span>
+<span id="cb34-120"><a href="#cb34-120" aria-hidden="true" tabindex="-1"></a>      team_clean,</span>
+<span id="cb34-121"><a href="#cb34-121" aria-hidden="true" tabindex="-1"></a>      <span class="at">z_pts_t  =</span> z_t,</span>
+<span id="cb34-122"><a href="#cb34-122" aria-hidden="true" tabindex="-1"></a>      <span class="at">z_pts_t1 =</span> z_t1,</span>
+<span id="cb34-123"><a href="#cb34-123" aria-hidden="true" tabindex="-1"></a>      <span class="at">z_pts_t2 =</span> z_t2,</span>
+<span id="cb34-124"><a href="#cb34-124" aria-hidden="true" tabindex="-1"></a>      <span class="at">z_elo    =</span> z_e</span>
+<span id="cb34-125"><a href="#cb34-125" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb34-126"><a href="#cb34-126" aria-hidden="true" tabindex="-1"></a>  },</span>
+<span id="cb34-127"><a href="#cb34-127" aria-hidden="true" tabindex="-1"></a>  by <span class="ot">=</span> .(country, season_start)</span>
+<span id="cb34-128"><a href="#cb34-128" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>rival_vectors</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -636,11 +630,11 @@ The following object is masked from 'package:future':
   4: -0.27634202
   5:  0.89443895
  ---            
-776: -0.72230266
-777: -0.51945212
-778: -1.23120756
-779: -0.13776310
-780:  0.83643733</code></pre>
+776:          NA
+777: -0.58540889
+778: -1.28019366
+779: -0.21282064
+780:  0.73815154</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -668,7 +662,7 @@ The following object is masked from 'package:future':
   4: Games of Matchday 38 Premier League 17/18    54     NA     NA 1651.972
   5: Games of Matchday 38 Premier League 17/18    70     NA     NA 1850.365
  ---                                                                       
-776:         Games of Matchday 38 LaLiga 24/25    16     NA     40 1614.598
+776:         Games of Matchday 38 LaLiga 24/25    16     NA     40       NA
 777:         Games of Matchday 38 LaLiga 24/25    41     41     49 1637.953
 778:         Games of Matchday 38 LaLiga 24/25    32     40     NA 1556.004
 779:         Games of Matchday 38 LaLiga 24/25    46     49     42 1681.899
@@ -747,11 +741,11 @@ The following object is masked from 'package:future':
    4: England         2017       arsenal        chelsea     0.3053090
    5: England         2017       arsenal crystal palace     0.8708584
   ---                                                                
-7226:   Spain         2024    sevilla fc       valencia     0.3977453
-7227:   Spain         2024    sevilla fc     villarreal     1.2132568
+7226:   Spain         2024    sevilla fc       valencia     0.3955821
+7227:   Spain         2024    sevilla fc     villarreal     1.2042990
 7228:   Spain         2024 ud las palmas       valencia            NA
 7229:   Spain         2024 ud las palmas     villarreal            NA
-7230:   Spain         2024      valencia     villarreal     1.1091230</code></pre>
+7230:   Spain         2024      valencia     villarreal     1.1040717</code></pre>
 </div>
 </div>
 <p>Smoothened rivalry score:</p>
@@ -787,11 +781,11 @@ The following object is masked from 'package:future':
    4: England         2022  arsenal aston villa     1.0375224  arsenal
    5: England         2023  arsenal aston villa     1.2433124  arsenal
   ---                                                                 
-7226:   Spain         2020 valencia  villarreal     0.9026128 valencia
+7226:   Spain         2020 valencia  villarreal     0.9058471 valencia
 7227:   Spain         2021 valencia  villarreal     0.9771819 valencia
 7228:   Spain         2022 valencia  villarreal     0.9812145 valencia
-7229:   Spain         2023 valencia  villarreal     0.9436439 valencia
-7230:   Spain         2024 valencia  villarreal     1.1091230 valencia
+7229:   Spain         2023 valencia  villarreal     0.9398531 valencia
+7230:   Spain         2024 valencia  villarreal     1.1040717 valencia
                tB rivalry_smooth
            &lt;char&gt;          &lt;num&gt;
    1: aston villa             NA
@@ -800,11 +794,11 @@ The following object is masked from 'package:future':
    4: aston villa             NA
    5: aston villa             NA
   ---                           
-7226:  villarreal      0.7384199
-7227:  villarreal      0.7981104
-7228:  villarreal      0.8438864
-7229:  villarreal      0.8688258
-7230:  villarreal      0.9289001</code></pre>
+7226:  villarreal      0.7422452
+7227:  villarreal      0.8009794
+7228:  villarreal      0.8460382
+7229:  villarreal      0.8694919
+7230:  villarreal      0.9281368</code></pre>
 </div>
 </div>
 </section>
@@ -861,19 +855,19 @@ The following object is masked from 'package:future':
 <span id="cb43-48"><a href="#cb43-48" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(rival_continuous, <span class="st">"data/rivalry_continuous.csv"</span>)</span>
 <span id="cb43-49"><a href="#cb43-49" aria-hidden="true" tabindex="-1"></a>rival_continuous[<span class="fu">order</span>(rivalry_proximity, <span class="at">decreasing =</span> <span class="cn">TRUE</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>      country season_start        team_a         team_b rivalry_proximity
-       &lt;char&gt;        &lt;int&gt;        &lt;char&gt;         &lt;char&gt;             &lt;num&gt;
-   1: England         2017   bournemouth crystal palace         0.9947368
-   2: England         2018   bournemouth crystal palace         0.9947368
-   3: England         2022   bournemouth  nott'm forest         0.9947368
-   4: England         2023   bournemouth  nott'm forest         0.9947368
-   5: England         2024   bournemouth  nott'm forest         0.9947368
-  ---                                                                    
-7226: England         2017      man city     stoke city         0.0000000
-7227:  France         2017        monaco         troyes         0.0000000
-7228: Germany         2017 bayern munich      wolfsburg         0.0000000
-7229:   Italy         2017     benevento       juventus         0.0000000
-7230:   Spain         2017     barcelona  ud las palmas         0.0000000</code></pre>
+<pre><code>      country season_start      team_a         team_b rivalry_proximity
+       &lt;char&gt;        &lt;int&gt;      &lt;char&gt;         &lt;char&gt;             &lt;num&gt;
+   1: England         2017 bournemouth crystal palace       0.994736842
+   2: England         2018 bournemouth crystal palace       0.994736842
+   3: England         2022 bournemouth  nott'm forest       0.994736842
+   4: England         2023 bournemouth  nott'm forest       0.994736842
+   5: England         2024 bournemouth  nott'm forest       0.994736842
+  ---                                                                  
+7226: England         2017     chelsea     stoke city       0.021052632
+7227: England         2017     man utd     stoke city       0.015789474
+7228: England         2017   liverpool     stoke city       0.010526316
+7229: England         2017  stoke city      tottenham       0.005263158
+7230: England         2017    man city     stoke city       0.000000000</code></pre>
 </div>
 </div>
 </section>
@@ -3362,8 +3356,10 @@ The following object is masked from 'package:future':
 <span id="cb796-5"><a href="#cb796-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb796-6"><a href="#cb796-6" aria-hidden="true" tabindex="-1"></a>top5_league_transfers <span class="ot">&lt;-</span> <span class="fu">filter</span>(transfers,</span>
 <span id="cb796-7"><a href="#cb796-7" aria-hidden="true" tabindex="-1"></a>       league <span class="sc">%in%</span> top5_leagues,</span>
-<span id="cb796-8"><a href="#cb796-8" aria-hidden="true" tabindex="-1"></a>       transfer_type <span class="sc">==</span> <span class="st">"Arrivals"</span>)</span>
-<span id="cb796-9"><a href="#cb796-9" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(top5_league_transfers, <span class="st">"data/top5_league_transfers.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb796-8"><a href="#cb796-8" aria-hidden="true" tabindex="-1"></a>       <span class="co">#league_2 %in% top5_leagues,</span></span>
+<span id="cb796-9"><a href="#cb796-9" aria-hidden="true" tabindex="-1"></a>       <span class="co">#is_loan == FALSE,</span></span>
+<span id="cb796-10"><a href="#cb796-10" aria-hidden="true" tabindex="-1"></a>       transfer_type <span class="sc">==</span> <span class="st">"Arrivals"</span>)</span>
+<span id="cb796-11"><a href="#cb796-11" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(top5_league_transfers, <span class="st">"data/top5_league_transfers.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="mapping" class="level3">
@@ -3394,49 +3390,50 @@ The following object is masked from 'package:future':
 <span id="cb797-22"><a href="#cb797-22" aria-hidden="true" tabindex="-1"></a>xf[, seller_raw <span class="sc">:</span><span class="er">=</span> <span class="fu">tolower</span>(<span class="fu">str_squish</span>(club_2))]</span>
 <span id="cb797-23"><a href="#cb797-23" aria-hidden="true" tabindex="-1"></a>xf[, country    <span class="sc">:</span><span class="er">=</span> <span class="fu">as.character</span>(country)]</span>
 <span id="cb797-24"><a href="#cb797-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb797-25"><a href="#cb797-25" aria-hidden="true" tabindex="-1"></a>raw_teams <span class="ot">&lt;-</span> <span class="fu">unique</span>(<span class="fu">rbind</span>(</span>
-<span id="cb797-26"><a href="#cb797-26" aria-hidden="true" tabindex="-1"></a>  xf[, .(country, <span class="at">raw =</span> buyer_raw)]</span>
-<span id="cb797-27"><a href="#cb797-27" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb797-28"><a href="#cb797-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb797-29"><a href="#cb797-29" aria-hidden="true" tabindex="-1"></a>valid_canon <span class="ot">&lt;-</span> canon_teams[, .(country, team_clean)]</span>
-<span id="cb797-30"><a href="#cb797-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb797-31"><a href="#cb797-31" aria-hidden="true" tabindex="-1"></a>raw_teams <span class="ot">&lt;-</span> raw_teams[</span>
-<span id="cb797-32"><a href="#cb797-32" aria-hidden="true" tabindex="-1"></a>  country <span class="sc">%in%</span> valid_canon<span class="sc">$</span>country</span>
-<span id="cb797-33"><a href="#cb797-33" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb797-34"><a href="#cb797-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb797-35"><a href="#cb797-35" aria-hidden="true" tabindex="-1"></a>normalize <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb797-36"><a href="#cb797-36" aria-hidden="true" tabindex="-1"></a>  x <span class="sc">|&gt;</span></span>
-<span id="cb797-37"><a href="#cb797-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tolower</span>() <span class="sc">|&gt;</span></span>
-<span id="cb797-38"><a href="#cb797-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_replace_all</span>(<span class="st">"&amp;"</span>, <span class="st">"and"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb797-39"><a href="#cb797-39" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_replace_all</span>(<span class="st">"[^a-z ]"</span>, <span class="st">""</span>) <span class="sc">|&gt;</span></span>
-<span id="cb797-40"><a href="#cb797-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_squish</span>()</span>
-<span id="cb797-41"><a href="#cb797-41" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb797-42"><a href="#cb797-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb797-43"><a href="#cb797-43" aria-hidden="true" tabindex="-1"></a>valid_canon[, team_norm <span class="sc">:</span><span class="er">=</span> <span class="fu">normalize</span>(team_clean)]</span>
-<span id="cb797-44"><a href="#cb797-44" aria-hidden="true" tabindex="-1"></a>raw_teams[, raw_norm <span class="sc">:</span><span class="er">=</span> <span class="fu">normalize</span>(raw)]</span>
-<span id="cb797-45"><a href="#cb797-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb797-25"><a href="#cb797-25" aria-hidden="true" tabindex="-1"></a>raw_teams <span class="ot">&lt;-</span> <span class="fu">unique</span>(<span class="fu">rbindlist</span>(<span class="fu">list</span>(</span>
+<span id="cb797-26"><a href="#cb797-26" aria-hidden="true" tabindex="-1"></a>  xf[, .(<span class="at">country =</span> country, <span class="at">raw =</span> buyer_raw)],</span>
+<span id="cb797-27"><a href="#cb797-27" aria-hidden="true" tabindex="-1"></a>  xf[, .(<span class="at">country =</span> country_2, <span class="at">raw =</span> seller_raw)]</span>
+<span id="cb797-28"><a href="#cb797-28" aria-hidden="true" tabindex="-1"></a>)))</span>
+<span id="cb797-29"><a href="#cb797-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb797-30"><a href="#cb797-30" aria-hidden="true" tabindex="-1"></a>valid_canon <span class="ot">&lt;-</span> canon_teams[, .(country, team_clean)]</span>
+<span id="cb797-31"><a href="#cb797-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb797-32"><a href="#cb797-32" aria-hidden="true" tabindex="-1"></a>raw_teams <span class="ot">&lt;-</span> raw_teams[</span>
+<span id="cb797-33"><a href="#cb797-33" aria-hidden="true" tabindex="-1"></a>  country <span class="sc">%in%</span> valid_canon<span class="sc">$</span>country</span>
+<span id="cb797-34"><a href="#cb797-34" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb797-35"><a href="#cb797-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb797-36"><a href="#cb797-36" aria-hidden="true" tabindex="-1"></a>normalize <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb797-37"><a href="#cb797-37" aria-hidden="true" tabindex="-1"></a>  x <span class="sc">|&gt;</span></span>
+<span id="cb797-38"><a href="#cb797-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tolower</span>() <span class="sc">|&gt;</span></span>
+<span id="cb797-39"><a href="#cb797-39" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_replace_all</span>(<span class="st">"&amp;"</span>, <span class="st">"and"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb797-40"><a href="#cb797-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_replace_all</span>(<span class="st">"[^a-z ]"</span>, <span class="st">""</span>) <span class="sc">|&gt;</span></span>
+<span id="cb797-41"><a href="#cb797-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_squish</span>()</span>
+<span id="cb797-42"><a href="#cb797-42" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb797-43"><a href="#cb797-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb797-44"><a href="#cb797-44" aria-hidden="true" tabindex="-1"></a>valid_canon[, team_norm <span class="sc">:</span><span class="er">=</span> <span class="fu">normalize</span>(team_clean)]</span>
+<span id="cb797-45"><a href="#cb797-45" aria-hidden="true" tabindex="-1"></a>raw_teams[, raw_norm <span class="sc">:</span><span class="er">=</span> <span class="fu">normalize</span>(raw)]</span>
 <span id="cb797-46"><a href="#cb797-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb797-47"><a href="#cb797-47" aria-hidden="true" tabindex="-1"></a><span class="do">## ===================== 4. FUZZY MATCH (RAW → CANONICAL) ===================== ##</span></span>
-<span id="cb797-48"><a href="#cb797-48" aria-hidden="true" tabindex="-1"></a>team_map <span class="ot">&lt;-</span> <span class="fu">stringdist_inner_join</span>(</span>
-<span id="cb797-49"><a href="#cb797-49" aria-hidden="true" tabindex="-1"></a>  raw_teams,</span>
-<span id="cb797-50"><a href="#cb797-50" aria-hidden="true" tabindex="-1"></a>  valid_canon,</span>
-<span id="cb797-51"><a href="#cb797-51" aria-hidden="true" tabindex="-1"></a>  <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"raw"</span> <span class="ot">=</span> <span class="st">"team_clean"</span>),</span>
-<span id="cb797-52"><a href="#cb797-52" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"jw"</span>,</span>
-<span id="cb797-53"><a href="#cb797-53" aria-hidden="true" tabindex="-1"></a>  <span class="at">max_dist =</span> <span class="fl">0.2</span>,</span>
-<span id="cb797-54"><a href="#cb797-54" aria-hidden="true" tabindex="-1"></a>  <span class="at">distance_col =</span> <span class="st">"dist"</span></span>
-<span id="cb797-55"><a href="#cb797-55" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb797-56"><a href="#cb797-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb797-57"><a href="#cb797-57" aria-hidden="true" tabindex="-1"></a><span class="co"># IMPORTANT: force data.table</span></span>
-<span id="cb797-58"><a href="#cb797-58" aria-hidden="true" tabindex="-1"></a><span class="fu">setDT</span>(team_map)</span>
-<span id="cb797-59"><a href="#cb797-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb797-60"><a href="#cb797-60" aria-hidden="true" tabindex="-1"></a><span class="do">## ===================== 5. FIX country.x / country.y ===================== ##</span></span>
-<span id="cb797-61"><a href="#cb797-61" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep only same-country matches</span></span>
-<span id="cb797-62"><a href="#cb797-62" aria-hidden="true" tabindex="-1"></a>team_map <span class="ot">&lt;-</span> team_map[country.x <span class="sc">==</span> country.y]</span>
-<span id="cb797-63"><a href="#cb797-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb797-64"><a href="#cb797-64" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean column names</span></span>
-<span id="cb797-65"><a href="#cb797-65" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(team_map, <span class="st">"country.x"</span>, <span class="st">"country"</span>)</span>
-<span id="cb797-66"><a href="#cb797-66" aria-hidden="true" tabindex="-1"></a>team_map[, country.y <span class="sc">:</span><span class="er">=</span> <span class="cn">NULL</span>]</span>
-<span id="cb797-67"><a href="#cb797-67" aria-hidden="true" tabindex="-1"></a>team_map[, country.dist <span class="sc">:</span><span class="er">=</span> <span class="cn">NULL</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb797-47"><a href="#cb797-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb797-48"><a href="#cb797-48" aria-hidden="true" tabindex="-1"></a><span class="do">## ===================== 4. FUZZY MATCH (RAW → CANONICAL) ===================== ##</span></span>
+<span id="cb797-49"><a href="#cb797-49" aria-hidden="true" tabindex="-1"></a>team_map <span class="ot">&lt;-</span> <span class="fu">stringdist_inner_join</span>(</span>
+<span id="cb797-50"><a href="#cb797-50" aria-hidden="true" tabindex="-1"></a>  raw_teams,</span>
+<span id="cb797-51"><a href="#cb797-51" aria-hidden="true" tabindex="-1"></a>  valid_canon,</span>
+<span id="cb797-52"><a href="#cb797-52" aria-hidden="true" tabindex="-1"></a>  <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"raw"</span> <span class="ot">=</span> <span class="st">"team_clean"</span>),</span>
+<span id="cb797-53"><a href="#cb797-53" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"jw"</span>,</span>
+<span id="cb797-54"><a href="#cb797-54" aria-hidden="true" tabindex="-1"></a>  <span class="at">max_dist =</span> <span class="fl">0.2</span>,</span>
+<span id="cb797-55"><a href="#cb797-55" aria-hidden="true" tabindex="-1"></a>  <span class="at">distance_col =</span> <span class="st">"dist"</span></span>
+<span id="cb797-56"><a href="#cb797-56" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb797-57"><a href="#cb797-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb797-58"><a href="#cb797-58" aria-hidden="true" tabindex="-1"></a><span class="co"># IMPORTANT: force data.table</span></span>
+<span id="cb797-59"><a href="#cb797-59" aria-hidden="true" tabindex="-1"></a><span class="fu">setDT</span>(team_map)</span>
+<span id="cb797-60"><a href="#cb797-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb797-61"><a href="#cb797-61" aria-hidden="true" tabindex="-1"></a><span class="do">## ===================== 5. FIX country.x / country.y ===================== ##</span></span>
+<span id="cb797-62"><a href="#cb797-62" aria-hidden="true" tabindex="-1"></a><span class="co"># Keep only same-country matches</span></span>
+<span id="cb797-63"><a href="#cb797-63" aria-hidden="true" tabindex="-1"></a>team_map <span class="ot">&lt;-</span> team_map[country.x <span class="sc">==</span> country.y]</span>
+<span id="cb797-64"><a href="#cb797-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb797-65"><a href="#cb797-65" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean column names</span></span>
+<span id="cb797-66"><a href="#cb797-66" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(team_map, <span class="st">"country.x"</span>, <span class="st">"country"</span>)</span>
+<span id="cb797-67"><a href="#cb797-67" aria-hidden="true" tabindex="-1"></a>team_map[, country.y <span class="sc">:</span><span class="er">=</span> <span class="cn">NULL</span>]</span>
+<span id="cb797-68"><a href="#cb797-68" aria-hidden="true" tabindex="-1"></a>team_map[, country.dist <span class="sc">:</span><span class="er">=</span> <span class="cn">NULL</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning in `[.data.table`(team_map, , `:=`(country.dist, NULL)): Tried to
 assign NULL to column 'country.dist', but this column does not exist to remove</code></pre>
@@ -3450,6 +3447,7 @@ NULL to column 'raw.dist', but this column does not exist to remove</code></pre>
 <span id="cb801-2"><a href="#cb801-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setorder</span>(team_map, country, raw, dist)</span>
 <span id="cb801-3"><a href="#cb801-3" aria-hidden="true" tabindex="-1"></a>team_map <span class="ot">&lt;-</span> team_map[, .SD[<span class="dv">1</span>], by <span class="ot">=</span> .(country, raw)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>We have a very niche problem with selling club’s country. unlike a buyer’s country that points to the league the country belongs to, seller’s country points to the country where the club actually is (Ex: Monaco is not in France, but in the French league). So, when we match based on country, we get NA for seller_clean. After verifying the data, missing values come from such cases. So, we simply use seller_raw’s name in seller_clean. The data in seller_raw for these clubs are simplified and don’t cause matching issues. So, we can directly copy the name.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb802"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb802-1"><a href="#cb802-1" aria-hidden="true" tabindex="-1"></a>riv <span class="ot">&lt;-</span> <span class="fu">fread</span>(rivals_path)   <span class="co"># rivalry_continuous.csv</span></span>
 <span id="cb802-2"><a href="#cb802-2" aria-hidden="true" tabindex="-1"></a>manual_map <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">"data/unmatched_transfer_teams.csv"</span>)</span>
@@ -3482,71 +3480,95 @@ NULL to column 'raw.dist', but this column does not exist to remove</code></pre>
 <span id="cb802-29"><a href="#cb802-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">all.x =</span> <span class="cn">TRUE</span></span>
 <span id="cb802-30"><a href="#cb802-30" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb802-31"><a href="#cb802-31" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(xf, <span class="st">"team_clean"</span>, <span class="st">"buyer_clean"</span>)</span>
-<span id="cb802-32"><a href="#cb802-32" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(xf, <span class="st">"seller_raw"</span>, <span class="st">"seller_clean"</span>)</span>
-<span id="cb802-33"><a href="#cb802-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-34"><a href="#cb802-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove duplicate columns from merges</span></span>
-<span id="cb802-35"><a href="#cb802-35" aria-hidden="true" tabindex="-1"></a>xf <span class="ot">&lt;-</span> xf[, <span class="sc">!</span><span class="fu">duplicated</span>(<span class="fu">names</span>(xf), <span class="at">fromLast =</span> <span class="cn">TRUE</span>), with <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
-<span id="cb802-36"><a href="#cb802-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-37"><a href="#cb802-37" aria-hidden="true" tabindex="-1"></a><span class="co"># ===================== 3. MAKE TRANSFER PAIRS UNDIRECTED ===================== #</span></span>
-<span id="cb802-38"><a href="#cb802-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-39"><a href="#cb802-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Create ordered pair to match rivalry file</span></span>
-<span id="cb802-40"><a href="#cb802-40" aria-hidden="true" tabindex="-1"></a>xf[, team_low  <span class="sc">:</span><span class="er">=</span> <span class="fu">pmin</span>(buyer_clean, seller_clean)]</span>
-<span id="cb802-41"><a href="#cb802-41" aria-hidden="true" tabindex="-1"></a>xf[, team_high <span class="sc">:</span><span class="er">=</span> <span class="fu">pmax</span>(buyer_clean, seller_clean)]</span>
+<span id="cb802-32"><a href="#cb802-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb802-33"><a href="#cb802-33" aria-hidden="true" tabindex="-1"></a>xf <span class="ot">&lt;-</span> <span class="fu">merge</span>(</span>
+<span id="cb802-34"><a href="#cb802-34" aria-hidden="true" tabindex="-1"></a>  xf,</span>
+<span id="cb802-35"><a href="#cb802-35" aria-hidden="true" tabindex="-1"></a>  team_map_final,</span>
+<span id="cb802-36"><a href="#cb802-36" aria-hidden="true" tabindex="-1"></a>  <span class="at">by.x =</span> <span class="fu">c</span>(<span class="st">"country_2"</span>, <span class="st">"seller_raw"</span>),</span>
+<span id="cb802-37"><a href="#cb802-37" aria-hidden="true" tabindex="-1"></a>  <span class="at">by.y =</span> <span class="fu">c</span>(<span class="st">"country"</span>, <span class="st">"raw"</span>),</span>
+<span id="cb802-38"><a href="#cb802-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">all.x =</span> <span class="cn">TRUE</span></span>
+<span id="cb802-39"><a href="#cb802-39" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb802-40"><a href="#cb802-40" aria-hidden="true" tabindex="-1"></a><span class="fu">setnames</span>(xf, <span class="st">"team_clean"</span>, <span class="st">"seller_clean"</span>)</span>
+<span id="cb802-41"><a href="#cb802-41" aria-hidden="true" tabindex="-1"></a>xf[<span class="fu">is.na</span>(seller_clean), seller_clean <span class="sc">:</span><span class="er">=</span> seller_raw]</span>
 <span id="cb802-42"><a href="#cb802-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-43"><a href="#cb802-43" aria-hidden="true" tabindex="-1"></a><span class="co"># ===================== 4. MERGE CONTINUOUS RIVALRY ===================== #</span></span>
+<span id="cb802-43"><a href="#cb802-43" aria-hidden="true" tabindex="-1"></a><span class="co">#setnames(xf, "seller_raw", "seller_clean")</span></span>
 <span id="cb802-44"><a href="#cb802-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-45"><a href="#cb802-45" aria-hidden="true" tabindex="-1"></a>xf <span class="ot">&lt;-</span> <span class="fu">merge</span>(</span>
-<span id="cb802-46"><a href="#cb802-46" aria-hidden="true" tabindex="-1"></a>  xf,</span>
-<span id="cb802-47"><a href="#cb802-47" aria-hidden="true" tabindex="-1"></a>  riv_unique,</span>
-<span id="cb802-48"><a href="#cb802-48" aria-hidden="true" tabindex="-1"></a>  <span class="at">by.x =</span> <span class="fu">c</span>(<span class="st">"country"</span>, <span class="st">"season"</span>, <span class="st">"team_low"</span>, <span class="st">"team_high"</span>),</span>
-<span id="cb802-49"><a href="#cb802-49" aria-hidden="true" tabindex="-1"></a>  <span class="at">by.y =</span> <span class="fu">c</span>(<span class="st">"country"</span>, <span class="st">"season"</span>, <span class="st">"team_a_clean"</span>, <span class="st">"team_b_clean"</span>),</span>
-<span id="cb802-50"><a href="#cb802-50" aria-hidden="true" tabindex="-1"></a>  <span class="at">all.x =</span> <span class="cn">TRUE</span></span>
-<span id="cb802-51"><a href="#cb802-51" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb802-52"><a href="#cb802-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-53"><a href="#cb802-53" aria-hidden="true" tabindex="-1"></a><span class="co"># ===================== 5. HANDLE CROSS-LEAGUE TRANSFERS ===================== #</span></span>
-<span id="cb802-54"><a href="#cb802-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-55"><a href="#cb802-55" aria-hidden="true" tabindex="-1"></a><span class="co"># If seller is from a different league (country_2 != country),</span></span>
-<span id="cb802-56"><a href="#cb802-56" aria-hidden="true" tabindex="-1"></a><span class="co"># rivalry should be NA explicitly</span></span>
-<span id="cb802-57"><a href="#cb802-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-58"><a href="#cb802-58" aria-hidden="true" tabindex="-1"></a>xf[country_2 <span class="sc">!=</span> country, rivalry_proximity <span class="sc">:</span><span class="er">=</span> <span class="cn">NA_real_</span>]</span>
-<span id="cb802-59"><a href="#cb802-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-60"><a href="#cb802-60" aria-hidden="true" tabindex="-1"></a><span class="co"># ===================== 6. CLEANUP ===================== #</span></span>
-<span id="cb802-61"><a href="#cb802-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-62"><a href="#cb802-62" aria-hidden="true" tabindex="-1"></a>xf[, <span class="fu">c</span>(<span class="st">"team_low"</span>, <span class="st">"team_high"</span>) <span class="sc">:</span><span class="er">=</span> <span class="cn">NULL</span>]</span>
+<span id="cb802-45"><a href="#cb802-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove duplicate columns from merges</span></span>
+<span id="cb802-46"><a href="#cb802-46" aria-hidden="true" tabindex="-1"></a>xf <span class="ot">&lt;-</span> xf[, <span class="sc">!</span><span class="fu">duplicated</span>(<span class="fu">names</span>(xf), <span class="at">fromLast =</span> <span class="cn">TRUE</span>), with <span class="ot">=</span> <span class="cn">FALSE</span>]</span>
+<span id="cb802-47"><a href="#cb802-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb802-48"><a href="#cb802-48" aria-hidden="true" tabindex="-1"></a><span class="co"># ===================== 3. MAKE TRANSFER PAIRS UNDIRECTED ===================== #</span></span>
+<span id="cb802-49"><a href="#cb802-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb802-50"><a href="#cb802-50" aria-hidden="true" tabindex="-1"></a><span class="co"># Create ordered pair to match rivalry file</span></span>
+<span id="cb802-51"><a href="#cb802-51" aria-hidden="true" tabindex="-1"></a>xf[, team_low  <span class="sc">:</span><span class="er">=</span> <span class="fu">pmin</span>(buyer_clean, seller_clean)]</span>
+<span id="cb802-52"><a href="#cb802-52" aria-hidden="true" tabindex="-1"></a>xf[, team_high <span class="sc">:</span><span class="er">=</span> <span class="fu">pmax</span>(buyer_clean, seller_clean)]</span>
+<span id="cb802-53"><a href="#cb802-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb802-54"><a href="#cb802-54" aria-hidden="true" tabindex="-1"></a><span class="co"># ===================== 4. MERGE CONTINUOUS RIVALRY ===================== #</span></span>
+<span id="cb802-55"><a href="#cb802-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb802-56"><a href="#cb802-56" aria-hidden="true" tabindex="-1"></a>xf <span class="ot">&lt;-</span> <span class="fu">merge</span>(</span>
+<span id="cb802-57"><a href="#cb802-57" aria-hidden="true" tabindex="-1"></a>  xf,</span>
+<span id="cb802-58"><a href="#cb802-58" aria-hidden="true" tabindex="-1"></a>  riv_unique,</span>
+<span id="cb802-59"><a href="#cb802-59" aria-hidden="true" tabindex="-1"></a>  <span class="at">by.x =</span> <span class="fu">c</span>(<span class="st">"country"</span>, <span class="st">"season"</span>, <span class="st">"team_low"</span>, <span class="st">"team_high"</span>),</span>
+<span id="cb802-60"><a href="#cb802-60" aria-hidden="true" tabindex="-1"></a>  <span class="at">by.y =</span> <span class="fu">c</span>(<span class="st">"country"</span>, <span class="st">"season"</span>, <span class="st">"team_a_clean"</span>, <span class="st">"team_b_clean"</span>),</span>
+<span id="cb802-61"><a href="#cb802-61" aria-hidden="true" tabindex="-1"></a>  <span class="at">all.x =</span> <span class="cn">TRUE</span></span>
+<span id="cb802-62"><a href="#cb802-62" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb802-63"><a href="#cb802-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-64"><a href="#cb802-64" aria-hidden="true" tabindex="-1"></a>xf[, pos_clean <span class="sc">:</span><span class="er">=</span> <span class="fu">tolower</span>(<span class="fu">str_squish</span>(player_position))]</span>
+<span id="cb802-64"><a href="#cb802-64" aria-hidden="true" tabindex="-1"></a><span class="co"># ===================== 5. HANDLE CROSS-LEAGUE TRANSFERS ===================== #</span></span>
 <span id="cb802-65"><a href="#cb802-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb802-66"><a href="#cb802-66" aria-hidden="true" tabindex="-1"></a><span class="co"># Save</span></span>
-<span id="cb802-67"><a href="#cb802-67" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(xf, <span class="st">"data/top5_league_transfers_clean.csv"</span>)</span>
-<span id="cb802-68"><a href="#cb802-68" aria-hidden="true" tabindex="-1"></a>xf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb802-66"><a href="#cb802-66" aria-hidden="true" tabindex="-1"></a><span class="co"># If seller is from a different league (country_2 != country),</span></span>
+<span id="cb802-67"><a href="#cb802-67" aria-hidden="true" tabindex="-1"></a><span class="co"># rivalry should be NA explicitly</span></span>
+<span id="cb802-68"><a href="#cb802-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb802-69"><a href="#cb802-69" aria-hidden="true" tabindex="-1"></a>xf[country_2 <span class="sc">!=</span> country, rivalry_proximity <span class="sc">:</span><span class="er">=</span> <span class="cn">NA_real_</span>]</span>
+<span id="cb802-70"><a href="#cb802-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb802-71"><a href="#cb802-71" aria-hidden="true" tabindex="-1"></a><span class="co"># ===================== 6. CLEANUP ===================== #</span></span>
+<span id="cb802-72"><a href="#cb802-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb802-73"><a href="#cb802-73" aria-hidden="true" tabindex="-1"></a>xf[, <span class="fu">c</span>(<span class="st">"team_low"</span>, <span class="st">"team_high"</span>) <span class="sc">:</span><span class="er">=</span> <span class="cn">NULL</span>]</span>
+<span id="cb802-74"><a href="#cb802-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb802-75"><a href="#cb802-75" aria-hidden="true" tabindex="-1"></a>xf[, pos_clean <span class="sc">:</span><span class="er">=</span> <span class="fu">tolower</span>(<span class="fu">str_squish</span>(player_position))]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We now check for mismatched sellers. We only check for mismatches within the top 5 leagues. We check if the team names in the league table and the seller team’s name in transfers match. For other leagues, we don’t have league point or rivalry info. So, they don’t have to match with the league table.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb803"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb803-1"><a href="#cb803-1" aria-hidden="true" tabindex="-1"></a>xf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Key: &lt;country, season&gt;
-      country season               buyer_raw               team_name
-       &lt;char&gt;  &lt;int&gt;                  &lt;char&gt;                  &lt;char&gt;
-   1: England   2018       manchester united       Manchester United
-   2: England   2018        newcastle united        Newcastle United
-   3: England   2018         afc bournemouth         AFC Bournemouth
-   4: England   2018 wolverhampton wanderers Wolverhampton Wanderers
-   5: England   2018         manchester city         Manchester City
+      country season            country_2      seller_raw
+       &lt;char&gt;  &lt;int&gt;               &lt;char&gt;          &lt;char&gt;
+   1: England   2018             Scotland     aberdeen fc
+   2: England   2018              England      accrington
+   3: England   2018              England   afc wimbledon
+   4: England   2018         Saudi Arabia        al-hilal
+   5: England   2018 United Arab Emirates         al-wasl
+  ---                                                    
+9198:   Spain   2024                Spain villarreal cf b
+9199:   Spain   2024                Spain villarreal cf b
+9200:   Spain   2024                Spain villarreal cf b
+9201:   Spain   2024                Spain villarreal cf b
+9202:   Spain   2024                Spain villarreal cf b
+                    buyer_raw               team_name         league
+                       &lt;char&gt;                  &lt;char&gt;         &lt;char&gt;
+   1:       manchester united       Manchester United Premier League
+   2:        newcastle united        Newcastle United Premier League
+   3:         afc bournemouth         AFC Bournemouth Premier League
+   4: wolverhampton wanderers Wolverhampton Wanderers Premier League
+   5:         manchester city         Manchester City Premier League
   ---                                                               
-9198:   Spain   2024           villarreal cf           Villarreal CF
-9199:   Spain   2024           villarreal cf           Villarreal CF
-9200:   Spain   2024           villarreal cf           Villarreal CF
-9201:   Spain   2024           villarreal cf           Villarreal CF
-9202:   Spain   2024           villarreal cf           Villarreal CF
-              league transfer_type     player_name
-              &lt;char&gt;        &lt;char&gt;          &lt;char&gt;
-   1: Premier League      Arrivals    James Wilson
-   2: Premier League      Arrivals    Dan Barlaser
-   3: Premier League      Arrivals  Aaron Ramsdale
-   4: Premier League      Arrivals    Léo Bonatini
-   5: Premier League      Arrivals Anthony Cáceres
-  ---                                             
-9198:         LaLiga      Arrivals  Adrià Altimira
-9199:         LaLiga      Arrivals      Álex Forés
-9200:         LaLiga      Arrivals   Carlos Romero
-9201:         LaLiga      Arrivals  Andrés Ferrari
-9202:         LaLiga      Arrivals   Jorge Pascual
+9198:           villarreal cf           Villarreal CF         LaLiga
+9199:           villarreal cf           Villarreal CF         LaLiga
+9200:           villarreal cf           Villarreal CF         LaLiga
+9201:           villarreal cf           Villarreal CF         LaLiga
+9202:           villarreal cf           Villarreal CF         LaLiga
+      transfer_type     player_name
+             &lt;char&gt;          &lt;char&gt;
+   1:      Arrivals    James Wilson
+   2:      Arrivals    Dan Barlaser
+   3:      Arrivals  Aaron Ramsdale
+   4:      Arrivals    Léo Bonatini
+   5:      Arrivals Anthony Cáceres
+  ---                              
+9198:      Arrivals  Adrià Altimira
+9199:      Arrivals      Álex Forés
+9200:      Arrivals   Carlos Romero
+9201:      Arrivals  Andrés Ferrari
+9202:      Arrivals   Jorge Pascual
                                                                player_url
                                                                    &lt;char&gt;
    1:    https://www.transfermarkt.com/james-wilson/profil/spieler/214104
@@ -3573,32 +3595,32 @@ NULL to column 'raw.dist', but this column does not exist to remove</code></pre>
 9200:          Left-Back         22              Spain Villarreal CF B
 9201:     Centre-Forward         21            Uruguay Villarreal CF B
 9202:     Centre-Forward         21              Spain Villarreal CF B
-                         league_2            country_2 transfer_fee is_loan
-                           &lt;char&gt;               &lt;char&gt;        &lt;num&gt;  &lt;lgcl&gt;
-   1:                 Premiership             Scotland           NA    TRUE
-   2:                  League One              England           NA    TRUE
-   3:                  League One              England           NA    TRUE
-   4:            Saudi Pro League         Saudi Arabia        4e+06   FALSE
-   5:              UAE Pro League United Arab Emirates           NA    TRUE
-  ---                                                                      
-9198: Primera Federación - Gr. II                Spain           NA   FALSE
-9199: Primera Federación - Gr. II                Spain           NA   FALSE
-9200: Primera Federación - Gr. II                Spain           NA   FALSE
-9201: Primera Federación - Gr. II                Spain           NA   FALSE
-9202: Primera Federación - Gr. II                Spain           NA   FALSE
-              transfer_notes window in_squad appearances goals minutes_played
-                      &lt;char&gt; &lt;char&gt;    &lt;int&gt;       &lt;int&gt; &lt;int&gt;          &lt;int&gt;
-   1: End of loan 20/05/2019 Summer        0           0     0              0
-   2: End of loan 31/05/2019 Summer       NA          NA    NA             NA
-   3: End of loan 31/05/2019 Summer        0           0     0              0
-   4:                        Summer       21           9     1            293
-   5: End of loan 30/06/2018 Summer        0           0     0              0
+                         league_2 transfer_fee is_loan         transfer_notes
+                           &lt;char&gt;        &lt;num&gt;  &lt;lgcl&gt;                 &lt;char&gt;
+   1:                 Premiership           NA    TRUE End of loan 20/05/2019
+   2:                  League One           NA    TRUE End of loan 31/05/2019
+   3:                  League One           NA    TRUE End of loan 31/05/2019
+   4:            Saudi Pro League        4e+06   FALSE                       
+   5:              UAE Pro League           NA    TRUE End of loan 30/06/2018
   ---                                                                        
-9198:                      - Summer       NA          NA    NA             NA
-9199:                      - Summer       NA          NA    NA             NA
-9200:                      - Summer       NA          NA    NA             NA
-9201:                      - Summer       NA          NA    NA             NA
-9202:                      - Summer       NA          NA    NA             NA
+9198: Primera Federación - Gr. II           NA   FALSE                      -
+9199: Primera Federación - Gr. II           NA   FALSE                      -
+9200: Primera Federación - Gr. II           NA   FALSE                      -
+9201: Primera Federación - Gr. II           NA   FALSE                      -
+9202: Primera Federación - Gr. II           NA   FALSE                      -
+      window in_squad appearances goals minutes_played
+      &lt;char&gt;    &lt;int&gt;       &lt;int&gt; &lt;int&gt;          &lt;int&gt;
+   1: Summer        0           0     0              0
+   2: Summer       NA          NA    NA             NA
+   3: Summer        0           0     0              0
+   4: Summer       21           9     1            293
+   5: Summer        0           0     0              0
+  ---                                                 
+9198: Summer       NA          NA    NA             NA
+9199: Summer       NA          NA    NA             NA
+9200: Summer       NA          NA    NA             NA
+9201: Summer       NA          NA    NA             NA
+9202: Summer       NA          NA    NA             NA
                                                                                         team_url
                                                                                           &lt;char&gt;
    1:       https://www.transfermarkt.com/manchester-united/startseite/verein/985/saison_id/2018
@@ -3612,19 +3634,19 @@ NULL to column 'raw.dist', but this column does not exist to remove</code></pre>
 9200:          https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050/saison_id/2024
 9201:          https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050/saison_id/2024
 9202:          https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050/saison_id/2024
-      season_start    seller_clean buyer_clean rivalry_proximity
-             &lt;int&gt;          &lt;char&gt;      &lt;char&gt;             &lt;num&gt;
-   1:         2018     aberdeen fc     man utd                NA
-   2:         2018      accrington   newcastle                NA
-   3:         2018   afc wimbledon bournemouth                NA
-   4:         2018        al-hilal      wolves                NA
-   5:         2018         al-wasl    man city                NA
-  ---                                                           
-9198:         2024 villarreal cf b  villarreal                NA
-9199:         2024 villarreal cf b  villarreal                NA
-9200:         2024 villarreal cf b  villarreal                NA
-9201:         2024 villarreal cf b  villarreal                NA
-9202:         2024 villarreal cf b  villarreal                NA
+      season_start buyer_clean  seller_clean rivalry_proximity
+             &lt;int&gt;      &lt;char&gt;        &lt;char&gt;             &lt;num&gt;
+   1:         2018     man utd   aberdeen fc                NA
+   2:         2018   newcastle    accrington                NA
+   3:         2018 bournemouth afc wimbledon                NA
+   4:         2018      wolves      al-hilal                NA
+   5:         2018    man city       al-wasl                NA
+  ---                                                         
+9198:         2024  villarreal    villarreal                NA
+9199:         2024  villarreal    villarreal                NA
+9200:         2024  villarreal    villarreal                NA
+9201:         2024  villarreal    villarreal                NA
+9202:         2024  villarreal    villarreal                NA
                pos_clean
                   &lt;char&gt;
    1:     centre-forward
@@ -3640,27 +3662,103 @@ NULL to column 'raw.dist', but this column does not exist to remove</code></pre>
 9202:     centre-forward</code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb805"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb805-1"><a href="#cb805-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setDT</span>(league_table)</span>
+<span id="cb805-2"><a href="#cb805-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setDT</span>(xf)</span>
+<span id="cb805-3"><a href="#cb805-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb805-4"><a href="#cb805-4" aria-hidden="true" tabindex="-1"></a><span class="do">## ---------- NORMALIZATION FUNCTION ----------</span></span>
+<span id="cb805-5"><a href="#cb805-5" aria-hidden="true" tabindex="-1"></a>normalize <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb805-6"><a href="#cb805-6" aria-hidden="true" tabindex="-1"></a>  x <span class="sc">|&gt;</span></span>
+<span id="cb805-7"><a href="#cb805-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tolower</span>() <span class="sc">|&gt;</span></span>
+<span id="cb805-8"><a href="#cb805-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_replace_all</span>(<span class="st">"&amp;"</span>, <span class="st">"and"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb805-9"><a href="#cb805-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_replace_all</span>(<span class="st">"[^a-z0-9 ]"</span>, <span class="st">""</span>) <span class="sc">|&gt;</span></span>
+<span id="cb805-10"><a href="#cb805-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_squish</span>()</span>
+<span id="cb805-11"><a href="#cb805-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb805-12"><a href="#cb805-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb805-13"><a href="#cb805-13" aria-hidden="true" tabindex="-1"></a><span class="do">## ---------- NORMALIZE TEAM NAMES ----------</span></span>
+<span id="cb805-14"><a href="#cb805-14" aria-hidden="true" tabindex="-1"></a>league_table[, squad_norm <span class="sc">:</span><span class="er">=</span> <span class="fu">normalize</span>(squad)]</span>
+<span id="cb805-15"><a href="#cb805-15" aria-hidden="true" tabindex="-1"></a>xf[, seller_norm <span class="sc">:</span><span class="er">=</span> <span class="fu">normalize</span>(seller_clean)]</span>
+<span id="cb805-16"><a href="#cb805-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb805-17"><a href="#cb805-17" aria-hidden="true" tabindex="-1"></a><span class="do">## ---------- REMOVE DUPLICATES ----------</span></span>
+<span id="cb805-18"><a href="#cb805-18" aria-hidden="true" tabindex="-1"></a>league_teams <span class="ot">&lt;-</span> <span class="fu">unique</span>(</span>
+<span id="cb805-19"><a href="#cb805-19" aria-hidden="true" tabindex="-1"></a>  league_table[, .(league_name, squad, squad_norm)]</span>
+<span id="cb805-20"><a href="#cb805-20" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb805-21"><a href="#cb805-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb805-22"><a href="#cb805-22" aria-hidden="true" tabindex="-1"></a>seller_teams <span class="ot">&lt;-</span> <span class="fu">unique</span>(</span>
+<span id="cb805-23"><a href="#cb805-23" aria-hidden="true" tabindex="-1"></a>  xf[, .(<span class="at">league_name =</span> league_2, seller_clean, seller_norm)]</span>
+<span id="cb805-24"><a href="#cb805-24" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb805-25"><a href="#cb805-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb805-26"><a href="#cb805-26" aria-hidden="true" tabindex="-1"></a><span class="do">## ---------- FIND MISMATCHES ----------</span></span>
+<span id="cb805-27"><a href="#cb805-27" aria-hidden="true" tabindex="-1"></a>mismatches <span class="ot">&lt;-</span> seller_teams[</span>
+<span id="cb805-28"><a href="#cb805-28" aria-hidden="true" tabindex="-1"></a>  <span class="sc">!</span>league_teams,</span>
+<span id="cb805-29"><a href="#cb805-29" aria-hidden="true" tabindex="-1"></a>  on <span class="ot">=</span> .(league_name, <span class="at">seller_norm =</span> squad_norm)</span>
+<span id="cb805-30"><a href="#cb805-30" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb805-31"><a href="#cb805-31" aria-hidden="true" tabindex="-1"></a>mismatches</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                      league_name  seller_clean   seller_norm
+                           &lt;char&gt;        &lt;char&gt;        &lt;char&gt;
+   1:                 Premiership   aberdeen fc   aberdeen fc
+   2:                  League One    accrington    accrington
+   3:                  League One afc wimbledon afc wimbledon
+   4:            Saudi Pro League      al-hilal       alhilal
+   5:              UAE Pro League       al-wasl        alwasl
+  ---                                                        
+1327:                     LaLiga2 racing ferrol racing ferrol
+1328:                 Chance Liga banik ostrava banik ostrava
+1329: Primera Federación - Gr. II    córdoba cf     crdoba cf
+1330:  Segunda Federación - Gr. V        getafe        getafe
+1331: Primera Federación - Gr. II    sevilla fc    sevilla fc</code></pre>
+</div>
+</div>
+<p>In the above data, we can clearly see that none of the mismatched seller teams actually belong to the top 5 leagues. So, we remove this polluted data from transfers.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb807"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb807-1"><a href="#cb807-1" aria-hidden="true" tabindex="-1"></a>xf <span class="ot">&lt;-</span> xf[</span>
+<span id="cb807-2"><a href="#cb807-2" aria-hidden="true" tabindex="-1"></a>  <span class="sc">!</span>mismatches,</span>
+<span id="cb807-3"><a href="#cb807-3" aria-hidden="true" tabindex="-1"></a>  on <span class="ot">=</span> .(<span class="at">league_2 =</span> league_name, seller_norm)</span>
+<span id="cb807-4"><a href="#cb807-4" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Similarly, we check for buyers:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb808"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb808-1"><a href="#cb808-1" aria-hidden="true" tabindex="-1"></a>xf[, buyer_norm <span class="sc">:</span><span class="er">=</span> <span class="fu">normalize</span>(buyer_clean)]</span>
+<span id="cb808-2"><a href="#cb808-2" aria-hidden="true" tabindex="-1"></a>buyer_teams <span class="ot">&lt;-</span> <span class="fu">unique</span>(</span>
+<span id="cb808-3"><a href="#cb808-3" aria-hidden="true" tabindex="-1"></a>  xf[, .(<span class="at">league_name =</span> league, buyer_clean, buyer_norm)]</span>
+<span id="cb808-4"><a href="#cb808-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb808-5"><a href="#cb808-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb808-6"><a href="#cb808-6" aria-hidden="true" tabindex="-1"></a><span class="do">## ---------- FIND MISMATCHES ----------</span></span>
+<span id="cb808-7"><a href="#cb808-7" aria-hidden="true" tabindex="-1"></a>mismatches <span class="ot">&lt;-</span> buyer_teams[</span>
+<span id="cb808-8"><a href="#cb808-8" aria-hidden="true" tabindex="-1"></a>  <span class="sc">!</span>league_teams,</span>
+<span id="cb808-9"><a href="#cb808-9" aria-hidden="true" tabindex="-1"></a>  on <span class="ot">=</span> .(league_name, <span class="at">buyer_norm =</span> squad_norm)</span>
+<span id="cb808-10"><a href="#cb808-10" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb808-11"><a href="#cb808-11" aria-hidden="true" tabindex="-1"></a>mismatches</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Empty data.table (0 rows and 3 cols): league_name,buyer_clean,buyer_norm</code></pre>
+</div>
+</div>
+<p>There are no buyer mismatches.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb810"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb810-1"><a href="#cb810-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(xf, <span class="st">"data/top5_league_transfers_clean.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 </section>
 <section id="conditional-multinomial-choice-model" class="level2">
 <h2 class="anchored" data-anchor-id="conditional-multinomial-choice-model">Conditional Multinomial choice model</h2>
 <ol type="1">
-<li>Choice set: transfers within top 5 leagues (both buyers and sellers are in the top 5 leagues). Seller is also from the same league as the buyer.</li>
+<li>Choice set: transfers within top 5 leagues (both buyers and sellers are in the top 5 leagues). The buyers of the alternatives are also from the same league as the focal buyer. We also ignore loan transfer options.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb804"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb804-1"><a href="#cb804-1" aria-hidden="true" tabindex="-1"></a>transfers <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/top5_league_transfers_clean.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb811"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb811-1"><a href="#cb811-1" aria-hidden="true" tabindex="-1"></a>transfers <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/top5_league_transfers_clean.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Rows: 9202 Columns: 28
+<pre><code>Rows: 3257 Columns: 31
 ── Column specification ────────────────────────────────────────────────────────
 Delimiter: ","
-chr (18): country, buyer_raw, team_name, league, transfer_type, player_name,...
+chr (21): country, country_2, seller_raw, buyer_raw, team_name, league, tran...
 dbl  (9): season, player_age, transfer_fee, in_squad, appearances, goals, mi...
 lgl  (1): is_loan
 
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb806"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb806-1"><a href="#cb806-1" aria-hidden="true" tabindex="-1"></a>rivalry_lookup <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/rivalry_continuous.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb813"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb813-1"><a href="#cb813-1" aria-hidden="true" tabindex="-1"></a>rivalry_lookup <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/rivalry_continuous.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 7230 Columns: 5
 ── Column specification ────────────────────────────────────────────────────────
@@ -3671,231 +3769,635 @@ dbl (2): season_start, rivalry_proximity
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb808"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb808-1"><a href="#cb808-1" aria-hidden="true" tabindex="-1"></a>transfers_1 <span class="ot">&lt;-</span> transfers <span class="sc">%&gt;%</span></span>
-<span id="cb808-2"><a href="#cb808-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
-<span id="cb808-3"><a href="#cb808-3" aria-hidden="true" tabindex="-1"></a>    league_2 <span class="sc">%in%</span> top5_leagues,</span>
-<span id="cb808-4"><a href="#cb808-4" aria-hidden="true" tabindex="-1"></a>    is_loan <span class="sc">==</span> <span class="cn">FALSE</span></span>
-<span id="cb808-5"><a href="#cb808-5" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb808-6"><a href="#cb808-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb808-7"><a href="#cb808-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">transfer_id =</span> <span class="fu">row_number</span>(),</span>
-<span id="cb808-8"><a href="#cb808-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">log_fee =</span> <span class="fu">log</span>(transfer_fee <span class="sc">+</span> <span class="dv">1</span>)</span>
-<span id="cb808-9"><a href="#cb808-9" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb808-10"><a href="#cb808-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb808-11"><a href="#cb808-11" aria-hidden="true" tabindex="-1"></a>band_width <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb808-12"><a href="#cb808-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb808-13"><a href="#cb808-13" aria-hidden="true" tabindex="-1"></a>choice_data_1 <span class="ot">&lt;-</span> transfers_1 <span class="sc">%&gt;%</span></span>
-<span id="cb808-14"><a href="#cb808-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb808-15"><a href="#cb808-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">do</span>({</span>
-<span id="cb808-16"><a href="#cb808-16" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb808-17"><a href="#cb808-17" aria-hidden="true" tabindex="-1"></a>    current <span class="ot">&lt;-</span> .</span>
-<span id="cb808-18"><a href="#cb808-18" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb808-19"><a href="#cb808-19" aria-hidden="true" tabindex="-1"></a>    focal_log_fee  <span class="ot">&lt;-</span> current<span class="sc">$</span>log_fee[[<span class="dv">1</span>]]</span>
-<span id="cb808-20"><a href="#cb808-20" aria-hidden="true" tabindex="-1"></a>    focal_season   <span class="ot">&lt;-</span> current<span class="sc">$</span>season[[<span class="dv">1</span>]]</span>
-<span id="cb808-21"><a href="#cb808-21" aria-hidden="true" tabindex="-1"></a>    focal_pos      <span class="ot">&lt;-</span> current<span class="sc">$</span>pos_clean[[<span class="dv">1</span>]]</span>
-<span id="cb808-22"><a href="#cb808-22" aria-hidden="true" tabindex="-1"></a>    focal_country  <span class="ot">&lt;-</span> current<span class="sc">$</span>country[[<span class="dv">1</span>]]</span>
-<span id="cb808-23"><a href="#cb808-23" aria-hidden="true" tabindex="-1"></a>    focal_id       <span class="ot">&lt;-</span> current<span class="sc">$</span>transfer_id[[<span class="dv">1</span>]]</span>
-<span id="cb808-24"><a href="#cb808-24" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb808-25"><a href="#cb808-25" aria-hidden="true" tabindex="-1"></a>    pool <span class="ot">&lt;-</span> transfers_1 <span class="sc">%&gt;%</span></span>
-<span id="cb808-26"><a href="#cb808-26" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(</span>
-<span id="cb808-27"><a href="#cb808-27" aria-hidden="true" tabindex="-1"></a>        season <span class="sc">==</span> focal_season,</span>
-<span id="cb808-28"><a href="#cb808-28" aria-hidden="true" tabindex="-1"></a>        pos_clean <span class="sc">==</span> focal_pos,</span>
-<span id="cb808-29"><a href="#cb808-29" aria-hidden="true" tabindex="-1"></a>        country_2 <span class="sc">==</span> focal_country,</span>
-<span id="cb808-30"><a href="#cb808-30" aria-hidden="true" tabindex="-1"></a>        transfer_id <span class="sc">!=</span> focal_id,</span>
-<span id="cb808-31"><a href="#cb808-31" aria-hidden="true" tabindex="-1"></a>        <span class="sc">!</span><span class="fu">is.na</span>(log_fee),</span>
-<span id="cb808-32"><a href="#cb808-32" aria-hidden="true" tabindex="-1"></a>        <span class="fu">abs</span>(log_fee <span class="sc">-</span> focal_log_fee) <span class="sc">&lt;=</span> band_width</span>
-<span id="cb808-33"><a href="#cb808-33" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb808-34"><a href="#cb808-34" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb808-35"><a href="#cb808-35" aria-hidden="true" tabindex="-1"></a>    pool <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(pool, current)</span>
-<span id="cb808-36"><a href="#cb808-36" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb808-37"><a href="#cb808-37" aria-hidden="true" tabindex="-1"></a>    pool <span class="sc">%&gt;%</span></span>
-<span id="cb808-38"><a href="#cb808-38" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(</span>
-<span id="cb808-39"><a href="#cb808-39" aria-hidden="true" tabindex="-1"></a>        <span class="at">choice_id =</span> focal_id,</span>
-<span id="cb808-40"><a href="#cb808-40" aria-hidden="true" tabindex="-1"></a>        <span class="at">chosen =</span> <span class="fu">ifelse</span>(transfer_id <span class="sc">==</span> focal_id, <span class="dv">1</span>, <span class="dv">0</span>)</span>
-<span id="cb808-41"><a href="#cb808-41" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb808-42"><a href="#cb808-42" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb808-43"><a href="#cb808-43" aria-hidden="true" tabindex="-1"></a>  }) <span class="sc">%&gt;%</span></span>
-<span id="cb808-44"><a href="#cb808-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
-<span id="cb808-45"><a href="#cb808-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb808-46"><a href="#cb808-46" aria-hidden="true" tabindex="-1"></a>choice_data_1 <span class="ot">&lt;-</span> choice_data_1 <span class="sc">%&gt;%</span></span>
-<span id="cb808-47"><a href="#cb808-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb808-48"><a href="#cb808-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">nat_match =</span> <span class="fu">ifelse</span>(player_nationality <span class="sc">==</span> country, <span class="dv">1</span>, <span class="dv">0</span>),</span>
-<span id="cb808-49"><a href="#cb808-49" aria-hidden="true" tabindex="-1"></a>    <span class="at">rivalry_proximity =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(rivalry_proximity), <span class="dv">0</span>, rivalry_proximity)</span>
-<span id="cb808-50"><a href="#cb808-50" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb815"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb815-1"><a href="#cb815-1" aria-hidden="true" tabindex="-1"></a>transfers_1 <span class="ot">&lt;-</span> transfers <span class="sc">%&gt;%</span></span>
+<span id="cb815-2"><a href="#cb815-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
+<span id="cb815-3"><a href="#cb815-3" aria-hidden="true" tabindex="-1"></a>    league_2 <span class="sc">%in%</span> top5_leagues,</span>
+<span id="cb815-4"><a href="#cb815-4" aria-hidden="true" tabindex="-1"></a>    is_loan <span class="sc">==</span> <span class="cn">FALSE</span></span>
+<span id="cb815-5"><a href="#cb815-5" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb815-6"><a href="#cb815-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb815-7"><a href="#cb815-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">transfer_id =</span> <span class="fu">row_number</span>(),</span>
+<span id="cb815-8"><a href="#cb815-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">log_fee =</span> <span class="fu">log</span>(transfer_fee <span class="sc">+</span> <span class="dv">1</span>)</span>
+<span id="cb815-9"><a href="#cb815-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb815-10"><a href="#cb815-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb815-11"><a href="#cb815-11" aria-hidden="true" tabindex="-1"></a>band_width <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb815-12"><a href="#cb815-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb815-13"><a href="#cb815-13" aria-hidden="true" tabindex="-1"></a>choice_data_1 <span class="ot">&lt;-</span> transfers_1 <span class="sc">%&gt;%</span></span>
+<span id="cb815-14"><a href="#cb815-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb815-15"><a href="#cb815-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">do</span>({</span>
+<span id="cb815-16"><a href="#cb815-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb815-17"><a href="#cb815-17" aria-hidden="true" tabindex="-1"></a>    current <span class="ot">&lt;-</span> .</span>
+<span id="cb815-18"><a href="#cb815-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb815-19"><a href="#cb815-19" aria-hidden="true" tabindex="-1"></a>    focal_log_fee  <span class="ot">&lt;-</span> current<span class="sc">$</span>log_fee[[<span class="dv">1</span>]]</span>
+<span id="cb815-20"><a href="#cb815-20" aria-hidden="true" tabindex="-1"></a>    focal_season   <span class="ot">&lt;-</span> current<span class="sc">$</span>season[[<span class="dv">1</span>]]</span>
+<span id="cb815-21"><a href="#cb815-21" aria-hidden="true" tabindex="-1"></a>    focal_pos      <span class="ot">&lt;-</span> current<span class="sc">$</span>pos_clean[[<span class="dv">1</span>]]</span>
+<span id="cb815-22"><a href="#cb815-22" aria-hidden="true" tabindex="-1"></a>    focal_country  <span class="ot">&lt;-</span> current<span class="sc">$</span>country[[<span class="dv">1</span>]]</span>
+<span id="cb815-23"><a href="#cb815-23" aria-hidden="true" tabindex="-1"></a>    focal_league  <span class="ot">&lt;-</span> current<span class="sc">$</span>league[[<span class="dv">1</span>]]</span>
+<span id="cb815-24"><a href="#cb815-24" aria-hidden="true" tabindex="-1"></a>    focal_id       <span class="ot">&lt;-</span> current<span class="sc">$</span>transfer_id[[<span class="dv">1</span>]]</span>
+<span id="cb815-25"><a href="#cb815-25" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb815-26"><a href="#cb815-26" aria-hidden="true" tabindex="-1"></a>    pool <span class="ot">&lt;-</span> transfers_1 <span class="sc">%&gt;%</span></span>
+<span id="cb815-27"><a href="#cb815-27" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(</span>
+<span id="cb815-28"><a href="#cb815-28" aria-hidden="true" tabindex="-1"></a>        season <span class="sc">==</span> focal_season,</span>
+<span id="cb815-29"><a href="#cb815-29" aria-hidden="true" tabindex="-1"></a>        pos_clean <span class="sc">==</span> focal_pos,</span>
+<span id="cb815-30"><a href="#cb815-30" aria-hidden="true" tabindex="-1"></a>        league <span class="sc">==</span> focal_league,</span>
+<span id="cb815-31"><a href="#cb815-31" aria-hidden="true" tabindex="-1"></a>        transfer_id <span class="sc">!=</span> focal_id,</span>
+<span id="cb815-32"><a href="#cb815-32" aria-hidden="true" tabindex="-1"></a>        <span class="sc">!</span><span class="fu">is.na</span>(log_fee),</span>
+<span id="cb815-33"><a href="#cb815-33" aria-hidden="true" tabindex="-1"></a>        <span class="fu">abs</span>(log_fee <span class="sc">-</span> focal_log_fee) <span class="sc">&lt;=</span> band_width</span>
+<span id="cb815-34"><a href="#cb815-34" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb815-35"><a href="#cb815-35" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb815-36"><a href="#cb815-36" aria-hidden="true" tabindex="-1"></a>    pool <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(pool, current)</span>
+<span id="cb815-37"><a href="#cb815-37" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb815-38"><a href="#cb815-38" aria-hidden="true" tabindex="-1"></a>    pool <span class="sc">%&gt;%</span></span>
+<span id="cb815-39"><a href="#cb815-39" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(</span>
+<span id="cb815-40"><a href="#cb815-40" aria-hidden="true" tabindex="-1"></a>        <span class="at">choice_id =</span> focal_id,</span>
+<span id="cb815-41"><a href="#cb815-41" aria-hidden="true" tabindex="-1"></a>        <span class="at">nat_match =</span> <span class="fu">ifelse</span>(player_nationality <span class="sc">==</span> focal_country, <span class="dv">1</span>, <span class="dv">0</span>),</span>
+<span id="cb815-42"><a href="#cb815-42" aria-hidden="true" tabindex="-1"></a>        <span class="at">chosen =</span> <span class="fu">ifelse</span>(transfer_id <span class="sc">==</span> focal_id, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb815-43"><a href="#cb815-43" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb815-44"><a href="#cb815-44" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb815-45"><a href="#cb815-45" aria-hidden="true" tabindex="-1"></a>  }) <span class="sc">%&gt;%</span></span>
+<span id="cb815-46"><a href="#cb815-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb815-47"><a href="#cb815-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb815-48"><a href="#cb815-48" aria-hidden="true" tabindex="-1"></a>choice_data_1 <span class="ot">&lt;-</span> choice_data_1 <span class="sc">%&gt;%</span></span>
+<span id="cb815-49"><a href="#cb815-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb815-50"><a href="#cb815-50" aria-hidden="true" tabindex="-1"></a>    <span class="at">rivalry_proximity =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(rivalry_proximity), <span class="dv">0</span>, rivalry_proximity)</span>
+<span id="cb815-51"><a href="#cb815-51" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb809"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb809-1"><a href="#cb809-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(choice_data_1,<span class="st">"data/choice_data.csv"</span>)</span>
-<span id="cb809-2"><a href="#cb809-2" aria-hidden="true" tabindex="-1"></a>choice_data_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb816"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb816-1"><a href="#cb816-1" aria-hidden="true" tabindex="-1"></a><span class="co">#remove choice sets where there are no alternatives</span></span>
+<span id="cb816-2"><a href="#cb816-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setDT</span>(choice_data_1)</span>
+<span id="cb816-3"><a href="#cb816-3" aria-hidden="true" tabindex="-1"></a>choice_data_1 <span class="ot">&lt;-</span> choice_data_1[</span>
+<span id="cb816-4"><a href="#cb816-4" aria-hidden="true" tabindex="-1"></a>  choice_id <span class="sc">%in%</span> choice_data_1[, .N, by <span class="ot">=</span> choice_id][N <span class="sc">&gt;</span> <span class="dv">1</span>, choice_id]</span>
+<span id="cb816-5"><a href="#cb816-5" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb816-6"><a href="#cb816-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb816-7"><a href="#cb816-7" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(choice_data_1,<span class="st">"data/choice_data.csv"</span>)</span>
+<span id="cb816-8"><a href="#cb816-8" aria-hidden="true" tabindex="-1"></a>choice_data_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3,955 × 33
-   country season buyer_raw       team_name     league transfer_type player_name
-   &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;           &lt;chr&gt;         &lt;chr&gt;  &lt;chr&gt;         &lt;chr&gt;      
- 1 France    2018 olympique lyon  Olympique Ly… Ligue… Arrivals      Jason Dena…
- 2 Spain     2018 villarreal cf   Villarreal CF LaLiga Arrivals      Ramiro Fun…
- 3 England   2018 arsenal fc      Arsenal FC    Premi… Arrivals      Sokratis   
- 4 England   2018 west ham united West Ham Uni… Premi… Arrivals      Ryan Frede…
- 5 France    2018 losc lille      LOSC Lille    Ligue… Arrivals      Jérémy Pied
- 6 England   2018 arsenal fc      Arsenal FC    Premi… Arrivals      Stephan Li…
- 7 Spain     2018 real madrid     Real Madrid   LaLiga Arrivals      Thibaut Co…
- 8 England   2018 arsenal fc      Arsenal FC    Premi… Arrivals      Bernd Leno 
- 9 England   2018 crystal palace  Crystal Pala… Premi… Arrivals      Cheikhou K…
-10 England   2018 arsenal fc      Arsenal FC    Premi… Arrivals      Lucas Torr…
-# ℹ 3,945 more rows
-# ℹ 26 more variables: player_url &lt;chr&gt;, player_position &lt;chr&gt;,
-#   player_age &lt;dbl&gt;, player_nationality &lt;chr&gt;, club_2 &lt;chr&gt;, league_2 &lt;chr&gt;,
-#   country_2 &lt;chr&gt;, transfer_fee &lt;dbl&gt;, is_loan &lt;lgl&gt;, transfer_notes &lt;chr&gt;,
-#   window &lt;chr&gt;, in_squad &lt;dbl&gt;, appearances &lt;dbl&gt;, goals &lt;dbl&gt;,
-#   minutes_played &lt;dbl&gt;, team_url &lt;chr&gt;, season_start &lt;dbl&gt;,
-#   seller_clean &lt;chr&gt;, buyer_clean &lt;chr&gt;, rivalry_proximity &lt;dbl&gt;, …</code></pre>
+<pre><code>      country season country_2    seller_raw              buyer_raw
+       &lt;char&gt;  &lt;num&gt;    &lt;char&gt;        &lt;char&gt;                 &lt;char&gt;
+   1: England   2018     Spain     barcelona             everton fc
+   2: England   2018   Germany       leipzig brighton &amp; hove albion
+   3: England   2018    France      toulouse        west ham united
+   4: England   2018   Germany      dortmund             arsenal fc
+   5: England   2018   England        fulham        west ham united
+  ---                                                              
+3730:   Spain   2024     Spain     barcelona    real betis balompié
+3731:   Spain   2024   England       man utd          villarreal cf
+3732:   Spain   2024    France      toulouse          villarreal cf
+3733:   Spain   2024     Italy        torino    real betis balompié
+3734:   Spain   2024     Spain ud las palmas          villarreal cf
+                   team_name         league transfer_type       player_name
+                      &lt;char&gt;         &lt;char&gt;        &lt;char&gt;            &lt;char&gt;
+   1:             Everton FC Premier League      Arrivals        Yerry Mina
+   2: Brighton &amp; Hove Albion Premier League      Arrivals          Bernardo
+   3:        West Ham United Premier League      Arrivals         Issa Diop
+   4:             Arsenal FC Premier League      Arrivals          Sokratis
+   5:        West Ham United Premier League      Arrivals   Ryan Fredericks
+  ---                                                                      
+3730:    Real Betis Balompié         LaLiga      Arrivals        Chadi Riad
+3731:          Villarreal CF         LaLiga      Arrivals    Willy Kambwala
+3732:          Villarreal CF         LaLiga      Arrivals       Logan Costa
+3733:    Real Betis Balompié         LaLiga      Arrivals Ricardo Rodríguez
+3734:          Villarreal CF         LaLiga      Arrivals     Sergi Cardona
+                                                                player_url
+                                                                    &lt;char&gt;
+   1:       https://www.transfermarkt.com/yerry-mina/profil/spieler/289446
+   2:         https://www.transfermarkt.com/bernardo/profil/spieler/364258
+   3:        https://www.transfermarkt.com/issa-diop/profil/spieler/272622
+   4:          https://www.transfermarkt.com/sokratis/profil/spieler/34322
+   5:  https://www.transfermarkt.com/ryan-fredericks/profil/spieler/140191
+  ---                                                                     
+3730:       https://www.transfermarkt.com/chadi-riad/profil/spieler/689637
+3731:   https://www.transfermarkt.com/willy-kambwala/profil/spieler/780630
+3732:      https://www.transfermarkt.com/logan-costa/profil/spieler/484988
+3733: https://www.transfermarkt.com/ricardo-rodriguez/profil/spieler/86784
+3734:    https://www.transfermarkt.com/sergi-cardona/profil/spieler/678406
+      player_position player_age player_nationality        club_2
+               &lt;char&gt;      &lt;num&gt;             &lt;char&gt;        &lt;char&gt;
+   1:     Centre-Back         23           Colombia     Barcelona
+   2:     Centre-Back         23             Brazil       Leipzig
+   3:     Centre-Back         21             France      Toulouse
+   4:     Centre-Back         30             Greece      Dortmund
+   5:      Right-Back         25            England        Fulham
+  ---                                                            
+3730:     Centre-Back         21            Morocco     Barcelona
+3731:     Centre-Back         19             France       Man Utd
+3732:     Centre-Back         23         Cape Verde      Toulouse
+3733:       Left-Back         31        Switzerland        Torino
+3734:       Left-Back         25              Spain UD Las Palmas
+            league_2 transfer_fee is_loan transfer_notes window in_squad
+              &lt;char&gt;        &lt;num&gt;  &lt;lgcl&gt;         &lt;char&gt; &lt;char&gt;    &lt;num&gt;
+   1:         LaLiga     30250000   FALSE           &lt;NA&gt; Summer       21
+   2:     Bundesliga     10000000   FALSE           &lt;NA&gt; Summer       39
+   3:        Ligue 1     25000000   FALSE           &lt;NA&gt; Summer       43
+   4:     Bundesliga     16000000   FALSE           &lt;NA&gt; Summer       43
+   5: Premier League            0   FALSE           &lt;NA&gt; Summer       26
+  ---                                                                   
+3730:         LaLiga      9000000   FALSE           &lt;NA&gt; Summer       NA
+3731: Premier League     10000000   FALSE           &lt;NA&gt; Summer       32
+3732:        Ligue 1     18000000   FALSE           &lt;NA&gt; Summer       37
+3733:        Serie A            0   FALSE           &lt;NA&gt; Summer       56
+3734:         LaLiga            0   FALSE           &lt;NA&gt; Summer       38
+      appearances goals minutes_played
+            &lt;num&gt; &lt;num&gt;          &lt;num&gt;
+   1:          15     1           1027
+   2:          27     0           2260
+   3:          38     2           3420
+   4:          40     3           3375
+   5:          18     2           1311
+  ---                                 
+3730:          NA    NA             NA
+3731:          21     0           1281
+3732:          34     2           2721
+3733:          33     0           2427
+3734:          36     1           3000
+                                                                                          team_url
+                                                                                            &lt;char&gt;
+   1:                 https://www.transfermarkt.com/fc-everton/startseite/verein/29/saison_id/2018
+   2: https://www.transfermarkt.com/brighton-amp-hove-albion/startseite/verein/1237/saison_id/2018
+   3:           https://www.transfermarkt.com/west-ham-united/startseite/verein/379/saison_id/2018
+   4:                 https://www.transfermarkt.com/fc-arsenal/startseite/verein/11/saison_id/2018
+   5:           https://www.transfermarkt.com/west-ham-united/startseite/verein/379/saison_id/2018
+  ---                                                                                             
+3730:        https://www.transfermarkt.com/real-betis-sevilla/startseite/verein/150/saison_id/2024
+3731:            https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050/saison_id/2024
+3732:            https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050/saison_id/2024
+3733:        https://www.transfermarkt.com/real-betis-sevilla/startseite/verein/150/saison_id/2024
+3734:            https://www.transfermarkt.com/fc-villarreal/startseite/verein/1050/saison_id/2024
+      season_start buyer_clean  seller_clean rivalry_proximity   pos_clean
+             &lt;num&gt;      &lt;char&gt;        &lt;char&gt;             &lt;num&gt;      &lt;char&gt;
+   1:         2018     everton     barcelona         0.0000000 centre-back
+   2:         2018    brighton       leipzig         0.0000000 centre-back
+   3:         2018    west ham      toulouse         0.0000000 centre-back
+   4:         2018     arsenal      dortmund         0.0000000 centre-back
+   5:         2018    west ham        fulham         0.1315789  right-back
+  ---                                                                     
+3730:         2024  real betis     barcelona         0.4263158 centre-back
+3731:         2024  villarreal       man utd         0.0000000 centre-back
+3732:         2024  villarreal      toulouse         0.0000000 centre-back
+3733:         2024  real betis        torino         0.0000000   left-back
+3734:         2024  villarreal ud las palmas         0.4263158   left-back
+        seller_norm buyer_norm transfer_id  log_fee choice_id nat_match chosen
+             &lt;char&gt;     &lt;char&gt;       &lt;int&gt;    &lt;num&gt;     &lt;int&gt;     &lt;num&gt;  &lt;num&gt;
+   1:     barcelona    everton           9 17.22501         1         0      0
+   2:       leipzig   brighton          15 16.11810         1         0      0
+   3:      toulouse   west ham          42 17.03439         1         0      0
+   4:      dortmund    arsenal           1 16.58810         1         0      1
+   5:        fulham   west ham          33  0.00000         2         1      0
+  ---                                                                         
+3730:     barcelona real betis        1475 16.01274      1498         0      0
+3731:       man utd villarreal        1487 16.11810      1498         0      0
+3732:      toulouse villarreal        1498 16.70588      1498         0      1
+3733:        torino real betis        1495  0.00000      1499         0      0
+3734: ud las palmas villarreal        1499  0.00000      1499         1      1</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb811"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb811-1"><a href="#cb811-1" aria-hidden="true" tabindex="-1"></a>model_1 <span class="ot">&lt;-</span> <span class="fu">clogit</span>(</span>
-<span id="cb811-2"><a href="#cb811-2" aria-hidden="true" tabindex="-1"></a>  chosen <span class="sc">~</span> player_age <span class="sc">+</span></span>
-<span id="cb811-3"><a href="#cb811-3" aria-hidden="true" tabindex="-1"></a>    minutes_played <span class="sc">+</span> nat_match <span class="sc">+</span></span>
-<span id="cb811-4"><a href="#cb811-4" aria-hidden="true" tabindex="-1"></a>    goals <span class="sc">+</span></span>
-<span id="cb811-5"><a href="#cb811-5" aria-hidden="true" tabindex="-1"></a>    log_fee <span class="sc">+</span> </span>
-<span id="cb811-6"><a href="#cb811-6" aria-hidden="true" tabindex="-1"></a>    rivalry_proximity <span class="sc">+</span> </span>
-<span id="cb811-7"><a href="#cb811-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">strata</span>(choice_id),</span>
-<span id="cb811-8"><a href="#cb811-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> choice_data_1</span>
-<span id="cb811-9"><a href="#cb811-9" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb811-10"><a href="#cb811-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb811-11"><a href="#cb811-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb818"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb818-1"><a href="#cb818-1" aria-hidden="true" tabindex="-1"></a>model_1 <span class="ot">&lt;-</span> <span class="fu">clogit</span>(</span>
+<span id="cb818-2"><a href="#cb818-2" aria-hidden="true" tabindex="-1"></a>  chosen <span class="sc">~</span> player_age <span class="sc">+</span></span>
+<span id="cb818-3"><a href="#cb818-3" aria-hidden="true" tabindex="-1"></a>    minutes_played <span class="sc">+</span> </span>
+<span id="cb818-4"><a href="#cb818-4" aria-hidden="true" tabindex="-1"></a>    nat_match <span class="sc">+</span></span>
+<span id="cb818-5"><a href="#cb818-5" aria-hidden="true" tabindex="-1"></a>    goals <span class="sc">+</span></span>
+<span id="cb818-6"><a href="#cb818-6" aria-hidden="true" tabindex="-1"></a>    log_fee <span class="sc">+</span> </span>
+<span id="cb818-7"><a href="#cb818-7" aria-hidden="true" tabindex="-1"></a>    rivalry_proximity <span class="sc">+</span> </span>
+<span id="cb818-8"><a href="#cb818-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">strata</span>(choice_id),</span>
+<span id="cb818-9"><a href="#cb818-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> choice_data_1</span>
+<span id="cb818-10"><a href="#cb818-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb818-11"><a href="#cb818-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb818-12"><a href="#cb818-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Call:
-coxph(formula = Surv(rep(1, 3955L), chosen) ~ player_age + minutes_played + 
+coxph(formula = Surv(rep(1, 3734L), chosen) ~ player_age + minutes_played + 
     nat_match + goals + log_fee + rivalry_proximity + strata(choice_id), 
     data = choice_data_1, method = "exact")
 
-  n= 3787, number of events= 1470 
-   (168 observations deleted due to missingness)
+  n= 3607, number of events= 1052 
+   (127 observations deleted due to missingness)
 
-                        coef  exp(coef)   se(coef)      z Pr(&gt;|z|)  
-player_age        -1.845e-02  9.817e-01  1.189e-02 -1.552   0.1207  
-minutes_played     1.089e-06  1.000e+00  4.428e-05  0.025   0.9804  
-nat_match          4.072e-02  1.042e+00  8.959e-02  0.455   0.6494  
-goals             -6.136e-03  9.939e-01  1.067e-02 -0.575   0.5653  
-log_fee           -3.775e-02  9.629e-01  1.000e-01 -0.377   0.7058  
-rivalry_proximity -3.366e-01  7.142e-01  1.337e-01 -2.518   0.0118 *
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+                        coef  exp(coef)   se(coef)      z Pr(&gt;|z|)
+player_age         6.352e-04  1.001e+00  1.180e-02  0.054    0.957
+minutes_played     3.763e-06  1.000e+00  4.314e-05  0.087    0.930
+nat_match         -3.531e-03  9.965e-01  9.142e-02 -0.039    0.969
+goals             -1.598e-03  9.984e-01  1.075e-02 -0.149    0.882
+log_fee            2.542e-03  1.003e+00  9.987e-02  0.025    0.980
+rivalry_proximity  8.773e-03  1.009e+00  1.377e-01  0.064    0.949
 
                   exp(coef) exp(-coef) lower .95 upper .95
-player_age           0.9817     1.0186    0.9591    1.0049
-minutes_played       1.0000     1.0000    0.9999    1.0001
-nat_match            1.0416     0.9601    0.8738    1.2415
-goals                0.9939     1.0062    0.9733    1.0149
-log_fee              0.9629     1.0385    0.7915    1.1715
-rivalry_proximity    0.7142     1.4002    0.5495    0.9281
+player_age           1.0006     0.9994    0.9778     1.024
+minutes_played       1.0000     1.0000    0.9999     1.000
+nat_match            0.9965     1.0035    0.8330     1.192
+goals                0.9984     1.0016    0.9776     1.020
+log_fee              1.0025     0.9975    0.8243     1.219
+rivalry_proximity    1.0088     0.9913    0.7702     1.321
 
-Concordance= 0.539  (se = 0.017 )
-Likelihood ratio test= 9.64  on 6 df,   p=0.1
-Wald test            = 9.5  on 6 df,   p=0.1
-Score (logrank) test = 9.56  on 6 df,   p=0.1</code></pre>
+Concordance= 0.5  (se = 0.017 )
+Likelihood ratio test= 0.03  on 6 df,   p=1
+Wald test            = 0.03  on 6 df,   p=1
+Score (logrank) test = 0.03  on 6 df,   p=1</code></pre>
 </div>
 </div>
 <ol start="2" type="1">
 <li>All arrivals to top 5 leagues (including loans). The Seller can be from any league. We also choose the top 10 alternatives for each transfer.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb813"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb813-1"><a href="#cb813-1" aria-hidden="true" tabindex="-1"></a>transfers <span class="ot">&lt;-</span> transfers <span class="sc">%&gt;%</span></span>
-<span id="cb813-2"><a href="#cb813-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb813-3"><a href="#cb813-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">transfer_id =</span> <span class="fu">row_number</span>(),</span>
-<span id="cb813-4"><a href="#cb813-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">log_fee =</span> <span class="fu">log</span>(transfer_fee <span class="sc">+</span> <span class="dv">1</span>)</span>
-<span id="cb813-5"><a href="#cb813-5" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb813-6"><a href="#cb813-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb813-7"><a href="#cb813-7" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
-<span id="cb813-8"><a href="#cb813-8" aria-hidden="true" tabindex="-1"></a>band_width <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb813-9"><a href="#cb813-9" aria-hidden="true" tabindex="-1"></a>K <span class="ot">&lt;-</span> <span class="dv">10</span></span>
-<span id="cb813-10"><a href="#cb813-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb813-11"><a href="#cb813-11" aria-hidden="true" tabindex="-1"></a>choice_data_2 <span class="ot">&lt;-</span> transfers <span class="sc">%&gt;%</span></span>
-<span id="cb813-12"><a href="#cb813-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb813-13"><a href="#cb813-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">do</span>({</span>
-<span id="cb813-14"><a href="#cb813-14" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb813-15"><a href="#cb813-15" aria-hidden="true" tabindex="-1"></a>    current <span class="ot">&lt;-</span> .</span>
-<span id="cb813-16"><a href="#cb813-16" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb813-17"><a href="#cb813-17" aria-hidden="true" tabindex="-1"></a>    focal_log_fee  <span class="ot">&lt;-</span> current<span class="sc">$</span>log_fee[[<span class="dv">1</span>]]</span>
-<span id="cb813-18"><a href="#cb813-18" aria-hidden="true" tabindex="-1"></a>    focal_season   <span class="ot">&lt;-</span> current<span class="sc">$</span>season[[<span class="dv">1</span>]]</span>
-<span id="cb813-19"><a href="#cb813-19" aria-hidden="true" tabindex="-1"></a>    focal_pos      <span class="ot">&lt;-</span> current<span class="sc">$</span>pos_clean[[<span class="dv">1</span>]]</span>
-<span id="cb813-20"><a href="#cb813-20" aria-hidden="true" tabindex="-1"></a>    focal_id       <span class="ot">&lt;-</span> current<span class="sc">$</span>transfer_id[[<span class="dv">1</span>]]</span>
-<span id="cb813-21"><a href="#cb813-21" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb813-22"><a href="#cb813-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Candidate alternatives</span></span>
-<span id="cb813-23"><a href="#cb813-23" aria-hidden="true" tabindex="-1"></a>    pool_all <span class="ot">&lt;-</span> transfers <span class="sc">%&gt;%</span></span>
-<span id="cb813-24"><a href="#cb813-24" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(</span>
-<span id="cb813-25"><a href="#cb813-25" aria-hidden="true" tabindex="-1"></a>        season <span class="sc">==</span> focal_season,</span>
-<span id="cb813-26"><a href="#cb813-26" aria-hidden="true" tabindex="-1"></a>        pos_clean <span class="sc">==</span> focal_pos,</span>
-<span id="cb813-27"><a href="#cb813-27" aria-hidden="true" tabindex="-1"></a>        transfer_id <span class="sc">!=</span> focal_id,</span>
-<span id="cb813-28"><a href="#cb813-28" aria-hidden="true" tabindex="-1"></a>        <span class="sc">!</span><span class="fu">is.na</span>(log_fee),</span>
-<span id="cb813-29"><a href="#cb813-29" aria-hidden="true" tabindex="-1"></a>        <span class="fu">abs</span>(log_fee <span class="sc">-</span> focal_log_fee) <span class="sc">&lt;=</span> band_width</span>
-<span id="cb813-30"><a href="#cb813-30" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb813-31"><a href="#cb813-31" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb813-32"><a href="#cb813-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Randomly sample up to K alternatives</span></span>
-<span id="cb813-33"><a href="#cb813-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">nrow</span>(pool_all) <span class="sc">&gt;</span> K) {</span>
-<span id="cb813-34"><a href="#cb813-34" aria-hidden="true" tabindex="-1"></a>      pool_sample <span class="ot">&lt;-</span> pool_all <span class="sc">%&gt;%</span> <span class="fu">slice_sample</span>(<span class="at">n =</span> K)</span>
-<span id="cb813-35"><a href="#cb813-35" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb813-36"><a href="#cb813-36" aria-hidden="true" tabindex="-1"></a>      pool_sample <span class="ot">&lt;-</span> pool_all</span>
-<span id="cb813-37"><a href="#cb813-37" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb813-38"><a href="#cb813-38" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb813-39"><a href="#cb813-39" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add chosen transfer back</span></span>
-<span id="cb813-40"><a href="#cb813-40" aria-hidden="true" tabindex="-1"></a>    pool <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(pool_sample, current)</span>
-<span id="cb813-41"><a href="#cb813-41" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb813-42"><a href="#cb813-42" aria-hidden="true" tabindex="-1"></a>    pool <span class="sc">%&gt;%</span></span>
-<span id="cb813-43"><a href="#cb813-43" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(</span>
-<span id="cb813-44"><a href="#cb813-44" aria-hidden="true" tabindex="-1"></a>        <span class="at">choice_id =</span> focal_id,</span>
-<span id="cb813-45"><a href="#cb813-45" aria-hidden="true" tabindex="-1"></a>        <span class="at">chosen =</span> <span class="fu">ifelse</span>(transfer_id <span class="sc">==</span> focal_id, <span class="dv">1</span>, <span class="dv">0</span>)</span>
-<span id="cb813-46"><a href="#cb813-46" aria-hidden="true" tabindex="-1"></a>      )</span>
-<span id="cb813-47"><a href="#cb813-47" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb813-48"><a href="#cb813-48" aria-hidden="true" tabindex="-1"></a>  }) <span class="sc">%&gt;%</span></span>
-<span id="cb813-49"><a href="#cb813-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
-<span id="cb813-50"><a href="#cb813-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb813-51"><a href="#cb813-51" aria-hidden="true" tabindex="-1"></a>choice_data_2 <span class="ot">&lt;-</span> choice_data_2 <span class="sc">%&gt;%</span></span>
-<span id="cb813-52"><a href="#cb813-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb813-53"><a href="#cb813-53" aria-hidden="true" tabindex="-1"></a>    <span class="at">nat_match =</span> <span class="fu">ifelse</span>(player_nationality <span class="sc">==</span> country, <span class="dv">1</span>, <span class="dv">0</span>),</span>
-<span id="cb813-54"><a href="#cb813-54" aria-hidden="true" tabindex="-1"></a>    <span class="at">rivalry_proximity =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(rivalry_proximity), <span class="dv">0</span>, rivalry_proximity)</span>
-<span id="cb813-55"><a href="#cb813-55" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb820"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb820-1"><a href="#cb820-1" aria-hidden="true" tabindex="-1"></a>transfers <span class="ot">&lt;-</span> transfers <span class="sc">%&gt;%</span></span>
+<span id="cb820-2"><a href="#cb820-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb820-3"><a href="#cb820-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">transfer_id =</span> <span class="fu">row_number</span>(),</span>
+<span id="cb820-4"><a href="#cb820-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">log_fee =</span> <span class="fu">log</span>(transfer_fee <span class="sc">+</span> <span class="dv">1</span>)</span>
+<span id="cb820-5"><a href="#cb820-5" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb820-6"><a href="#cb820-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb820-7"><a href="#cb820-7" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb820-8"><a href="#cb820-8" aria-hidden="true" tabindex="-1"></a>band_width <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb820-9"><a href="#cb820-9" aria-hidden="true" tabindex="-1"></a>K <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb820-10"><a href="#cb820-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb820-11"><a href="#cb820-11" aria-hidden="true" tabindex="-1"></a>choice_data_2 <span class="ot">&lt;-</span> transfers <span class="sc">%&gt;%</span></span>
+<span id="cb820-12"><a href="#cb820-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb820-13"><a href="#cb820-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">do</span>({</span>
+<span id="cb820-14"><a href="#cb820-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb820-15"><a href="#cb820-15" aria-hidden="true" tabindex="-1"></a>    current <span class="ot">&lt;-</span> .</span>
+<span id="cb820-16"><a href="#cb820-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb820-17"><a href="#cb820-17" aria-hidden="true" tabindex="-1"></a>    focal_log_fee  <span class="ot">&lt;-</span> current<span class="sc">$</span>log_fee[[<span class="dv">1</span>]]</span>
+<span id="cb820-18"><a href="#cb820-18" aria-hidden="true" tabindex="-1"></a>    focal_season   <span class="ot">&lt;-</span> current<span class="sc">$</span>season[[<span class="dv">1</span>]]</span>
+<span id="cb820-19"><a href="#cb820-19" aria-hidden="true" tabindex="-1"></a>    focal_country  <span class="ot">&lt;-</span> current<span class="sc">$</span>country[[<span class="dv">1</span>]]</span>
+<span id="cb820-20"><a href="#cb820-20" aria-hidden="true" tabindex="-1"></a>    focal_league  <span class="ot">&lt;-</span> current<span class="sc">$</span>league[[<span class="dv">1</span>]]</span>
+<span id="cb820-21"><a href="#cb820-21" aria-hidden="true" tabindex="-1"></a>    focal_pos      <span class="ot">&lt;-</span> current<span class="sc">$</span>pos_clean[[<span class="dv">1</span>]]</span>
+<span id="cb820-22"><a href="#cb820-22" aria-hidden="true" tabindex="-1"></a>    focal_id       <span class="ot">&lt;-</span> current<span class="sc">$</span>transfer_id[[<span class="dv">1</span>]]</span>
+<span id="cb820-23"><a href="#cb820-23" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb820-24"><a href="#cb820-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Candidate alternatives</span></span>
+<span id="cb820-25"><a href="#cb820-25" aria-hidden="true" tabindex="-1"></a>    pool_all <span class="ot">&lt;-</span> transfers <span class="sc">%&gt;%</span></span>
+<span id="cb820-26"><a href="#cb820-26" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(</span>
+<span id="cb820-27"><a href="#cb820-27" aria-hidden="true" tabindex="-1"></a>        season <span class="sc">==</span> focal_season,</span>
+<span id="cb820-28"><a href="#cb820-28" aria-hidden="true" tabindex="-1"></a>        league <span class="sc">==</span> focal_league,</span>
+<span id="cb820-29"><a href="#cb820-29" aria-hidden="true" tabindex="-1"></a>        pos_clean <span class="sc">==</span> focal_pos,</span>
+<span id="cb820-30"><a href="#cb820-30" aria-hidden="true" tabindex="-1"></a>        transfer_id <span class="sc">!=</span> focal_id,</span>
+<span id="cb820-31"><a href="#cb820-31" aria-hidden="true" tabindex="-1"></a>        <span class="sc">!</span><span class="fu">is.na</span>(log_fee),</span>
+<span id="cb820-32"><a href="#cb820-32" aria-hidden="true" tabindex="-1"></a>        <span class="fu">abs</span>(log_fee <span class="sc">-</span> focal_log_fee) <span class="sc">&lt;=</span> band_width</span>
+<span id="cb820-33"><a href="#cb820-33" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb820-34"><a href="#cb820-34" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb820-35"><a href="#cb820-35" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Randomly sample up to K alternatives</span></span>
+<span id="cb820-36"><a href="#cb820-36" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">nrow</span>(pool_all) <span class="sc">&gt;</span> K) {</span>
+<span id="cb820-37"><a href="#cb820-37" aria-hidden="true" tabindex="-1"></a>      pool_sample <span class="ot">&lt;-</span> pool_all <span class="sc">%&gt;%</span> <span class="fu">slice_sample</span>(<span class="at">n =</span> K)</span>
+<span id="cb820-38"><a href="#cb820-38" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb820-39"><a href="#cb820-39" aria-hidden="true" tabindex="-1"></a>      pool_sample <span class="ot">&lt;-</span> pool_all</span>
+<span id="cb820-40"><a href="#cb820-40" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb820-41"><a href="#cb820-41" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb820-42"><a href="#cb820-42" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add chosen transfer back</span></span>
+<span id="cb820-43"><a href="#cb820-43" aria-hidden="true" tabindex="-1"></a>    pool <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(pool_sample, current)</span>
+<span id="cb820-44"><a href="#cb820-44" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb820-45"><a href="#cb820-45" aria-hidden="true" tabindex="-1"></a>    pool <span class="sc">%&gt;%</span></span>
+<span id="cb820-46"><a href="#cb820-46" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(</span>
+<span id="cb820-47"><a href="#cb820-47" aria-hidden="true" tabindex="-1"></a>        <span class="at">choice_id =</span> focal_id,</span>
+<span id="cb820-48"><a href="#cb820-48" aria-hidden="true" tabindex="-1"></a>        <span class="at">nat_match =</span> <span class="fu">ifelse</span>(player_nationality <span class="sc">==</span> focal_country, <span class="dv">1</span>, <span class="dv">0</span>),</span>
+<span id="cb820-49"><a href="#cb820-49" aria-hidden="true" tabindex="-1"></a>        <span class="at">chosen =</span> <span class="fu">ifelse</span>(transfer_id <span class="sc">==</span> focal_id, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb820-50"><a href="#cb820-50" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb820-51"><a href="#cb820-51" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb820-52"><a href="#cb820-52" aria-hidden="true" tabindex="-1"></a>  }) <span class="sc">%&gt;%</span></span>
+<span id="cb820-53"><a href="#cb820-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb820-54"><a href="#cb820-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb820-55"><a href="#cb820-55" aria-hidden="true" tabindex="-1"></a>choice_data_2 <span class="ot">&lt;-</span> choice_data_2 <span class="sc">%&gt;%</span></span>
+<span id="cb820-56"><a href="#cb820-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb820-57"><a href="#cb820-57" aria-hidden="true" tabindex="-1"></a>    <span class="at">rivalry_proximity =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(rivalry_proximity), <span class="dv">0</span>, rivalry_proximity)</span>
+<span id="cb820-58"><a href="#cb820-58" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb820-59"><a href="#cb820-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb820-60"><a href="#cb820-60" aria-hidden="true" tabindex="-1"></a><span class="fu">setDT</span>(choice_data_2)</span>
+<span id="cb820-61"><a href="#cb820-61" aria-hidden="true" tabindex="-1"></a>choice_data_2 <span class="ot">&lt;-</span> choice_data_2[</span>
+<span id="cb820-62"><a href="#cb820-62" aria-hidden="true" tabindex="-1"></a>  choice_id <span class="sc">%in%</span> choice_data_2[, .N, by <span class="ot">=</span> choice_id][N <span class="sc">&gt;</span> <span class="dv">1</span>, choice_id]</span>
+<span id="cb820-63"><a href="#cb820-63" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb814"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb814-1"><a href="#cb814-1" aria-hidden="true" tabindex="-1"></a>model_2 <span class="ot">&lt;-</span> <span class="fu">clogit</span>(</span>
-<span id="cb814-2"><a href="#cb814-2" aria-hidden="true" tabindex="-1"></a>  chosen <span class="sc">~</span> player_age <span class="sc">+</span></span>
-<span id="cb814-3"><a href="#cb814-3" aria-hidden="true" tabindex="-1"></a>    minutes_played <span class="sc">+</span> nat_match <span class="sc">+</span></span>
-<span id="cb814-4"><a href="#cb814-4" aria-hidden="true" tabindex="-1"></a>    goals <span class="sc">+</span></span>
-<span id="cb814-5"><a href="#cb814-5" aria-hidden="true" tabindex="-1"></a>    log_fee <span class="sc">+</span> </span>
-<span id="cb814-6"><a href="#cb814-6" aria-hidden="true" tabindex="-1"></a>    rivalry_proximity <span class="sc">+</span> </span>
-<span id="cb814-7"><a href="#cb814-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">strata</span>(choice_id),</span>
-<span id="cb814-8"><a href="#cb814-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> choice_data_2</span>
-<span id="cb814-9"><a href="#cb814-9" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb814-10"><a href="#cb814-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb814-11"><a href="#cb814-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb821"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb821-1"><a href="#cb821-1" aria-hidden="true" tabindex="-1"></a>model_2 <span class="ot">&lt;-</span> <span class="fu">clogit</span>(</span>
+<span id="cb821-2"><a href="#cb821-2" aria-hidden="true" tabindex="-1"></a>  chosen <span class="sc">~</span> player_age <span class="sc">+</span></span>
+<span id="cb821-3"><a href="#cb821-3" aria-hidden="true" tabindex="-1"></a>    minutes_played <span class="sc">+</span> nat_match <span class="sc">+</span></span>
+<span id="cb821-4"><a href="#cb821-4" aria-hidden="true" tabindex="-1"></a>    goals <span class="sc">+</span></span>
+<span id="cb821-5"><a href="#cb821-5" aria-hidden="true" tabindex="-1"></a>    log_fee <span class="sc">+</span> </span>
+<span id="cb821-6"><a href="#cb821-6" aria-hidden="true" tabindex="-1"></a>    rivalry_proximity <span class="sc">+</span> </span>
+<span id="cb821-7"><a href="#cb821-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">strata</span>(choice_id),</span>
+<span id="cb821-8"><a href="#cb821-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> choice_data_2</span>
+<span id="cb821-9"><a href="#cb821-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb821-10"><a href="#cb821-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb821-11"><a href="#cb821-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Call:
-coxph(formula = Surv(rep(1, 37442L), chosen) ~ player_age + minutes_played + 
+coxph(formula = Surv(rep(1, 4390L), chosen) ~ player_age + minutes_played + 
     nat_match + goals + log_fee + rivalry_proximity + strata(choice_id), 
     data = choice_data_2, method = "exact")
 
-  n= 29768, number of events= 3095 
-   (7674 observations deleted due to missingness)
+  n= 4247, number of events= 1218 
+   (143 observations deleted due to missingness)
 
                         coef  exp(coef)   se(coef)      z Pr(&gt;|z|)
-player_age         1.176e-03  1.001e+00  5.438e-03  0.216    0.829
-minutes_played    -4.369e-06  1.000e+00  2.273e-05 -0.192    0.848
-nat_match         -4.645e-04  9.995e-01  4.407e-02 -0.011    0.992
-goals              3.899e-03  1.004e+00  6.505e-03  0.599    0.549
-log_fee           -1.996e-02  9.802e-01  4.395e-02 -0.454    0.650
-rivalry_proximity  2.209e-03  1.002e+00  7.582e-02  0.029    0.977
+player_age         1.346e-04  1.000e+00  1.077e-02  0.012    0.990
+minutes_played     4.546e-06  1.000e+00  4.077e-05  0.111    0.911
+nat_match          1.371e-03  1.001e+00  8.512e-02  0.016    0.987
+goals             -1.146e-04  9.999e-01  1.015e-02 -0.011    0.991
+log_fee           -8.055e-03  9.920e-01  8.791e-02 -0.092    0.927
+rivalry_proximity  5.687e-03  1.006e+00  1.273e-01  0.045    0.964
 
                   exp(coef) exp(-coef) lower .95 upper .95
-player_age           1.0012     0.9988    0.9906     1.012
-minutes_played       1.0000     1.0000    1.0000     1.000
-nat_match            0.9995     1.0005    0.9168     1.090
-goals                1.0039     0.9961    0.9912     1.017
-log_fee              0.9802     1.0202    0.8993     1.068
-rivalry_proximity    1.0022     0.9978    0.8638     1.163
+player_age           1.0001     0.9999    0.9792     1.021
+minutes_played       1.0000     1.0000    0.9999     1.000
+nat_match            1.0014     0.9986    0.8475     1.183
+goals                0.9999     1.0001    0.9802     1.020
+log_fee              0.9920     1.0081    0.8350     1.179
+rivalry_proximity    1.0057     0.9943    0.7836     1.291
 
-Concordance= 0.502  (se = 0.006 )
-Likelihood ratio test= 0.65  on 6 df,   p=1
-Wald test            = 0.65  on 6 df,   p=1
-Score (logrank) test = 0.65  on 6 df,   p=1</code></pre>
+Concordance= 0.5  (se = 0.015 )
+Likelihood ratio test= 0.03  on 6 df,   p=1
+Wald test            = 0.03  on 6 df,   p=1
+Score (logrank) test = 0.03  on 6 df,   p=1</code></pre>
 </div>
 </div>
+<ol start="3" type="1">
+<li>Either the alternative buyer is in the focal league, or the alternative seller is</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb823"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb823-1"><a href="#cb823-1" aria-hidden="true" tabindex="-1"></a>transfers <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/top5_league_transfers_clean.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 3257 Columns: 31
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (21): country, country_2, seller_raw, buyer_raw, team_name, league, tran...
+dbl  (9): season, player_age, transfer_fee, in_squad, appearances, goals, mi...
+lgl  (1): is_loan
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb825"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb825-1"><a href="#cb825-1" aria-hidden="true" tabindex="-1"></a>transfers <span class="ot">&lt;-</span> transfers <span class="sc">%&gt;%</span></span>
+<span id="cb825-2"><a href="#cb825-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(</span>
+<span id="cb825-3"><a href="#cb825-3" aria-hidden="true" tabindex="-1"></a>    is_loan <span class="sc">==</span> <span class="cn">FALSE</span></span>
+<span id="cb825-4"><a href="#cb825-4" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb825-5"><a href="#cb825-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb825-6"><a href="#cb825-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">transfer_id =</span> <span class="fu">row_number</span>(),</span>
+<span id="cb825-7"><a href="#cb825-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">log_fee =</span> <span class="fu">log</span>(transfer_fee <span class="sc">+</span> <span class="dv">1</span>)</span>
+<span id="cb825-8"><a href="#cb825-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb825-9"><a href="#cb825-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb825-10"><a href="#cb825-10" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb825-11"><a href="#cb825-11" aria-hidden="true" tabindex="-1"></a>band_width <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb825-12"><a href="#cb825-12" aria-hidden="true" tabindex="-1"></a>K <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb825-13"><a href="#cb825-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb825-14"><a href="#cb825-14" aria-hidden="true" tabindex="-1"></a>choice_data_3 <span class="ot">&lt;-</span> transfers <span class="sc">%&gt;%</span></span>
+<span id="cb825-15"><a href="#cb825-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb825-16"><a href="#cb825-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">do</span>({</span>
+<span id="cb825-17"><a href="#cb825-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb825-18"><a href="#cb825-18" aria-hidden="true" tabindex="-1"></a>    current <span class="ot">&lt;-</span> .</span>
+<span id="cb825-19"><a href="#cb825-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb825-20"><a href="#cb825-20" aria-hidden="true" tabindex="-1"></a>    focal_log_fee  <span class="ot">&lt;-</span> current<span class="sc">$</span>log_fee[[<span class="dv">1</span>]]</span>
+<span id="cb825-21"><a href="#cb825-21" aria-hidden="true" tabindex="-1"></a>    focal_season   <span class="ot">&lt;-</span> current<span class="sc">$</span>season[[<span class="dv">1</span>]]</span>
+<span id="cb825-22"><a href="#cb825-22" aria-hidden="true" tabindex="-1"></a>    focal_country  <span class="ot">&lt;-</span> current<span class="sc">$</span>country[[<span class="dv">1</span>]]</span>
+<span id="cb825-23"><a href="#cb825-23" aria-hidden="true" tabindex="-1"></a>    focal_league  <span class="ot">&lt;-</span> current<span class="sc">$</span>league[[<span class="dv">1</span>]]</span>
+<span id="cb825-24"><a href="#cb825-24" aria-hidden="true" tabindex="-1"></a>    focal_pos      <span class="ot">&lt;-</span> current<span class="sc">$</span>pos_clean[[<span class="dv">1</span>]]</span>
+<span id="cb825-25"><a href="#cb825-25" aria-hidden="true" tabindex="-1"></a>    focal_id       <span class="ot">&lt;-</span> current<span class="sc">$</span>transfer_id[[<span class="dv">1</span>]]</span>
+<span id="cb825-26"><a href="#cb825-26" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb825-27"><a href="#cb825-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Candidate alternatives</span></span>
+<span id="cb825-28"><a href="#cb825-28" aria-hidden="true" tabindex="-1"></a>    pool_all <span class="ot">&lt;-</span> transfers <span class="sc">%&gt;%</span></span>
+<span id="cb825-29"><a href="#cb825-29" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(</span>
+<span id="cb825-30"><a href="#cb825-30" aria-hidden="true" tabindex="-1"></a>        season <span class="sc">==</span> focal_season,</span>
+<span id="cb825-31"><a href="#cb825-31" aria-hidden="true" tabindex="-1"></a>        league <span class="sc">==</span> focal_league <span class="sc">|</span> league_2 <span class="sc">==</span> focal_league,</span>
+<span id="cb825-32"><a href="#cb825-32" aria-hidden="true" tabindex="-1"></a>        pos_clean <span class="sc">==</span> focal_pos,</span>
+<span id="cb825-33"><a href="#cb825-33" aria-hidden="true" tabindex="-1"></a>        transfer_id <span class="sc">!=</span> focal_id,</span>
+<span id="cb825-34"><a href="#cb825-34" aria-hidden="true" tabindex="-1"></a>        <span class="sc">!</span><span class="fu">is.na</span>(log_fee),</span>
+<span id="cb825-35"><a href="#cb825-35" aria-hidden="true" tabindex="-1"></a>        <span class="fu">abs</span>(log_fee <span class="sc">-</span> focal_log_fee) <span class="sc">&lt;=</span> band_width</span>
+<span id="cb825-36"><a href="#cb825-36" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb825-37"><a href="#cb825-37" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb825-38"><a href="#cb825-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Randomly sample up to K alternatives</span></span>
+<span id="cb825-39"><a href="#cb825-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">nrow</span>(pool_all) <span class="sc">&gt;</span> K) {</span>
+<span id="cb825-40"><a href="#cb825-40" aria-hidden="true" tabindex="-1"></a>      pool_sample <span class="ot">&lt;-</span> pool_all <span class="sc">%&gt;%</span> <span class="fu">slice_sample</span>(<span class="at">n =</span> K)</span>
+<span id="cb825-41"><a href="#cb825-41" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb825-42"><a href="#cb825-42" aria-hidden="true" tabindex="-1"></a>      pool_sample <span class="ot">&lt;-</span> pool_all</span>
+<span id="cb825-43"><a href="#cb825-43" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb825-44"><a href="#cb825-44" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb825-45"><a href="#cb825-45" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add chosen transfer back</span></span>
+<span id="cb825-46"><a href="#cb825-46" aria-hidden="true" tabindex="-1"></a>    pool <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(pool_sample, current)</span>
+<span id="cb825-47"><a href="#cb825-47" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb825-48"><a href="#cb825-48" aria-hidden="true" tabindex="-1"></a>    pool <span class="sc">%&gt;%</span></span>
+<span id="cb825-49"><a href="#cb825-49" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(</span>
+<span id="cb825-50"><a href="#cb825-50" aria-hidden="true" tabindex="-1"></a>        <span class="at">choice_id =</span> focal_id,</span>
+<span id="cb825-51"><a href="#cb825-51" aria-hidden="true" tabindex="-1"></a>        <span class="at">nat_match =</span> <span class="fu">ifelse</span>(player_nationality <span class="sc">==</span> focal_country, <span class="dv">1</span>, <span class="dv">0</span>),</span>
+<span id="cb825-52"><a href="#cb825-52" aria-hidden="true" tabindex="-1"></a>        <span class="at">chosen =</span> <span class="fu">ifelse</span>(transfer_id <span class="sc">==</span> focal_id, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb825-53"><a href="#cb825-53" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb825-54"><a href="#cb825-54" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb825-55"><a href="#cb825-55" aria-hidden="true" tabindex="-1"></a>  }) <span class="sc">%&gt;%</span></span>
+<span id="cb825-56"><a href="#cb825-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb825-57"><a href="#cb825-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb825-58"><a href="#cb825-58" aria-hidden="true" tabindex="-1"></a>choice_data_3 <span class="ot">&lt;-</span> choice_data_3 <span class="sc">%&gt;%</span></span>
+<span id="cb825-59"><a href="#cb825-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb825-60"><a href="#cb825-60" aria-hidden="true" tabindex="-1"></a>    <span class="at">rivalry_proximity =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(rivalry_proximity), <span class="dv">0</span>, rivalry_proximity)</span>
+<span id="cb825-61"><a href="#cb825-61" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb825-62"><a href="#cb825-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb825-63"><a href="#cb825-63" aria-hidden="true" tabindex="-1"></a><span class="fu">setDT</span>(choice_data_3)</span>
+<span id="cb825-64"><a href="#cb825-64" aria-hidden="true" tabindex="-1"></a>choice_data_3 <span class="ot">&lt;-</span> choice_data_3[</span>
+<span id="cb825-65"><a href="#cb825-65" aria-hidden="true" tabindex="-1"></a>  choice_id <span class="sc">%in%</span> choice_data_3[, .N, by <span class="ot">=</span> choice_id][N <span class="sc">&gt;</span> <span class="dv">1</span>, choice_id]</span>
+<span id="cb825-66"><a href="#cb825-66" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb825-67"><a href="#cb825-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb825-68"><a href="#cb825-68" aria-hidden="true" tabindex="-1"></a><span class="fu">fwrite</span>(choice_data_3, <span class="st">"data/choice_data_3.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb826"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb826-1"><a href="#cb826-1" aria-hidden="true" tabindex="-1"></a>model_3 <span class="ot">&lt;-</span> <span class="fu">clogit</span>(</span>
+<span id="cb826-2"><a href="#cb826-2" aria-hidden="true" tabindex="-1"></a>  chosen <span class="sc">~</span> player_age <span class="sc">+</span></span>
+<span id="cb826-3"><a href="#cb826-3" aria-hidden="true" tabindex="-1"></a>    minutes_played <span class="sc">+</span> nat_match <span class="sc">+</span></span>
+<span id="cb826-4"><a href="#cb826-4" aria-hidden="true" tabindex="-1"></a>    goals <span class="sc">+</span></span>
+<span id="cb826-5"><a href="#cb826-5" aria-hidden="true" tabindex="-1"></a>    log_fee <span class="sc">+</span> </span>
+<span id="cb826-6"><a href="#cb826-6" aria-hidden="true" tabindex="-1"></a>    rivalry_proximity <span class="sc">+</span> </span>
+<span id="cb826-7"><a href="#cb826-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">strata</span>(choice_id),</span>
+<span id="cb826-8"><a href="#cb826-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> choice_data_3</span>
+<span id="cb826-9"><a href="#cb826-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb826-10"><a href="#cb826-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb826-11"><a href="#cb826-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Call:
+coxph(formula = Surv(rep(1, 4912L), chosen) ~ player_age + minutes_played + 
+    nat_match + goals + log_fee + rivalry_proximity + strata(choice_id), 
+    data = choice_data_3, method = "exact")
+
+  n= 4750, number of events= 1184 
+   (162 observations deleted due to missingness)
+
+                        coef  exp(coef)   se(coef)      z Pr(&gt;|z|)    
+player_age        -7.327e-03  9.927e-01  1.087e-02 -0.674    0.500    
+minutes_played    -8.580e-06  1.000e+00  3.999e-05 -0.215    0.830    
+nat_match         -1.174e-02  9.883e-01  8.349e-02 -0.141    0.888    
+goals             -2.031e-04  9.998e-01  9.740e-03 -0.021    0.983    
+log_fee           -3.715e-02  9.635e-01  8.956e-02 -0.415    0.678    
+rivalry_proximity  9.026e-01  2.466e+00  1.256e-01  7.188 6.59e-13 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+                  exp(coef) exp(-coef) lower .95 upper .95
+player_age           0.9927     1.0074    0.9718     1.014
+minutes_played       1.0000     1.0000    0.9999     1.000
+nat_match            0.9883     1.0118    0.8391     1.164
+goals                0.9998     1.0002    0.9809     1.019
+log_fee              0.9635     1.0378    0.8084     1.148
+rivalry_proximity    2.4661     0.4055    1.9280     3.154
+
+Concordance= 0.573  (se = 0.015 )
+Likelihood ratio test= 58.5  on 6 df,   p=9e-11
+Wald test            = 58.48  on 6 df,   p=9e-11
+Score (logrank) test = 59.93  on 6 df,   p=5e-11</code></pre>
+</div>
+</div>
+<p>A 1-unit increase in rivalry proximity multiplies the odds of choosing that player by ~2.47. So clubs are much more likely to sign players from rivals. The effect is also very strong.</p>
+</section>
+<section id="analysis" class="level2">
+<h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
+<p>The first 2 models produce very high p-values for every variable. Also, the coefficients are close to 0 and the concordance value of 0.5 and LR, Wald and Score tests have value ≈ 0. That combination means the model cannot distinguish chosen from non-chosen alternatives. So, we analyse the data to check if there are any issues with the choice set.</p>
+<p>We already know that team names match. So there are no issues there. We first check how different the alternative choices are:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb828"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb828-1"><a href="#cb828-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setDT</span>(choice_data_1)</span>
+<span id="cb828-2"><a href="#cb828-2" aria-hidden="true" tabindex="-1"></a>sd_table <span class="ot">&lt;-</span> choice_data_1[, .(</span>
+<span id="cb828-3"><a href="#cb828-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">age_sd =</span> <span class="fu">sd</span>(player_age),</span>
+<span id="cb828-4"><a href="#cb828-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">minutes_sd =</span> <span class="fu">sd</span>(minutes_played),</span>
+<span id="cb828-5"><a href="#cb828-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">goals_sd =</span> <span class="fu">sd</span>(goals),</span>
+<span id="cb828-6"><a href="#cb828-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">fee_sd =</span> <span class="fu">sd</span>(log_fee),</span>
+<span id="cb828-7"><a href="#cb828-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">riv_sd =</span> <span class="fu">sd</span>(rivalry_proximity)</span>
+<span id="cb828-8"><a href="#cb828-8" aria-hidden="true" tabindex="-1"></a>), by <span class="ot">=</span> choice_id]</span>
+<span id="cb828-9"><a href="#cb828-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb828-10"><a href="#cb828-10" aria-hidden="true" tabindex="-1"></a>sd_counts <span class="ot">&lt;-</span> sd_table[, .(</span>
+<span id="cb828-11"><a href="#cb828-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">age_sd_zero     =</span> <span class="fu">sum</span>(age_sd <span class="sc">==</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb828-12"><a href="#cb828-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">age_sd_nonzero  =</span> <span class="fu">sum</span>(age_sd <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb828-13"><a href="#cb828-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb828-14"><a href="#cb828-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">minutes_sd_zero    =</span> <span class="fu">sum</span>(minutes_sd <span class="sc">==</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb828-15"><a href="#cb828-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">minutes_sd_nonzero =</span> <span class="fu">sum</span>(minutes_sd <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb828-16"><a href="#cb828-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb828-17"><a href="#cb828-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">goals_sd_zero    =</span> <span class="fu">sum</span>(goals_sd <span class="sc">==</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb828-18"><a href="#cb828-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">goals_sd_nonzero =</span> <span class="fu">sum</span>(goals_sd <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb828-19"><a href="#cb828-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb828-20"><a href="#cb828-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">fee_sd_zero    =</span> <span class="fu">sum</span>(fee_sd <span class="sc">==</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb828-21"><a href="#cb828-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">fee_sd_nonzero =</span> <span class="fu">sum</span>(fee_sd <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb828-22"><a href="#cb828-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb828-23"><a href="#cb828-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">riv_sd_zero    =</span> <span class="fu">sum</span>(riv_sd <span class="sc">==</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb828-24"><a href="#cb828-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">riv_sd_nonzero =</span> <span class="fu">sum</span>(riv_sd <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb828-25"><a href="#cb828-25" aria-hidden="true" tabindex="-1"></a>)]</span>
+<span id="cb828-26"><a href="#cb828-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb828-27"><a href="#cb828-27" aria-hidden="true" tabindex="-1"></a>sd_counts</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   age_sd_zero age_sd_nonzero minutes_sd_zero minutes_sd_nonzero goals_sd_zero
+         &lt;int&gt;          &lt;int&gt;           &lt;int&gt;              &lt;int&gt;         &lt;int&gt;
+1:          28           1060               0                973           159
+   goals_sd_nonzero fee_sd_zero fee_sd_nonzero riv_sd_zero riv_sd_nonzero
+              &lt;int&gt;       &lt;int&gt;          &lt;int&gt;       &lt;int&gt;          &lt;int&gt;
+1:              814         269            819         216            872</code></pre>
+</div>
+</div>
+<p>As we can see, there are a few instances when the alternatives don’t have much difference between them, but there is still plenty of data where the alternatives aren’t too similar. So, this can’t be the issue.</p>
+<p>We now check how often the chosen alternative is the “best” option within its choice set according to each variable, and average across choice sets. If the values ≈ random chance, the variable does not explain the choice.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb830"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb830-1"><a href="#cb830-1" aria-hidden="true" tabindex="-1"></a>choice_data_1[, .(</span>
+<span id="cb830-2"><a href="#cb830-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb830-3"><a href="#cb830-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">age_best =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(player_age))) <span class="cn">NA_real_</span></span>
+<span id="cb830-4"><a href="#cb830-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="fu">mean</span>(chosen <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> player_age <span class="sc">==</span> <span class="fu">min</span>(player_age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb830-5"><a href="#cb830-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb830-6"><a href="#cb830-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">minutes_best =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(minutes_played))) <span class="cn">NA_real_</span></span>
+<span id="cb830-7"><a href="#cb830-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="fu">mean</span>(chosen <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> minutes_played <span class="sc">==</span> <span class="fu">max</span>(minutes_played, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb830-8"><a href="#cb830-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb830-9"><a href="#cb830-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">goals_best =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(goals))) <span class="cn">NA_real_</span></span>
+<span id="cb830-10"><a href="#cb830-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="fu">mean</span>(chosen <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> goals <span class="sc">==</span> <span class="fu">max</span>(goals, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb830-11"><a href="#cb830-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb830-12"><a href="#cb830-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">fee_best =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(log_fee))) <span class="cn">NA_real_</span></span>
+<span id="cb830-13"><a href="#cb830-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="fu">mean</span>(chosen <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> log_fee <span class="sc">==</span> <span class="fu">min</span>(log_fee, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb830-14"><a href="#cb830-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb830-15"><a href="#cb830-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">riv_best =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(rivalry_proximity))) <span class="cn">NA_real_</span></span>
+<span id="cb830-16"><a href="#cb830-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="fu">mean</span>(chosen <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> rivalry_proximity <span class="sc">==</span> <span class="fu">max</span>(rivalry_proximity, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb830-17"><a href="#cb830-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb830-18"><a href="#cb830-18" aria-hidden="true" tabindex="-1"></a>), by <span class="ot">=</span> choice_id][, <span class="fu">lapply</span>(.SD, <span class="cf">function</span>(x) <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   choice_id  age_best minutes_best goals_best fee_best  riv_best
+       &lt;num&gt;     &lt;num&gt;        &lt;num&gt;      &lt;num&gt;    &lt;num&gt;     &lt;num&gt;
+1:  732.0671 0.1549654    0.1453513  0.1857848 0.189905 0.1993107</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb832"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb832-1"><a href="#cb832-1" aria-hidden="true" tabindex="-1"></a>choice_data_1[, <span class="fu">mean</span>(.N), by <span class="ot">=</span> choice_id][, <span class="fu">mean</span>(V1)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3.431985</code></pre>
+</div>
+</div>
+<p>We can see that the average choice set size is about 3. By random selection, the best player would be selected 33% of the time. But from our data, the predictors are actually worse than random at predicting the chosen player, which explains why the Cox model estimates coefficients ≈ 0.</p>
+<p>Next, we check the average rank of the chosen player within each choice set for each variable, averaged across choice sets. If the average rank is better than random, the variable helps explain the choice; if it equals the random rank, the variable has no predictive power.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb834"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb834-1"><a href="#cb834-1" aria-hidden="true" tabindex="-1"></a>choice_data_1[, .(</span>
+<span id="cb834-2"><a href="#cb834-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb834-3"><a href="#cb834-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">age_rank     =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(player_age))) <span class="cn">NA_real_</span></span>
+<span id="cb834-4"><a href="#cb834-4" aria-hidden="true" tabindex="-1"></a>                 <span class="cf">else</span> <span class="fu">mean</span>(<span class="fu">frank</span>(player_age, <span class="at">ties.method=</span><span class="st">"average"</span>) [chosen<span class="sc">==</span><span class="dv">1</span>]),</span>
+<span id="cb834-5"><a href="#cb834-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb834-6"><a href="#cb834-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">minutes_rank =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(minutes_played))) <span class="cn">NA_real_</span></span>
+<span id="cb834-7"><a href="#cb834-7" aria-hidden="true" tabindex="-1"></a>                 <span class="cf">else</span> <span class="fu">mean</span>(<span class="fu">frank</span>(<span class="sc">-</span>minutes_played, <span class="at">ties.method=</span><span class="st">"average"</span>) [chosen<span class="sc">==</span><span class="dv">1</span>]),</span>
+<span id="cb834-8"><a href="#cb834-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb834-9"><a href="#cb834-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">goals_rank   =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(goals))) <span class="cn">NA_real_</span></span>
+<span id="cb834-10"><a href="#cb834-10" aria-hidden="true" tabindex="-1"></a>                 <span class="cf">else</span> <span class="fu">mean</span>(<span class="fu">frank</span>(<span class="sc">-</span>goals, <span class="at">ties.method=</span><span class="st">"average"</span>) [chosen<span class="sc">==</span><span class="dv">1</span>]),</span>
+<span id="cb834-11"><a href="#cb834-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb834-12"><a href="#cb834-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">fee_rank     =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(log_fee))) <span class="cn">NA_real_</span></span>
+<span id="cb834-13"><a href="#cb834-13" aria-hidden="true" tabindex="-1"></a>                 <span class="cf">else</span> <span class="fu">mean</span>(<span class="fu">frank</span>(log_fee, <span class="at">ties.method=</span><span class="st">"average"</span>) [chosen<span class="sc">==</span><span class="dv">1</span>]),</span>
+<span id="cb834-14"><a href="#cb834-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb834-15"><a href="#cb834-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">riv_rank     =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(rivalry_proximity))) <span class="cn">NA_real_</span></span>
+<span id="cb834-16"><a href="#cb834-16" aria-hidden="true" tabindex="-1"></a>                 <span class="cf">else</span> <span class="fu">mean</span>(<span class="fu">frank</span>(<span class="sc">-</span>rivalry_proximity, <span class="at">ties.method=</span><span class="st">"average"</span>) [chosen<span class="sc">==</span><span class="dv">1</span>])</span>
+<span id="cb834-17"><a href="#cb834-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb834-18"><a href="#cb834-18" aria-hidden="true" tabindex="-1"></a>), by <span class="ot">=</span> choice_id][, <span class="fu">lapply</span>(.SD, mean, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   choice_id age_rank minutes_rank goals_rank fee_rank riv_rank
+       &lt;num&gt;    &lt;num&gt;        &lt;num&gt;      &lt;num&gt;    &lt;num&gt;    &lt;num&gt;
+1:  732.0671 2.215993     2.217311   2.217311 2.215993 2.215993</code></pre>
+</div>
+</div>
+<p>These are almost exactly equal to the random benchmark (2.215). Thus, the chosen player is indistinguishable from random. Thus, the data simply contains no predictive signal for the choice in the variables that were included.</p>
+<p>Unlike the first 2 models, the 3rd one actually produced a very low p-value for rivalry_proximity, and the LR, Wald and Score test showed about 58%. So, let’s try the same analysis on choice_data_3:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb836"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb836-1"><a href="#cb836-1" aria-hidden="true" tabindex="-1"></a>choice_data_3[, .(</span>
+<span id="cb836-2"><a href="#cb836-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb836-3"><a href="#cb836-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">age_best =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(player_age))) <span class="cn">NA_real_</span></span>
+<span id="cb836-4"><a href="#cb836-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="fu">mean</span>(chosen <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> player_age <span class="sc">==</span> <span class="fu">min</span>(player_age, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb836-5"><a href="#cb836-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb836-6"><a href="#cb836-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">minutes_best =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(minutes_played))) <span class="cn">NA_real_</span></span>
+<span id="cb836-7"><a href="#cb836-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="fu">mean</span>(chosen <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> minutes_played <span class="sc">==</span> <span class="fu">max</span>(minutes_played, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb836-8"><a href="#cb836-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb836-9"><a href="#cb836-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">goals_best =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(goals))) <span class="cn">NA_real_</span></span>
+<span id="cb836-10"><a href="#cb836-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="fu">mean</span>(chosen <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> goals <span class="sc">==</span> <span class="fu">max</span>(goals, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb836-11"><a href="#cb836-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb836-12"><a href="#cb836-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">fee_best =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(log_fee))) <span class="cn">NA_real_</span></span>
+<span id="cb836-13"><a href="#cb836-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="fu">mean</span>(chosen <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> log_fee <span class="sc">==</span> <span class="fu">min</span>(log_fee, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb836-14"><a href="#cb836-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb836-15"><a href="#cb836-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">riv_best =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(rivalry_proximity))) <span class="cn">NA_real_</span></span>
+<span id="cb836-16"><a href="#cb836-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="fu">mean</span>(chosen <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> rivalry_proximity <span class="sc">==</span> <span class="fu">max</span>(rivalry_proximity, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb836-17"><a href="#cb836-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb836-18"><a href="#cb836-18" aria-hidden="true" tabindex="-1"></a>), by <span class="ot">=</span> choice_id][, <span class="fu">lapply</span>(.SD, <span class="cf">function</span>(x) <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   choice_id  age_best minutes_best goals_best  fee_best  riv_best
+       &lt;num&gt;     &lt;num&gt;        &lt;num&gt;      &lt;num&gt;     &lt;num&gt;     &lt;num&gt;
+1:  734.2243 0.1266602    0.1199908   0.153909 0.1617183 0.1967054</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb838"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb838-1"><a href="#cb838-1" aria-hidden="true" tabindex="-1"></a>choice_data_3[, <span class="fu">mean</span>(.N), by <span class="ot">=</span> choice_id][, <span class="fu">mean</span>(V1)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4.006525</code></pre>
+</div>
+</div>
+<p>The results are similar to choice_data_1</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb840"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb840-1"><a href="#cb840-1" aria-hidden="true" tabindex="-1"></a>choice_data_3[, .(</span>
+<span id="cb840-2"><a href="#cb840-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb840-3"><a href="#cb840-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">age_rank     =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(player_age))) <span class="cn">NA_real_</span></span>
+<span id="cb840-4"><a href="#cb840-4" aria-hidden="true" tabindex="-1"></a>                 <span class="cf">else</span> <span class="fu">mean</span>(<span class="fu">frank</span>(player_age, <span class="at">ties.method=</span><span class="st">"average"</span>) [chosen<span class="sc">==</span><span class="dv">1</span>]),</span>
+<span id="cb840-5"><a href="#cb840-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb840-6"><a href="#cb840-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">minutes_rank =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(minutes_played))) <span class="cn">NA_real_</span></span>
+<span id="cb840-7"><a href="#cb840-7" aria-hidden="true" tabindex="-1"></a>                 <span class="cf">else</span> <span class="fu">mean</span>(<span class="fu">frank</span>(<span class="sc">-</span>minutes_played, <span class="at">ties.method=</span><span class="st">"average"</span>) [chosen<span class="sc">==</span><span class="dv">1</span>]),</span>
+<span id="cb840-8"><a href="#cb840-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb840-9"><a href="#cb840-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">goals_rank   =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(goals))) <span class="cn">NA_real_</span></span>
+<span id="cb840-10"><a href="#cb840-10" aria-hidden="true" tabindex="-1"></a>                 <span class="cf">else</span> <span class="fu">mean</span>(<span class="fu">frank</span>(<span class="sc">-</span>goals, <span class="at">ties.method=</span><span class="st">"average"</span>) [chosen<span class="sc">==</span><span class="dv">1</span>]),</span>
+<span id="cb840-11"><a href="#cb840-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb840-12"><a href="#cb840-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">fee_rank     =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(log_fee))) <span class="cn">NA_real_</span></span>
+<span id="cb840-13"><a href="#cb840-13" aria-hidden="true" tabindex="-1"></a>                 <span class="cf">else</span> <span class="fu">mean</span>(<span class="fu">frank</span>(log_fee, <span class="at">ties.method=</span><span class="st">"average"</span>) [chosen<span class="sc">==</span><span class="dv">1</span>]),</span>
+<span id="cb840-14"><a href="#cb840-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb840-15"><a href="#cb840-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">riv_rank     =</span> <span class="cf">if</span> (<span class="fu">all</span>(<span class="fu">is.na</span>(rivalry_proximity))) <span class="cn">NA_real_</span></span>
+<span id="cb840-16"><a href="#cb840-16" aria-hidden="true" tabindex="-1"></a>                 <span class="cf">else</span> <span class="fu">mean</span>(<span class="fu">frank</span>(<span class="sc">-</span>rivalry_proximity, <span class="at">ties.method=</span><span class="st">"average"</span>) [chosen<span class="sc">==</span><span class="dv">1</span>])</span>
+<span id="cb840-17"><a href="#cb840-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb840-18"><a href="#cb840-18" aria-hidden="true" tabindex="-1"></a>), by <span class="ot">=</span> choice_id][, <span class="fu">lapply</span>(.SD, mean, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   choice_id age_rank minutes_rank goals_rank fee_rank riv_rank
+       &lt;num&gt;    &lt;num&gt;        &lt;num&gt;      &lt;num&gt;    &lt;num&gt;    &lt;num&gt;
+1:  734.2243 2.470636     2.523693   2.531454 2.479608 2.292007</code></pre>
+</div>
+</div>
+<p>Again, the results are similar.</p>
 </section>
 
 </main>

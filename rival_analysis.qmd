@@ -50,6 +50,7 @@ if (!file.exists(league_path)) {
       return(NULL)
     })
   })
+  results[, league_name := league |> str_remove("Games of Matchday \\d+ ") |> str_remove(" \\d{2}/\\d{2}")]
   fwrite(results, league_path)
 }
 ```
@@ -356,7 +357,7 @@ rival_base <- merge(rival_base, elo_quartiles,
                     by = "season_start",
                     all.x = TRUE)
 
-rival_base[is.na(elo), elo := q_elo]
+# rival_base[is.na(elo), elo := q_elo]
 
 
 # flag seasons where lagged points are structurally missing
@@ -387,19 +388,12 @@ rival_vectors <- rival_base[
     # ---- impute non-structural missing ----
     pts_t1_imp <- pts_t1
     pts_t2_imp <- pts_t2
-    elo_imp    <- elo
-    
-    #q_t1  <- quantile(pts_t1, 0.25, na.rm = TRUE)
-    #q_t2  <- quantile(pts_t2, 0.25, na.rm = TRUE)
-    #q_elo <- quantile(elo,    0.25, na.rm = TRUE)
-
-    elo_imp[is.na(elo_imp)] <- q_elo
 
     # ---- z-score scaling (after imputation) ----
     z_t  <- as.numeric(scale(pts_t))
     z_t1 <- as.numeric(scale(pts_t1_imp))
     z_t2 <- as.numeric(scale(pts_t2_imp))
-    z_e  <- as.numeric(scale(elo_imp))
+    z_e  <- as.numeric(scale(elo))
 
     # ---- set structural missing to 0 AFTER scaling ----
     if(season_start == 2017) {
@@ -811,6 +805,8 @@ top5_leagues <- c("Premier League", "LaLiga", "Bundesliga", "Ligue 1", "Serie A"
 
 top5_league_transfers <- filter(transfers,
        league %in% top5_leagues,
+       #league_2 %in% top5_leagues,
+       #is_loan == FALSE,
        transfer_type == "Arrivals")
 fwrite(top5_league_transfers, "data/top5_league_transfers.csv")
 ```
@@ -845,9 +841,10 @@ xf[, buyer_raw  := tolower(str_squish(team_name))]
 xf[, seller_raw := tolower(str_squish(club_2))]
 xf[, country    := as.character(country)]
 
-raw_teams <- unique(rbind(
-  xf[, .(country, raw = buyer_raw)]
-))
+raw_teams <- unique(rbindlist(list(
+  xf[, .(country = country, raw = buyer_raw)],
+  xf[, .(country = country_2, raw = seller_raw)]
+)))
 
 valid_canon <- canon_teams[, .(country, team_clean)]
 
@@ -895,6 +892,8 @@ setorder(team_map, country, raw, dist)
 team_map <- team_map[, .SD[1], by = .(country, raw)]
 ```
 
+We have a very niche problem with selling club's country. unlike a buyer's country that points to the league the country belongs to, seller's country points to the country where the club actually is (Ex: Monaco is not in France, but in the French league). So, when we match based on country, we get NA for seller_clean. After verifying the data, missing values come from such cases. So, we simply use seller_raw's name in seller_clean. The data in seller_raw for these clubs are simplified and don't cause matching issues. So, we can directly copy the name.
+
 ```{r}
 riv <- fread(rivals_path)   # rivalry_continuous.csv
 manual_map <- fread("data/unmatched_transfer_teams.csv")
@@ -927,7 +926,18 @@ xf <- merge(
   all.x = TRUE
 )
 setnames(xf, "team_clean", "buyer_clean")
-setnames(xf, "seller_raw", "seller_clean")
+
+xf <- merge(
+  xf,
+  team_map_final,
+  by.x = c("country_2", "seller_raw"),
+  by.y = c("country", "raw"),
+  all.x = TRUE
+)
+setnames(xf, "team_clean", "seller_clean")
+xf[is.na(seller_clean), seller_clean := seller_raw]
+
+#setnames(xf, "seller_raw", "seller_clean")
 
 # Remove duplicate columns from merges
 xf <- xf[, !duplicated(names(xf), fromLast = TRUE), with = FALSE]
@@ -960,15 +970,82 @@ xf[country_2 != country, rivalry_proximity := NA_real_]
 xf[, c("team_low", "team_high") := NULL]
 
 xf[, pos_clean := tolower(str_squish(player_position))]
+```
 
-# Save
-fwrite(xf, "data/top5_league_transfers_clean.csv")
+We now check for mismatched sellers. We only check for mismatches within the top 5 leagues. We check if the team names in the league table and the seller team's name in transfers match. For other leagues, we don't have league point or rivalry info. So, they don't have to match with the league table.
+
+```{r}
 xf
+```
+
+```{r}
+setDT(league_table)
+setDT(xf)
+
+## ---------- NORMALIZATION FUNCTION ----------
+normalize <- function(x) {
+  x |>
+    tolower() |>
+    str_replace_all("&", "and") |>
+    str_replace_all("[^a-z0-9 ]", "") |>
+    str_squish()
+}
+
+## ---------- NORMALIZE TEAM NAMES ----------
+league_table[, squad_norm := normalize(squad)]
+xf[, seller_norm := normalize(seller_clean)]
+
+## ---------- REMOVE DUPLICATES ----------
+league_teams <- unique(
+  league_table[, .(league_name, squad, squad_norm)]
+)
+
+seller_teams <- unique(
+  xf[, .(league_name = league_2, seller_clean, seller_norm)]
+)
+
+## ---------- FIND MISMATCHES ----------
+mismatches <- seller_teams[
+  !league_teams,
+  on = .(league_name, seller_norm = squad_norm)
+]
+mismatches
+```
+
+In the above data, we can clearly see that none of the mismatched seller teams actually belong to the top 5 leagues. So, we remove this polluted data from transfers.
+
+```{r}
+xf <- xf[
+  !mismatches,
+  on = .(league_2 = league_name, seller_norm)
+]
+```
+
+Similarly, we check for buyers:
+
+```{r}
+xf[, buyer_norm := normalize(buyer_clean)]
+buyer_teams <- unique(
+  xf[, .(league_name = league, buyer_clean, buyer_norm)]
+)
+
+## ---------- FIND MISMATCHES ----------
+mismatches <- buyer_teams[
+  !league_teams,
+  on = .(league_name, buyer_norm = squad_norm)
+]
+mismatches
+```
+
+There are no buyer mismatches.
+
+```{r}
+fwrite(xf, "data/top5_league_transfers_clean.csv")
 ```
 
 ## Conditional Multinomial choice model
 
-1.  Choice set: transfers within top 5 leagues (both buyers and sellers are in the top 5 leagues). Seller is also from the same league as the buyer.
+1.  Choice set: transfers within top 5 leagues (both buyers and sellers are in the top 5 leagues). The buyers of the alternatives are also from the same league as the focal buyer. We also ignore loan transfer options.
 
 ```{r}
 transfers <- read_csv("data/top5_league_transfers_clean.csv")
@@ -996,13 +1073,14 @@ choice_data_1 <- transfers_1 %>%
     focal_season   <- current$season[[1]]
     focal_pos      <- current$pos_clean[[1]]
     focal_country  <- current$country[[1]]
+    focal_league  <- current$league[[1]]
     focal_id       <- current$transfer_id[[1]]
     
     pool <- transfers_1 %>%
       filter(
         season == focal_season,
         pos_clean == focal_pos,
-        country_2 == focal_country,
+        league == focal_league,
         transfer_id != focal_id,
         !is.na(log_fee),
         abs(log_fee - focal_log_fee) <= band_width
@@ -1013,6 +1091,7 @@ choice_data_1 <- transfers_1 %>%
     pool %>%
       mutate(
         choice_id = focal_id,
+        nat_match = ifelse(player_nationality == focal_country, 1, 0),
         chosen = ifelse(transfer_id == focal_id, 1, 0)
       )
     
@@ -1021,20 +1100,27 @@ choice_data_1 <- transfers_1 %>%
 
 choice_data_1 <- choice_data_1 %>%
   mutate(
-    nat_match = ifelse(player_nationality == country, 1, 0),
     rivalry_proximity = ifelse(is.na(rivalry_proximity), 0, rivalry_proximity)
   )
 ```
 
 ```{r}
+#remove choice sets where there are no alternatives
+setDT(choice_data_1)
+choice_data_1 <- choice_data_1[
+  choice_id %in% choice_data_1[, .N, by = choice_id][N > 1, choice_id]
+]
+
 fwrite(choice_data_1,"data/choice_data.csv")
 choice_data_1
 ```
 
 ```{r}
+
 model_1 <- clogit(
   chosen ~ player_age +
-    minutes_played + nat_match +
+    minutes_played + 
+    nat_match +
     goals +
     log_fee + 
     rivalry_proximity + 
@@ -1066,6 +1152,8 @@ choice_data_2 <- transfers %>%
     
     focal_log_fee  <- current$log_fee[[1]]
     focal_season   <- current$season[[1]]
+    focal_country  <- current$country[[1]]
+    focal_league  <- current$league[[1]]
     focal_pos      <- current$pos_clean[[1]]
     focal_id       <- current$transfer_id[[1]]
     
@@ -1073,6 +1161,7 @@ choice_data_2 <- transfers %>%
     pool_all <- transfers %>%
       filter(
         season == focal_season,
+        league == focal_league,
         pos_clean == focal_pos,
         transfer_id != focal_id,
         !is.na(log_fee),
@@ -1092,6 +1181,7 @@ choice_data_2 <- transfers %>%
     pool %>%
       mutate(
         choice_id = focal_id,
+        nat_match = ifelse(player_nationality == focal_country, 1, 0),
         chosen = ifelse(transfer_id == focal_id, 1, 0)
       )
     
@@ -1100,9 +1190,13 @@ choice_data_2 <- transfers %>%
 
 choice_data_2 <- choice_data_2 %>%
   mutate(
-    nat_match = ifelse(player_nationality == country, 1, 0),
     rivalry_proximity = ifelse(is.na(rivalry_proximity), 0, rivalry_proximity)
   )
+
+setDT(choice_data_2)
+choice_data_2 <- choice_data_2[
+  choice_id %in% choice_data_2[, .N, by = choice_id][N > 1, choice_id]
+]
 ```
 
 ```{r}
@@ -1118,3 +1212,237 @@ model_2 <- clogit(
 
 summary(model_2)
 ```
+
+3.  Either the alternative buyer is in the focal league, or the alternative seller is
+
+```{r}
+transfers <- read_csv("data/top5_league_transfers_clean.csv")
+transfers <- transfers %>%
+  filter(
+    is_loan == FALSE
+  ) %>%
+  mutate(
+    transfer_id = row_number(),
+    log_fee = log(transfer_fee + 1)
+  )
+
+set.seed(123)
+band_width <- 1
+K <- 10
+
+choice_data_3 <- transfers %>%
+  rowwise() %>%
+  do({
+    
+    current <- .
+    
+    focal_log_fee  <- current$log_fee[[1]]
+    focal_season   <- current$season[[1]]
+    focal_country  <- current$country[[1]]
+    focal_league  <- current$league[[1]]
+    focal_pos      <- current$pos_clean[[1]]
+    focal_id       <- current$transfer_id[[1]]
+    
+    # Candidate alternatives
+    pool_all <- transfers %>%
+      filter(
+        season == focal_season,
+        league == focal_league | league_2 == focal_league,
+        pos_clean == focal_pos,
+        transfer_id != focal_id,
+        !is.na(log_fee),
+        abs(log_fee - focal_log_fee) <= band_width
+      )
+    
+    # Randomly sample up to K alternatives
+    if (nrow(pool_all) > K) {
+      pool_sample <- pool_all %>% slice_sample(n = K)
+    } else {
+      pool_sample <- pool_all
+    }
+    
+    # Add chosen transfer back
+    pool <- bind_rows(pool_sample, current)
+    
+    pool %>%
+      mutate(
+        choice_id = focal_id,
+        nat_match = ifelse(player_nationality == focal_country, 1, 0),
+        chosen = ifelse(transfer_id == focal_id, 1, 0)
+      )
+    
+  }) %>%
+  ungroup()
+
+choice_data_3 <- choice_data_3 %>%
+  mutate(
+    rivalry_proximity = ifelse(is.na(rivalry_proximity), 0, rivalry_proximity)
+  )
+
+setDT(choice_data_3)
+choice_data_3 <- choice_data_3[
+  choice_id %in% choice_data_3[, .N, by = choice_id][N > 1, choice_id]
+]
+
+fwrite(choice_data_3, "data/choice_data_3.csv")
+```
+
+```{r}
+model_3 <- clogit(
+  chosen ~ player_age +
+    minutes_played + nat_match +
+    goals +
+    log_fee + 
+    rivalry_proximity + 
+    strata(choice_id),
+  data = choice_data_3
+)
+
+summary(model_3)
+```
+
+A 1-unit increase in rivalry proximity multiplies the odds of choosing that player by \~2.47. So clubs are much more likely to sign players from rivals. The effect is also very strong.
+
+## Analysis
+
+The first 2 models produce very high p-values for every variable. Also, the coefficients are close to 0 and the concordance value of 0.5 and LR, Wald and Score tests have value ≈ 0. That combination means the model cannot distinguish chosen from non-chosen alternatives. So, we analyse the data to check if there are any issues with the choice set.
+
+We already know that team names match. So there are no issues there. We first check how different the alternative choices are:
+
+```{r}
+setDT(choice_data_1)
+sd_table <- choice_data_1[, .(
+  age_sd = sd(player_age),
+  minutes_sd = sd(minutes_played),
+  goals_sd = sd(goals),
+  fee_sd = sd(log_fee),
+  riv_sd = sd(rivalry_proximity)
+), by = choice_id]
+
+sd_counts <- sd_table[, .(
+  age_sd_zero     = sum(age_sd == 0, na.rm = TRUE),
+  age_sd_nonzero  = sum(age_sd > 0, na.rm = TRUE),
+
+  minutes_sd_zero    = sum(minutes_sd == 0, na.rm = TRUE),
+  minutes_sd_nonzero = sum(minutes_sd > 0, na.rm = TRUE),
+
+  goals_sd_zero    = sum(goals_sd == 0, na.rm = TRUE),
+  goals_sd_nonzero = sum(goals_sd > 0, na.rm = TRUE),
+
+  fee_sd_zero    = sum(fee_sd == 0, na.rm = TRUE),
+  fee_sd_nonzero = sum(fee_sd > 0, na.rm = TRUE),
+
+  riv_sd_zero    = sum(riv_sd == 0, na.rm = TRUE),
+  riv_sd_nonzero = sum(riv_sd > 0, na.rm = TRUE)
+)]
+
+sd_counts
+```
+
+As we can see, there are a few instances when the alternatives don't have much difference between them, but there is still plenty of data where the alternatives aren't too similar. So, this can't be the issue.
+
+We now check how often the chosen alternative is the “best” option within its choice set according to each variable, and average across choice sets. If the values ≈ random chance, the variable does not explain the choice.
+
+```{r}
+choice_data_1[, .(
+
+  age_best = if (all(is.na(player_age))) NA_real_
+  else mean(chosen == 1 & player_age == min(player_age, na.rm = TRUE)),
+
+  minutes_best = if (all(is.na(minutes_played))) NA_real_
+  else mean(chosen == 1 & minutes_played == max(minutes_played, na.rm = TRUE)),
+
+  goals_best = if (all(is.na(goals))) NA_real_
+  else mean(chosen == 1 & goals == max(goals, na.rm = TRUE)),
+
+  fee_best = if (all(is.na(log_fee))) NA_real_
+  else mean(chosen == 1 & log_fee == min(log_fee, na.rm = TRUE)),
+
+  riv_best = if (all(is.na(rivalry_proximity))) NA_real_
+  else mean(chosen == 1 & rivalry_proximity == max(rivalry_proximity, na.rm = TRUE))
+
+), by = choice_id][, lapply(.SD, function(x) mean(x, na.rm = TRUE))]
+```
+
+```{r}
+choice_data_1[, mean(.N), by = choice_id][, mean(V1)]
+```
+
+We can see that the average choice set size is about 3. By random selection, the best player would be selected 33% of the time. But from our data, the predictors are actually worse than random at predicting the chosen player, which explains why the Cox model estimates coefficients ≈ 0.
+
+Next, we check the average rank of the chosen player within each choice set for each variable, averaged across choice sets. If the average rank is better than random, the variable helps explain the choice; if it equals the random rank, the variable has no predictive power.
+
+```{r}
+choice_data_1[, .(
+
+  age_rank     = if (all(is.na(player_age))) NA_real_
+                 else mean(frank(player_age, ties.method="average") [chosen==1]),
+
+  minutes_rank = if (all(is.na(minutes_played))) NA_real_
+                 else mean(frank(-minutes_played, ties.method="average") [chosen==1]),
+
+  goals_rank   = if (all(is.na(goals))) NA_real_
+                 else mean(frank(-goals, ties.method="average") [chosen==1]),
+
+  fee_rank     = if (all(is.na(log_fee))) NA_real_
+                 else mean(frank(log_fee, ties.method="average") [chosen==1]),
+
+  riv_rank     = if (all(is.na(rivalry_proximity))) NA_real_
+                 else mean(frank(-rivalry_proximity, ties.method="average") [chosen==1])
+
+), by = choice_id][, lapply(.SD, mean, na.rm = TRUE)]
+```
+
+These are almost exactly equal to the random benchmark (2.215). Thus, the chosen player is indistinguishable from random. Thus, the data simply contains no predictive signal for the choice in the variables that were included.
+
+Unlike the first 2 models, the 3rd one actually produced a very low p-value for rivalry_proximity, and the LR, Wald and Score test showed about 58%. So, let's try the same analysis on choice_data_3:
+
+```{r}
+choice_data_3[, .(
+
+  age_best = if (all(is.na(player_age))) NA_real_
+  else mean(chosen == 1 & player_age == min(player_age, na.rm = TRUE)),
+
+  minutes_best = if (all(is.na(minutes_played))) NA_real_
+  else mean(chosen == 1 & minutes_played == max(minutes_played, na.rm = TRUE)),
+
+  goals_best = if (all(is.na(goals))) NA_real_
+  else mean(chosen == 1 & goals == max(goals, na.rm = TRUE)),
+
+  fee_best = if (all(is.na(log_fee))) NA_real_
+  else mean(chosen == 1 & log_fee == min(log_fee, na.rm = TRUE)),
+
+  riv_best = if (all(is.na(rivalry_proximity))) NA_real_
+  else mean(chosen == 1 & rivalry_proximity == max(rivalry_proximity, na.rm = TRUE))
+
+), by = choice_id][, lapply(.SD, function(x) mean(x, na.rm = TRUE))]
+```
+
+```{r}
+choice_data_3[, mean(.N), by = choice_id][, mean(V1)]
+```
+
+The results are similar to choice_data_1
+
+```{r}
+choice_data_3[, .(
+
+  age_rank     = if (all(is.na(player_age))) NA_real_
+                 else mean(frank(player_age, ties.method="average") [chosen==1]),
+
+  minutes_rank = if (all(is.na(minutes_played))) NA_real_
+                 else mean(frank(-minutes_played, ties.method="average") [chosen==1]),
+
+  goals_rank   = if (all(is.na(goals))) NA_real_
+                 else mean(frank(-goals, ties.method="average") [chosen==1]),
+
+  fee_rank     = if (all(is.na(log_fee))) NA_real_
+                 else mean(frank(log_fee, ties.method="average") [chosen==1]),
+
+  riv_rank     = if (all(is.na(rivalry_proximity))) NA_real_
+                 else mean(frank(-rivalry_proximity, ties.method="average") [chosen==1])
+
+), by = choice_id][, lapply(.SD, mean, na.rm = TRUE)]
+```
+
+Again, the results are similar.

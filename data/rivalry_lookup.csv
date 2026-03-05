@@ -1,23 +1,25 @@
 country,season_start,team_a,team_b,is_rival
-France,2017,lille,r. strasbourg,TRUE
-France,2017,lille,sm caen,TRUE
-France,2017,lille,toulouse,TRUE
-France,2017,angers sco,lille,TRUE
-France,2017,amiens sc,lille,TRUE
 France,2017,r. strasbourg,sm caen,TRUE
-France,2017,r. strasbourg,toulouse,TRUE
-France,2017,angers sco,r. strasbourg,TRUE
+France,2017,fc metz,r. strasbourg,TRUE
+France,2017,r. strasbourg,stade rennais,TRUE
+France,2017,psg,r. strasbourg,TRUE
 Spain,2017,athletic club,cd leganés,TRUE
 Spain,2017,athletic club,celta de vigo,TRUE
 Spain,2017,athletic club,real sociedad,TRUE
 Spain,2017,athletic club,dep. la coruña,TRUE
+Spain,2017,athletic club,real betis,TRUE
 Spain,2017,celta de vigo,real sociedad,TRUE
 Spain,2017,cd leganés,celta de vigo,TRUE
 Spain,2017,celta de vigo,real betis,TRUE
-France,2017,sm caen,toulouse,TRUE
+Spain,2017,celta de vigo,dep. la coruña,TRUE
+France,2017,fc metz,sm caen,TRUE
+France,2017,sm caen,stade rennais,TRUE
+France,2017,psg,sm caen,TRUE
 Spain,2017,cd leganés,real sociedad,TRUE
 Spain,2017,cd leganés,dep. la coruña,TRUE
+Spain,2017,cd leganés,real betis,TRUE
 Spain,2017,real betis,real sociedad,TRUE
+Spain,2017,dep. la coruña,real sociedad,TRUE
 England,2017,bournemouth,crystal palace,TRUE
 England,2017,bournemouth,newcastle,TRUE
 England,2017,bournemouth,leicester,TRUE
@@ -38,8 +40,9 @@ Italy,2017,cagliari,spal,TRUE
 Italy,2017,cagliari,crotone,TRUE
 Italy,2017,inter,lazio,TRUE
 Italy,2017,atalanta,inter,TRUE
-Italy,2017,fiorentina,inter,TRUE
 Italy,2017,inter,roma,TRUE
+Italy,2017,fiorentina,inter,TRUE
+Italy,2017,inter,torino,TRUE
 Italy,2017,atalanta,lazio,TRUE
 Italy,2017,lazio,roma,TRUE
 Italy,2017,fiorentina,lazio,TRUE
@@ -92,13 +95,24 @@ England,2017,man utd,tottenham,TRUE
 England,2017,chelsea,tottenham,TRUE
 England,2017,arsenal,tottenham,TRUE
 England,2017,man city,tottenham,TRUE
+France,2017,g. bordeaux,saint-étienne,TRUE
+France,2017,g. bordeaux,nice,TRUE
+France,2017,g. bordeaux,montpellier,TRUE
+France,2017,nice,saint-étienne,TRUE
+France,2017,montpellier,saint-étienne,TRUE
+France,2017,dijon,saint-étienne,TRUE
+France,2017,montpellier,nice,TRUE
+France,2017,dijon,nice,TRUE
+France,2017,fc nantes,nice,TRUE
 France,2017,amiens sc,guingamp,TRUE
 France,2017,amiens sc,angers sco,TRUE
 France,2017,amiens sc,fc nantes,TRUE
 France,2017,amiens sc,toulouse,TRUE
-France,2017,angers sco,guingamp,TRUE
+France,2017,amiens sc,lille,TRUE
 France,2017,fc nantes,guingamp,TRUE
-France,2018,nîmes olympique,stade reims,TRUE
+France,2017,angers sco,guingamp,TRUE
+France,2017,dijon,guingamp,TRUE
+France,2017,guingamp,toulouse,TRUE
 Germany,2017,hoffenheim,leverkusen,TRUE
 Germany,2017,hoffenheim,leipzig,TRUE
 Germany,2017,dortmund,hoffenheim,TRUE
@@ -106,14 +120,6 @@ Germany,2017,hoffenheim,stuttgart,TRUE
 Germany,2017,leipzig,leverkusen,TRUE
 Germany,2017,dortmund,leverkusen,TRUE
 Germany,2017,leverkusen,stuttgart,TRUE
-Spain,2018,alavés,levante,TRUE
-Spain,2018,alavés,sd eibar,TRUE
-Spain,2018,alavés,espanyol,TRUE
-Spain,2018,alavés,girona,TRUE
-Spain,2018,alavés,getafe,TRUE
-Spain,2018,levante,sd eibar,TRUE
-Spain,2018,espanyol,levante,TRUE
-Spain,2018,girona,levante,TRUE
 Italy,2018,genoa,udinese,TRUE
 Italy,2018,genoa,spal,TRUE
 Italy,2018,cagliari,genoa,TRUE
@@ -123,14 +129,14 @@ Italy,2018,spal,udinese,TRUE
 Italy,2018,bologna,udinese,TRUE
 Italy,2018,cagliari,udinese,TRUE
 Italy,2018,sassuolo,udinese,TRUE
-France,2017,g. bordeaux,saint-étienne,TRUE
-France,2017,g. bordeaux,nice,TRUE
-France,2017,nice,saint-étienne,TRUE
-France,2017,montpellier,saint-étienne,TRUE
-France,2017,dijon,saint-étienne,TRUE
-France,2017,montpellier,nice,TRUE
-France,2017,dijon,nice,TRUE
-France,2017,nice,stade rennais,TRUE
+Spain,2018,alavés,levante,TRUE
+Spain,2018,alavés,sd eibar,TRUE
+Spain,2018,alavés,espanyol,TRUE
+Spain,2018,alavés,girona,TRUE
+Spain,2018,alavés,getafe,TRUE
+Spain,2018,levante,sd eibar,TRUE
+Spain,2018,espanyol,levante,TRUE
+Spain,2018,girona,levante,TRUE
 Italy,2018,bologna,cagliari,TRUE
 Italy,2018,bologna,spal,TRUE
 Italy,2018,bologna,chievo verona,TRUE
@@ -154,24 +160,23 @@ Italy,2020,cagliari,udinese,TRUE
 Italy,2020,genoa,udinese,TRUE
 Italy,2020,sassuolo,udinese,TRUE
 Italy,2020,sampdoria,udinese,TRUE
+Italy,2018,sassuolo,spal,TRUE
 England,2018,newcastle,west ham,TRUE
 England,2018,newcastle,watford,TRUE
-Italy,2018,sassuolo,spal,TRUE
 Spain,2018,celta de vigo,real sociedad,TRUE
 Spain,2018,cd leganés,celta de vigo,TRUE
 Spain,2018,athletic club,celta de vigo,TRUE
 Spain,2018,celta de vigo,real betis,TRUE
-Spain,2018,celta de vigo,girona,TRUE
 Spain,2018,athletic club,real sociedad,TRUE
 Spain,2018,cd leganés,real sociedad,TRUE
 Spain,2018,real betis,real sociedad,TRUE
 England,2018,watford,west ham,TRUE
 England,2018,brighton,watford,TRUE
 England,2018,brighton,west ham,TRUE
-England,2017,brighton,southampton,TRUE
 Italy,2019,genoa,udinese,TRUE
 Italy,2019,sassuolo,udinese,TRUE
 Italy,2019,spal,udinese,TRUE
+England,2017,brighton,southampton,TRUE
 Germany,2017,augsburg,hertha bsc,TRUE
 Germany,2017,augsburg,werder bremen,TRUE
 Germany,2017,augsburg,hannover 96,TRUE
@@ -181,6 +186,9 @@ Germany,2017,hertha bsc,werder bremen,TRUE
 Germany,2017,hannover 96,hertha bsc,TRUE
 Germany,2017,frankfurt,hertha bsc,TRUE
 Germany,2017,hertha bsc,mainz,TRUE
+Germany,2017,leipzig,stuttgart,TRUE
+Germany,2017,frankfurt,leipzig,TRUE
+Germany,2017,dortmund,leipzig,TRUE
 England,2021,crystal palace,newcastle,TRUE
 England,2021,brighton,crystal palace,TRUE
 England,2021,crystal palace,southampton,TRUE
@@ -190,15 +198,8 @@ England,2021,brighton,newcastle,TRUE
 England,2021,newcastle,southampton,TRUE
 England,2021,newcastle,west ham,TRUE
 England,2021,everton,newcastle,TRUE
-Germany,2017,leipzig,stuttgart,TRUE
-Germany,2017,frankfurt,leipzig,TRUE
-Germany,2017,dortmund,leipzig,TRUE
 Italy,2020,cagliari,genoa,TRUE
 Italy,2020,cagliari,sassuolo,TRUE
-France,2017,dijon,montpellier,TRUE
-France,2017,dijon,fc nantes,TRUE
-France,2017,fc nantes,montpellier,TRUE
-France,2017,montpellier,stade rennais,TRUE
 Italy,2021,bologna,udinese,TRUE
 Italy,2021,bologna,cagliari,TRUE
 Italy,2021,bologna,genoa,TRUE
@@ -208,9 +209,15 @@ Italy,2021,cagliari,udinese,TRUE
 Italy,2021,genoa,udinese,TRUE
 Italy,2021,sassuolo,udinese,TRUE
 Italy,2021,sampdoria,udinese,TRUE
+France,2018,nîmes olympique,stade reims,TRUE
+France,2017,dijon,montpellier,TRUE
+France,2017,dijon,fc nantes,TRUE
+France,2017,fc nantes,montpellier,TRUE
+France,2017,lille,toulouse,TRUE
+France,2017,angers sco,lille,TRUE
+France,2017,angers sco,toulouse,TRUE
 Germany,2017,frankfurt,stuttgart,TRUE
 Germany,2017,frankfurt,werder bremen,TRUE
-Germany,2017,stuttgart,werder bremen,TRUE
 England,2020,crystal palace,newcastle,TRUE
 England,2020,crystal palace,west ham,TRUE
 England,2020,crystal palace,everton,TRUE
@@ -220,6 +227,13 @@ England,2020,brighton,newcastle,TRUE
 England,2020,newcastle,west ham,TRUE
 England,2020,newcastle,southampton,TRUE
 England,2020,everton,newcastle,TRUE
+Italy,2018,inter,lazio,TRUE
+Italy,2018,atalanta,inter,TRUE
+Italy,2018,inter,roma,TRUE
+Italy,2018,atalanta,lazio,TRUE
+Italy,2018,lazio,roma,TRUE
+Italy,2018,fiorentina,lazio,TRUE
+Italy,2018,lazio,torino,TRUE
 England,2019,crystal palace,newcastle,TRUE
 England,2019,bournemouth,crystal palace,TRUE
 England,2019,crystal palace,west ham,TRUE
@@ -229,34 +243,17 @@ England,2019,newcastle,west ham,TRUE
 England,2019,bournemouth,newcastle,TRUE
 England,2019,newcastle,watford,TRUE
 England,2019,brighton,newcastle,TRUE
-Italy,2018,inter,lazio,TRUE
-Italy,2018,atalanta,inter,TRUE
-Italy,2018,inter,roma,TRUE
-Italy,2018,atalanta,lazio,TRUE
-Italy,2018,lazio,roma,TRUE
-Italy,2018,fiorentina,lazio,TRUE
+Italy,2017,fiorentina,torino,TRUE
+Italy,2017,atalanta,fiorentina,TRUE
+Italy,2017,atalanta,torino,TRUE
+Italy,2017,sampdoria,torino,TRUE
 England,2019,watford,west ham,TRUE
 England,2019,bournemouth,watford,TRUE
 England,2019,brighton,watford,TRUE
 England,2019,bournemouth,west ham,TRUE
 England,2019,brighton,west ham,TRUE
 England,2019,bournemouth,brighton,TRUE
-Italy,2017,fiorentina,torino,TRUE
-Italy,2017,atalanta,fiorentina,TRUE
-Italy,2017,atalanta,torino,TRUE
-Italy,2017,sampdoria,torino,TRUE
-Italy,2017,ac milan,torino,TRUE
 England,2022,bournemouth,nott'm forest,TRUE
-France,2017,angers sco,toulouse,TRUE
-France,2018,r. strasbourg,sm caen,TRUE
-France,2018,r. strasbourg,toulouse,TRUE
-France,2018,angers sco,r. strasbourg,TRUE
-France,2018,lille,r. strasbourg,TRUE
-France,2018,sm caen,toulouse,TRUE
-France,2018,angers sco,sm caen,TRUE
-France,2018,lille,sm caen,TRUE
-Italy,2019,genoa,spal,TRUE
-Italy,2019,genoa,sassuolo,TRUE
 Germany,2018,hoffenheim,leverkusen,TRUE
 Germany,2018,hoffenheim,leipzig,TRUE
 Germany,2018,dortmund,hoffenheim,TRUE
@@ -265,19 +262,19 @@ Germany,2018,leipzig,leverkusen,TRUE
 Germany,2018,dortmund,leverkusen,TRUE
 Germany,2018,frankfurt,leverkusen,TRUE
 Germany,2018,leverkusen,stuttgart,TRUE
-Spain,2017,málaga cf,ud las palmas,TRUE
-Spain,2017,dep. la coruña,málaga cf,TRUE
-Spain,2017,dep. la coruña,ud las palmas,TRUE
+Italy,2019,genoa,spal,TRUE
+Italy,2019,genoa,sassuolo,TRUE
 England,2019,everton,leicester,TRUE
 Spain,2017,getafe,sd eibar,TRUE
 Spain,2017,espanyol,sd eibar,TRUE
 Spain,2017,girona,sd eibar,TRUE
+Spain,2018,athletic club,cd leganés,TRUE
+Spain,2018,athletic club,real betis,TRUE
+Spain,2018,cd leganés,real betis,TRUE
 Spain,2017,getafe,villarreal,TRUE
 Spain,2017,espanyol,getafe,TRUE
 Spain,2017,getafe,sevilla fc,TRUE
 Spain,2017,getafe,girona,TRUE
-Spain,2018,athletic club,cd leganés,TRUE
-Spain,2017,espanyol,girona,TRUE
 Italy,2022,bologna,udinese,TRUE
 Italy,2022,bologna,sassuolo,TRUE
 Italy,2022,bologna,torino,TRUE
@@ -287,29 +284,31 @@ Italy,2022,sassuolo,udinese,TRUE
 Italy,2022,torino,udinese,TRUE
 Italy,2022,fiorentina,udinese,TRUE
 Italy,2022,sampdoria,udinese,TRUE
-Italy,2020,genoa,sassuolo,TRUE
 Germany,2018,dortmund,leipzig,TRUE
 Germany,2018,frankfurt,leipzig,TRUE
+Italy,2020,genoa,sassuolo,TRUE
 England,2018,brighton,southampton,TRUE
-Spain,2018,espanyol,sd eibar,TRUE
-Spain,2018,getafe,sd eibar,TRUE
-Spain,2018,girona,sd eibar,TRUE
-France,2018,amiens sc,guingamp,TRUE
-France,2018,amiens sc,angers sco,TRUE
-France,2018,amiens sc,toulouse,TRUE
-France,2018,amiens sc,fc nantes,TRUE
-France,2018,amiens sc,dijon,TRUE
-France,2018,dijon,guingamp,TRUE
-France,2018,angers sco,guingamp,TRUE
-France,2018,guingamp,toulouse,TRUE
 France,2018,nice,saint-étienne,TRUE
 France,2018,montpellier,nice,TRUE
 France,2018,g. bordeaux,nice,TRUE
-France,2018,nice,stade rennais,TRUE
 France,2018,fc nantes,nice,TRUE
 France,2018,g. bordeaux,saint-étienne,TRUE
 France,2018,montpellier,saint-étienne,TRUE
-France,2018,saint-étienne,stade rennais,TRUE
+Spain,2018,espanyol,sd eibar,TRUE
+Spain,2018,getafe,sd eibar,TRUE
+Spain,2018,girona,sd eibar,TRUE
+France,2018,r. strasbourg,sm caen,TRUE
+Spain,2017,espanyol,girona,TRUE
+France,2018,amiens sc,guingamp,TRUE
+France,2018,amiens sc,angers sco,TRUE
+France,2018,amiens sc,toulouse,TRUE
+France,2018,amiens sc,dijon,TRUE
+France,2018,amiens sc,fc nantes,TRUE
+France,2018,dijon,guingamp,TRUE
+France,2018,angers sco,guingamp,TRUE
+France,2018,fc nantes,guingamp,TRUE
+France,2018,guingamp,toulouse,TRUE
+France,2021,clermont foot,troyes,TRUE
 Germany,2018,augsburg,hertha bsc,TRUE
 Germany,2018,augsburg,hannover 96,TRUE
 Germany,2018,augsburg,mainz,TRUE
@@ -317,115 +316,94 @@ Germany,2018,augsburg,werder bremen,TRUE
 Germany,2018,augsburg,freiburg,TRUE
 Germany,2018,hertha bsc,werder bremen,TRUE
 Germany,2018,hertha bsc,mainz,TRUE
-Germany,2018,hertha bsc,mönchengladbach,TRUE
 Germany,2018,hannover 96,hertha bsc,TRUE
+Germany,2018,frankfurt,hertha bsc,TRUE
 Spain,2019,alavés,levante,TRUE
 Spain,2019,alavés,sd eibar,TRUE
 Spain,2019,alavés,espanyol,TRUE
-Spain,2019,alavés,cd leganés,TRUE
 Spain,2019,alavés,getafe,TRUE
 Spain,2019,levante,sd eibar,TRUE
 Spain,2019,espanyol,levante,TRUE
-Spain,2019,celta de vigo,levante,TRUE
-Spain,2019,levante,real sociedad,TRUE
-Spain,2017,sevilla fc,villarreal,TRUE
-France,2021,clermont foot,troyes,TRUE
-France,2019,nîmes olympique,stade reims,TRUE
-Spain,2019,espanyol,sd eibar,TRUE
-Spain,2019,getafe,sd eibar,TRUE
+Spain,2019,levante,villarreal,TRUE
+France,2020,montpellier,nice,TRUE
+France,2020,fc nantes,montpellier,TRUE
+France,2020,montpellier,saint-étienne,TRUE
+France,2020,g. bordeaux,montpellier,TRUE
+France,2020,angers sco,montpellier,TRUE
+France,2020,nice,saint-étienne,TRUE
+France,2020,g. bordeaux,nice,TRUE
+France,2020,fc nantes,nice,TRUE
+France,2020,angers sco,nice,TRUE
 Germany,2017,freiburg,hannover 96,TRUE
 Germany,2017,freiburg,hamburg,TRUE
 Germany,2017,freiburg,mainz,TRUE
 Germany,2017,hannover 96,mainz,TRUE
-Germany,2017,hannover 96,mönchengladbach,TRUE
-Spain,2018,espanyol,getafe,TRUE
-Spain,2018,espanyol,sevilla fc,TRUE
+Germany,2017,hamburg,hannover 96,TRUE
 Germany,2017,hamburg,mainz,TRUE
-France,2020,montpellier,nice,TRUE
-France,2020,fc nantes,montpellier,TRUE
-France,2020,montpellier,stade rennais,TRUE
-France,2020,montpellier,saint-étienne,TRUE
-France,2020,montpellier,r. strasbourg,TRUE
-France,2020,nice,saint-étienne,TRUE
-France,2020,g. bordeaux,nice,TRUE
-France,2020,nice,stade rennais,TRUE
-France,2020,fc nantes,nice,TRUE
-Italy,2021,cagliari,genoa,TRUE
-Italy,2021,genoa,sampdoria,TRUE
-Italy,2021,genoa,sassuolo,TRUE
 France,2018,lyon,marseille,TRUE
 France,2018,lyon,monaco,TRUE
 France,2018,marseille,monaco,TRUE
-Spain,2019,ca osasuna,granada cf,TRUE
-Spain,2019,ca osasuna,rcd mallorca,TRUE
-Spain,2019,granada cf,rcd mallorca,TRUE
-Spain,2020,alavés,sd eibar,TRUE
-Spain,2020,alavés,levante,TRUE
-Spain,2020,alavés,getafe,TRUE
-Spain,2020,alavés,celta de vigo,TRUE
-Spain,2020,alavés,athletic club,TRUE
-Spain,2020,levante,sd eibar,TRUE
-Spain,2020,getafe,sd eibar,TRUE
+Spain,2019,espanyol,sd eibar,TRUE
+Spain,2019,getafe,sd eibar,TRUE
+Spain,2019,sd eibar,villarreal,TRUE
+Spain,2017,sevilla fc,villarreal,TRUE
+Spain,2017,valencia,villarreal,TRUE
 France,2019,montpellier,nice,TRUE
 France,2019,fc nantes,montpellier,TRUE
-France,2019,montpellier,stade rennais,TRUE
 France,2019,montpellier,saint-étienne,TRUE
 France,2019,g. bordeaux,montpellier,TRUE
+France,2019,dijon,montpellier,TRUE
 France,2019,nice,saint-étienne,TRUE
 France,2019,g. bordeaux,nice,TRUE
 France,2019,fc nantes,nice,TRUE
-France,2019,nice,stade rennais,TRUE
-Spain,2020,ca osasuna,granada cf,TRUE
+Spain,2018,espanyol,getafe,TRUE
+Spain,2018,espanyol,sevilla fc,TRUE
+Italy,2021,cagliari,genoa,TRUE
+Italy,2021,cagliari,sassuolo,TRUE
+Italy,2021,genoa,sampdoria,TRUE
+Italy,2021,genoa,sassuolo,TRUE
+France,2018,fc nantes,montpellier,TRUE
+France,2018,dijon,montpellier,TRUE
+France,2018,g. bordeaux,montpellier,TRUE
 Germany,2019,leipzig,leverkusen,TRUE
 Germany,2019,dortmund,leipzig,TRUE
 Germany,2019,hoffenheim,leipzig,TRUE
+Germany,2019,frankfurt,leipzig,TRUE
 Germany,2019,hoffenheim,leverkusen,TRUE
 Germany,2019,dortmund,leverkusen,TRUE
 Germany,2019,frankfurt,leverkusen,TRUE
-Germany,2019,leverkusen,mönchengladbach,TRUE
-Italy,2017,sampdoria,sassuolo,TRUE
-England,2023,bournemouth,nott'm forest,TRUE
+Spain,2019,ca osasuna,granada cf,TRUE
+Spain,2020,alavés,sd eibar,TRUE
+Spain,2020,alavés,levante,TRUE
+Spain,2020,alavés,getafe,TRUE
+Spain,2020,levante,sd eibar,TRUE
+Spain,2020,getafe,sd eibar,TRUE
+Spain,2020,sd eibar,villarreal,TRUE
+Spain,2020,sd eibar,valencia,TRUE
+Spain,2020,ca osasuna,granada cf,TRUE
 Germany,2019,frankfurt,hoffenheim,TRUE
 Germany,2019,dortmund,hoffenheim,TRUE
+England,2023,bournemouth,nott'm forest,TRUE
+Italy,2019,sampdoria,sassuolo,TRUE
 England,2019,brighton,southampton,TRUE
 England,2020,everton,leicester,TRUE
 England,2020,everton,west ham,TRUE
 England,2020,everton,southampton,TRUE
 England,2020,leicester,west ham,TRUE
-Spain,2018,getafe,sevilla fc,TRUE
-Spain,2018,getafe,villarreal,TRUE
-Spain,2018,sevilla fc,villarreal,TRUE
-Italy,2019,sampdoria,sassuolo,TRUE
-France,2018,fc nantes,montpellier,TRUE
-France,2018,montpellier,stade rennais,TRUE
-France,2018,dijon,montpellier,TRUE
-France,2018,angers sco,toulouse,TRUE
-England,2021,brighton,southampton,TRUE
-England,2021,brighton,west ham,TRUE
 Italy,2019,inter,lazio,TRUE
 Italy,2019,atalanta,inter,TRUE
 Italy,2019,inter,roma,TRUE
-Italy,2019,ac milan,inter,TRUE
 Italy,2019,lazio,roma,TRUE
 Italy,2019,atalanta,lazio,TRUE
-Italy,2019,ac milan,lazio,TRUE
-France,2020,angers sco,r. strasbourg,TRUE
-France,2020,angers sco,fc nantes,TRUE
-France,2020,angers sco,g. bordeaux,TRUE
-France,2020,fc nantes,r. strasbourg,TRUE
+England,2021,brighton,southampton,TRUE
+England,2021,brighton,west ham,TRUE
 Italy,2020,benevento,spezia calcio,TRUE
 Italy,2020,benevento,crotone,TRUE
 Italy,2020,crotone,spezia calcio,TRUE
-France,2017,fc nantes,stade rennais,TRUE
+Spain,2018,getafe,sevilla fc,TRUE
+Spain,2018,getafe,villarreal,TRUE
+Spain,2018,sevilla fc,villarreal,TRUE
 Spain,2021,ca osasuna,granada cf,TRUE
-Germany,2017,1.fc köln,hamburg,TRUE
-France,2019,angers sco,r. strasbourg,TRUE
-France,2019,amiens sc,angers sco,TRUE
-France,2019,angers sco,fc nantes,TRUE
-France,2019,angers sco,toulouse,TRUE
-France,2019,lille,r. strasbourg,TRUE
-France,2019,fc nantes,r. strasbourg,TRUE
-France,2019,r. strasbourg,toulouse,TRUE
 Germany,2019,augsburg,hertha bsc,TRUE
 Germany,2019,augsburg,mainz,TRUE
 Germany,2019,augsburg,freiburg,TRUE
@@ -436,17 +414,18 @@ Germany,2019,freiburg,hertha bsc,TRUE
 Germany,2019,frankfurt,hertha bsc,TRUE
 England,2020,brighton,southampton,TRUE
 England,2020,brighton,west ham,TRUE
-Spain,2020,celta de vigo,levante,TRUE
-Spain,2020,athletic club,levante,TRUE
+France,2019,nîmes olympique,stade reims,TRUE
+Germany,2018,freiburg,mainz,TRUE
+Germany,2018,freiburg,hannover 96,TRUE
+Germany,2018,hannover 96,mainz,TRUE
+Germany,2018,mainz,werder bremen,TRUE
 Spain,2020,getafe,levante,TRUE
-Spain,2019,athletic club,real sociedad,TRUE
-Spain,2019,athletic club,cd leganés,TRUE
-Spain,2019,athletic club,celta de vigo,TRUE
-Spain,2019,celta de vigo,real sociedad,TRUE
-Spain,2019,cd leganés,real sociedad,TRUE
-Spain,2019,real betis,real sociedad,TRUE
-Spain,2019,cd leganés,celta de vigo,TRUE
-Spain,2019,celta de vigo,real betis,TRUE
+Spain,2020,levante,villarreal,TRUE
+Spain,2020,levante,sevilla fc,TRUE
+France,2018,dijon,g. bordeaux,TRUE
+Italy,2017,atalanta,roma,TRUE
+France,2018,angers sco,toulouse,TRUE
+France,2018,angers sco,lille,TRUE
 England,2018,cardiff,fulham,TRUE
 England,2018,cardiff,wolves,TRUE
 England,2018,fulham,wolves,TRUE
@@ -458,14 +437,21 @@ England,2022,crystal palace,newcastle,TRUE
 England,2022,newcastle,west ham,TRUE
 England,2022,newcastle,southampton,TRUE
 England,2022,everton,newcastle,TRUE
-Germany,2018,freiburg,mainz,TRUE
-Germany,2018,freiburg,hannover 96,TRUE
-Germany,2018,hannover 96,mainz,TRUE
-Germany,2018,mainz,werder bremen,TRUE
-Italy,2017,atalanta,roma,TRUE
+France,2019,g. bordeaux,saint-étienne,TRUE
+Spain,2019,celta de vigo,real sociedad,TRUE
+Spain,2019,cd leganés,celta de vigo,TRUE
+Spain,2019,athletic club,celta de vigo,TRUE
+Spain,2019,celta de vigo,real betis,TRUE
+Spain,2019,athletic club,real sociedad,TRUE
+Spain,2019,cd leganés,real sociedad,TRUE
+Spain,2019,real betis,real sociedad,TRUE
 Italy,2021,salernitana,venezia,TRUE
 Italy,2021,fc empoli,salernitana,TRUE
 Italy,2021,fc empoli,venezia,TRUE
+Spain,2019,athletic club,cd leganés,TRUE
+Spain,2019,athletic club,real betis,TRUE
+Spain,2019,cd leganés,real betis,TRUE
+France,2018,lille,toulouse,TRUE
 England,2018,arsenal,chelsea,TRUE
 England,2018,arsenal,tottenham,TRUE
 England,2018,arsenal,man utd,TRUE
@@ -473,9 +459,6 @@ England,2018,arsenal,liverpool,TRUE
 England,2018,chelsea,tottenham,TRUE
 England,2018,chelsea,man utd,TRUE
 England,2018,chelsea,liverpool,TRUE
-France,2018,dijon,g. bordeaux,TRUE
-France,2019,g. bordeaux,saint-étienne,TRUE
-France,2019,saint-étienne,stade rennais,TRUE
 Germany,2021,augsburg,hertha bsc,TRUE
 Germany,2021,augsburg,mainz,TRUE
 Germany,2021,augsburg,freiburg,TRUE
@@ -483,18 +466,20 @@ Germany,2021,hertha bsc,mainz,TRUE
 Germany,2021,freiburg,hertha bsc,TRUE
 Germany,2021,frankfurt,hertha bsc,TRUE
 Germany,2021,hertha bsc,hoffenheim,TRUE
-Spain,2019,espanyol,getafe,TRUE
+France,2018,dijon,fc nantes,TRUE
+Germany,2022,augsburg,hertha bsc,TRUE
+Germany,2022,augsburg,mainz,TRUE
+Germany,2022,augsburg,freiburg,TRUE
+Germany,2022,augsburg,hoffenheim,TRUE
+Germany,2022,hertha bsc,mainz,TRUE
+Germany,2022,hertha bsc,hoffenheim,TRUE
+Germany,2022,freiburg,hertha bsc,TRUE
 England,2018,liverpool,tottenham,TRUE
 England,2018,liverpool,man utd,TRUE
 England,2018,liverpool,man city,TRUE
 England,2018,man utd,tottenham,TRUE
 England,2018,man city,tottenham,TRUE
-Germany,2022,augsburg,hertha bsc,TRUE
-Germany,2022,augsburg,mainz,TRUE
-Germany,2022,augsburg,freiburg,TRUE
-Germany,2022,hertha bsc,mainz,TRUE
-Germany,2022,hertha bsc,hoffenheim,TRUE
-Germany,2022,freiburg,hertha bsc,TRUE
+Spain,2019,espanyol,getafe,TRUE
 Germany,2020,augsburg,hertha bsc,TRUE
 Germany,2020,augsburg,mainz,TRUE
 Germany,2020,augsburg,freiburg,TRUE
@@ -509,43 +494,39 @@ England,2019,arsenal,man utd,TRUE
 England,2019,chelsea,tottenham,TRUE
 England,2019,chelsea,man utd,TRUE
 England,2019,chelsea,liverpool,TRUE
+Germany,2019,freiburg,mainz,TRUE
+Germany,2019,freiburg,werder bremen,TRUE
+Germany,2019,mainz,werder bremen,TRUE
 England,2024,bournemouth,nott'm forest,TRUE
-England,2022,crystal palace,everton,TRUE
-England,2022,crystal palace,southampton,TRUE
-England,2022,crystal palace,west ham,TRUE
 Germany,2020,leipzig,leverkusen,TRUE
 Germany,2020,dortmund,leipzig,TRUE
 Germany,2020,hoffenheim,leipzig,TRUE
 Germany,2020,frankfurt,leipzig,TRUE
-Germany,2020,leipzig,mönchengladbach,TRUE
 Germany,2020,hoffenheim,leverkusen,TRUE
 Germany,2020,frankfurt,leverkusen,TRUE
 Germany,2020,dortmund,leverkusen,TRUE
-Germany,2020,leverkusen,mönchengladbach,TRUE
-Spain,2021,alavés,levante,TRUE
-Spain,2021,alavés,getafe,TRUE
-Spain,2021,alavés,celta de vigo,TRUE
-Spain,2021,getafe,levante,TRUE
-Spain,2021,celta de vigo,levante,TRUE
-Spain,2021,athletic club,levante,TRUE
-Spain,2021,levante,real sociedad,TRUE
+Germany,2018,frankfurt,werder bremen,TRUE
+England,2022,crystal palace,everton,TRUE
+England,2022,crystal palace,southampton,TRUE
+England,2022,crystal palace,west ham,TRUE
 England,2017,arsenal,chelsea,TRUE
 England,2017,arsenal,man utd,TRUE
 England,2017,chelsea,man utd,TRUE
-France,2020,nîmes olympique,stade reims,TRUE
+Spain,2021,alavés,levante,TRUE
+Spain,2021,alavés,getafe,TRUE
+Spain,2021,alavés,valencia,TRUE
+Spain,2021,alavés,villarreal,TRUE
+Spain,2021,getafe,levante,TRUE
+Spain,2021,levante,villarreal,TRUE
+Spain,2021,levante,valencia,TRUE
 Italy,2023,cagliari,genoa,TRUE
 Spain,2018,rayo vallecano,sd huesca,TRUE
 Spain,2018,rayo vallecano,real valladolid,TRUE
 Spain,2018,real valladolid,sd huesca,TRUE
-Germany,2019,freiburg,mainz,TRUE
-Germany,2019,freiburg,mönchengladbach,TRUE
-Germany,2019,mainz,werder bremen,TRUE
-Spain,2021,cádiz cf,elche cf,TRUE
+Germany,2020,frankfurt,hoffenheim,TRUE
+Germany,2020,dortmund,hoffenheim,TRUE
 Germany,2020,freiburg,mainz,TRUE
 Germany,2020,mainz,werder bremen,TRUE
-Germany,2018,frankfurt,werder bremen,TRUE
-Germany,2018,mönchengladbach,werder bremen,TRUE
-France,2018,fc nantes,stade rennais,TRUE
 England,2023,brighton,newcastle,TRUE
 England,2023,brighton,crystal palace,TRUE
 England,2023,brighton,west ham,TRUE
@@ -554,34 +535,41 @@ England,2023,crystal palace,newcastle,TRUE
 England,2023,newcastle,west ham,TRUE
 England,2023,everton,newcastle,TRUE
 England,2023,arsenal,newcastle,TRUE
-Germany,2020,frankfurt,hoffenheim,TRUE
-Germany,2020,hoffenheim,mönchengladbach,TRUE
-Spain,2020,cádiz cf,elche cf,TRUE
 Italy,2018,fiorentina,torino,TRUE
 Italy,2018,atalanta,fiorentina,TRUE
+Italy,2018,fiorentina,sampdoria,TRUE
 Italy,2018,atalanta,torino,TRUE
 Italy,2018,sampdoria,torino,TRUE
-Italy,2018,ac milan,torino,TRUE
+France,2019,angers sco,fc nantes,TRUE
+France,2019,fc nantes,g. bordeaux,TRUE
+France,2019,dijon,fc nantes,TRUE
 England,2018,man city,man utd,TRUE
 England,2019,man utd,tottenham,TRUE
 England,2019,liverpool,man utd,TRUE
 England,2019,man city,man utd,TRUE
 England,2019,liverpool,tottenham,TRUE
 England,2019,man city,tottenham,TRUE
-Spain,2020,athletic club,real sociedad,TRUE
-Spain,2020,athletic club,celta de vigo,TRUE
-Spain,2020,celta de vigo,real sociedad,TRUE
-Spain,2020,real betis,real sociedad,TRUE
-Spain,2020,real sociedad,villarreal,TRUE
+France,2019,dijon,g. bordeaux,TRUE
 England,2021,everton,leicester,TRUE
 England,2021,everton,west ham,TRUE
 England,2021,everton,southampton,TRUE
 England,2021,leicester,west ham,TRUE
 England,2021,arsenal,leicester,TRUE
-France,2019,fc nantes,stade rennais,TRUE
-England,2023,luton,sheff utd,TRUE
-France,2019,dijon,g. bordeaux,TRUE
 Italy,2020,sampdoria,sassuolo,TRUE
+France,2019,lyon,marseille,TRUE
+France,2019,lyon,monaco,TRUE
+France,2019,marseille,monaco,TRUE
+England,2023,luton,sheff utd,TRUE
+Germany,2019,frankfurt,werder bremen,TRUE
+France,2021,montpellier,nice,TRUE
+France,2021,fc nantes,montpellier,TRUE
+France,2021,montpellier,saint-étienne,TRUE
+France,2021,angers sco,montpellier,TRUE
+France,2021,g. bordeaux,montpellier,TRUE
+France,2021,fc nantes,nice,TRUE
+France,2021,nice,saint-étienne,TRUE
+France,2021,g. bordeaux,nice,TRUE
+France,2021,angers sco,nice,TRUE
 England,2021,chelsea,tottenham,TRUE
 England,2021,arsenal,chelsea,TRUE
 England,2021,chelsea,man utd,TRUE
@@ -590,6 +578,7 @@ England,2021,arsenal,tottenham,TRUE
 England,2021,man utd,tottenham,TRUE
 England,2021,liverpool,tottenham,TRUE
 England,2017,man city,man utd,TRUE
+Germany,2020,freiburg,werder bremen,TRUE
 Italy,2018,fc empoli,parma,TRUE
 Italy,2018,fc empoli,frosinone,TRUE
 Italy,2018,frosinone,parma,TRUE
@@ -601,12 +590,18 @@ England,2024,crystal palace,newcastle,TRUE
 England,2024,newcastle,west ham,TRUE
 England,2024,everton,newcastle,TRUE
 England,2024,man utd,newcastle,TRUE
-France,2019,lyon,marseille,TRUE
-France,2019,lyon,monaco,TRUE
-France,2019,marseille,monaco,TRUE
-Germany,2019,frankfurt,werder bremen,TRUE
-Germany,2019,mönchengladbach,werder bremen,TRUE
-Germany,2020,freiburg,werder bremen,TRUE
+France,2020,angers sco,fc nantes,TRUE
+France,2020,angers sco,g. bordeaux,TRUE
+France,2020,angers sco,dijon,TRUE
+France,2020,fc nantes,g. bordeaux,TRUE
+France,2020,fc nantes,saint-étienne,TRUE
+Italy,2023,bologna,udinese,TRUE
+Italy,2023,bologna,torino,TRUE
+Italy,2023,bologna,fiorentina,TRUE
+Italy,2023,bologna,sassuolo,TRUE
+Italy,2023,sassuolo,udinese,TRUE
+Italy,2023,torino,udinese,TRUE
+Italy,2023,fiorentina,udinese,TRUE
 England,2020,chelsea,man utd,TRUE
 England,2020,arsenal,chelsea,TRUE
 England,2020,chelsea,tottenham,TRUE
@@ -615,68 +610,57 @@ England,2020,man utd,tottenham,TRUE
 England,2020,arsenal,man utd,TRUE
 England,2020,liverpool,man utd,TRUE
 England,2020,man city,man utd,TRUE
-Italy,2023,bologna,udinese,TRUE
-Italy,2023,bologna,torino,TRUE
-Italy,2023,bologna,fiorentina,TRUE
-Italy,2023,bologna,sassuolo,TRUE
-Italy,2023,sassuolo,udinese,TRUE
-Italy,2023,torino,udinese,TRUE
-Italy,2023,fiorentina,udinese,TRUE
-France,2020,fc nantes,g. bordeaux,TRUE
 Italy,2024,parma,venezia,TRUE
 Italy,2024,como,parma,TRUE
 Italy,2024,como,venezia,TRUE
-France,2021,montpellier,nice,TRUE
-France,2021,fc nantes,montpellier,TRUE
-France,2021,montpellier,stade rennais,TRUE
-France,2021,montpellier,saint-étienne,TRUE
-France,2021,angers sco,montpellier,TRUE
-France,2021,fc nantes,nice,TRUE
-France,2021,nice,stade rennais,TRUE
-France,2021,nice,r. strasbourg,TRUE
-France,2021,nice,saint-étienne,TRUE
-Italy,2017,ac milan,sampdoria,TRUE
 England,2020,arsenal,tottenham,TRUE
 Germany,2021,leipzig,leverkusen,TRUE
 Germany,2021,dortmund,leipzig,TRUE
 Germany,2021,frankfurt,leipzig,TRUE
 Germany,2021,hoffenheim,leipzig,TRUE
-Germany,2021,leipzig,mönchengladbach,TRUE
 Germany,2021,hoffenheim,leverkusen,TRUE
 Germany,2021,dortmund,leverkusen,TRUE
-Germany,2021,leverkusen,mönchengladbach,TRUE
 Germany,2021,frankfurt,leverkusen,TRUE
+France,2019,amiens sc,dijon,TRUE
+France,2019,amiens sc,angers sco,TRUE
+France,2019,amiens sc,toulouse,TRUE
+France,2019,angers sco,dijon,TRUE
+France,2020,g. bordeaux,saint-étienne,TRUE
 England,2021,arsenal,man utd,TRUE
 Italy,2024,cagliari,genoa,TRUE
+Spain,2020,athletic club,real sociedad,TRUE
+Spain,2020,athletic club,celta de vigo,TRUE
+Spain,2020,athletic club,real betis,TRUE
+Spain,2020,celta de vigo,real sociedad,TRUE
+Spain,2020,real betis,real sociedad,TRUE
+England,2020,liverpool,tottenham,TRUE
 Spain,2019,getafe,sevilla fc,TRUE
 Spain,2019,getafe,villarreal,TRUE
-England,2020,liverpool,tottenham,TRUE
 England,2022,everton,leicester,TRUE
 England,2022,everton,west ham,TRUE
 England,2022,everton,southampton,TRUE
 England,2022,leicester,west ham,TRUE
 England,2022,leicester,southampton,TRUE
+Germany,2021,bayern munich,dortmund,TRUE
+Germany,2018,frankfurt,stuttgart,TRUE
+Italy,2019,atalanta,torino,TRUE
+Italy,2019,atalanta,roma,TRUE
+Italy,2019,atalanta,fiorentina,TRUE
+Germany,2020,frankfurt,werder bremen,TRUE
+France,2019,angers sco,toulouse,TRUE
 Spain,2019,sevilla fc,villarreal,TRUE
 Spain,2019,sevilla fc,valencia,TRUE
-Germany,2018,frankfurt,stuttgart,TRUE
-Germany,2018,frankfurt,mönchengladbach,TRUE
-Spain,2021,athletic club,real sociedad,TRUE
-Spain,2021,athletic club,celta de vigo,TRUE
-Spain,2021,athletic club,getafe,TRUE
-Spain,2021,athletic club,real betis,TRUE
-Spain,2021,real betis,real sociedad,TRUE
-Spain,2021,celta de vigo,real sociedad,TRUE
-Spain,2021,real sociedad,villarreal,TRUE
-France,2020,g. bordeaux,saint-étienne,TRUE
-Italy,2019,atalanta,torino,TRUE
-Italy,2019,ac milan,atalanta,TRUE
-Italy,2019,atalanta,roma,TRUE
 Germany,2021,freiburg,mainz,TRUE
-France,2021,angers sco,r. strasbourg,TRUE
-France,2021,angers sco,fc nantes,TRUE
-France,2021,angers sco,g. bordeaux,TRUE
-France,2021,fc nantes,r. strasbourg,TRUE
-France,2021,r. strasbourg,stade rennais,TRUE
+Germany,2021,frankfurt,mainz,TRUE
+Germany,2021,hoffenheim,mainz,TRUE
+Italy,2023,lazio,roma,TRUE
+Italy,2023,atalanta,lazio,TRUE
+Italy,2023,inter,lazio,TRUE
+Italy,2023,juventus,lazio,TRUE
+Italy,2023,atalanta,roma,TRUE
+Italy,2023,juventus,roma,TRUE
+Italy,2023,fiorentina,roma,TRUE
+Italy,2023,inter,roma,TRUE
 England,2022,chelsea,tottenham,TRUE
 England,2022,chelsea,man utd,TRUE
 England,2022,arsenal,chelsea,TRUE
@@ -684,273 +668,231 @@ England,2022,chelsea,liverpool,TRUE
 England,2022,arsenal,tottenham,TRUE
 England,2022,man utd,tottenham,TRUE
 England,2022,liverpool,tottenham,TRUE
-Italy,2023,lazio,roma,TRUE
-Italy,2023,atalanta,lazio,TRUE
-Italy,2023,ac milan,lazio,TRUE
-Italy,2023,inter,lazio,TRUE
-Italy,2023,juventus,lazio,TRUE
-Italy,2023,atalanta,roma,TRUE
-Italy,2023,juventus,roma,TRUE
-Italy,2023,fiorentina,roma,TRUE
-Italy,2023,ac milan,roma,TRUE
-France,2021,fc nantes,stade rennais,TRUE
+Italy,2018,atalanta,roma,TRUE
 Italy,2020,atalanta,inter,TRUE
 Italy,2020,atalanta,lazio,TRUE
-Italy,2020,ac milan,atalanta,TRUE
 Italy,2020,atalanta,roma,TRUE
 Italy,2020,inter,lazio,TRUE
 Italy,2020,inter,roma,TRUE
-Italy,2020,ac milan,inter,TRUE
 Italy,2020,inter,napoli,TRUE
-Spain,2022,cádiz cf,elche cf,TRUE
-France,2019,amiens sc,dijon,TRUE
-France,2019,amiens sc,toulouse,TRUE
-Italy,2018,atalanta,roma,TRUE
-France,2019,dijon,toulouse,TRUE
-Germany,2022,dortmund,leipzig,TRUE
-Germany,2022,dortmund,leverkusen,TRUE
-Germany,2022,leipzig,leverkusen,TRUE
-Germany,2022,frankfurt,leipzig,TRUE
+Italy,2020,inter,juventus,TRUE
 Italy,2022,lazio,roma,TRUE
 Italy,2022,atalanta,lazio,TRUE
 Italy,2022,inter,lazio,TRUE
-Italy,2022,ac milan,lazio,TRUE
 Italy,2022,juventus,lazio,TRUE
 Italy,2022,atalanta,roma,TRUE
 Italy,2022,juventus,roma,TRUE
 Italy,2022,inter,roma,TRUE
-Italy,2022,ac milan,roma,TRUE
-Spain,2020,celta de vigo,real betis,TRUE
+Germany,2022,dortmund,leipzig,TRUE
+Germany,2022,dortmund,leverkusen,TRUE
+Germany,2022,bayern munich,dortmund,TRUE
+Germany,2022,leipzig,leverkusen,TRUE
+Germany,2022,frankfurt,leipzig,TRUE
 Italy,2020,lazio,roma,TRUE
-Italy,2020,ac milan,lazio,TRUE
+Italy,2020,lazio,napoli,TRUE
 Italy,2022,fc empoli,salernitana,TRUE
-Germany,2021,freiburg,mönchengladbach,TRUE
-England,2023,crystal palace,west ham,TRUE
-England,2023,crystal palace,everton,TRUE
-Italy,2018,ac milan,sampdoria,TRUE
+Spain,2020,celta de vigo,real betis,TRUE
 Italy,2024,lazio,roma,TRUE
 Italy,2024,atalanta,lazio,TRUE
-Italy,2024,ac milan,lazio,TRUE
 Italy,2024,juventus,lazio,TRUE
 Italy,2024,fiorentina,lazio,TRUE
+Italy,2024,inter,lazio,TRUE
 Italy,2024,atalanta,roma,TRUE
 Italy,2024,juventus,roma,TRUE
 Italy,2024,fiorentina,roma,TRUE
-Italy,2024,ac milan,roma,TRUE
+Italy,2024,inter,roma,TRUE
+England,2023,crystal palace,west ham,TRUE
+England,2023,crystal palace,everton,TRUE
+Spain,2021,athletic club,real sociedad,TRUE
+Spain,2021,athletic club,celta de vigo,TRUE
+Spain,2021,athletic club,real betis,TRUE
+Spain,2021,celta de vigo,real sociedad,TRUE
+Spain,2021,real betis,real sociedad,TRUE
 England,2021,liverpool,man utd,TRUE
-Spain,2024,getafe,valencia,TRUE
-Spain,2024,celta de vigo,getafe,TRUE
-Spain,2024,getafe,sevilla fc,TRUE
-Spain,2024,celta de vigo,valencia,TRUE
-Spain,2024,sevilla fc,valencia,TRUE
-Spain,2024,athletic club,valencia,TRUE
 Italy,2021,sampdoria,sassuolo,TRUE
-Italy,2021,fiorentina,sassuolo,TRUE
+Spain,2024,getafe,valencia,TRUE
+Spain,2024,getafe,sevilla fc,TRUE
+Spain,2024,getafe,villarreal,TRUE
+Spain,2024,sevilla fc,valencia,TRUE
+Spain,2024,valencia,villarreal,TRUE
+Spain,2024,atlético,valencia,TRUE
+Spain,2024,real madrid,valencia,TRUE
 Italy,2021,lazio,roma,TRUE
 Italy,2021,atalanta,lazio,TRUE
 Italy,2021,inter,lazio,TRUE
-Italy,2021,ac milan,lazio,TRUE
+Italy,2021,lazio,napoli,TRUE
 Italy,2021,atalanta,roma,TRUE
 Italy,2021,inter,roma,TRUE
-Italy,2021,ac milan,roma,TRUE
 Italy,2021,juventus,roma,TRUE
-Germany,2019,frankfurt,mönchengladbach,TRUE
 Germany,2023,dortmund,leipzig,TRUE
 Germany,2023,dortmund,leverkusen,TRUE
 Germany,2023,bayern munich,dortmund,TRUE
 Germany,2023,leipzig,leverkusen,TRUE
 Germany,2023,frankfurt,leipzig,TRUE
-France,2022,fc nantes,r. strasbourg,TRUE
-France,2022,angers sco,fc nantes,TRUE
-France,2022,fc nantes,montpellier,TRUE
-France,2022,fc nantes,nice,TRUE
-France,2022,fc nantes,stade rennais,TRUE
-France,2022,nice,r. strasbourg,TRUE
-France,2022,angers sco,r. strasbourg,TRUE
-France,2022,montpellier,r. strasbourg,TRUE
-France,2022,r. strasbourg,stade rennais,TRUE
-France,2023,fc nantes,r. strasbourg,TRUE
-France,2023,fc nantes,montpellier,TRUE
-France,2023,fc nantes,nice,TRUE
-France,2023,nice,r. strasbourg,TRUE
-France,2023,montpellier,r. strasbourg,TRUE
+Germany,2023,freiburg,leipzig,TRUE
 Italy,2019,fiorentina,torino,TRUE
 Italy,2019,fiorentina,sampdoria,TRUE
 Italy,2019,sampdoria,torino,TRUE
-Italy,2019,ac milan,torino,TRUE
 Spain,2019,valencia,villarreal,TRUE
 England,2024,crystal palace,everton,TRUE
 England,2024,crystal palace,west ham,TRUE
-Italy,2022,atalanta,inter,TRUE
-Italy,2022,ac milan,atalanta,TRUE
-Italy,2022,atalanta,juventus,TRUE
 Germany,2024,dortmund,leipzig,TRUE
 Germany,2024,dortmund,leverkusen,TRUE
 Germany,2024,bayern munich,dortmund,TRUE
 Germany,2024,leipzig,leverkusen,TRUE
 Germany,2024,frankfurt,leipzig,TRUE
+Germany,2024,freiburg,leipzig,TRUE
+Germany,2024,hoffenheim,leipzig,TRUE
+France,2022,clermont foot,troyes,TRUE
+France,2021,angers sco,fc nantes,TRUE
+France,2021,angers sco,g. bordeaux,TRUE
+France,2021,angers sco,saint-étienne,TRUE
+France,2021,fc nantes,g. bordeaux,TRUE
+France,2021,fc nantes,saint-étienne,TRUE
+Italy,2022,atalanta,inter,TRUE
+Italy,2022,atalanta,juventus,TRUE
+Italy,2024,atalanta,juventus,TRUE
+Italy,2024,atalanta,inter,TRUE
+Italy,2020,juventus,roma,TRUE
+Italy,2020,napoli,roma,TRUE
 Spain,2020,getafe,villarreal,TRUE
 Spain,2020,getafe,valencia,TRUE
-Italy,2024,atalanta,juventus,TRUE
-Italy,2024,ac milan,atalanta,TRUE
-Italy,2024,atalanta,inter,TRUE
 Germany,2021,frankfurt,hoffenheim,TRUE
-Germany,2021,hoffenheim,mönchengladbach,TRUE
 Italy,2023,fiorentina,sassuolo,TRUE
 Italy,2023,sassuolo,torino,TRUE
 Italy,2021,atalanta,inter,TRUE
-Italy,2021,ac milan,atalanta,TRUE
 Italy,2021,atalanta,juventus,TRUE
-Italy,2020,juventus,roma,TRUE
 Italy,2019,brescia,lecce,TRUE
 Spain,2021,getafe,valencia,TRUE
 Spain,2021,getafe,villarreal,TRUE
-France,2022,clermont foot,troyes,TRUE
-Spain,2023,getafe,valencia,TRUE
-Spain,2023,celta de vigo,getafe,TRUE
-Spain,2023,athletic club,getafe,TRUE
-Spain,2023,celta de vigo,valencia,TRUE
-Spain,2023,valencia,villarreal,TRUE
-Spain,2018,atlético,real madrid,TRUE
-Spain,2018,atlético,valencia,TRUE
-Spain,2018,atlético,barcelona,TRUE
-Spain,2018,barcelona,real madrid,TRUE
-Spain,2018,real madrid,valencia,TRUE
+Spain,2021,getafe,sevilla fc,TRUE
 Italy,2022,sampdoria,sassuolo,TRUE
 Italy,2022,fiorentina,sassuolo,TRUE
 Italy,2022,sassuolo,torino,TRUE
 Italy,2020,sampdoria,torino,TRUE
 Italy,2020,fiorentina,sampdoria,TRUE
-Spain,2023,real betis,real sociedad,TRUE
-Spain,2023,real betis,villarreal,TRUE
-Spain,2023,athletic club,real betis,TRUE
-Spain,2023,celta de vigo,real betis,TRUE
-Spain,2023,real betis,sevilla fc,TRUE
-Spain,2023,real sociedad,villarreal,TRUE
-Spain,2023,athletic club,real sociedad,TRUE
-Spain,2023,celta de vigo,real sociedad,TRUE
-Spain,2023,real sociedad,sevilla fc,TRUE
 Italy,2023,atalanta,inter,TRUE
-Italy,2023,ac milan,atalanta,TRUE
 Italy,2023,atalanta,juventus,TRUE
-France,2022,nice,stade rennais,TRUE
-France,2022,montpellier,nice,TRUE
-France,2022,marseille,nice,TRUE
-France,2022,montpellier,stade rennais,TRUE
-France,2022,marseille,stade rennais,TRUE
-Italy,2023,fiorentina,torino,TRUE
+Spain,2023,getafe,valencia,TRUE
+Spain,2023,getafe,villarreal,TRUE
+Spain,2023,getafe,sevilla fc,TRUE
+Spain,2023,valencia,villarreal,TRUE
+Spain,2023,sevilla fc,valencia,TRUE
+Spain,2023,atlético,valencia,TRUE
+Spain,2023,barcelona,valencia,TRUE
 Germany,2022,freiburg,mainz,TRUE
 Germany,2022,hoffenheim,mainz,TRUE
-Germany,2022,mainz,mönchengladbach,TRUE
-France,2023,nice,stade rennais,TRUE
-France,2023,montpellier,nice,TRUE
-France,2023,lyon,nice,TRUE
-France,2023,marseille,stade rennais,TRUE
-France,2023,montpellier,stade rennais,TRUE
-France,2023,lyon,stade rennais,TRUE
-France,2023,lille,stade rennais,TRUE
+Germany,2022,frankfurt,mainz,TRUE
+Italy,2023,fiorentina,torino,TRUE
+Italy,2020,fiorentina,torino,TRUE
+Germany,2022,hoffenheim,leverkusen,TRUE
+Germany,2022,frankfurt,leverkusen,TRUE
 England,2023,everton,west ham,TRUE
 England,2023,tottenham,west ham,TRUE
-Germany,2022,hoffenheim,leverkusen,TRUE
-Germany,2022,leverkusen,mönchengladbach,TRUE
-Germany,2022,frankfurt,leverkusen,TRUE
-Spain,2017,atlético,real madrid,TRUE
-Spain,2017,atlético,valencia,TRUE
-Spain,2017,atlético,barcelona,TRUE
-Spain,2017,barcelona,real madrid,TRUE
 England,2022,arsenal,man utd,TRUE
 England,2024,everton,west ham,TRUE
-Spain,2023,sevilla fc,villarreal,TRUE
-Spain,2023,athletic club,villarreal,TRUE
-Italy,2020,fiorentina,torino,TRUE
-Germany,2022,freiburg,mönchengladbach,TRUE
-England,2024,tottenham,west ham,TRUE
-Spain,2022,real betis,real sociedad,TRUE
-Spain,2022,real betis,villarreal,TRUE
-Spain,2022,athletic club,real betis,TRUE
-Spain,2022,celta de vigo,real betis,TRUE
-Spain,2022,real betis,sevilla fc,TRUE
-Spain,2022,athletic club,real sociedad,TRUE
-Spain,2022,real sociedad,villarreal,TRUE
-Spain,2022,celta de vigo,real sociedad,TRUE
-Spain,2022,real sociedad,sevilla fc,TRUE
 Italy,2019,juventus,roma,TRUE
-Italy,2023,fc empoli,salernitana,TRUE
-France,2022,angers sco,montpellier,TRUE
-England,2023,chelsea,everton,TRUE
 Italy,2018,juventus,roma,TRUE
+Germany,2022,frankfurt,freiburg,TRUE
+France,2022,montpellier,nice,TRUE
+France,2022,fc nantes,montpellier,TRUE
+France,2022,angers sco,montpellier,TRUE
+France,2022,lille,montpellier,TRUE
+France,2022,lyon,montpellier,TRUE
+France,2022,fc nantes,nice,TRUE
+France,2022,marseille,nice,TRUE
+France,2022,angers sco,nice,TRUE
+France,2022,lille,nice,TRUE
+England,2024,tottenham,west ham,TRUE
+Italy,2023,fc empoli,salernitana,TRUE
+Spain,2018,atlético,real madrid,TRUE
+Spain,2018,atlético,valencia,TRUE
+Spain,2018,atlético,barcelona,TRUE
+Spain,2018,barcelona,real madrid,TRUE
+England,2023,chelsea,everton,TRUE
 Italy,2022,fiorentina,torino,TRUE
 Italy,2022,fiorentina,sampdoria,TRUE
 Italy,2022,sampdoria,torino,TRUE
-Spain,2022,athletic club,celta de vigo,TRUE
-Spain,2022,athletic club,getafe,TRUE
-Spain,2022,athletic club,villarreal,TRUE
-Germany,2020,frankfurt,mönchengladbach,TRUE
-Italy,2021,sampdoria,torino,TRUE
+Spain,2017,dep. la coruña,málaga cf,TRUE
 Italy,2024,bologna,fiorentina,TRUE
 Italy,2024,bologna,udinese,TRUE
 Italy,2024,bologna,torino,TRUE
 Italy,2024,fiorentina,torino,TRUE
 Italy,2024,fiorentina,udinese,TRUE
+Spain,2023,real betis,real sociedad,TRUE
+Spain,2023,athletic club,real betis,TRUE
+Spain,2023,celta de vigo,real betis,TRUE
+Spain,2023,athletic club,real sociedad,TRUE
+Spain,2023,celta de vigo,real sociedad,TRUE
+Italy,2021,sampdoria,torino,TRUE
 Italy,2021,fiorentina,torino,TRUE
-Spain,2024,real betis,villarreal,TRUE
-Spain,2024,real betis,real sociedad,TRUE
-Spain,2024,athletic club,real betis,TRUE
-Spain,2024,celta de vigo,real betis,TRUE
-Spain,2024,real betis,sevilla fc,TRUE
-Spain,2024,real sociedad,villarreal,TRUE
-Spain,2024,athletic club,villarreal,TRUE
-Spain,2024,sevilla fc,villarreal,TRUE
+Spain,2017,atlético,real madrid,TRUE
+Spain,2017,atlético,barcelona,TRUE
+Spain,2017,atlético,valencia,TRUE
+Spain,2017,barcelona,real madrid,TRUE
 Germany,2023,augsburg,mainz,TRUE
 Germany,2023,augsburg,hoffenheim,TRUE
-Germany,2023,augsburg,mönchengladbach,TRUE
 Germany,2023,augsburg,freiburg,TRUE
+Germany,2023,augsburg,frankfurt,TRUE
+Germany,2023,augsburg,wolfsburg,TRUE
 Germany,2023,freiburg,mainz,TRUE
-Germany,2023,mainz,mönchengladbach,TRUE
 Germany,2023,hoffenheim,mainz,TRUE
 Germany,2023,frankfurt,mainz,TRUE
+Germany,2023,mainz,wolfsburg,TRUE
 Spain,2022,getafe,valencia,TRUE
-Spain,2022,celta de vigo,getafe,TRUE
+Spain,2022,getafe,villarreal,TRUE
+Spain,2022,getafe,sevilla fc,TRUE
 Spain,2022,valencia,villarreal,TRUE
-Spain,2022,celta de vigo,valencia,TRUE
-Spain,2024,athletic club,real sociedad,TRUE
-Spain,2024,real sociedad,sevilla fc,TRUE
-Spain,2024,celta de vigo,real sociedad,TRUE
-Spain,2019,atlético,real madrid,TRUE
-Spain,2019,atlético,barcelona,TRUE
-Spain,2019,atlético,valencia,TRUE
-Spain,2019,barcelona,real madrid,TRUE
-Spain,2021,celta de vigo,real betis,TRUE
-Spain,2021,real betis,villarreal,TRUE
-England,2022,liverpool,man utd,TRUE
-Germany,2023,freiburg,mönchengladbach,TRUE
+Spain,2022,sevilla fc,valencia,TRUE
+Spain,2022,atlético,valencia,TRUE
+Spain,2022,real madrid,valencia,TRUE
+France,2020,lyon,marseille,TRUE
+France,2020,lyon,monaco,TRUE
+France,2020,marseille,monaco,TRUE
 Germany,2023,frankfurt,freiburg,TRUE
+Germany,2023,freiburg,hoffenheim,TRUE
+Spain,2021,celta de vigo,real betis,TRUE
+England,2022,liverpool,man utd,TRUE
+Italy,2021,inter,juventus,TRUE
+Italy,2021,inter,napoli,TRUE
 England,2024,man utd,tottenham,TRUE
 England,2024,arsenal,man utd,TRUE
 England,2024,chelsea,man utd,TRUE
 England,2024,arsenal,tottenham,TRUE
 England,2024,chelsea,tottenham,TRUE
-Italy,2021,ac milan,inter,TRUE
-Italy,2021,inter,juventus,TRUE
+Spain,2022,athletic club,real sociedad,TRUE
+Spain,2022,athletic club,celta de vigo,TRUE
+Spain,2022,athletic club,real betis,TRUE
+Spain,2022,real betis,real sociedad,TRUE
+Spain,2022,celta de vigo,real sociedad,TRUE
 Italy,2024,torino,udinese,TRUE
-France,2020,lyon,marseille,TRUE
-France,2020,lyon,monaco,TRUE
-France,2020,marseille,monaco,TRUE
+Spain,2022,celta de vigo,real betis,TRUE
+Spain,2019,atlético,real madrid,TRUE
+Spain,2019,atlético,barcelona,TRUE
+Spain,2019,atlético,valencia,TRUE
+Spain,2019,barcelona,real madrid,TRUE
 Germany,2024,freiburg,mainz,TRUE
 Germany,2024,frankfurt,freiburg,TRUE
-Germany,2024,freiburg,mönchengladbach,TRUE
 Germany,2024,augsburg,freiburg,TRUE
 Germany,2024,freiburg,hoffenheim,TRUE
 Germany,2024,augsburg,mainz,TRUE
-Germany,2024,mainz,mönchengladbach,TRUE
 Germany,2024,frankfurt,mainz,TRUE
 Germany,2024,hoffenheim,mainz,TRUE
-Spain,2022,sevilla fc,villarreal,TRUE
+Germany,2024,mainz,wolfsburg,TRUE
 Germany,2024,augsburg,hoffenheim,TRUE
-Germany,2024,augsburg,mönchengladbach,TRUE
+Germany,2024,augsburg,frankfurt,TRUE
+Germany,2024,augsburg,wolfsburg,TRUE
+Spain,2024,real betis,real sociedad,TRUE
+Spain,2024,athletic club,real betis,TRUE
+Spain,2024,celta de vigo,real betis,TRUE
+Spain,2024,athletic club,real sociedad,TRUE
+Spain,2024,celta de vigo,real sociedad,TRUE
+France,2021,g. bordeaux,saint-étienne,TRUE
 Italy,2022,cremonese,lecce,TRUE
 Italy,2022,cremonese,monza,TRUE
 Italy,2022,lecce,monza,TRUE
+France,2022,angers sco,fc nantes,TRUE
+France,2022,fc nantes,lille,TRUE
 England,2023,man utd,tottenham,TRUE
 England,2023,arsenal,man utd,TRUE
 England,2023,chelsea,man utd,TRUE
@@ -958,114 +900,140 @@ England,2023,liverpool,man utd,TRUE
 England,2023,arsenal,tottenham,TRUE
 England,2023,chelsea,tottenham,TRUE
 England,2023,liverpool,tottenham,TRUE
+Italy,2017,juventus,roma,TRUE
 Spain,2020,sevilla fc,villarreal,TRUE
 Spain,2020,sevilla fc,valencia,TRUE
-France,2021,g. bordeaux,saint-étienne,TRUE
-France,2024,nice,stade rennais,TRUE
-France,2024,nice,r. strasbourg,TRUE
-France,2024,lyon,nice,TRUE
-France,2024,marseille,nice,TRUE
-France,2024,lille,nice,TRUE
-France,2024,marseille,stade rennais,TRUE
-France,2024,lyon,stade rennais,TRUE
-France,2024,montpellier,stade rennais,TRUE
-France,2024,lille,stade rennais,TRUE
-France,2024,fc nantes,r. strasbourg,TRUE
-France,2024,fc nantes,montpellier,TRUE
-France,2024,montpellier,r. strasbourg,TRUE
-Germany,2023,hoffenheim,mönchengladbach,TRUE
-Germany,2023,frankfurt,hoffenheim,TRUE
-Germany,2023,hoffenheim,leverkusen,TRUE
-Germany,2023,frankfurt,mönchengladbach,TRUE
+Spain,2020,atlético,sevilla fc,TRUE
+Spain,2020,valencia,villarreal,TRUE
 Spain,2020,atlético,real madrid,TRUE
 Spain,2020,atlético,barcelona,TRUE
 Spain,2020,barcelona,real madrid,TRUE
-Germany,2021,frankfurt,mönchengladbach,TRUE
-Germany,2024,hoffenheim,mönchengladbach,TRUE
-Germany,2024,frankfurt,mönchengladbach,TRUE
-Spain,2023,athletic club,celta de vigo,TRUE
 Spain,2021,valencia,villarreal,TRUE
-Germany,2024,frankfurt,hoffenheim,TRUE
-Italy,2017,juventus,roma,TRUE
-Spain,2024,athletic club,celta de vigo,TRUE
+Spain,2021,sevilla fc,valencia,TRUE
+Italy,2024,inter,juventus,TRUE
 Spain,2023,atlético,barcelona,TRUE
 Spain,2023,atlético,real madrid,TRUE
+Spain,2023,atlético,sevilla fc,TRUE
+Spain,2023,atlético,villarreal,TRUE
 Spain,2023,barcelona,real madrid,TRUE
-Italy,2024,ac milan,juventus,TRUE
-Italy,2024,inter,juventus,TRUE
 France,2024,lyon,marseille,TRUE
 France,2024,lyon,monaco,TRUE
+France,2024,lyon,nice,TRUE
 France,2024,lille,lyon,TRUE
+France,2024,lyon,montpellier,TRUE
 France,2024,marseille,monaco,TRUE
+France,2024,marseille,nice,TRUE
 France,2024,lille,marseille,TRUE
+France,2024,marseille,montpellier,TRUE
+Spain,2023,athletic club,celta de vigo,TRUE
 Germany,2024,holstein kiel,st. pauli,TRUE
-Germany,2022,hoffenheim,mönchengladbach,TRUE
-Germany,2022,frankfurt,hoffenheim,TRUE
-Germany,2022,frankfurt,mönchengladbach,TRUE
+France,2022,ac ajaccio,aj auxerre,TRUE
+France,2022,ac ajaccio,toulouse,TRUE
+France,2022,aj auxerre,toulouse,TRUE
+Germany,2023,hoffenheim,leverkusen,TRUE
+France,2023,fc nantes,montpellier,TRUE
+France,2023,fc nantes,nice,TRUE
+France,2023,montpellier,nice,TRUE
+France,2023,lille,montpellier,TRUE
+France,2023,lyon,montpellier,TRUE
+France,2023,marseille,montpellier,TRUE
 England,2019,liverpool,man city,TRUE
 Spain,2022,atlético,barcelona,TRUE
 Spain,2022,atlético,real madrid,TRUE
 Spain,2022,atlético,sevilla fc,TRUE
+Spain,2022,atlético,villarreal,TRUE
 Spain,2022,barcelona,real madrid,TRUE
-Spain,2021,sevilla fc,villarreal,TRUE
-Spain,2021,atlético,sevilla fc,TRUE
-France,2023,lille,montpellier,TRUE
-France,2022,ac ajaccio,aj auxerre,TRUE
-France,2022,ac ajaccio,toulouse,TRUE
-France,2022,aj auxerre,toulouse,TRUE
-Spain,2024,atlético,barcelona,TRUE
-Spain,2024,atlético,real madrid,TRUE
-Spain,2024,barcelona,real madrid,TRUE
-Italy,2020,ac milan,napoli,TRUE
+Germany,2022,frankfurt,hoffenheim,TRUE
 France,2022,lyon,monaco,TRUE
 France,2022,lyon,marseille,TRUE
 France,2022,lille,lyon,TRUE
 France,2022,marseille,monaco,TRUE
+Spain,2021,sevilla fc,villarreal,TRUE
+Spain,2021,atlético,sevilla fc,TRUE
+Spain,2021,real madrid,sevilla fc,TRUE
+Germany,2023,frankfurt,hoffenheim,TRUE
+France,2023,lyon,nice,TRUE
+France,2023,marseille,nice,TRUE
+France,2023,lille,nice,TRUE
+Spain,2024,atlético,barcelona,TRUE
+Spain,2024,atlético,real madrid,TRUE
+Spain,2024,atlético,villarreal,TRUE
+Spain,2024,atlético,sevilla fc,TRUE
+Spain,2024,barcelona,real madrid,TRUE
+France,2024,monaco,nice,TRUE
+France,2024,lille,monaco,TRUE
 England,2023,arsenal,chelsea,TRUE
 England,2023,arsenal,liverpool,TRUE
-Italy,2022,ac milan,inter,TRUE
-Italy,2022,ac milan,napoli,TRUE
-Italy,2022,inter,juventus,TRUE
-France,2024,lille,monaco,TRUE
-France,2023,lyon,marseille,TRUE
 France,2023,lyon,monaco,TRUE
+France,2023,lyon,marseille,TRUE
 France,2023,lille,lyon,TRUE
 France,2023,marseille,monaco,TRUE
+France,2023,lille,monaco,TRUE
+France,2023,lille,marseille,TRUE
+Spain,2022,real madrid,sevilla fc,TRUE
+Spain,2022,real madrid,villarreal,TRUE
+France,2021,lyon,marseille,TRUE
+France,2021,lyon,monaco,TRUE
+France,2021,lille,lyon,TRUE
+France,2021,marseille,monaco,TRUE
+Italy,2022,inter,juventus,TRUE
+Italy,2022,inter,napoli,TRUE
+Germany,2024,frankfurt,hoffenheim,TRUE
+France,2022,lille,marseille,TRUE
 Spain,2021,atlético,real madrid,TRUE
 Spain,2021,atlético,barcelona,TRUE
 Spain,2021,barcelona,real madrid,TRUE
-France,2023,lille,monaco,TRUE
-France,2021,lyon,marseille,TRUE
-France,2021,lyon,monaco,TRUE
-France,2021,marseille,monaco,TRUE
-Italy,2023,ac milan,inter,TRUE
-Italy,2023,ac milan,juventus,TRUE
+Spain,2024,athletic club,celta de vigo,TRUE
+Spain,2022,sevilla fc,villarreal,TRUE
+Spain,2024,real madrid,villarreal,TRUE
+Spain,2024,real madrid,sevilla fc,TRUE
+France,2024,fc nantes,montpellier,TRUE
+France,2024,montpellier,nice,TRUE
+France,2024,lille,montpellier,TRUE
+France,2017,fc metz,stade rennais,TRUE
+France,2017,fc metz,psg,TRUE
+Spain,2023,sevilla fc,villarreal,TRUE
+Spain,2023,real madrid,sevilla fc,TRUE
+Spain,2023,real madrid,villarreal,TRUE
 Italy,2023,inter,juventus,TRUE
-Italy,2024,ac milan,inter,TRUE
-Italy,2021,ac milan,napoli,TRUE
+France,2024,lille,nice,TRUE
 England,2019,aston villa,norwich,TRUE
 England,2019,aston villa,sheff utd,TRUE
 England,2019,norwich,sheff utd,TRUE
-England,2024,leicester,southampton,TRUE
 France,2020,fc lorient,lens,TRUE
+England,2024,leicester,southampton,TRUE
+Italy,2022,juventus,napoli,TRUE
 England,2020,liverpool,man city,TRUE
+Spain,2024,sevilla fc,villarreal,TRUE
 England,2024,arsenal,liverpool,TRUE
 England,2024,arsenal,man city,TRUE
 England,2021,liverpool,man city,TRUE
 England,2024,liverpool,man city,TRUE
+France,2021,fc lorient,lens,TRUE
 England,2023,liverpool,man city,TRUE
 England,2022,liverpool,man city,TRUE
-France,2021,fc lorient,lens,TRUE
 Spain,2022,girona,ud almería,TRUE
-Germany,2022,fc schalke 04,werder bremen,TRUE
 England,2020,aston villa,sheff utd,TRUE
-Italy,2024,lecce,monza,TRUE
-Germany,2018,1.fc nuremberg,f. düsseldorf,TRUE
 France,2022,fc lorient,lens,TRUE
+Italy,2024,lecce,monza,TRUE
 Italy,2023,lecce,monza,TRUE
 Germany,2019,sc paderborn,union berlin,TRUE
-Germany,2021,greuther fürth,vfl bochum,TRUE
-Spain,2023,girona,ud almería,TRUE
+Germany,2018,fc schalke 04,mönchengladbach,TRUE
+France,2017,psg,stade rennais,TRUE
+Germany,2017,fc schalke 04,mönchengladbach,TRUE
+Germany,2017,1.fc köln,fc schalke 04,TRUE
+Germany,2017,1.fc köln,mönchengladbach,TRUE
+Germany,2019,fc schalke 04,mönchengladbach,TRUE
 France,2023,fc lorient,lens,TRUE
+Germany,2020,fc schalke 04,mönchengladbach,TRUE
 Germany,2023,darmstadt 98,heidenheim,TRUE
+Germany,2018,1.fc nuremberg,f. düsseldorf,TRUE
 England,2020,leeds,west brom,TRUE
+France,2023,psg,stade rennais,TRUE
+France,2022,psg,stade rennais,TRUE
+Italy,2017,ac milan,hellas verona,TRUE
+France,2024,psg,stade rennais,TRUE
+France,2021,psg,stade rennais,TRUE
+France,2018,psg,stade rennais,TRUE
+France,2019,psg,stade rennais,TRUE
+France,2020,psg,stade rennais,TRUE
