@@ -892,7 +892,7 @@ setorder(team_map, country, raw, dist)
 team_map <- team_map[, .SD[1], by = .(country, raw)]
 ```
 
-We have a very niche problem with selling club's country. unlike a buyer's country that points to the league the country belongs to, seller's country points to the country where the club actually is (Ex: Monaco is not in France, but in the French league). So, when we match based on country, we get NA for seller_clean. After verifying the data, missing values come from such cases. So, we simply use seller_raw's name in seller_clean. The data in seller_raw for these clubs are simplified and don't cause matching issues. So, we can directly copy the name.
+We have a very niche problem with selling club's country. unlike a buyer's country that points to the league the country belongs to, seller's country points to the country where the club actually is (Ex: Monaco is not in France, but in the French league). So, when we match based on country, we get NA for seller_clean. After verifying the data, missing values come from such cases. So, we simply use seller_raw's name in seller_clean (only in such cases). The data in seller_raw for these clubs are simplified and don't cause matching issues. So, we can directly copy the name.
 
 ```{r}
 riv <- fread(rivals_path)   # rivalry_continuous.csv
