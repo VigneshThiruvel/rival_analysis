@@ -4,7 +4,7 @@ author:
   - name: "Vignesh Thiruvel Selvam"
   - name: "Prof. Dr.Christoph Ihl"
     role: "Supervisor"
-format: html
+format: pdf
 editor: visual
 ---
 
@@ -1217,24 +1217,34 @@ In model 1, the choice set includes players that arrived to the focal league, ei
 ::: {.callout-note icon="false"}
 ## Model 1: Rivalry Proximity
 
-coef = 0.209\
-exp(coef) = 1.23\
-p = 0.117
+coef = 0.047\
+exp(coef) = 1.05\
+p \> 0.1
 :::
 
-This means, `the odds of a player being signed increases by 23% per unit increase in rivalry`. However, `this effect is not significant` (p-value is very high, but concordance is still \>0.5, so the model isn't giving random output). Thus, the data doesn't provide strong evidence to suggest that teams prefer to buy from their rivals.
+This means, `the odds of a player being signed increases by 5% per unit increase in rivalry`. However, `this effect is not significant` (p-value is very high, but concordance is still \>0.5, so the model isn't giving random output). Thus, the data doesn't provide strong evidence to suggest that teams prefer to buy from their rivals.
 
 When we look at the other variables, we see that minutes played, nationality match, goals and transfer fee don't have any effect on the outcome of the transfer. However, for player age:
 
 ::: {.callout-note icon="false"}
 ## Model 1: Player Age
 
-coef = 0.072\
-exp(coef) = 1.00\
+coef = 0.039\
+exp(coef) = 1.04\
 p \< 0.001
 :::
 
-Thus, `age is a very robust predictor, but the effect is too small`.
+Thus, `age is a very robust predictor, with a 4% increased odds of a player being signed if they are a year older`.
+
+::: {.callout-note icon="false"}
+## Model 1: Minutes Played
+
+coef = -0.0000625\
+exp(coef) = 0.999\
+p \< 0.05
+:::
+
+For minutes played, we have a very low p-vaue, `indicating a strong but very small effect (<0.001)`
 
 ------------------------------------------------------------------------
 
@@ -1243,36 +1253,38 @@ For model 2, we added players that left the focal league (permanent move or loan
 ::: {.callout-note icon="false"}
 ## Model 2: Rivalry Proximity
 
-coef = -0.767\
-exp(coef) = 0.465\
+coef = -0.797\
+exp(coef) = 0.451\
 p \< 0.001
 :::
 
-For rivalry proximity. Thus, `A one-unit increase in rivalry proximity reduces the odds of a transfer by ~53%`. This effect is strong and highly significant (p-value \< 0.05).
+For rivalry proximity. Thus, `A one-unit increase in rivalry proximity reduces the odds of a transfer by ~55%`. This effect is strong and highly significant (p-value \< 0.05).
 
 For nationality match, we have:
 
 ::: {.callout-note icon="false"}
 ## Model 2: Nationality Match
 
-coef = 0.359\
-exp(coef) = 1.43\
+coef = 0.266\
+exp(coef) = 1.31\
 p \< 0.001
 :::
 
-The effect is strong with a very low p-value, meaning `players whose nationality matches the buyer's country are 43% more likely to be chosen`.
+The effect is strong with a very low p-value, meaning `players whose nationality matches the buyer's country are 31% more likely to be chosen`.
 
 Similarly for player age, we have:
 
 ::: {.callout-note icon="false"}
 ## Model 2: Player Age
 
-coef = 0.067\
-exp(coef) = 1.07\
+coef = 0.034\
+exp(coef) = 1.03\
 p \< 0.001
 :::
 
-Again a very significant effect. This means that `a player is 7% more likely to be bought by a club if he is a year older than the alternatives`.
+Again a very significant effect. This means that `a player is 3% more likely to be bought by a club if he is a year older than the alternatives`.
+
+For minutes played, we have a very similar outcome to model 1: `significant but too small`.
 
 Other variables don't have any significant effect on the transfer.
 

@@ -4014,12 +4014,12 @@ Model 1: Rivalry Proximity
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>coef = 0.209<br>
-exp(coef) = 1.23<br>
-p = 0.117</p>
+<p>coef = 0.047<br>
+exp(coef) = 1.05<br>
+p &gt; 0.1</p>
 </div>
 </div>
-<p>This means, <code>the odds of a player being signed increases by 23% per unit increase in rivalry</code>. However, <code>this effect is not significant</code> (p-value is very high, but concordance is still &gt;0.5, so the model isn’t giving random output). Thus, the data doesn’t provide strong evidence to suggest that teams prefer to buy from their rivals.</p>
+<p>This means, <code>the odds of a player being signed increases by 5% per unit increase in rivalry</code>. However, <code>this effect is not significant</code> (p-value is very high, but concordance is still &gt;0.5, so the model isn’t giving random output). Thus, the data doesn’t provide strong evidence to suggest that teams prefer to buy from their rivals.</p>
 <p>When we look at the other variables, we see that minutes played, nationality match, goals and transfer fee don’t have any effect on the outcome of the transfer. However, for player age:</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4031,12 +4031,28 @@ Model 1: Player Age
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>coef = 0.072<br>
-exp(coef) = 1.00<br>
+<p>coef = 0.039<br>
+exp(coef) = 1.04<br>
 p &lt; 0.001</p>
 </div>
 </div>
-<p>Thus, <code>age is a very robust predictor, but the effect is too small</code>.</p>
+<p>Thus, <code>age is a very robust predictor, with a 4% increased odds of a player being signed if they are a year older</code>.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Model 1: Minutes Played
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>coef = -0.0000625<br>
+exp(coef) = 0.999<br>
+p &lt; 0.05</p>
+</div>
+</div>
+<p>For minutes played, we have a very low p-vaue, <code>indicating a strong but very small effect (&lt;0.001)</code></p>
 <hr>
 <p>For model 2, we added players that left the focal league (permanent move or loan move) to the existing pool in model 1. This gave us:</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
@@ -4049,12 +4065,12 @@ Model 2: Rivalry Proximity
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>coef = -0.767<br>
-exp(coef) = 0.465<br>
+<p>coef = -0.797<br>
+exp(coef) = 0.451<br>
 p &lt; 0.001</p>
 </div>
 </div>
-<p>For rivalry proximity. Thus, <code>A one-unit increase in rivalry proximity reduces the odds of a transfer by ~53%</code>. This effect is strong and highly significant (p-value &lt; 0.05).</p>
+<p>For rivalry proximity. Thus, <code>A one-unit increase in rivalry proximity reduces the odds of a transfer by ~55%</code>. This effect is strong and highly significant (p-value &lt; 0.05).</p>
 <p>For nationality match, we have:</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4066,12 +4082,12 @@ Model 2: Nationality Match
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>coef = 0.359<br>
-exp(coef) = 1.43<br>
+<p>coef = 0.266<br>
+exp(coef) = 1.31<br>
 p &lt; 0.001</p>
 </div>
 </div>
-<p>The effect is strong with a very low p-value, meaning <code>players whose nationality matches the buyer's country are 43% more likely to be chosen</code>.</p>
+<p>The effect is strong with a very low p-value, meaning <code>players whose nationality matches the buyer's country are 31% more likely to be chosen</code>.</p>
 <p>Similarly for player age, we have:</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4083,12 +4099,13 @@ Model 2: Player Age
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>coef = 0.067<br>
-exp(coef) = 1.07<br>
+<p>coef = 0.034<br>
+exp(coef) = 1.03<br>
 p &lt; 0.001</p>
 </div>
 </div>
-<p>Again a very significant effect. This means that <code>a player is 7% more likely to be bought by a club if he is a year older than the alternatives</code>.</p>
+<p>Again a very significant effect. This means that <code>a player is 3% more likely to be bought by a club if he is a year older than the alternatives</code>.</p>
+<p>For minutes played, we have a very similar outcome to model 1: <code>significant but too small</code>.</p>
 <p>Other variables don’t have any significant effect on the transfer.</p>
 <section id="interpretation" class="level3">
 <h3 class="anchored" data-anchor-id="interpretation">Interpretation</h3>
